@@ -1,3 +1,42 @@
+
+<h1>Repositorio Oficial de <em>EmbeddedSP</em></h1>
+<p>Bienvenido al repositorio <strong>EmbeddedSP</strong>, creado para el curso <strong>Sistemas Programables</strong>. Este espacio está diseñado para explorar, documentar y colaborar en el desarrollo de sistemas embebidos, integrando la teoría con prácticas avanzadas en automatización y control.</p>
+
+<h2>¿Qué encontrarás aquí?</h2>
+<ul>
+  <li><strong>Ejemplos de programación:</strong> Código para microcontroladores utilizando lenguajes como C, C++ y MicroPython.</li>
+  <li><strong>Proyectos prácticos:</strong> Implementaciones reales que integran sensores, actuadores y buses de comunicación.</li>
+  <li><strong>Diagramas y esquemas:</strong> Conexiones y simulaciones diseñadas para sistemas embebidos.</li>
+  <li><strong>Recursos de aprendizaje:</strong> Guías, enlaces y documentación técnica para profundizar en los temas.</li>
+</ul>
+
+<h2>Objetivos del Repositorio</h2>
+<p>El objetivo de <em>EmbeddedSP</em> es brindar un espacio colaborativo donde los estudiantes puedan:</p>
+<ul>
+  <li>Desarrollar habilidades en el diseño y programación de sistemas embebidos.</li>
+  <li>Explorar conceptos de automatización y control aplicados a la industria moderna.</li>
+  <li>Compartir y gestionar proyectos de forma eficiente.</li>
+</ul>
+
+<h2>Contribuciones</h2>
+<p>Las contribuciones son bienvenidas. Si deseas colaborar, sigue estos pasos:</p>
+<ol>
+  <li>Haz un fork de este repositorio.</li>
+  <li>Realiza tus cambios en una nueva rama.</li>
+  <li>Envía un pull request detallando tus modificaciones.</li>
+</ol>
+
+<h2>Licencia</h2>
+<p>Este repositorio está licenciado bajo la <a href="https://opensource.org/licenses/MIT">MIT License</a>, lo que significa que puedes utilizar y modificar los contenidos siempre y cuando des crédito al autor original.</p>
+
+
+### ¿Qué incluye este formato?  
+1. **Título atractivo**: Usa HTML para destacar el nombre del repositorio.  
+2. **Contenido organizado**: Secciones para objetivos, recursos y contribuciones.  
+3. **Formato amigable**: Enlaces, listas y subtítulos para una lectura sencilla.  
+
+¿Te gustaría personalizar algo más o añadir más detalles? 😊
+
 # Calendario Escolar Febrero - Junio 2025  
 **Curso:** Sistemas Programables  
 
