@@ -30,13 +30,7 @@
 <p>Este repositorio está licenciado bajo la <a href="https://opensource.org/licenses/MIT">MIT License</a>, lo que significa que puedes utilizar y modificar los contenidos siempre y cuando des crédito al autor original.</p>
 
 
-### ¿Qué incluye este formato?  
-1. **Título atractivo**: Usa HTML para destacar el nombre del repositorio.  
-2. **Contenido organizado**: Secciones para objetivos, recursos y contribuciones.  
-3. **Formato amigable**: Enlaces, listas y subtítulos para una lectura sencilla.  
-
-¿Te gustaría personalizar algo más o añadir más detalles? 😊
-
+-----
 # Calendario Escolar Febrero - Junio 2025  
 **Curso:** Sistemas Programables  
 
