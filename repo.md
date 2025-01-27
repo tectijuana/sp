@@ -1,3 +1,5 @@
+# Estructura del Repositorio
+
 ```bash
 EmbeddedSP/
 ├── README.md
@@ -25,7 +27,7 @@ EmbeddedSP/
 └── /simulaciones
 ```
 
-# Estructura del Repositorio
+
 
 ## 1. Raíz del Repositorio
 - **`README.md`**  
