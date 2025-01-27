@@ -28,6 +28,13 @@
 
 <h2>Licencia</h2>
 <p>Este repositorio está licenciado bajo la <a href="https://opensource.org/licenses/MIT">MIT License</a>, lo que significa que puedes utilizar y modificar los contenidos siempre y cuando des crédito al autor original.</p>
+---
+
+## 📧 **Contacto**
+- **Docente:** MC. René Solis R.
+- **GitHub:** @IoTeacher
+- **Facebook Page:** facebook.com/profesorsolis
+- **Whazap Community:** https://whatsapp.com/channel/0029Vaeb4bf8aKvByZj8U91h
 
 
 -----
