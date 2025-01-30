@@ -1,7 +1,6 @@
 <img width="568" alt="Screenshot 2025-01-29 at 12 15 32 p m" src="https://github.com/user-attachments/assets/22c50836-a301-4324-b37c-b57e810fdc72" />
 
 
-
 # Práctica: Creación y gestión de una instancia EC2 con Asciinema
 
 **Objetivo:**  
