@@ -1,5 +1,5 @@
 
-# Actividad 1: Elabora una participacion de temas selectosd de Sistemas Programables para integrarlos a el curso en GH como contribucion
+# Actividad 1: Elabora una participacion de temas selectos de Sistemas Programables para integrarlos a el curso en GH como contribucion
 
 ## ¿Cómo contribuir a el repositorio?
 - En URL de donde deja su contribucion via GitHub **https://github.com/tectijuana/EmbeddedSP/new/main/class-material/U1**
