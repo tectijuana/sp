@@ -12,6 +12,7 @@
 - **Loom 1** - (Estudiante Fork) [https://www.loom.com/share/6835069706494761a6828d4c3b053a21?sid=87c4a764-40b9-4606-8cb9-1235679380ca](https://www.loom.com/share/6835069706494761a6828d4c3b053a21?sid=f0c66887-f17a-4b30-8a58-6d1b2735b432)
 - **Loom 2** - (docente Pull) [https://www.loom.com/share/8f26a0e6203d4be68ce65b07c5b5a077?sid=e675e02a-4532-4080-bcf2-5327ddcfc532](https://www.loom.com/share/8f26a0e6203d4be68ce65b07c5b5a077?sid=f9b4f1d5-6757-4949-9647-e3a778ba0f7f)
 
+<img width="1034" alt="Temas investigacion via Pull" src="https://github.com/user-attachments/assets/21887432-99b2-42f6-9ff6-fd0866e50a36" />
 
 
 
