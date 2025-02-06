@@ -5,6 +5,8 @@
 
 **NUM CONTROL : 22210335**
 
+**GITHUB NAME : Cesarr777**
+
 
 ## Introducción
 La automatización y el control en sistemas programables han revolucionado la industria y la domótica. Gracias a los avances en hardware y software, es posible mejorar la eficiencia, seguridad y comodidad en diferentes aplicaciones.
