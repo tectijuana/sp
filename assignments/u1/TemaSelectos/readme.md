@@ -3,8 +3,7 @@
 
 ## ¿Cómo contribuir a el repositorio?
 - En URL de donde deja su contribucion via GitHub **https://github.com/tectijuana/EmbeddedSP/new/main/class-material/U1/__________/readme.md**
-- Recuerde poner el numero seguido de un guión por la descripción
-- En en encabezado dentro del documento en MARKDOWN estará su nombre y nickname de GitHub
+- En en encabezado dentro del documento en MARKDOWN estará su nombre como autor
 - Docente revisa el archivo y pasa la calificación manualmente.
 - Docente hace PULL al repositorio para la integración especificamente a ese directorio, fuera de este el trabajo esta invalido.
 
