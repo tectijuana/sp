@@ -1,5 +1,5 @@
+## Ochoa Moran Victor Alejandro
 # Investigación sobre Programación a Bajo Nivel
-
 #  Introducción
 
 La programación a bajo nivel se refiere al desarrollo de software que interactúa directamente con el hardware, utilizando lenguajes como ensamblador y técnicas como bit-banging. Este enfoque permite un mayor control sobre los recursos de la máquina y es fundamental en sistemas embebidos, controladores de hardware y optimización de rendimiento.
