@@ -39,4 +39,6 @@
 | 21210860        | Seguridad en sistemas embebidos – Criptografía, autenticación, protección contra ataques. |  
 | C20212322       | IoT y sistemas embebidos – Comunicación con la nube, MQTT, REST, Edge Computing. |  
 | 20210637        | Tendencias futuras en sistemas programables – IA en dispositivos embebidos, RISC-V, computación neuromórfica. |  
+| 22210354        | Tema duplicado | 
+
 
