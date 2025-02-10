@@ -65,10 +65,12 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy, conectarse 
 - Una vez que se haya detenido la grabación, obtén el **enlace de la grabación** desde la interfaz de Asciinema.
 - Accede al enlace de la grabación
 - Documenta en markdown la revisión de la demostración que se busca evaluar, puede usar ChatGTP para ese trabajo.
-- y **comparte el link** en **iDoceo** u otras indicaciones para su revisión.
+- Estará listo para **comparte el link** en **iDoceo** u otras indicaciones de revisión.
 
 **Nota Importante:**  
-Recuerda que si no validas el enlace de grabación en un plazo de **7 días**, este se **expirará** y no podrá ser compartido ni revisado.
+- Recuerda que si no validas el enlace de grabación en un plazo de **7 días**, este se **expirará** y no podrá ser compartido ni revisado.
+- Por consecuencia si el docente revisa a los 7 dias con 1 segundo, su trabajo estarà borraro y sera un cero de calificación, **no dejar esta indicacion a la ligera**
+- No hay 2das oportunidad, sea responsable de esta indicación.
 
 **RUBRICA**  
 ![Rubrica AWS Basico](https://github.com/user-attachments/assets/1b954623-d2dd-41db-b88a-b923bdd43a73)
