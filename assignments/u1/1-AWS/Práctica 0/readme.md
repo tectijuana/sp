@@ -1,5 +1,5 @@
 # 📌 Acceso a AWS Academy y Creación de una Instancia EC2 en Amazon Web Services
-
+# By Ochoa Moran Victor Alejandro
 ## 1️⃣ Creación de la instancia
 ![Creación de la instancia](https://github.com/user-attachments/assets/0dabd434-065e-42c3-85a7-18f1a85ee993)
 
@@ -17,3 +17,5 @@
 
 ## 4️⃣ Grabación con Asciinema
 [![asciicast](https://asciinema.org/a/416FWg4V9Z8RHrTxLOjKE8q3Q.svg)](https://asciinema.org/a/416FWg4V9Z8RHrTxLOjKE8q3Q)
+
+
