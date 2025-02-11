@@ -31,4 +31,6 @@ sudo apt upgrade
 ````
 Se mostrará como se ejecutaron los comandos en el siguiente link:
 
-Grabación Asciinema: https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt
+## Grabación Asciinema:
+
+[![asciicast](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt.svg)](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt)
