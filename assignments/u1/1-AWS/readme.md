@@ -75,8 +75,9 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtua
 - Por consecuencia si el docente revisa a los 7 dias con 1 segundo, su trabajo estarà borraro y sera un cero de calificación, **no dejar esta indicacion a la ligera**
 - No hay 2das oportunidad, sea responsable de esta indicación.
 
-**RUBRICA**  
-![Rubrica AWS Basico](https://github.com/user-attachments/assets/1b954623-d2dd-41db-b88a-b923bdd43a73)
+**RUBRICA UNIFICADA![Screenshot 2025-02-12 at 2 23 43 p m](https://github.com/user-attachments/assets/2417cb93-15a0-4ba6-8ea3-da909b839196)
+**  
+
 
 
 
