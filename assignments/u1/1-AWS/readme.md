@@ -1,5 +1,8 @@
 <img width="568" alt="Screenshot 2025-01-29 at 12 15 32 p m" src="https://github.com/user-attachments/assets/22c50836-a301-4324-b37c-b57e810fdc72" />
 
+![asciinema](https://github.com/user-attachments/assets/22f52d88-1071-4041-9b51-6f883af969a6)
+
+
 
 # Práctica 0: Creación instancia Amazon Web Servicec EC2, gestion básica de una Raspberry Pi 4 con grabación de consola del estudiante con Asciinema  2 streams.
 
