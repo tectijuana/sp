@@ -10,10 +10,10 @@
 El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtual Hardware con una Raspberry pi 4, instalar Asciinema, grabar una sesión de actualización del sistema operativo con uso comandos básicas de Linux, y finalmente compartir el enlace de la grabación.
 
 **Materiales:**
-- Cuenta en AWS Academy y ARM.com (junto con AVH) https://app.avh.corellium.com/login
-- Software de acceso SSH (puede ser mediante el panel de AWS o software como PuTTY o cualquier cliente SSH), incluye Microsoft Powe Shell o masOS terminal
+- Cuenta en AWS Academy y ARM.com (y una vez acceder a el laboratorio AVH via  https://app.avh.corellium.com/login ) con **la cuenta de ARM**.
+- Software de acceso SSH (puede ser mediante el panel de AWS video incluido de Loom), incluye Microsoft Powe Shell o masOS terminal
 - Acceso a Internet puede ser incluso 4G
-- Tabulador de navegador para revisar las indicaciones.
+- Tres Tabulador de navegador para revisar las indicaciones, AWS Academy y AVH
 
 ---
 
@@ -73,7 +73,14 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtua
 **Nota Importante:**  
 - Recuerda que si no validas el enlace de grabación en un plazo de **7 días**, este se **expirará** y no podrá ser compartido ni revisado.
 - Por consecuencia si el docente revisa a los 7 dias con 1 segundo, su trabajo estarà borraro y sera un cero de calificación, **no dejar esta indicacion a la ligera**
-- No hay 2das oportunidad, sea responsable de esta indicación.
+- Sea eficiente de esta indicación, no hay 2das oportunidades debe practicarlo y dominar la base del curso.
+
+# USER PASSWORD RASPBIAN-OS LITE
+- USUARIO:  pi (minuscula)
+- CLAVE:  raspberry
+
+--- 
+
 
 **RUBRICA UNIFICADA![Screenshot 2025-02-12 at 2 23 43 p m](https://github.com/user-attachments/assets/2417cb93-15a0-4ba6-8ea3-da909b839196)
 **  
