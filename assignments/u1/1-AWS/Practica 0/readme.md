@@ -18,4 +18,7 @@
 ## 4️⃣ Grabación con Asciinema
 [![asciicast](https://asciinema.org/a/416FWg4V9Z8RHrTxLOjKE8q3Q.svg)](https://asciinema.org/a/416FWg4V9Z8RHrTxLOjKE8q3Q)
 
+---
 
+## 5️⃣ Grabación con Asciinema en Rasberry
+[![asciicast](https://asciinema.org/a/y8ezr6WOubkgXvIgk9Ko2IXuR.svg)](https://asciinema.org/a/y8ezr6WOubkgXvIgk9Ko2IXuR)
