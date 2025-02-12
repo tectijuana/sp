@@ -1,13 +1,13 @@
 <img width="568" alt="Screenshot 2025-01-29 at 12 15 32 p m" src="https://github.com/user-attachments/assets/22c50836-a301-4324-b37c-b57e810fdc72" />
 
 
-# Práctica 0: Creación y gestión de una instancia Amazon Web Servicec EC2 y grabación de consola del estudiante con Asciinema
+# Práctica 0: Creación instancia Amazon Web Servicec EC2, gestion básica de una Raspberry Pi 4 con grabación de consola del estudiante con Asciinema  2 streams.
 
 **Objetivo:**  
-El estudiante será capaz de crear una instancia EC2 en AWS Academy, conectarse por SSH, instalar Asciinema, grabar una sesión de actualización del sistema operativo con uso comandos básicas de Linux, y finalmente compartir el enlace de la grabación.
+El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtual Hardware con una Raspberry pi 4, instalar Asciinema, grabar una sesión de actualización del sistema operativo con uso comandos básicas de Linux, y finalmente compartir el enlace de la grabación.
 
 **Materiales:**
-- Cuenta en AWS Academy
+- Cuenta en AWS Academy y ARM.com (junto con AVH) https://app.avh.corellium.com/login
 - Software de acceso SSH (puede ser mediante el panel de AWS o software como PuTTY o cualquier cliente SSH), incluye Microsoft Powe Shell o masOS terminal
 - Acceso a Internet puede ser incluso 4G
 - Tabulador de navegador para revisar las indicaciones.
@@ -17,7 +17,7 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy, conectarse 
 ## Instrucciones:
 
 ### 1. Acceso a AWS Academy y creación de una instancia EC2 en Amazon Web Services:
-- Ingresa a tu cuenta de **AWS Academy**.
+- Ingresa a tu cuenta de **AWS Academy**, otro tabulador ARM Virtual Hardware site https://app.avh.corellium.com/login
 - Crea una nueva **instancia EC2** con las siguientes especificaciones:
   - Selecciona una **Amazon Machine Image (AMI)** trabajaremos con el famoso Ubuntu 20.04 LTS.
   - Escoge el **tipo de instancia** (recomendado: t2.micro, para esta practica básica
