@@ -1,8 +1,7 @@
 # Practica # 0 
-## Creación de instancia EC2 Ubuntu AWS
-## Joel Cuevas Estrada - 22210298
-### Grabación Asciinema: https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt
-### Crearción y ejecución de instancia EC2
+## Creación de instancia EC2 Ubuntu AWS y Raspberry Pi 4 AVH
+### Joel Cuevas Estrada - 22210298
+## Crearción y ejecución de instancia EC2
 Primero se ingresa a AWS y se inicia sesión, posteriormente nos vamos a la opción de instancias | EC2 donde se mirara un menú como este:
 
 ![image](https://github.com/user-attachments/assets/cded1885-ca7a-44f4-b760-7c8344ed0627)
@@ -34,3 +33,7 @@ Se mostrará como se ejecutaron los comandos en el siguiente link:
 ## Grabación Asciinema:
 
 [![asciicast](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt.svg)](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt)
+
+## Creción y ejecución de Raspberry Pi 4 AVH
+
+[![asciicast](https://asciinema.org/a/nvPs2VpgasCCBkBCJCLbh5GG3.svg)](https://asciinema.org/a/nvPs2VpgasCCBkBCJCLbh5GG3)
