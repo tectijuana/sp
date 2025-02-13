@@ -88,6 +88,9 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtua
 **RUBRICA UNIFICADA![Screenshot 2025-02-12 at 2 23 43 p m](https://github.com/user-attachments/assets/2417cb93-15a0-4ba6-8ea3-da909b839196)
 **  
 
+# NOTA:
+![Screenshot 2025-02-13 at 2 38 37 p m](https://github.com/user-attachments/assets/f627bc27-337b-47f0-8c50-7e57f47ed97d)
+
 
 
 
