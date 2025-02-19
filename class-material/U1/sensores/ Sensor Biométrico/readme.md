@@ -1,7 +1,10 @@
 # Presentación sobre Sensores Biónicos
-**Cesar Alexis Peñuelas Cardenas**
-**22210335**
-**Cesarr777**
+
+**Nombre:Cesar Alexis Peñuelas Cardenas**
+
+**Matricula:22210335**
+
+**Github:Cesarr777**
 
 ## **Introducción a los Sensores Biónicos**
 
@@ -21,8 +24,9 @@ Estos sensores tienen aplicaciones en medicina, robótica, industria, y más, pe
 
 3. **Respuesta o Retroalimentación**:  
    El sistema puede generar una respuesta, como mover un brazo robótico, enviar una alerta o estimular tejidos biológicos.
+   
+![sensor](https://github.com/user-attachments/assets/a22d48c2-0a01-408c-9656-a6ca31bc33f9)
 
----
 
 ## **Ejemplos de Sensores Biónicos**
 
@@ -77,6 +81,7 @@ Estos sensores tienen aplicaciones en medicina, robótica, industria, y más, pe
 4. **Robótica**:  
    - Robots con capacidad de sentir y adaptarse a su entorno.  
    - Asistentes personales con interacción más humana.  
+![sensor 2](https://github.com/user-attachments/assets/00a4c10c-ea06-45b3-bc87-213ecdd6ae4d)
 
 ---
 
