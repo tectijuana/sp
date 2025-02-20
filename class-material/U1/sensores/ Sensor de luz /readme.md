@@ -1,3 +1,8 @@
+# Realizado por:
+Nombre: Garcia Santos Jonathan 
+Matricula: 22210307
+GitHub: JONATHAN-GARCIA20
+
 # Sensores de Luz en Sistemas Programables
 
 Los sensores de luz son componentes esenciales en muchos sistemas programables, permitiendo la detección y medición de la luz para diversas aplicaciones. A continuación, se presentan tres tipos principales de sensores de luz utilizados en sistemas programables.
