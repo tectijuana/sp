@@ -14,8 +14,14 @@ Los sensores de sonido o micrófonos convierten las ondas de sonido en señales 
 Cada tipo de sensor tiene un principio de operación distinto:
 
 - **Electret**: Contiene un diafragma y una placa con carga permanente que varía su capacitancia con el sonido.
+![image](https://github.com/user-attachments/assets/bc3fb74d-6e86-4569-a4ad-1dccfa00914b)
+
 - **MEMS**: Usa estructuras microelectromecánicas que detectan cambios de presión sonora.
+  ![image](https://github.com/user-attachments/assets/56b09b2a-d076-4ae4-a154-574031c7810d)
+
 - **Dinámico**: Usa una bobina móvil dentro de un campo magnético para generar voltaje proporcional a la vibración.
+![image](https://github.com/user-attachments/assets/3699bfbb-8d12-40cf-a6f1-d51fa765e4c1)
+
 
 ## Aplicaciones
 Los sensores de sonido tienen múltiples aplicaciones, como:
@@ -63,6 +69,3 @@ Los sensores de sonido juegan un papel clave en múltiples industrias. La elecci
 - "MEMS Microphones Overview", Knowles Electronics.
 - "Dynamic Microphones", Shure Inc.
 
-  
-![image](https://github.com/user-attachments/assets/220092c1-86ab-4b75-915a-39606b614574)
-![image](https://github.com/user-attachments/assets/c9c12f88-42eb-4cba-9b82-dfbc112f9d41)
