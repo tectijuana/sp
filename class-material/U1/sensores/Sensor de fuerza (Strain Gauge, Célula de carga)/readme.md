@@ -8,6 +8,7 @@ Un sensor de fuerza es un dispositivo que mide la magnitud de una fuerza aplicad
 ## 📏 **1. Strain Gauge (Galga Extensométrica)**
 ### 🔹 **Definición**
 Un strain gauge es un sensor que mide la deformación (strain) en un objeto al detectar cambios en la resistencia eléctrica de un material conductor.
+# ![image](https://github.com/user-attachments/assets/15e388e8-8c88-4fa2-a5e0-83cb870f031b)
 
 ### 🛠 **Principio de Funcionamiento**
 - Se adhiere a la superficie de un objeto.
@@ -24,6 +25,7 @@ Un strain gauge es un sensor que mide la deformación (strain) en un objeto al d
 ## ⚖️ **2. Célula de Carga (Load Cell)**
 ### 🔹 **Definición**
 Es un dispositivo que mide la fuerza aplicada y la convierte en una señal eléctrica proporcional a la carga.
+# ![image](https://github.com/user-attachments/assets/312a09d7-fc9d-41bd-aba8-9063ec09baa6)
 
 ### 🛠 **Principio de Funcionamiento**
 - Utiliza uno o varios strain gauges en su interior.
