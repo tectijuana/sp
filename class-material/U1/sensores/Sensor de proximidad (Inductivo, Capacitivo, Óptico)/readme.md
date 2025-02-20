@@ -6,6 +6,10 @@ Los **sensores de proximidad** se utilizan para detectar la presencia o ausencia
 ---
 
 ## 🔵 1️⃣ Sensor Inductivo  
+
+![image](https://github.com/user-attachments/assets/1002eef6-62f3-47ba-82f5-b96fded7f8f3)
+
+
 ### 🔍 Principio de funcionamiento  
 Detecta objetos **metálicos** mediante un campo electromagnético.
 
@@ -32,6 +36,9 @@ Detecta objetos **metálicos** mediante un campo electromagnético.
 ---
 
 ## 🟡 2️⃣ Sensor Capacitivo  
+
+![image](https://github.com/user-attachments/assets/465b59a2-5605-4305-95dd-a4a880022df7)
+
 ### 🔍 Principio de funcionamiento  
 Detecta **cambios en la capacitancia** cuando un objeto se acerca.  
 
@@ -55,7 +62,11 @@ Detecta **cambios en la capacitancia** cuando un objeto se acerca.
 
 ---
 
-## 🔴 3️⃣ Sensor Óptico (Fotoeléctrico)  
+## 🔴 3️⃣ Sensor Óptico (Fotoeléctrico) 
+
+![image](https://github.com/user-attachments/assets/c0a39522-756d-4033-8624-f380af85bd1a)
+
+
 ### 🔍 Principio de funcionamiento  
 Emite un **haz de luz** (LED o láser) y detecta la reflexión o interrupción de ese haz.  
 
