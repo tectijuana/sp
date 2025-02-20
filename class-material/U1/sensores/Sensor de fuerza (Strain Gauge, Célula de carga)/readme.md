@@ -1,7 +1,6 @@
 # Sensor de fuerza (Strain Gauge, Célula de carga)
 ## By Ochoa Moran victor Alejandro
 
-# 🏋️ StrongBOT - Sensor de Fuerza (Strain Gauge / Célula de Carga)
 
 ## 🔵 ¿Qué hacen las celdas de carga?
 Las **celdas de carga** son sensores que miden **fuerza** o **peso** mediante la deformación de un material elástico. Se utilizan en:
