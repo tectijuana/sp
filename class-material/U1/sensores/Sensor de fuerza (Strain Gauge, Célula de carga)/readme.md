@@ -8,6 +8,8 @@ Las **celdas de carga** son sensores que miden **fuerza** o **peso** mediante la
 - Pruebas de materiales
 - Automatización industrial
 - Control de fuerza en robots
+# ![image](https://github.com/user-attachments/assets/180dd41a-0922-438e-ad01-e219f0c88712)
+
 
 ---
 
@@ -62,9 +64,6 @@ void loop() {
     delay(500);
 }
 ```
-# ⚡ **Aplicaciones de las Celdas de Carga (Strain Gauge)**
-Las celdas de carga permiten medir peso, fuerza y presión en una gran variedad de industrias.  
-
 ---
 
 ## 🎯 **Aplicaciones Comunes (Uso Frecuente)**
