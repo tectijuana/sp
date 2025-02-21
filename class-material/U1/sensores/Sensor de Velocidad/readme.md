@@ -118,6 +118,7 @@ void loop()
   <img src="https://http2.mlstatic.com/D_NQ_NP_689002-MLM40853808730_022020-O.webp" width="500">
 </p>
 Un encoder es un dispositivo de detección que proporciona una respuesta. Los Encoders convierten el movimiento en una señal eléctrica que puede ser leída por algún tipo de dispositivo de control en un sistema de control de movimiento, tal como un mostrador o PLC. El encoder envía una señal de respuesta que puede ser utilizado para determinar la posición, contar, velocidad o dirección.
+
 ### Aplicaciones
 - Utilizado por Fabricantes de Cintas Transportadoras
 - Manejo de Materiales
