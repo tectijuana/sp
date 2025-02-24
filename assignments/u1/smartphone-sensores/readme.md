@@ -1,8 +1,6 @@
-Aquí tienes una versión mejorada de la actividad para el grupo de ISC del TecNM:
 
----
 
-**Actividad 2.1: ¿Qué sensores tiene tu smartphone?**
+**Actividad 1.5: ¿Qué sensores tiene tu smartphone?**
 
 **Responsable:** René Solís Reyes  
 **Fecha de entrega:** Ver IDoceo
