@@ -112,6 +112,19 @@ En una **planta petroquímica**, los sensores de radar se utilizan para monitore
 - **Sensores de Flotador**: Son simples, confiables y baratos, pero tienen limitaciones en aplicaciones más complejas o líquidos agitados.
 - **Sensores de Radar**: Ofrecen alta precisión y son ideales para condiciones extremas, pero su costo es elevado y su instalación más compleja.
 
+| Característica                | Sensor de Nivel Ultrasónico                    | Sensor de Nivel de Flotador                   | Sensor de Nivel Radar                      |
+|-------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------|
+| **Funcionamiento**             | Emite ondas ultrasónicas que se reflejan en la superficie del líquido. | Un flotador se mueve con el nivel del líquido, activando un interruptor o transductor. | Emite ondas de radar que se reflejan en la superficie del líquido. |
+| **Rango de Medición**          | 0.25 m a 10 m (dependiendo del modelo).         | Limitado, generalmente a unos pocos metros.    | Rango amplio, adecuado para condiciones extremas. |
+| **Condiciones Ambientales**    | Afectado por temperatura, presión y humedad.   | No afectado, pero el flotador puede desgastarse. | No afectado por vapor, temperatura o presión. |
+| **Precisión**                  | Alta precisión en condiciones estables.       | Menos preciso, especialmente en líquidos turbulentos. | Alta precisión, incluso en condiciones extremas. |
+| **Costo**                      | Moderado, más accesible que el radar.         | Bajo costo.                                   | Alto costo.                                |
+| **Instalación**                | Relativamente fácil de instalar.               | Muy fácil de instalar y mantener.             | Instalación compleja y especializada.      |
+| **Aplicaciones**               | Industria química, tratamiento de aguas, alimentos, almacenaje de líquidos. | Sistemas domésticos, vehículos cisterna, agricultura. | Industria química, alimentaria, plantas de energía y refinerías. |
+| **Ventajas**                   | Sin contacto, fácil instalación, versátil.     | Simple, confiable, económico.                 | Alta precisión, no afectado por condiciones extremas. |
+| **Desventajas**                | Sensible a condiciones ambientales, limitado en rango. | Limitado en aplicaciones complejas, puede desgastarse. | Costo elevado, instalación compleja.       |
+
+
 ---
 
 ## Referencias Técnicas:
