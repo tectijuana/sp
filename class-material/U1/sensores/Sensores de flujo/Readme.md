@@ -26,7 +26,7 @@ Los sensores de flujo térmico miden la velocidad del fluido utilizando la trans
 ---
 
 ### 2. Sensor de Flujo de Turbina
-
+![Sensor de flujo de turbina](https://proconsamexico.com/wp-content/uploads/Medidor-de-flujo-tipo-turbina-para-gasolina-modelo-HDF-WL.jpg)
 #### **Funcionamiento**
 Este sensor mide el flujo mediante una turbina que gira proporcionalmente a la velocidad del fluido. Un sensor magnético o óptico detecta las rotaciones y calcula el caudal.
 
@@ -48,7 +48,7 @@ Este sensor mide el flujo mediante una turbina que gira proporcionalmente a la v
 ---
 
 ### 3. Sensor de Flujo Electromagnético
-
+![Sensor]([https://proconsamexico.com/wp-content/uploads/Medidor-de-flujo-tipo-turbina-para-gasolina-modelo-HDF-WL.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2F0grados.com%2Fsensor-de-flujo-electromagnetico%2F&psig=AOvVaw24luf0WRd4xup8Uy-i4O2l&ust=1740522619194000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjf-ZSu3YsDFQAAAAAdAAAAABAE))
 #### **Funcionamiento**
 Estos sensores generan un campo magnético y miden la diferencia de voltaje inducida por el flujo de un fluido conductor, utilizando la ley de Faraday.
 
