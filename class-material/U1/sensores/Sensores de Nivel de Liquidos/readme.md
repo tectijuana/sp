@@ -7,6 +7,8 @@ Existen varios tipos de sensores de nivel, cada uno con características especí
 
 ## 1. Sensor de Nivel Ultrasónico
 
+![Sensor de Nivel Ultrasonico](https://th.bing.com/th/id/R.0dd8ca63c1b41438a23a5d174f87e175?rik=Hi7JSue7bucA6g&pid=ImgRaw&r=0)
+
 ### Funcionamiento:
 El **sensor ultrasónico** utiliza ondas acústicas de alta frecuencia para medir la distancia entre el sensor y el líquido. El sensor emite pulsos ultrasónicos que viajan hacia la superficie del líquido. Cuando los pulsos llegan a la superficie del líquido, se reflejan de vuelta al sensor. El tiempo que tarda el pulso en regresar es utilizado para calcular el nivel del líquido, basándose en la velocidad de propagación del sonido en el aire.
 
@@ -40,6 +42,8 @@ En un **tanque de almacenamiento de agua** en una planta de tratamiento de aguas
 
 ## 2. Sensor de Nivel de Flotador
 
+![Sensor de Nivel de Flotador](https://th.bing.com/th/id/R.7242f9d4afb86633335458139e0cb361?rik=YnWSflWD%2bmVWNg&pid=ImgRaw&r=0)
+
 ### Funcionamiento:
 El **sensor de nivel de flotador** se basa en un principio mecánico. Un flotador, que es un objeto que flota sobre la superficie del líquido, se conecta a un mecanismo (generalmente una varilla o un imán) que está asociado con un interruptor o un transductor. A medida que el nivel del líquido sube o baja, el flotador se mueve y activa el mecanismo, proporcionando una señal correspondiente al nivel del líquido.
 
@@ -70,6 +74,8 @@ En un **tanque de gasolina** en una estación de servicio, el flotador se usa pa
 ---
 
 ## 3. Sensor de Nivel Radar
+
+![Sensor de Nivel Radar](https://th.bing.com/th/id/OIP._qUzuM789WkR7nFsh1Dd1gAAAA?rs=1&pid=ImgDetMain)
 
 ### Funcionamiento:
 El **sensor de radar** utiliza ondas electromagnéticas (radar) para medir el nivel de líquidos. El sensor emite una señal de microondas hacia la superficie del líquido. La señal se refleja de vuelta al sensor, y el tiempo que tarda en regresar se utiliza para calcular el nivel. Este principio es similar al de los sensores ultrasónicos, pero con la ventaja de que las ondas de radar son menos afectadas por factores ambientales como la temperatura, el vapor o la presión.
