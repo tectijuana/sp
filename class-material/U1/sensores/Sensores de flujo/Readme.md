@@ -5,7 +5,7 @@ Este repositorio contiene información sobre los sensores de flujo y sus diferen
 ## Tipos de Sensores de Flujo
 
 ### 1. Sensor de Flujo Térmico
-
+!(https://www.pce-iberica.es/medidor-detalles-tecnicos/images/sensor-flujo-ss-20-200-500.jpg)
 #### **Funcionamiento**
 Los sensores de flujo térmico miden la velocidad del fluido utilizando la transferencia de calor. Un elemento calefactor calienta el fluido, y sensores de temperatura detectan el cambio térmico para determinar el caudal.
 
