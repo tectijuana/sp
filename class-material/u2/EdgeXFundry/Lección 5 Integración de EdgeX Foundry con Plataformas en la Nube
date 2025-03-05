@@ -1,0 +1,156 @@
+# **Lección 5: Integración de EdgeX Foundry con Plataformas en la Nube (AWS, Azure, Google Cloud)** ☁️  
+
+---
+
+## **1. Objetivo de la Lección**  
+Al finalizar esta lección, el estudiante comprenderá cómo **integrar EdgeX Foundry con plataformas en la nube** como **AWS IoT, Azure IoT Hub y Google Cloud IoT Core**. Se explorarán métodos para **enviar datos desde EdgeX a la nube, autenticación segura, y casos de uso en la industria**.  
+
+---
+
+## **2. Introducción**  
+### **2.1 ¿Por qué integrar EdgeX con la nube?**  
+La integración con plataformas en la nube permite:  
+✅ **Almacenamiento y procesamiento avanzado** en infraestructuras escalables.  
+✅ **Análisis de datos con Machine Learning e Inteligencia Artificial**.  
+✅ **Monitoreo en tiempo real** de dispositivos IoT distribuidos.  
+✅ **Gestión remota de dispositivos y servicios IoT**.  
+
+### **2.2 Métodos de Integración con la Nube**  
+- **MQTT**: Publicación de datos desde EdgeX hacia un broker MQTT en la nube.  
+- **REST API**: Envío de datos directamente a servicios en la nube mediante HTTP.  
+- **Pub/Sub (Google Cloud)**: Uso de mensajería distribuida para integración con Google Cloud.  
+
+---
+
+## **3. Integración de EdgeX Foundry con AWS IoT Core**  
+### **3.1 Configurar AWS IoT Core**  
+1. **Crear un "Thing" en AWS IoT Core**:  
+   - Acceder a **AWS IoT Console**.  
+   - Crear un nuevo dispositivo (**Thing**).  
+   - Descargar los certificados y claves de autenticación.  
+
+2. **Crear un "Rule" para procesar datos**:  
+   - Configurar una regla para redirigir datos a **Amazon S3, DynamoDB o Lambda**.  
+
+### **3.2 Configurar EdgeX para Enviar Datos a AWS IoT Core**  
+#### **Paso 1: Instalar el Cliente MQTT**  
+```bash
+sudo apt-get install mosquitto-clients
+```
+#### **Paso 2: Configurar el Application Service en EdgeX**  
+Editar `configuration.toml`:  
+```toml
+[Writable]
+Pipeline:
+  ExecutionOrder = "FilterByDeviceName, Transform, MQTTExport"
+  [Writable.Pipeline.Functions.FilterByDeviceName]
+    DeviceNames = ["TemperatureSensor"]
+  [Writable.Pipeline.Functions.MQTTExport]
+    BrokerAddress = "ssl://a1b2c3d4e5-ats.iot.us-west-2.amazonaws.com:8883"
+    ClientId = "edgex-client"
+    Topic = "edgex/data"
+    AuthMode = "certificate"
+    SecretName = "aws-certificates"
+```
+#### **Paso 3: Guardar los Certificados en EdgeX Vault**  
+```bash
+vault kv put secret/aws-certificates \
+  cert="$(cat cert.pem)" \
+  key="$(cat private-key.pem)" \
+  ca="$(cat AmazonRootCA1.pem)"
+```
+#### **Paso 4: Reiniciar el Application Service**  
+```bash
+docker-compose restart app-service
+```
+
+---
+
+## **4. Integración de EdgeX Foundry con Azure IoT Hub**  
+### **4.1 Configurar Azure IoT Hub**  
+1. **Crear un nuevo IoT Hub** en el portal de Azure.  
+2. **Registrar un nuevo dispositivo** y obtener la cadena de conexión.  
+
+### **4.2 Configurar el Application Service en EdgeX**  
+Editar `configuration.toml`:  
+```toml
+[Writable.Pipeline.Functions.MQTTExport]
+  BrokerAddress = "ssl://<your-hub>.azure-devices.net:8883"
+  ClientId = "<device-id>"
+  Topic = "devices/<device-id>/messages/events/"
+  AuthMode = "symmetric-key"
+  SecretName = "azure-iot-key"
+```
+#### **4.3 Guardar la Clave Secreta en EdgeX Vault**  
+```bash
+vault kv put secret/azure-iot-key key="YOUR_SHARED_ACCESS_KEY"
+```
+#### **4.4 Probar la Conexión con Azure**  
+```bash
+mosquitto_pub -h "<your-hub>.azure-devices.net" -t "devices/<device-id>/messages/events/" \
+  -m '{"temperature":25.3}' -p 8883 --capath /etc/ssl/certs/ \
+  --tls-version tlsv1.2 -u "<device-id>"
+```
+
+---
+
+## **5. Integración de EdgeX Foundry con Google Cloud IoT Core**  
+### **5.1 Configurar Google Cloud IoT Core**  
+1. **Crear un registro de dispositivos** en **Google Cloud IoT Core**.  
+2. **Generar y cargar una clave RSA** para autenticación.  
+
+### **5.2 Configurar EdgeX para Enviar Datos a Google Cloud**  
+#### **Paso 1: Configurar Publicación MQTT**  
+Editar `configuration.toml`:  
+```toml
+[Writable.Pipeline.Functions.MQTTExport]
+  BrokerAddress = "ssl://mqtt.googleapis.com:8883"
+  ClientId = "projects/<project-id>/locations/us-central1/registries/<registry-id>/devices/<device-id>"
+  Topic = "/devices/<device-id>/events"
+  AuthMode = "jwt"
+  SecretName = "gcp-jwt"
+```
+#### **Paso 2: Generar un Token JWT en EdgeX Vault**  
+```bash
+vault kv put secret/gcp-jwt \
+  private_key="$(cat rsa_private.pem)" \
+  algorithm="RS256"
+```
+#### **Paso 3: Reiniciar el Servicio**  
+```bash
+docker-compose restart app-service
+```
+
+---
+
+## **6. Comparación de las Plataformas en la Nube**  
+| Característica | AWS IoT Core | Azure IoT Hub | Google Cloud IoT Core |
+|--------------|--------------|--------------|--------------|
+| Seguridad | Certificados X.509 | Claves Simétricas | JWT con RSA |
+| Integración con Bases de Datos | DynamoDB, S3 | Cosmos DB | BigQuery |
+| Protocolos Soportados | MQTT, HTTP | MQTT, AMQP | MQTT, HTTP |
+| Escalabilidad | Alta | Alta | Alta |
+| Casos de Uso | Industrial, Retail | Smart Cities, IoT Empresarial | Machine Learning, Big Data |
+
+---
+
+## **7. Evaluación**  
+### **7.1 Preguntas de Revisión**  
+1. ¿Cuál es el método de autenticación en AWS IoT Core?  
+2. ¿Cómo se configuran los certificados de Azure IoT Hub en EdgeX?  
+3. ¿Qué ventaja tiene usar Google Cloud IoT Core para analítica de datos?  
+
+### **7.2 Práctica**  
+1. Configurar EdgeX para enviar datos a **AWS IoT Core** y verificar en la consola de AWS.  
+2. Integrar EdgeX con **Azure IoT Hub** y visualizar los datos en **Time Series Insights**.  
+3. Usar **Google Cloud IoT Core** para recibir datos de sensores en EdgeX.  
+
+---
+
+## **8. Conclusión**  
+La integración de EdgeX Foundry con la nube permite expandir las capacidades de IoT, habilitando almacenamiento masivo, análisis avanzado y gestión de dispositivos en plataformas como **AWS, Azure y Google Cloud**. Cada plataforma ofrece ventajas dependiendo del caso de uso, desde **seguridad avanzada** hasta **machine learning** en la nube.  
+
+---
+
+### **Próxima Lección**  
+**"Automatización de Procesos en EdgeX Foundry con Inteligencia Artificial y Machine Learning"** 🤖🔥
