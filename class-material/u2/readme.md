@@ -18,7 +18,7 @@ Los elementos adicionales para construir un servidor IoT robusto y escalable, co
 
 Esta combinación de herramientas permite construir un ecosistema IoT completo, abarcando desde la comunicación y el almacenamiento de datos, hasta la visualización, monitorización, procesamiento en tiempo real y seguridad, adaptándose a las exigencias y escalabilidad que se esperan 
 
-# Servidro InfluxDB
+# Servidor InfluxDB
 [![asciicast](https://asciinema.org/a/620847.svg)](https://asciinema.org/a/620847)
 
 # Servicios de Prometeus
