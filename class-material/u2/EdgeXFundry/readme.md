@@ -1,3 +1,6 @@
+
+Bot de Asistencia: https://chatgpt.com/g/g-HZPuMKEa9-edgex-expert
+
 ### **Lección: Introducción a EdgeX Foundry para Servidores de IoT**
 
 #### **Objetivo de la Lección**
