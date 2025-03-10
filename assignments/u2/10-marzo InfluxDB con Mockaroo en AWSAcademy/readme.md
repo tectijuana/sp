@@ -1,3 +1,9 @@
+<img width="1124" alt="Screenshot 2025-03-10 at 2 01 54 p m" src="https://github.com/user-attachments/assets/bb9cd28f-a469-40d8-986a-ca4cf0c25edf" />
+
+
+
+
+
 **Ejercicio Práctico para Ingeniería: Implementación y análisis de datos de sensores usando InfluxDB en AWS Academy**
 
 ## 🎯 Objetivo
