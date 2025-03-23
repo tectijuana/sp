@@ -1,6 +1,3 @@
-Aquí tienes un material didáctico claro y breve para que los estudiantes comprendan el valor económico e importancia del software de código abierto (OSS):
-
-⸻
 
 Lectura: El valor económico del software de código abierto
 
