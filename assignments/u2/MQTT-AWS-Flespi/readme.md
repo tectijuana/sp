@@ -65,7 +65,7 @@ Al finalizar esta práctica, el estudiante será capaz de:
 ### 📝 **Evaluación:**
 
 - Reporte técnico de implementación (50%) en gist markdown.
-- Demostración en tiempo real de integración IoT (50%)
+- Demostración en tiempo real de integración IoT (50%) con LOOM.com documentado en su GIST.
 
 ---
 
