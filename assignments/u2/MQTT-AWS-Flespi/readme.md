@@ -1,3 +1,6 @@
+<img width="616" alt="Screenshot 2025-03-24 at 2 07 05 p m" src="https://github.com/user-attachments/assets/2ae4420a-41a1-4b4a-9f3f-5cc655030285" />
+
+
 ### Bloque 2:  Sistemas Programables e IoT con Raspberry Pi, flespi.com y AWS Academy
 
 **Curso:** Sistemas Programables  
