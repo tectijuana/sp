@@ -81,3 +81,8 @@ Al finalizar esta práctica, el estudiante será capaz de:
 Esta lección impulsa el aprendizaje integral y práctico, alineado con los objetivos profesionales de los estudiantes de Ingeniería en Sistemas Computacionales.
 
 NOTA: Favor de crear bot de asistente de "flespi.com" es bien conocido
+
+---
+
+![Screenshot 2025-03-24 at 2 33 31 p m](https://github.com/user-attachments/assets/5b8e179c-0678-4b0a-ac3b-ae01d09cbd38)
+
