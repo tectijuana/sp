@@ -92,3 +92,11 @@ Triptico: https://flespi.com/files/flespi-presentation.pdf
 
 # Creacion de un Python "Fake Sensor"
 
+Wokwi es un simulador gratuito y en línea diseñado especialmente para estudiantes, makers y desarrolladores que trabajan con microcontroladores. Destaca especialmente para quienes desean aprender o desarrollar proyectos con MicroPython utilizando la Raspberry Pi Pico W.
+
+
+Portal de uso simulador MQTT empotrando microcontroladores https://wokwi.com/projects/315787266233467457
+
+```python
+
+
