@@ -88,3 +88,7 @@ NOTA: Favor de crear bot de asistente de "flespi.com" es bien conocido
 
 Triptico: https://flespi.com/files/flespi-presentation.pdf
 
+----
+
+# Creacion de un Python "Fake Sensor"
+
