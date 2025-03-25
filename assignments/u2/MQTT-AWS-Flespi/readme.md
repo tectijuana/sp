@@ -90,6 +90,7 @@ Triptico: https://flespi.com/files/flespi-presentation.pdf
 
 ----
 
+![Screenshot 2025-03-25 at 2 35 38 p m](https://github.com/user-attachments/assets/3f3070d9-5c8e-484b-af38-575fb5d321ca)
 
 
 # Creacion de un Python "Fake Sensor"
@@ -100,7 +101,7 @@ Wokwi es un simulador gratuito y en línea diseñado especialmente para estudian
 Portal de uso simulador MQTT empotrando microcontroladores https://wokwi.com/projects/315787266233467457
 
 
- Wokwi permite enviar solicitudes MQTT a brokers como Flespi. Flespi es un broker MQTT público y gratuito que soporta MQTT 5.0, ofreciendo características como conexiones seguras SSL/TLS y un sistema flexible de control de acceso. 
+Wokwi permite enviar solicitudes MQTT a brokers como Flespi. Flespi es un broker MQTT público y gratuito que soporta MQTT 5.0, ofreciendo características como conexiones seguras SSL/TLS y un sistema flexible de control de acceso. 
 
 En Wokwi, puedes simular microcontroladores como el ESP32 o el Raspberry Pi Pico W ejecutando MicroPython y establecer conexiones MQTT con Flespi. Un ejemplo de esto es un proyecto en Wokwi que utiliza un ESP32 para medir la frecuencia cardíaca y enviar los datos a Flespi a través de MQTT.
 
