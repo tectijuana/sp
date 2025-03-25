@@ -101,10 +101,64 @@ Wokwi es un simulador gratuito y en línea diseñado especialmente para estudian
 Portal de uso simulador MQTT empotrando microcontroladores https://wokwi.com/projects/315787266233467457
 
 
-En Wokwi,  permite enviar solicitudes MQTT a brokers como Flespi. Flespi es un broker MQTT público y gratuito que soporta MQTT 5.0, ofreciendo características como conexiones seguras SSL/TLS y un sistema flexible de control de acceso. Puedes simular microcontroladores como el ESP32 o el Raspberry Pi Pico W ejecutando MicroPython y establecer conexiones MQTT con Flespi. Un ejemplo de esto es un proyecto en Wokwi que utiliza un ESP32 para medir la frecuencia cardíaca y enviar los datos a Flespi a través de MQTT.
+En Wokwi,  permite enviar solicitudes MQTT a brokers como Flespi. Flespi es un broker MQTT público y gratuito que soporta MQTT 5.0, ofreciendo características como conexiones seguras SSL/TLS y un sistema flexible de control de acceso. Puedes simular microcontroladores como el ESP32 o el Raspberry Pi Pico W ejecutando MicroPython y establecer conexiones MQTT con Flespi. Un ejemplo de esto es un proyecto en Wokwi que utiliza un ESP32 para medir la frecuencia cardíaca y enviar los datos a Flespi a través de MQTT.
 
 Para conectar tu simulació, necesitarás crear una cuenta en Flespi para obtener un token de autorización. Luego, en tu código de MicroPython, puedes utilizar este token como el nombre de usuario al configurar la conexión MQTT. Asegúrate de que tu simulación en Wokwi tenga acceso a Internet y que las bibliotecas necesarias para MQTT estén instaladas y correctamente importadas en tu entorno de MicroPython. 
 
-```python
+Como por ejemplo:
+- 🌦️ **Estación Meteorológica Agrícola:** Envía temperatura, humedad y velocidad del viento cada minuto para monitoreo agrícola.
+-  🚗 **Tracker GPS Vehicular:** Reporta coordenadas, velocidad y estado del vehículo cada 30 segundos.
+-  ⚡ **Medidor Inteligente de Energía Eléctrica:** Reporta consumo en tiempo real cada minuto para gestión de consumo residencial.
+-  🏭 **Sensor de Nivel Industrial:** Envía niveles de tanque y alertas de rebosamiento cada 10 segundos.
+
+
+---
+
+🛰️ **Práctica MQTT IoT con Flespi, Wokwi y/o AWS Academy** 🌐
+
+ 🚀 En esta práctica temática exploraremos MQTT en profundidad utilizando las plataformas Flespi, Wokwi y/o AWS Academy para simular escenarios realistas de integración de dispositivos IoT. Cada uno de UDs. seleccionará un caso del mundo real (ficticio, pero basado en situaciones reales), integrando 10 dispositivos MQTT específicos a ese contexto. Usara ChatGTP bot para que puede amplificar las condiciones de la simulacion para determinar los 10 devices donde acomodarlos para una tematica profesional.
+
+📡 **Escenarios disponibles (cada uno debe integrar 10 dispositivos IoT MQTT):**
+
+1. 🌾 Agricultura Inteligente
+2. 🚛 Logística y Transporte
+3. 🏭 Industria 4.0
+4. 🏥 Salud Inteligente
+5. 🏙️ Ciudad Inteligente
+6. 🏡 Hogar Inteligente
+7. 🛍️ Retail Inteligente
+8. 🎓 Campus Universitario Inteligente
+9. 🛳️ Puerto Inteligente
+10. 🏟️ Estadio Inteligente
+11. 🎢 Parque Temático Inteligente
+12. 🌊 Acuicultura Inteligente
+13. ⚡ Redes Eléctricas Inteligentes
+14. 🏨 Hotelería Inteligente
+15. 🚴 Movilidad Inteligente
+16. 🌲 Gestión Forestal Inteligente
+17. 🚉 Ferrocarriles Inteligentes
+18. 🏢 Edificios Inteligentes
+19. 🏋️‍♂️ Gimnasios Inteligentes
+20. 🍽️ Restaurantes Inteligentes
+21. 🏖️ Turismo Inteligente
+22. 🎮 Centros de Entretenimiento Inteligentes
+23. 🐾 Monitoreo Inteligente de Fauna Silvestre
+24. 📦 Almacenes Inteligentes
+25. 🎬 Producción Audiovisual Inteligente
+
+📋 **Tareas a realizar:**
+- Seleccionar un escenario y diseñar los tópicos MQTT adecuados para cada dispositivo.
+- Simular la conexión y comunicación MQTT usando MicroPython en Wokwi y/o AWS Academy.
+- Conectar cada dispositivo al broker MQTT Flespi.
+- Crear dashboards básicos en Flespi para monitoreo en tiempo real.
+- Generar imágenes temáticas para la presentación del proyecto utilizando Adobe Firefly o herramientas similares.
+- Documentar claramente los tópicos, mensajes y frecuencias de publicación y suscripción.
+
+📌 **Objetivos de aprendizaje:**
+- Comprender y aplicar el protocolo MQTT en distintos escenarios reales.
+- Desarrollar habilidades en configuración y gestión de redes IoT heterogéneas.
+- Potenciar la capacidad de resolución de problemas mediante simulaciones realistas.
+- Aplicar herramientas creativas para la generación visual temática en proyectos técnicos.
+
 
 
