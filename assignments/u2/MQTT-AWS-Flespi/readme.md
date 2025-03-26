@@ -140,11 +140,12 @@ Como por ejemplo:
 18. 🏢 Edificios Inteligentes
 19. 🏋️‍♂️ Gimnasios Inteligentes
 20. 🍽️ Restaurantes Inteligentes
-21. 🏖️ Turismo Inteligente
+21. 🏖️ Turismo Inteligente-(abnerorterga98)
 22. 🎮 Centros de Entretenimiento Inteligentes
 23. 🐾 Monitoreo Inteligente de Fauna Silvestre
 24. 📦 Almacenes Inteligentes
 25. 🎬 Producción Audiovisual Inteligente
+26. Gestion vehiculos (uber) / juanuz
 
 📋 **Tareas a realizar:**
 - Seleccionar un escenario y diseñar los tópicos MQTT adecuados para cada dispositivo.
