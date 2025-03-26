@@ -132,8 +132,8 @@ Como por ejemplo:
 10. 🏟️ Estadio Inteligente
 11. 🎢 Parque Temático Inteligente
 12. 🌊 Acuicultura Inteligente
-13. ⚡ Redes Eléctricas Inteligentes
-14. 🏨 Hotelería Inteligente
+13. ⚡ Redes Eléctricas Inteligentes-PaulScholl
+14. 🏨 Hotelería Inteligente Sh0cko
 15. 🚴 Movilidad Inteligente
 16. 🌲 Gestión Forestal Inteligente
 17. 🚉 Ferrocarriles Inteligentes
@@ -143,7 +143,7 @@ Como por ejemplo:
 21. 🏖️ Turismo Inteligente-(abnerorterga98)
 22. 🎮 Centros de Entretenimiento Inteligentes
 23. 🐾 Monitoreo Inteligente de Fauna Silvestre
-24. 📦 Almacenes Inteligentes
+24. 📦 Almacenes Inteligentes/ 22210329
 25. 🎬 Producción Audiovisual Inteligente
 26. Gestion vehiculos (uber) / juanuz
 
