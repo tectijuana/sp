@@ -137,7 +137,7 @@ Como por ejemplo:
 15. 🚴 Movilidad Inteligente
 16. 🌲 Gestión Forestal Inteligente
 17. 🚉 Ferrocarriles Inteligentes
-18. 🏢 Edificios Inteligentes
+18. 🏢 Edificios Inteligentes / vivianar
 19. 🏋️‍♂️ Gimnasios Inteligentes
 20. 🍽️ Restaurantes Inteligentes
 21. 🏖️ Turismo Inteligente-(abnerorterga98)
