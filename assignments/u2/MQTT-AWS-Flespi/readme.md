@@ -121,8 +121,8 @@ Como por ejemplo:
 📡 **Escenarios disponibles (cada uno debe integrar 10 dispositivos IoT MQTT):**
 
 1. 🌾 Agricultura Inteligente / pythonC
-2. 🚛 Logística y Transporte / diotescodehub
-3. 🏭 Industria 4.0
+2. 🚛 Logística y Transporte / diegotescodehub
+3. 🏭 Industria 4.0 - brandon0216
 4. 🏥 Salud Inteligente
 5. 🏙️ Ciudad Inteligente
 6. 🏡 Hogar Inteligente / saidtm
@@ -130,16 +130,16 @@ Como por ejemplo:
 8. 🎓 Campus Universitario Inteligente
 9. 🛳️ Puerto Inteligente / eduardojs7
 10. 🏟️ Estadio Inteligente
-11. 🎢 Parque Temático Inteligente
+11. 🎢 Parque Temático Inteligente - noelgalgo
 12. 🌊 Acuicultura Inteligente
 13. ⚡ Redes Eléctricas Inteligentes-PaulScholl
 14. 🏨 Hotelería Inteligente / Sh0cko
 15. 🚴 Movilidad Inteligente
-16. 🌲 Gestión Forestal Inteligente
-17. 🚉 Ferrocarriles Inteligentes
+16. 🌲 Gestión Forestal Inteligente - urieluna17
+17. 🚉 Ferrocarriles Inteligentes - molinaedgr
 18. 🏢 Edificios Inteligentes / vivianar
-19. 🏋️‍♂️ Gimnasios Inteligentes
-20. 🍽️ Restaurantes Inteligentes
+19. 🏋️‍♂️ Gimnasios Inteligentes - castiilejo16
+20. 🍽️ Restaurantes Inteligentes -jonathan-garcia20
 21. 🏖️ Turismo Inteligente-(abnerorterga98)
 22. 🎮 Centros de Entretenimiento Inteligentes
 23. 🐾 Monitoreo Inteligente de Fauna Silvestre
