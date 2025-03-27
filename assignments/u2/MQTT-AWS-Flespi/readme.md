@@ -123,7 +123,7 @@ Como por ejemplo:
 1. 🌾 Agricultura Inteligente / pythonC
 2. 🚛 Logística y Transporte / diegotescodehub
 3. 🏭 Industria 4.0 - brandon0216
-4. 🏥 Salud Inteligente
+4. 🏥 Salud Inteligente - cesarr777
 5. 🏙️ Ciudad Inteligente
 6. 🏡 Hogar Inteligente / saidtm
 7. 🛍️ Retail Inteligente
