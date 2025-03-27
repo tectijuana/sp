@@ -129,7 +129,7 @@ Como por ejemplo:
 7. 🛍️ Retail Inteligente
 8. 🎓 Campus Universitario Inteligente
 9. 🛳️ Puerto Inteligente / eduardojs7
-10. 🏟️ Estadio Inteligente
+10. 🏟️ Estadio Inteligente - aagramon
 11. 🎢 Parque Temático Inteligente - noelgalgo
 12. 🌊 Acuicultura Inteligente
 13. ⚡ Redes Eléctricas Inteligentes-PaulScholl
