@@ -1,3 +1,8 @@
+
+
+
+Enlace: https://drive.google.com/drive/folders/0B_h8UBt3n9OafnFHcVdoNDJicG9Pek56al9KUTc1SWJndFh2djZOeC0zWHNXX2l3T3BtZFE?resourcekey=0-nYyP17PM0_xOkPw5_kn5zg&usp=sharing
+
 | Book Title (English)                                                    | Descripción y Opinión en Español                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Building IoT Visualizations using Grafana**                           | Ideal para visualizar datos de sensores IoT con herramientas open-source como Grafana y Prometheus. Muy útil para estudiantes que necesitan mostrar telemetría en tiempo real.                                                                                                                                                                                                                                  |
