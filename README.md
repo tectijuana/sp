@@ -1,4 +1,7 @@
 
+
+<img width="717" alt="Screenshot 2025-03-31 at 2 54 51 p m" src="https://github.com/user-attachments/assets/90f89108-192c-48b0-baef-558bf4ad686f" />
+
 <h1 align="center">📦 Repositorio Oficial de <em>EmbeddedSP</em></h1>
 
 # GPT del Curso:  https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
