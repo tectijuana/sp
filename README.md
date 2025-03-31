@@ -1,7 +1,7 @@
 
 <h1 align="center">📦 Repositorio Oficial de <em>EmbeddedSP</em></h1>
 
-GPT del Curso:  https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
+# GPT del Curso:  https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
 
 <p align="center">
   Bienvenido al repositorio de <strong>EmbeddedSP</strong>, un espacio creado como apoyo integral al curso de <strong>Sistemas Programables</strong> del <em>TECNM Campus ITT</em>.
