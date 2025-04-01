@@ -69,5 +69,5 @@ Si lo quieres hacer **full web**, se puede montar en:
 Requerimos:
 1. Genere el código para la página web con Leaflet?
 2. Te dé el script para simular este stream en Wokwi con UART?
-3. Ambos?
+
 
