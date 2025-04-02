@@ -14,7 +14,7 @@ Script Python que funciona como puente MQTT para:
 2. Parsear y transformar los datos a JSON
 3. Reenviar la información estructurada a Flespi
 
-## Codigo de Woski donde se envian los datos
+## Codigo de Woskwi donde se envian los datos
 ```
 import time
 import network
@@ -49,7 +49,7 @@ while True:
     time.sleep(3)  # Esperar 3 segundos antes de enviar el siguiente dato
 ```
 
-![image](https://gist.github.com/user-attachments/assets/c5f6c9e8-9363-469b-8fb6-3fbc078b9df7)
+![image](https://github.com/user-attachments/assets/3023e8ea-e6e5-4cc5-a49c-b98462c1901f)
 
 
  # Codigo python que sirve como puente
@@ -141,10 +141,10 @@ except Exception as e:
     print(f"❌ Error crítico: {e}")
     
   ```
- ![image](https://gist.github.com/user-attachments/assets/82f25bc7-1531-40b4-ad57-a0b74b34b3b1)
+![image](https://github.com/user-attachments/assets/842cad9b-db9f-4531-bb8c-2b51e1bcefe8)
 
   # Datos en Flespi 
-![image](https://gist.github.com/user-attachments/assets/2dd32f6a-8499-47c3-b8ac-ece67ca9518d)
+![image](https://github.com/user-attachments/assets/d805678e-5c8f-46ea-8fb5-b1cda232e5a5)
 
 # Sensor de CO (MQ-7)	
 
@@ -154,7 +154,7 @@ Script Python que funciona como puente MQTT para:
 2. Parsear y transformar los datos a JSON
 3. Reenviar la información estructurada a Flespi
 
-## Codigo de Woski donde se envian los datos
+## Codigo de Woswi donde se envian los datos
 ```
 import time
 import network
@@ -189,7 +189,7 @@ while True:
     time.sleep(3)  # Esperar 3 segundos antes de enviar el siguiente dato
 ```
 
-![image](https://gist.github.com/user-attachments/assets/668403fe-620e-4caa-bd7e-986827063410)
+![image](https://github.com/user-attachments/assets/6451d928-1617-41cf-91c4-e5a266dd82a5)
 
  # Codigo python que sirve como puente
  ```
@@ -280,11 +280,11 @@ except Exception as e:
     print(f"❌ Error crítico: {e}")
     
   ```
-![image](https://gist.github.com/user-attachments/assets/8d68b106-715c-4da5-88cc-6c8a456ab4d7)
+![image](https://github.com/user-attachments/assets/3f9dbad3-c5a4-4379-9cd1-645ef5e2ba2c)
 
   # Datos en Flespi 
   
-![image](https://gist.github.com/user-attachments/assets/780e73bf-3687-448d-916d-4e3d40f2cb5c)
+![image](https://github.com/user-attachments/assets/f2943f0c-9c60-4ea5-85e0-f1a5906d776d)
 
 # GPS DE WOKWI A MQTT
 # Puente MQTT: De Wokwi a Flespi
@@ -301,7 +301,7 @@ Script Python que funciona como puente MQTT para:
 2. Parsear y transformar los datos a JSON
 3. Reenviar la información estructurada a Flespi
 
-## Codigo de Woski donde se envian los datos
+## Codigo de Wokwi donde se envian los datos
 ```
 import time
 import network
@@ -342,7 +342,7 @@ while True:
         time.sleep(3)  # Esperar 3 segundos antes de enviar el siguiente dato
 ```
 
-![image](https://gist.github.com/user-attachments/assets/90f814b0-ba5e-4e4d-b2c3-4e51d8d1761a)
+![image](https://github.com/user-attachments/assets/95bb710c-4516-49c3-b574-c5ed758ec2df)
 
  
  # Codigo python que sirve como puente
@@ -434,10 +434,10 @@ except Exception as e:
     print(f"❌ Error crítico: {e}")
     
   ```
-  ![image](https://gist.github.com/user-attachments/assets/42996463-0445-4410-9fb3-729be696623c)
+![image](https://github.com/user-attachments/assets/8c00393a-99e2-423b-b0dc-afed8036cb3b)
 
   # Datos en Flespi 
-  ![image](https://gist.github.com/user-attachments/assets/c3ef97a6-cb0b-4e71-a584-bfe671521c3d)
+![image](https://github.com/user-attachments/assets/9991a8c1-e304-4b07-b6f0-8fde8ae88166)
  
 
 
