@@ -90,7 +90,7 @@ from(bucket:"eco_grow")
 
 Copia el siguiente prompt en **mockaroom.com** para generar automáticamente datos realistas del caso:
 
-> "Eres MockaroomBot, un asistente experto en generación de datasets simulados. Crea un conjunto de datos realista simulando la captura de múltiples sensores agrícolas durante un día entero. Incluye sensores de temperatura (entre 10 y 30 ºC), humedad ambiental (entre 40% y 90%), luminosidad (0 a 1000 lux), y humedad del suelo (20% a 80%). El intervalo debe ser de 1 minuto para representar datos continuos. Entrega el resultado en CSV para fácil importación a InfluxDB."
+> " Crea un conjunto de datos realista simulando la captura de múltiples sensores agrícolas durante un día entero. Incluye sensores de temperatura (entre 10 y 30 ºC), humedad ambiental (entre 40% y 90%), luminosidad (0 a 1000 lux), y humedad del suelo (20% a 80%). El intervalo debe ser de 1 minuto para representar datos continuos. Entrega el resultado en CSV para fácil importación a InfluxDB."
 
 ---
 
@@ -110,6 +110,6 @@ Cada estudiante entregará:
 - Breve reflexión sobre las ventajas observadas en el uso de InfluxDB para datos de sensores.
 
 ---
-
+NOTA: Recuerde que AWS el Security Groups para exponer el puerto TCP 8080s
 ✨ ¡Éxito en tu actividad! 🌱📈
 

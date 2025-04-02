@@ -29,6 +29,12 @@ Esta combinación de herramientas permite construir un ecosistema IoT completo, 
 
 ---
 
+# MQTT explorando aplicaciones.
+
+https://www.figma.com/board/YrDTCcEpaQwr8XmzGKGMH8/MQTT-para-Sistemas-Programables?node-id=0-1&t=1znWNyzBZY4jiRq1-1
+
+Clave: proporcionada el docente.
+
 
 
 
