@@ -13,7 +13,7 @@ Acompañemiento del BOT: https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c
 | CRUZ PATIÑO DIEGO | Sensor de nivel ultrasónico (HC-SR04) | Sensor de corriente ACS712 |---Poner aqui---|
 | CUEVAS ESTRADA JOEL | Sensor de luz (BH1750) | Sensor de humedad de suelo (YL-69) |------Poner aqui---|
 | FLORES RAMIREZ EMILIANO RAFAEL | Sensor de gas (MQ-2) | Sensor de vibración (SW-420) |----Poner aqui---|
-| GARCIA ORNELAS JUAN CARLOS | Sensor PIR (movimiento) | Sensor de CO2 (MH-Z19B) |[https://wokwi.com/projects/427153073207513089]|
+| GARCIA ORNELAS JUAN CARLOS | Sensor PIR (movimiento) | Sensor de CO2 (MH-Z19B) |https://wokwi.com/projects/427153073207513089|
 | GARCIA SANTOS JONATHAN | Sensor de presión barométrica (BMP280) | Sensor de sonido (MAX4466) |----Poner aqui----|
 | GUTIERREZ CEPEDA ANDRES | Sensor de pulso cardíaco (MAX30100) | Sensor de temperatura infrarrojo (MLX90614) |----Poner aqui--|
 | IÑIGUEZ GALLEGO CARLOS ALBERTO | Sensor de distancia láser (VL53L0X) | Sensor de voltaje (ZMPT101B) |---Poner aqui----|
