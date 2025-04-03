@@ -16,12 +16,12 @@ El objetivo principal de esta práctica fue aprender a utilizar el sensor ultras
 
 ## Hardware Utilizado
 
-- **Microcontrolador:** Arduino Uno
+- **Microcontrolador:** ESP32
 - **Sensor Ultrasónico:** HC-SR04
-  - **VCC** al pin **5V** de Arduino
-  - **GND** al pin **GND** de Arduino
-  - **Trig** al pin **3** de Arduino
-  - **Echo** al pin **4** de Arduino
+  - **VCC** al pin **5V** de ESP32
+  - **GND** al pin **GND** de ESP32
+  - **Trig** al pin **3** de ESP32
+  - **Echo** al pin **4** de ESP32
  
 - **Conexiones:** 
   - El sensor **HC-SR04** se conecta a los pines digitales de Arduino para la transmisión de señales de disparo y eco.
