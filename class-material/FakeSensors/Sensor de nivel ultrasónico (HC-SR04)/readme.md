@@ -35,8 +35,11 @@ El circuito se simuló en Wokwi con la siguiente configuración:
 - El **VCC** se conecta al pin de **5V** de ESP32.
 - El **GND** se conecta al pin de **GND** de ESP32.
 
-- Link de Wokwi para mejor identificacion de los pines:
+## Link de Wokwi para mejor identificacion de los pines:
 https://wokwi.com/projects/427202158131296257
+
+## Video demostracion en Loom del codigo:
+https://www.loom.com/share/dea4bcdfa9d24c24bd2977aa33cb42da?sid=a5f5cf3c-c0de-4c44-8808-de383a820ed0
 
 ## Código Fuente
 
@@ -156,7 +159,3 @@ void loop() {
 
   delay(1000); // Hacer una pausa de 1 segundo
 }
-´´´
-
-## Video demostracion en Loom del codigo:
-https://www.loom.com/share/dea4bcdfa9d24c24bd2977aa33cb42da?sid=a5f5cf3c-c0de-4c44-8808-de383a820ed0
