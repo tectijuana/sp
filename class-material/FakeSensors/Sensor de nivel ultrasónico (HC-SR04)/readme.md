@@ -156,7 +156,7 @@ void loop() {
 
   delay(1000); // Hacer una pausa de 1 segundo
 }
-´´´´
+´´´
 
 ## Video demostracion en Loom del codigo:
 https://www.loom.com/share/dea4bcdfa9d24c24bd2977aa33cb42da?sid=a5f5cf3c-c0de-4c44-8808-de383a820ed0
