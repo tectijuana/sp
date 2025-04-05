@@ -212,8 +212,9 @@ while True:
 ![Sensor de prescencia IR](https://github.com/user-attachments/assets/466d5008-effd-4305-a205-38eb7d4a1c5c)
 ![Sensor de presencia IR](https://github.com/user-attachments/assets/6f8354b2-4f4e-47ba-b9a8-6a0ae04ab92e)
 
+#### Loom
+https://www.loom.com/share/d25cbc828d57469e9b2801393591ecfa
+
 ---
-#### Video Loom
-https://www.loom.com/share/3303d415efb4401aad5900139f5a6de1
 
 
