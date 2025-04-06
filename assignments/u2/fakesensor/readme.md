@@ -15,7 +15,7 @@
 ### 2. Conversión a NMEA (script personalizado)
 Puedes usar este pequeño script en Python para convertir puntos de la ruta a `$GPRMC` (la sentencia NMEA más común para velocidad y tiempo).
 
-```python
+
 ```python
 import datetime
 import random
@@ -66,8 +66,9 @@ now = datetime.datetime.utcnow()
 for i, (lat, lon) in enumerate(route):
     # Imprime la sentencia GPRMC generada para cada punto con el tiempo ajustado
     print(generate_gprmc(lat, lon, now + datetime.timedelta(seconds=i * 10)))
+
 ```
-```
+
 
 ---
 
