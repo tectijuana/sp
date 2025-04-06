@@ -68,8 +68,28 @@ for i, (lat, lon) in enumerate(route):
     print(generate_gprmc(lat, lon, now + datetime.timedelta(seconds=i * 10)))
 
 ```
+A continuación, se muestra un ejemplo de salida reproducible al ejecutar el código (se agregó una semilla fija para obtener valores deterministas y se usó un timestamp fijo para mayor claridad):
+```
+$GPRMC,120000.00,A,4042.7680,N,7400.3600,W,18.44,272.86,060425,,,A*47
+$GPRMC,120010.00,A,4042.8280,N,7400.4200,W,14.21,93.21,060425,,,A*71
+$GPRMC,120020.00,A,4042.8880,N,7400.4800,W,15.11,145.78,060425,,,A*46
 
+Explicación de la salida:
 
+Tiempo y Fecha:
+Cada línea contiene la hora y fecha en formato NMEA. En el primer mensaje, la hora es 120000.00 (12:00:00 UTC) y la fecha es 060425 (06/04/25). En las siguientes líneas, se incrementa 10 segundos cada una.
+Coordenadas:
+Las coordenadas se convierten al formato NMEA:
+Para la latitud 40.7128, se obtiene 4042.7680,N.
+Para la longitud -74.0060, se obtiene 7400.3600,W.
+Los otros puntos se calculan de forma similar.
+Velocidad y Rumbo:
+Se generan valores aleatorios para la velocidad (en nudos) y el rumbo (en grados). Gracias a la semilla fija, se obtuvieron los valores mostrados.
+Checksum:
+Al final de cada sentencia se incluye un checksum calculado como XOR de todos los caracteres de la cadena (sin incluir el símbolo $ y antes del *).
+
+Nota: Debido al uso de números aleatorios, en una ejecución real sin semilla fija los valores de velocidad, rumbo y, por ende, los checksums variarán.
+```
 ---
 
 ### 3. Simular en Wokwi
