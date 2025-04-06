@@ -7,9 +7,8 @@
 
 ## 🔍 ¿Qué es un sensor de presencia por IR (PIR)?
 
-Un **sensor PIR (Passive Infrared Sensor)** es un dispositivo electrónico que **detecta cambios en la radiación infrarroja (calor)** emitida por objetos o personas dentro de su campo de visión.  
 
-A diferencia de sensores activos (como los ultrasónicos o láser), **no emite señales**, sino que **funciona de forma pasiva**, midiendo las variaciones de calor en el ambiente.
+Un sensor de presencia por IR (Infrarrojo), también conocido como sensor PIR (Passive Infrared Sensor), es un dispositivo utilizado para detectar la presencia de personas o animales en un área determinada mediante la detección de radiación infrarroja. Este sensor no emite radiación; más bien, detecta los cambios en la radiación infrarroja emitida por objetos calientes, como cuerpos humanos, debido a su temperatura (generalmente más alta que la del entorno).
 
 ---
 
@@ -20,6 +19,14 @@ Este proyecto utiliza un **sensor PIR conectado a un ESP32**, que envía datos m
 Además, se integran **variables simuladas** (temperatura, humedad, luz) para enriquecer los datos enviados y su posterior análisis.
 
 ---
+## ¿Cómo funciona un sensor de presencia por IR?
+Los sensores PIR detectan variaciones en los niveles de radiación infrarroja que los seres humanos o animales emiten en su calor corporal.
+
+Cuando alguien se mueve en el campo de visión del sensor, el sensor detecta el cambio en la radiación, lo que genera una señal de salida. En términos de hardware, el sensor PIR tiene un detector de infrarrojos pasivo que no interactúa con el objeto, sino que simplemente observa el cambio en los niveles de radiación infrarroja.
+
+En el caso del código proporcionado, el sensor PIR está conectado a un microcontrolador (como un ESP32), que lee la señal del sensor PIR (a través de un pin de entrada) y, según esa señal, decide si la presencia ha sido detectada o no.
+
+--
 
 ## 🔌 Conexión del ESP32 a WiFi y MQTT
 
@@ -128,11 +135,6 @@ def generate_sensor_data(pir_value):
     data["humedad"] = round(40 + random.random() * 30, 1)      # Humedad entre 40-70%
     data["luz"] = round(random.random() * 1000, 1)             # Nivel de luz 0-1000
     
-    # Si se detecta presencia, añadir más datos simulados
-    if pir_value == 1:
-        data["movimiento_intensidad"] = round(0.5 + random.random() * 0.5, 2)  # 0.5-1.0
-        data["duracion_estimada"] = random.randint(1, 10)  # 1-10 segundos
-    
     return data
 
 # --- Iniciar conexiones ---
@@ -140,38 +142,40 @@ connect_wifi()
 mqtt_client = connect_mqtt()
 
 # --- Variables de control ---
-last_state = 0
-counter = 0
-last_publish_time = 0
+last_detection_time = 0  # Tiempo cuando se detectó por última vez presencia
+presence_timeout = 30  # Tiempo para considerar que la persona sigue presente (en segundos)
 
 # --- Loop principal ---
 while True:
-    # Verifica conexión WiFi
-    if not network.WLAN(network.STA_IF).isconnected():
-        print("⚠️ WiFi desconectado. Reintentando...")
-        connect_wifi()
-    
     current_time = utime.time()
     current_state = pir_sensor.value()
     
-    # Publicar datos cuando se detecta movimiento
-    if current_state == 1 and last_state == 0:
+    if current_state == 1:  # Cuando se detecta presencia
+        last_detection_time = current_time  # Actualizamos la hora de detección
         data = generate_sensor_data(1)
         json_data = ujson.dumps(data)
         
         try:
             mqtt_client.publish(MQTT_TOPIC, json_data)
-            mqtt_client.ping()
             print("👤 Presencia detectada")
             print("📤 Mensaje enviado:", json_data)
-            last_publish_time = current_time
         except Exception as e:
             print("❌ Error publicando MQTT:", str(e))
-            mqtt_client = connect_mqtt()
     
-    # Publicar datos cuando ya no hay movimiento
-    elif current_state == 0 and last_state == 1:
-        data = generate_sensor_data(0)
+    # Si no se detecta presencia, pero ha pasado el tiempo de timeout, simula que sigue presente
+    elif current_time - last_detection_time < presence_timeout:
+        data = generate_sensor_data(1)  # Simula que la presencia sigue activa
+        json_data = ujson.dumps(data)
+        
+        try:
+            mqtt_client.publish(MQTT_TOPIC, json_data)
+            print("📊 Datos de presencia continua enviados:", json_data)
+        except Exception as e:
+            print("❌ Error publicando MQTT:", str(e))
+    
+    # Si ha pasado el tiempo de timeout y no se detecta movimiento, considera la presencia como terminada
+    elif current_time - last_detection_time >= presence_timeout:
+        data = generate_sensor_data(0)  # No hay presencia detectada
         json_data = ujson.dumps(data)
         
         try:
@@ -181,39 +185,17 @@ while True:
         except Exception as e:
             print("❌ Error publicando MQTT:", str(e))
     
-    # Enviar datos periódicos incluso sin cambios de estado
-    # Esto asegura un flujo constante de datos para Grafana
-    elif current_time - last_publish_time >= 5:  # Cada 5 segundos
-        # Simular detección aleatoria ocasionalmente
-        simulate_detection = random.random() < 0.3  # 30% de probabilidad
-        
-        if simulate_detection:
-            print("🔄 Simulando detección")
-            data = generate_sensor_data(1)
-        else:
-            data = generate_sensor_data(current_state)
-        
-        json_data = ujson.dumps(data)
-        
-        try:
-            mqtt_client.publish(MQTT_TOPIC, json_data)
-            mqtt_client.ping()
-            print("📊 Datos periódicos enviados:", json_data)
-            last_publish_time = current_time
-        except Exception as e:
-            print("❌ Error publicando MQTT:", str(e))
-            mqtt_client = connect_mqtt()
-    
-    last_state = current_state
-    counter += 1
     utime.sleep(0.2)
+
 ```
 #### Ejecucion 
-![Sensor de prescencia IR](https://github.com/user-attachments/assets/466d5008-effd-4305-a205-38eb7d4a1c5c)
-![Sensor de presencia IR](https://github.com/user-attachments/assets/6f8354b2-4f4e-47ba-b9a8-6a0ae04ab92e)
+![image](https://github.com/user-attachments/assets/15b3d5f3-b9eb-4805-81a1-c0dbc139df09)
+
+![Captura de pantalla 2025-04-06 104430](https://github.com/user-attachments/assets/0d86fa47-2117-4af9-bd1d-a36b4bfa7220)
+
 
 #### Loom
-https://www.loom.com/share/d25cbc828d57469e9b2801393591ecfa
+https://www.loom.com/share/7fad3c9c5d4a4244b1138c2d042393ff
 
 ---
 
