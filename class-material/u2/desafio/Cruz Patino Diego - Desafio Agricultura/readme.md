@@ -81,19 +81,3 @@ La lógica de riego se basará en las condiciones del suelo y el clima, además 
 ## Conclusión
 
 Este sistema de riego automatizado está diseñado para operar de manera eficiente, tanto en términos de consumo energético como de uso de la conectividad limitada. Utilizando sensores adecuados, el ESP32 como microcontrolador, MQTT para la transmisión de datos y Grafana para la visualización y gestión de alertas, se puede lograr un sistema robusto y fiable para la finca, permitiendo un monitoreo en tiempo real y una gestión eficiente del riego.
-
----
-
-## Instalación y Configuración
-
-1. **Instalar el ESP32 y los sensores**:
-   - Conectar los sensores de humedad, temperatura y nivel de agua al ESP32 según las especificaciones.
-2. **Configurar la comunicación MQTT**:
-   - Crear una cuenta en Flespi y configurar el broker MQTT.
-   - Configurar el ESP32 para que se conecte al broker y publique los datos de los sensores.
-3. **Configurar el Dashboard en Grafana**:
-   - Conectar Grafana a Flespi y crear un dashboard para visualizar los datos.
-   - Configurar alertas para condiciones específicas.
-4. **Asegurar la alimentación solar**:
-   - Asegurarse de que el sistema solar sea capaz de alimentar el ESP32 y la bomba de riego de manera continua.
-
