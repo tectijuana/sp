@@ -43,3 +43,5 @@ Proponme la **arquitectura completa**, describiendo:
 Y si te atoras, dime “💡 dame una pista”.
 
 ¿Cómo resolverías este caso?
+
+Reportar en IDoceo Connect dia 7 de abril.
