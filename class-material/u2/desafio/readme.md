@@ -1,5 +1,7 @@
+# 📘 **La importancia de enfrentar desafíos reales en el diseño de soluciones IoT**
 
-### 📘 **La importancia de enfrentar desafíos reales en el diseño de soluciones IoT**
+<img width="1191" alt="Screenshot 2025-04-07 at 2 45 31 p m" src="https://github.com/user-attachments/assets/cad5d2b6-17f4-4242-95e3-df615a76d97d" />
+
 
 En el contexto del aprendizaje de la ingeniería IoT, enfrentarse a **desafíos prácticos y situacionales** no es solo una manera de poner a prueba los conocimientos técnicos, sino también una oportunidad única para fomentar **la conciencia social, ambiental y ética** en la toma de decisiones tecnológicas.
 
