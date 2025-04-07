@@ -1,7 +1,9 @@
 
 ### 🚦 Desafío: *Monitor de calidad del aire en una ciudad con zonas escolares y tráfico denso*
 
-<img width="608" alt="Screenshot 2025-04-07 at 2 15 37 p m" src="https://github.com/user-attachments/assets/12257e83-00bc-4076-8c9c-c5a5579552a5" />
+<p align="center">
+  <img width="608" alt="Screenshot 2025-04-07 at 2 15 37 p m" src="https://github.com/user-attachments/assets/12257e83-00bc-4076-8c9c-c5a5579552a5" />
+</p>
 
 
 **Situación:**
