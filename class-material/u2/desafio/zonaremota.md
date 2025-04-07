@@ -1,7 +1,9 @@
 
 # 🌍 Desafío: *Estación IoT de Monitoreo Ambiental en Zona Remota*
 
-<img width="551" alt="Screenshot 2025-04-07 at 2 20 12 p m" src="https://github.com/user-attachments/assets/6bb7ab15-1199-4869-810a-ccd4fc0c7f37" />
+<p align="center">
+  <img width="551" alt="Screenshot 2025-04-07 at 2 20 12 p m" src="https://github.com/user-attachments/assets/6bb7ab15-1199-4869-810a-ccd4fc0c7f37" />
+</p>
 
 **Contexto:**
 Una ONG ambientalista quiere instalar estaciones de monitoreo en una reserva natural de difícil acceso (bosques montañosos). Las estaciones deben medir:
