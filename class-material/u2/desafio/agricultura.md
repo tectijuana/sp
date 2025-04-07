@@ -2,7 +2,9 @@
 
 # 🌱 Desafío: *Agricultura Inteligente con Riego Autónomo*
 
-<img width="583" alt="Screenshot 2025-04-07 at 2 07 30 p m" src="https://github.com/user-attachments/assets/6f7a10ff-6d1c-48ba-817f-fe0289e0cb8c" />
+<p align="center">
+  <img width="583" alt="Screenshot 2025-04-07 at 2 07 30 p m" src="https://github.com/user-attachments/assets/6f7a10ff-6d1c-48ba-817f-fe0289e0cb8c" />
+</p>
 
 **Situación:**
 Una finca de 5 hectáreas en una zona rural quiere automatizar el riego de sus cultivos para ahorrar agua y mejorar el rendimiento. No tienen buena conexión a Internet (sólo 3G intermitente), pero sí electricidad por paneles solares. Quieren ver datos en tiempo real cuando estén en la ciudad y recibir alertas si hay problemas (por ejemplo, si se seca el suelo o la bomba no arranca).
