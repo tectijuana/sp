@@ -1,6 +1,6 @@
 # Estación de Monitoreo de Calidad del Aire en Zonas Escolares
 
-Este proyecto tiene como objetivo implementar una solución de monitoreo de calidad del aire para detectar y mitigar el impacto de la contaminación en la salud. Se han seleccionado sensores para medir los niveles de dióxido de nitrógeno (NO₂), monóxido de carbono (CO), material particulado (PM2.5), temperatura y humedad. Los datos se almacenarán localmente y se enviarán a la nube para su análisis y visualización.
+Este proyecto tiene como objetivo implementar una solución de monitoreo de calidad del aire en zonas escolares para detectar y mitigar el impacto de la contaminación en la salud de los niños. Se han seleccionado sensores para medir los niveles de dióxido de nitrógeno (NO₂), monóxido de carbono (CO), material particulado (PM2.5), temperatura y humedad. Los datos se almacenarán localmente y se enviarán a la nube para su análisis y visualización.
 
 ## Objetivos del Proyecto
 
@@ -10,7 +10,7 @@ Este proyecto tiene como objetivo implementar una solución de monitoreo de cali
 4. Generar alertas automáticas cuando los niveles de contaminación superen umbrales predefinidos.
 5. Implementar una solución de bajo mantenimiento, que funcione con energía solar o de farola.
 
-![Estación de Monitoreo de Calidad del Aire](https://upload.wikimedia.org/wikipedia/commons/9/99/Air_Quality_Monitoring_station.jpg)
+![Estación de Monitoreo de Calidad del Aire](https://www.sciencedirect.com/science/article/pii/S2352938522000993/pdfft?md5=8e07e23847b1a8468241d34282c9c396&pid=1-s2.0-S2352938522000993-main.pdf)
 *Estación de monitoreo de calidad del aire (imagen de referencia).*
 
 ## Sensores Utilizados
