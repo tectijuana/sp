@@ -1,6 +1,6 @@
 # Estación de Monitoreo de Calidad del Aire en Zonas Escolares
 
-Este proyecto tiene como objetivo implementar una solución de monitoreo de calidad del aire en zonas escolares para detectar y mitigar el impacto de la contaminación en la salud de los niños. Se han seleccionado sensores para medir los niveles de dióxido de nitrógeno (NO₂), monóxido de carbono (CO), material particulado (PM2.5), temperatura y humedad. Los datos se almacenarán localmente y se enviarán a la nube para su análisis y visualización.
+Este proyecto tiene como objetivo implementar una solución de monitoreo de calidad del aire para detectar y mitigar el impacto de la contaminación en la salud. Se han seleccionado sensores para medir los niveles de dióxido de nitrógeno (NO₂), monóxido de carbono (CO), material particulado (PM2.5), temperatura y humedad. Los datos se almacenarán localmente y se enviarán a la nube para su análisis y visualización.
 
 ## Objetivos del Proyecto
 
@@ -9,9 +9,6 @@ Este proyecto tiene como objetivo implementar una solución de monitoreo de cali
 3. Visualizar los datos en tiempo real mediante **Grafana** y **InfluxDB**.
 4. Generar alertas automáticas cuando los niveles de contaminación superen umbrales predefinidos.
 5. Implementar una solución de bajo mantenimiento, que funcione con energía solar o de farola.
-
-![Estación de Monitoreo de Calidad del Aire](https://www.sciencedirect.com/science/article/pii/S2352938522000993/pdfft?md5=8e07e23847b1a8468241d34282c9c396&pid=1-s2.0-S2352938522000993-main.pdf)
-*Estación de monitoreo de calidad del aire (imagen de referencia).*
 
 ## Sensores Utilizados
 
@@ -31,9 +28,6 @@ Este proyecto tiene como objetivo implementar una solución de monitoreo de cali
    - **Sensor:** BME280 o DHT22
    - **Justificación:** El BME280 ofrece una mayor precisión y fiabilidad, permitiendo correlacionar los contaminantes con las condiciones climáticas.
 
-![Sensores de Calidad del Aire](https://upload.wikimedia.org/wikipedia/commons/7/70/Air_quality_sensor.png)
-*Ejemplo de sensores de calidad del aire utilizados en proyectos ambientales.*
-
 ## Microcontrolador Seleccionado
 
 ### **ESP32**
@@ -42,9 +36,6 @@ Este proyecto tiene como objetivo implementar una solución de monitoreo de cali
      - **Bajo consumo de energía** en modo de reposo, ideal para alimentación solar o de farola.
      - Capacidad de procesamiento suficiente para filtrar picos falsos y valores faltantes.
      - **Compatibilidad con LoRaWAN**, lo que lo hace flexible para diferentes métodos de comunicación.
-
-![ESP32](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESP32-DevKitC.jpg/800px-ESP32-DevKitC.jpg)
-*Microcontrolador ESP32.*
 
 ## Arquitectura de Comunicación
 
@@ -57,9 +48,6 @@ La arquitectura de comunicación depende de la disponibilidad de red en la zona:
 ### 2. **LoRaWAN (cuando no hay WiFi disponible o la cobertura es insuficiente)**
    - El **ESP32** se conectará a un módulo **LoRa** (como el **SX1278** o **RFM95**) para transmitir los datos a una gateway LoRaWAN.
    - Se utilizará **MQTT** para enviar los datos a la nube, o bien el protocolo específico de LoRaWAN para integrarse a la infraestructura del municipio.
-
-![LoRaWAN](https://upload.wikimedia.org/wikipedia/commons/a/a6/LoRaWAN_Protocol_Stack.svg)
-*Esquema de funcionamiento de LoRaWAN.*
 
 ## Procesamiento de Datos
 
@@ -82,9 +70,6 @@ La arquitectura de comunicación depende de la disponibilidad de red en la zona:
    - Se configurarán **alertas en Grafana** cuando los niveles de contaminantes superen umbrales predefinidos (por ejemplo, PM2.5 > 35 µg/m³ o NO₂ > 100 ppb).
    - Las alertas se enviarán por correo electrónico o a plataformas como **Telegram**.
 
-![Grafana](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Grafana_logo.svg/800px-Grafana_logo.svg.png)
-*Logo de Grafana, utilizado para la visualización de los datos.*
-
 ## Diseño de la Caja y Alimentación
 
 ### 1. **Caja Resistente IP65:**
@@ -93,9 +78,6 @@ La arquitectura de comunicación depende de la disponibilidad de red en la zona:
 ### 2. **Alimentación Solar o de Farola:**
    - El sistema utilizará **paneles solares** para cargar una batería recargable, garantizando una fuente de energía autónoma y sostenible.
    - Si es posible, también se podrá utilizar **energía de los postes de luz cercanos** para alimentar la estación.
-
-![Caja IP65](https://upload.wikimedia.org/wikipedia/commons/d/d6/Weatherproof_box_IP65.jpg)
-*Caja resistente IP65 para la protección de los componentes.*
 
 ## Requisitos de Hardware
 
