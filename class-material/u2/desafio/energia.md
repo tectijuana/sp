@@ -4,7 +4,7 @@
 
 <p align="center">
 <img width="716" alt="Screenshot 2025-04-07 at 2 18 19 p m" src="https://github.com/user-attachments/assets/758ae9b3-13bc-42f3-aa64-4947c5770453" />
-/p>
+
 
 **Situación:**
 Un edificio corporativo de 5 pisos busca reducir su factura eléctrica y detectar anomalías en el consumo (equipos encendidos fuera de horario, sobrecargas, picos de consumo en HVAC, etc). Ya cuentan con una red interna (LAN y WiFi), y quieren implementar una solución **IoT local + cloud** que les permita:
