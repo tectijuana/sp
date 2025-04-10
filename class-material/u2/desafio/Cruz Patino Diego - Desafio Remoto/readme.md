@@ -44,7 +44,7 @@ Una ONG ambientalista desea implementar estaciones de monitoreo ambiental en una
 
 ## ☁️ Arquitectura Nodo → Estación Base → Nube
 
-````
+```
 [Nodo IoT x N] --LoRaWAN--> [Estación Base (ChirpStack)] --LTE/WiFi--> [Servidor EC2 (Nube)]
 ```
 
