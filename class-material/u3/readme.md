@@ -4,6 +4,7 @@
 
 
 🌍 **Thingsboard.io en un vistazo en 10 minutos como alternativa Open Source** 🚀
+
 Video: https://youtu.be/GzBy2ke8wwc?si=St6KATVss32YJfxE
 
 En el mundo actual, donde el Internet de las Cosas (IoT) está revolucionando industrias enteras —desde la agricultura hasta las ciudades inteligentes—, es fundamental que los estudiantes de ingeniería y tecnología conozcan plataformas que permitan desarrollar soluciones reales, escalables y seguras. Una de las mejores oportunidades que tienes para aprender e innovar **sin depender de soluciones privativas o costosas** es **ThingsBoard**, una plataforma **Open Source** que puedes explorar desde:
