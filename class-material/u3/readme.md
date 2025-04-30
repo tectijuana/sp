@@ -112,7 +112,9 @@ graph TD
 
 ---
 
-![Uploading Screenshot 2025-04-30 at 2.29.07 p.m..png…]()
+<img width="950" alt="Screenshot 2025-04-30 at 2 29 07 p m" src="https://github.com/user-attachments/assets/40dadd49-c827-4331-a478-eeea7a10e76c" />
+<img width="352" alt="Screenshot 2025-04-30 at 2 26 52 p m" src="https://github.com/user-attachments/assets/8ecc3359-bd47-4116-8bf1-e5bfbda591bd" />
+
 
 ## 🌐 Flujo de Datos
 
