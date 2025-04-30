@@ -112,6 +112,8 @@ graph TD
 
 ---
 
+![Uploading Screenshot 2025-04-30 at 2.29.07 p.m..png…]()
+
 ## 🌐 Flujo de Datos
 
 1. **Adquisición**:  
