@@ -110,12 +110,6 @@ graph TD
 - Permite crear **dashboards personalizados**, establecer **reglas de negocio** y gestionar dispositivos.
 - Puede ser alojado **localmente** o en la **nube**.
 
----
-
-<img width="950" alt="Screenshot 2025-04-30 at 2 29 07 p m" src="https://github.com/user-attachments/assets/40dadd49-c827-4331-a478-eeea7a10e76c" />
-<img width="352" alt="Screenshot 2025-04-30 at 2 26 52 p m" src="https://github.com/user-attachments/assets/8ecc3359-bd47-4116-8bf1-e5bfbda591bd" />
-
-
 ## 🌐 Flujo de Datos
 
 1. **Adquisición**:  
@@ -133,4 +127,9 @@ graph TD
 5. **Visualización y Gestión**:  
    En ThingsBoard, los datos se visualizan en tiempo real, se almacenan y se pueden utilizar para activar alertas o acciones automatizadas.
 
+---
+
+
+<img width="950" alt="Screenshot 2025-04-30 at 2 29 07 p m" src="https://github.com/user-attachments/assets/40dadd49-c827-4331-a478-eeea7a10e76c" />
+<img width="352" alt="Screenshot 2025-04-30 at 2 26 52 p m" src="https://github.com/user-attachments/assets/8ecc3359-bd47-4116-8bf1-e5bfbda591bd" />
 
