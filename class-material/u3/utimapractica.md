@@ -20,7 +20,7 @@ Que el estudiante comprenda cómo integrar una Raspberry Pi Pico W con servicios
 * Otros sensore de Wokwi para que involucrarlos en la idea de la proyeccion de esta microcontroladora con un grado de inteligencia..
 * Conexión a Internet (emulada en Wokwi)
 
-> Recuerde el proder del prompt que sea el retorno solicitado y no una gran enunciado que no puea entender la condición.
+> Recuerde el modificar el "prompt" que sea el retorno solicitado y no una gran enunciado que no puea entender la condición, debe decidir la validación por ChatGTP.
 
 ---
 
