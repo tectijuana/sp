@@ -15,9 +15,12 @@ Que el estudiante comprenda cómo integrar una Raspberry Pi Pico W con servicios
 📦 **Materiales (simulados en Wokwi)**
 
 * Raspberry Pi Pico W
-* Pantalla LCD 16x2, OLED Display (con salida de consola para depurar)
+* Pantalla  OLED Display (con salida de consola para depurar) NOTA: Puede utilizar otras pantallas de WOKWI.com
 * Sensor de botón o entrada por REPL (mas complementos libre de actuar)
+* Otros sensore de Wokwi para que involucrarlos en la idea de la proyeccion de esta microcontroladora con un grado de inteligencia..
 * Conexión a Internet (emulada en Wokwi)
+
+> Recuerde el proder del prompt que sea el retorno solicitado y no una gran enunciado que no puea entender la condición.
 
 ---
 
