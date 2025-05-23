@@ -1,6 +1,7 @@
 # Datos del alumno
 
 Alumno: Lua Velasco Jorge Alexis
+
 Matricula: 20211802
 
 ---
