@@ -22,7 +22,7 @@ Acompañemiento del BOT: https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c
 | LUNA GOMEZ JESUS URIEL | Sensor magnético (Reed Switch) | Sensor de peso (HX711 + celda) |---Poner aqui----|
 | MOLINA FABELA EDGAR FABIAN | Sensor UV (VEML6075) | Sensor de nivel de agua (analógico) |-----Poner aqui---|
 | MORA LOPEZ ERIC SAID | Sensor de color (TCS34725) | Sensor de gas propano (MQ-6) |------Poner aqui---|
-| OCHOA MORAN VICTOR ALEJANDRO | Sensor de calidad de aire (BME680) | Sensor PIR dual zona |---Poner aqui----|
+| OCHOA MORAN VICTOR ALEJANDRO | Sensor de calidad de aire (BME680) | Sensor PIR dual zona |https://gist.github.com/l22210329/98efa62d06cb7359a2d8885c2f3b0811-https://gist.github.com/l22210329/022ce766ceaca137c94941c23744209e|
 | OROZCO HERNANDEZ BRANDON | Sensor de movimiento con radar (RCWL-0516) | Sensor de lluvia (YL-83) |---Poner aqui------|
 | ORTEGA MEDINA ABNER NAHUM | Sensor de presencia IR | Sensor de humedad + temp (SHT20) |----Poner aqui-----|
 | PASILLAS HERNANDEZ JOSE RICARDO (GLOBAL) | Sensor de corriente trifásica (INA3221) | Sensor de energía (PZEM-004T) |--Poner aqui----|
