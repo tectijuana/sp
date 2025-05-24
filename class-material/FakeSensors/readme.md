@@ -29,7 +29,7 @@ Acompañemiento del BOT: https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c
 | PEÑUELAS CARDENAS CESAR ALEXIS | Sensor de vibración piezoeléctrico | Sensor de CO (MQ-7) |------Poner aqui-|
 | QUIÑONEZ AGRAMON ANGEL GABRIEL | Sensor de presión (MPX5010) | Sensor magnético lineal (A1302) |https://gist.github.com/AngelAgramon/fcad66b1896ebe6170ac8e1a7a95d0a6|
 | RODRIGUEZ GALLARDO ALAN PAUL | Sensor GPS (NEO-6M) | Sensor de velocidad de viento (anemómetro) |----Poner aqui----|
-| SANCHEZ SALINAS EDUARDO JOSUE | Sensor de llama (IR) | Sensor de polvo (GP2Y1010AU0F) |----Poner aqui---|
+| SANCHEZ SALINAS EDUARDO JOSUE | Sensor de llama (IR) | Sensor de polvo (GP2Y1010AU0F) |https://gist.github.com/Eduardojs7/8216d320e519ff2e4640fe675a5993d2|
 | SERNA SEGURA NOEL ALBERTO | Sensor UV + Luz visible (SI1145) | Sensor de dióxido de nitrógeno (NO2, MICS-2714) |----Poner aqui-----|
 
 ---
