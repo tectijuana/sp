@@ -12,7 +12,7 @@ Acompañemiento del BOT: https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c
 | ARIAS VERDIN VIVIAN | Sensor de temperatura y humedad (DHT22) | Sensor de calidad del aire (MQ-135) |----Poner aqui------|
 | CASTILLEJO ROBLES LENNYN ALEJANDRO | Acelerómetro (MPU6050) | Sensor de sonido (KY-038) |---Poner aqui-----|
 | CRUZ PATIÑO DIEGO | Sensor de nivel ultrasónico (HC-SR04) | Sensor de corriente ACS712 |---Poner aqui---|
-| CUEVAS ESTRADA JOEL | Sensor de luz (BH1750) | Sensor de humedad de suelo (YL-69) |------Poner aqui---|
+| CUEVAS ESTRADA JOEL | Sensor de luz (BH1750) | Sensor de humedad de suelo (YL-69) |- https://gist.github.com/Sh0cko/264a387e8704ba3f6baa6ad12370f842 - https://gist.github.com/Sh0cko/e47135efa980fed205b1acf02a296911 -|
 | FLORES RAMIREZ EMILIANO RAFAEL | Sensor de gas (MQ-2) | Sensor de vibración (SW-420) |----Poner aqui---|
 | GARCIA ORNELAS JUAN CARLOS | Sensor PIR (movimiento) | Sensor de CO2 (MH-Z19B) |https://wokwi.com/projects/427153073207513089|
 | GARCIA SANTOS JONATHAN | Sensor de presión barométrica (BMP280) | Sensor de sonido (MAX4466) |----Poner aqui----|
