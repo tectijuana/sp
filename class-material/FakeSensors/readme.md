@@ -17,7 +17,7 @@ Acompañemiento del BOT: https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c
 | GARCIA ORNELAS JUAN CARLOS | Sensor PIR (movimiento) | Sensor de CO2 (MH-Z19B) |https://wokwi.com/projects/427153073207513089|
 | GARCIA SANTOS JONATHAN | Sensor de presión barométrica (BMP280) | Sensor de sonido (MAX4466) |----Poner aqui----|
 | GUTIERREZ CEPEDA ANDRES | Sensor de pulso cardíaco (MAX30100) | Sensor de temperatura infrarrojo (MLX90614) |----Poner aqui--|
-| IÑIGUEZ GALLEGO CARLOS ALBERTO | Sensor de distancia láser (VL53L0X) | Sensor de voltaje (ZMPT101B) |---Poner aqui----|
+| IÑIGUEZ GALLEGO CARLOS ALBERTO | Sensor de distancia láser (VL53L0X) | Sensor de voltaje (ZMPT101B) |https://gist.github.com/CarlosAlberto193/4175966988233fe8838e493fe5ae1488|
 | LUA VELASCO JORGE ALEXIS | Sensor de inclinación | Sensor de humedad relativa (SHT31) |----Poner aqui--|
 | LUNA GOMEZ JESUS URIEL | Sensor magnético (Reed Switch) | Sensor de peso (HX711 + celda) |---Poner aqui----|
 | MOLINA FABELA EDGAR FABIAN | Sensor UV (VEML6075) | Sensor de nivel de agua (analógico) |-----Poner aqui---|
