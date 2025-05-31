@@ -1,3 +1,10 @@
+31 de mayo
+
+Captuardo Kardex
+
+
+------ Old News
+
 📢 AVISO IMPORTANTE – CALIFICACIONES FINALES ACTUALIZADO: 28 de mayo, 5:00 pm
 
 Estimados estudiantes,
