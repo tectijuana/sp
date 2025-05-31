@@ -3,7 +3,7 @@
 Captuardo Kardex
 
 
------- Old News
+> Old News
 
 📢 AVISO IMPORTANTE – CALIFICACIONES FINALES ACTUALIZADO: 28 de mayo, 5:00 pm
 
