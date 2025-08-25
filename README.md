@@ -10,11 +10,6 @@
   Bienvenido al repositorio de <strong>EmbeddedSP</strong>, un espacio creado como apoyo integral al curso de <strong>Sistemas Programables</strong> del <em>TECNM Campus ITT</em>.
 </p>
 
-<p align="center">
-  Aquí se documentan prácticas, ejemplos, proyectos, recursos y herramientas para el diseño y desarrollo de <strong>sistemas embebidos</strong>, conectando la teoría con soluciones reales de automatización y control.
-</p>
-
-
 ---
 # Sistemas Programables — EmbeddedSP
 
@@ -45,7 +40,8 @@ Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herra
 - Consulta el syllabus y calendario en: [`SYLLABUS.md`](./SYLLABUS.md) y [`SCHEDULE.md`](./SCHEDULE.md) *(si existen)*
 - Revisa el [Código de Conducta](./CODE_OF_CONDUCT.md)
 - Si deseas colaborar, lee la [Guía de Contribución](./CONTRIBUTING.md)
-
+- Uso reponsable de ChatGPT y otros LLM  Si deseas colaborar, lee la [Guía de uso ChatGPT y otros LLM](./AI_GUIDANCE.md)
+  
 ---
 
 ## Cómo empezar
