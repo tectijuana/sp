@@ -54,3 +54,11 @@ Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herra
    ```bash
    git clone https://github.com/tectijuana/EmbeddedSP.git
    cd EmbeddedSP
+
+---
+English Summary
+Title: Programmable Systems — EmbeddedSP
+Overview: Code examples, projects, simulations, documentation for embedded systems.
+License: MIT (see LICENSE)
+Conduct & Contributions: see CODE_OF_CONDUCT.md and CONTRIBUTING.md
+Getting started: explore examples/, projects/, resources/
