@@ -28,4 +28,4 @@ Gracias por tu interés en mejorar este curso.
 - Una vez aprobado, se integrará en la rama principal
 
 
-NOTA: __Kebab-case es una convención de nomenclatura en la que todas las palabras de un nombre se escriben en minúsculas y se separan mediante guiones (-), similar a la forma en que las piezas de carne se ensartan en un shish kebab, de ahí su nombre. Es una alternativa legible a usar espacios, que no son permitidos en muchos lenguajes de programación, y se usa comúnmente en CSS, HTML y URL.__
+NOTA: _Kebab-case es una convención de nomenclatura en la que todas las palabras de un nombre se escriben en minúsculas y se separan mediante guiones (-), similar a la forma en que las piezas de carne se ensartan en un shish kebab, de ahí su nombre. Es una alternativa legible a usar espacios, que no son permitidos en muchos lenguajes de programación, y se usa comúnmente en CSS, HTML y URL._
