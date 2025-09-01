@@ -78,9 +78,7 @@ El estudiante será capaz de crear una instancia EC2 en AWS Academy y ARM Virtua
 - Por consecuencia si el docente revisa a los 7 dias con 1 segundo, su trabajo estarà borraro y sera un cero de calificación, **no dejar esta indicacion a la ligera**
 - Sea eficiente de esta indicación, no hay 2das oportunidades debe practicarlo y dominar la base del curso.
 
-# USER PASSWORD RASPBIAN-OS LITE
-- USUARIO:  pi (minuscula)
-- CLAVE:  raspberry
+
 
 --- 
 
