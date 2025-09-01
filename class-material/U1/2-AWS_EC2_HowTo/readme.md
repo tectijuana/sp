@@ -1,8 +1,6 @@
-Perfecto. Aquí tienes la **sección 4 revisada**, incorporando la indicación de que la práctica culmina con la ejecución de **asciiquarium**, como cierre visual de la grabación:
 
----
 
-### 4. Grabar la sesión con Asciinema
+# Grabar la sesión con Asciinema
 
 1. Inicia la grabación:
 
