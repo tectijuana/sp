@@ -1,6 +1,7 @@
-![](https://github.com/tectijuana/sp/blob/main/resources/images/Cyberpunk%20Tux.PNG)
-
 # Guía de Contribución — EmbeddedSP
+
+<img src="https://github.com/tectijuana/sp/blob/main/resources/images/Cyberpunk%20Tux.PNG" width="50%">
+
 
 Gracias por tu interés en mejorar este curso.
 
