@@ -6,8 +6,6 @@
 
 # Reseña de AWS Academy
 
-## Para Estudiantes de Ingeniería en Sistemas
-
 </div>
 
 ---
