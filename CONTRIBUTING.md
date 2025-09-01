@@ -1,6 +1,4 @@
-Aquí tienes una versión actualizada de la guía de contribución para el repositorio `EmbeddedSP`, integrando las recomendaciones del archivo [`AI_GUIDANCE.md`](https://github.com/tectijuana/sp/blob/main/AI_GUIDANCE.md) del repositorio `sp`. Se ha añadido una nueva sección titulada **"Uso de herramientas de IA"**, manteniendo el estilo y tono del resto del documento:
 
----
 
 # Guía de Contribución — EmbeddedSP
 
