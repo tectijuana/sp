@@ -1,6 +1,6 @@
 
 
-
+ 
 Sensor de temperatura – ❌
 Sensor de presión – ✅
 Sensor de nivel de líquidos – ✅
