@@ -1,48 +1,72 @@
 
+
+<div align="center">
+
 <img width="568" alt="Screenshot 2025-01-29 at 12 15 32 p m" src="https://github.com/user-attachments/assets/1c8e39c5-61cd-4c98-8b2c-36c94cbedd64" />
 
+# Reseña de AWS Academy
 
-# Reseña de AWS Academy para Estudiantes de Ingeniería en Sistemas
+## Para Estudiantes de Ingeniería en Sistemas
 
-Estimados estudiantes,
+</div>
 
-Les quiero compartir una excelente oportunidad para expandir sus conocimientos en la nube y la computación. El **TECNM Campus ITT** está calificado para otorgar **becas de AWS Academy**, un servicio que ofrece capacitación especializada en **Amazon Web Services (AWS)**, una de las plataformas de computación en la nube más utilizadas a nivel mundial.
+---
 
-### ¿Qué es AWS Academy?
+**Estimados estudiantes:**
 
-**AWS Academy** es un programa educativo que proporciona contenido de formación de alta calidad, con acceso a herramientas y recursos utilizados por empresas líderes en la industria. El programa está diseñado para preparar a los estudiantes para desarrollar habilidades en la nube, centrado en servicios como:
+Les comparto una excelente oportunidad para fortalecer sus competencias en **tecnologías de nube**. El **TECNM Campus ITT** ha sido acreditado para otorgar **becas de acceso al programa AWS Academy**, una iniciativa de **Amazon Web Services (AWS)** orientada a estudiantes que deseen adquirir habilidades clave en computación en la nube.
 
-- **Cómputo en la nube**
-- **Almacenamiento de datos**
-- **Redes y seguridad**
-- **Machine Learning**
-- **Bases de datos**
-  
-AWS Academy es ideal para estudiantes de **Ingeniería en Sistemas** que desean adentrarse en el mundo de la computación en la nube, mejorar su perfil profesional y obtener un entendimiento práctico de las soluciones tecnológicas que transforman industrias.
+---
 
-### Beneficios del Programa
+### 🌐 ¿Qué es AWS Academy?
 
-- **Capacitación oficial** con materiales y recursos directamente proporcionados por **AWS**.
-- **Certificación** en áreas clave de la nube, lo que aumenta tu competitividad en el mercado laboral.
-- Acceso a **labs prácticos** que te permitirán trabajar en proyectos reales.
-- Oportunidad de **trabajar en la nube**, utilizando tecnologías que están en constante evolución.
+**AWS Academy** es un programa educativo que brinda acceso a contenido de capacitación oficial, laboratorios prácticos y recursos utilizados por empresas líderes en el sector tecnológico. Está diseñado para preparar a los estudiantes en las siguientes áreas:
 
-### ¿Cómo obtener la beca?
+* ☁️ Cómputo en la nube
+* 🗄️ Almacenamiento de datos
+* 🔐 Redes y seguridad
+* 🤖 Machine Learning
+* 🧠 Bases de datos
 
-1. El **TECNM Campus ITT** ha sido seleccionado para otorgar becas, así que este es el momento perfecto para aprovechar este recurso.
-2. Durante el proceso de inscripción, recibirás detalles adicionales sobre cómo aplicar para la beca.
-3. No dudes en acercarte a tu docente o coordinador para resolver cualquier duda sobre el proceso.
+Ideal para estudiantes de **Ingeniería en Sistemas**, este programa te prepara para enfrentar retos reales en la industria tecnológica.
 
-### ¿Por qué AWS?
+---
 
-Con **AWS** dominando el mercado de servicios en la nube, tener experiencia en sus herramientas y soluciones puede abrirte muchas puertas en el mundo profesional. Empresas de todos los tamaños y sectores buscan expertos que puedan administrar y optimizar sus recursos en la nube, y estar capacitado en AWS te da una ventaja competitiva única.
+### 🎓 Beneficios del Programa
 
-Espero que aprovechen esta oportunidad para enriquecer su formación académica y profesional. ¡No dejen pasar esta oportunidad de aprender y crecer!
+* **Capacitación oficial de AWS**, con contenido actualizado y alineado a estándares globales.
+* **Certificaciones reconocidas**, que mejoran tu perfil profesional.
+* **Laboratorios prácticos**, donde aplicarás tus conocimientos en entornos reales.
+* **Experiencia directa en la nube**, con tecnologías modernas y demandadas.
 
-### Tutorial de demostración de la activacion de la beca en video
+---
 
- Youtube https://www.youtube.com/watch?v=dukDiHjChaA  (revisado 30-enero-25)
+### 📝 ¿Cómo obtener la beca?
 
-Saludos cordiales,  
-**MC. René Solis R.**  
+1. El **TECNM Campus ITT** ha sido seleccionado para otorgar estas becas.
+2. Durante tu proceso de inscripción, recibirás detalles sobre cómo aplicar.
+3. Acércate a tu **docente** o **coordinador** académico para más información.
+
+---
+
+### 🚀 ¿Por qué aprender AWS?
+
+AWS es líder global en servicios de nube. Las empresas que migran a la nube necesitan profesionales capaces de gestionar y optimizar sus recursos. Con conocimientos en AWS, tendrás una **ventaja competitiva** en el mercado laboral, tanto a nivel nacional como internacional.
+
+---
+
+### ▶️ Video Tutorial: Activación de la Beca
+
+**YouTube:** [https://www.youtube.com/watch?v=dukDiHjChaA](https://www.youtube.com/watch?v=dukDiHjChaA)
+*Video revisado: 30 de enero de 2025*
+
+---
+
+<div align="right">
+
+**MC. René Solis R.**
 Docente de Ingeniería en Sistemas
+
+</div>
+
+
