@@ -17,28 +17,27 @@
 
 
 # TEMAS SELECTOS
-| **ID Estudiante** | **Descripción** |  
-|------------------|----------------|  
-| C20211692       | Introducción a los sistemas programables – Definición, importancia y aplicaciones en la industria. |  
-| 22210880        | Arquitectura de los sistemas programables – Componentes clave: CPU, memoria, buses, periféricos. |  
-| 22210297        | Diferencias entre microcontroladores, microprocesadores y FPGA – Casos de uso y ventajas de cada uno. |  
-| 22210298        | Lenguajes de programación en sistemas programables – C, C++, Python, ensamblador, VHDL, Verilog. |  
-| 20212404        | Sistemas operativos en sistemas embebidos – Tiempo real (RTOS) vs. sistemas operativos convencionales. |  
-| 22210307        | Microcontroladores y su arquitectura interna – Registros, ALU, memoria, GPIOs, periféricos. |  
-| 23211009        | Introducción a FPGA y computación reconfigurable – Lógica programable, LUTs, flujos de diseño. |  
-| 19211660        | Plataformas populares para sistemas programables – Arduino, Raspberry Pi, ESP32, STM32, BeagleBone. |  
-| 20211802        | Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento. |  
-| 19211675        | Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos. |  
-| 22210780        | Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus. |  
-| 21210403        | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging. |  
-| 22210329        | Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware. |  
-| 21212577        | Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos. |  
-| 20211819        | Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |  
-| 20211823        | Sistemas de tiempo real (RTOS) – FreeRTOS, Zephyr, diferencias con sistemas tradicionales. |  
-| 22210335        | Automatización y control en sistemas programables – Aplicaciones en la industria y domótica. |  
-| 21210860        | Seguridad en sistemas embebidos – Criptografía, autenticación, protección contra ataques. |  
-| C20212322       | IoT y sistemas embebidos – Comunicación con la nube, MQTT, REST, Edge Computing. |  
-| 20210637        | Tendencias futuras en sistemas programables – IA en dispositivos embebidos, RISC-V, computación neuromórfica. |  
-| 22210354        | Tema duplicado | 
-
+| **Descripción** |  
+|-----------------|  
+| Introducción a los sistemas programables – Definición, importancia y aplicaciones en la industria. |  
+| Arquitectura de los sistemas programables – Componentes clave: CPU, memoria, buses, periféricos. |  
+| Diferencias entre microcontroladores, microprocesadores y FPGA – Casos de uso y ventajas de cada uno. |  
+| Lenguajes de programación en sistemas programables – C, C++, Python, ensamblador, VHDL, Verilog. |  
+| Sistemas operativos en sistemas embebidos – Tiempo real (RTOS) vs. sistemas operativos convencionales. |  
+| Microcontroladores y su arquitectura interna – Registros, ALU, memoria, GPIOs, periféricos. |  
+| Introducción a FPGA y computación reconfigurable – Lógica programable, LUTs, flujos de diseño. |  
+| Plataformas populares para sistemas programables – Arduino, Raspberry Pi, ESP32, STM32, BeagleBone. |  
+| Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento. |  
+| Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos. |  
+| Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus. |  
+| Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging. |  
+| Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware. |  
+| Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos. |  
+| Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |  
+| Sistemas de tiempo real (RTOS) – FreeRTOS, Zephyr, diferencias con sistemas tradicionales. |  
+| Automatización y control en sistemas programables – Aplicaciones en la industria y domótica. |  
+| Seguridad en sistemas embebidos – Criptografía, autenticación, protección contra ataques. |  
+| IoT y sistemas embebidos – Comunicación con la nube, MQTT, REST, Edge Computing. |  
+| Tendencias futuras en sistemas programables – IA en dispositivos embebidos, RISC-V, computación neuromórfica. |  
+| Tema duplicado |  
 
