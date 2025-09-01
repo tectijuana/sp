@@ -1,4 +1,4 @@
-
+![](https://github.com/tectijuana/sp/blob/main/resources/images/Cyberpunk%20Tux.PNG)
 
 # Guía de Contribución — EmbeddedSP
 
