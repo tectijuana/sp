@@ -75,7 +75,3 @@
    ```
 
 8. Copia y guarda el **enlace generado** por Asciinema.
-
----
-
-¿Te gustaría que actualice el documento completo con todas estas modificaciones integradas en un solo bloque final listo para compartir o imprimir?
