@@ -2,6 +2,8 @@
 
 # ✅ Actividad práctica 2: Instalación y prueba de **Dashing** (Dashboard en terminal para Python)
 
+![]*https://raw.githubusercontent.com/FedericoCeratto/dashing/gh-pages/tty.gif)
+
 ## 📋 Lista de verificación
 
 ### 🔧 Preparación
