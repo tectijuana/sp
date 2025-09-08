@@ -1,8 +1,6 @@
-Perfecto 🙌 Aquí tienes la **actividad en formato checklist con emojis**, lista para que tus alumnos la sigan paso a paso:
 
----
 
-# ✅ Actividad práctica: Instalación y prueba de **Dashing** (Dashboard en terminal para Python)
+# ✅ Actividad práctica 2: Instalación y prueba de **Dashing** (Dashboard en terminal para Python)
 
 ## 📋 Lista de verificación
 
