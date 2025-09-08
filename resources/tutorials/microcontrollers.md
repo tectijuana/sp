@@ -162,4 +162,4 @@ Para aprovechar esta revolución, se requiere:
 - Conocimientos de IA y procesamiento de señales  
 - Visión sistémica que combine hardware, software y analítica
 
-Quienes logren integrar estas habilidades estarán al frente del diseño de soluciones que transformarán sectores clave como la salud, la industria, el transporte y la sostenibilidad.
+Quienes logren integrar estas habilidades estarán al frente del diseño de soluciones que transformarán sectores clave como la salud, la industria, el transporte y mas.
