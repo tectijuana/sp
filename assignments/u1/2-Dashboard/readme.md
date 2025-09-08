@@ -1,10 +1,51 @@
-
-
 # ✅ Actividad práctica 2: Instalación y prueba de **Dashing** (Dashboard en terminal para Python)
 
 ![](https://raw.githubusercontent.com/FedericoCeratto/dashing/gh-pages/tty.gif)
 
 https://github.com/FedericoCeratto/dashing
+
+# 📊 Dashing en Python
+
+**Dashing** es una librería de Python diseñada para crear **dashboards en la terminal** de manera sencilla y visual.
+
+Funciona mediante **bloques (*tiles*)** que pueden ser:
+
+* 📝 Textos
+* 📜 Logs
+* 📊 Indicadores (*gauges*)
+* 📈 Gráficas
+
+Estos bloques se organizan en **contenedores horizontales (HSplit)** o **verticales (VSplit)**.
+
+---
+
+## 🔧 Uso en un ambiente de sensores
+
+En un escenario con sensores, **Dashing** puede servir como un **panel en tiempo real** para mostrar datos recolectados, por ejemplo:
+
+* 🌡️ Lecturas de **temperatura** y **humedad** en barras **verticales y horizontales**.
+* 💡 Estados de **dispositivos** como interruptores, luces o motores representados en *gauges*.
+* 📜 **Historial de eventos** en forma de logs que se actualizan con cada nueva lectura.
+* 📈 **Gráficas dinámicas** que muestran la evolución de una variable como **presión, velocidad o flujo**.
+
+---
+
+## 🚀 Ventaja principal
+
+La gran ventaja de Dashing es que todo se presenta **directamente en la consola**, sin necesidad de un navegador o entorno gráfico.
+
+Esto lo hace especialmente útil en:
+
+* 🔌 **Sistemas embebidos**
+* 🖥️ **Servidores remotos**
+* ⚡ **Despliegues ligeros** donde los sensores envían datos constantemente
+
+---
+
+¿Quieres que te prepare este mismo contenido también en un **esquema visual tipo mapa conceptual en Markdown** (con viñetas y niveles) para que sea aún más didáctico?
+
+
+
 
 ## 📋 Lista de verificación
 
