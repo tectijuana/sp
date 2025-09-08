@@ -42,12 +42,7 @@ Esto lo hace especialmente útil en:
 
 ---
 
-¿Quieres que te prepare este mismo contenido también en un **esquema visual tipo mapa conceptual en Markdown** (con viñetas y niveles) para que sea aún más didáctico?
-
-
-
-
-## 📋 Lista de verificación
+## 📋 Lista de verificación par la instalación
 
 ### 🔧 Preparación
 
