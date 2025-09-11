@@ -97,6 +97,10 @@ Para Horario 2pm TV
 | YARETZI MICHELLE GOMEZ PEREZ       | Uso de lenguajes de descripción de hardware modernos (Chisel, Clash). |
 | ZAMORANO  OMAR GARCIA              | Comunicación por Radio Frecuencia en microcontroladores (XBee, Zigbee, otros) |
 | FERNANDO YAEL  PERALTA VIGIL   | 5G para microcontroladores  |
+| EDWIN YAIR  HERNANDEZ LIMON | ...
+| IKER SAUL  ALONSO VILLELA  |
+|  |
+
 
 ---
 # RUBRICA EVALUACION
