@@ -12,8 +12,7 @@
 - **Loom 2** - (docente Pull) [https://www.loom.com/share/8f26a0e6203d4be68ce65b07c5b5a077?sid=e675e02a-4532-4080-bcf2-5327ddcfc532](https://www.loom.com/share/8f26a0e6203d4be68ce65b07c5b5a077?sid=f9b4f1d5-6757-4949-9647-e3a778ba0f7f)
 
 
-# RUBRICA EVALUACION
-<img width="1034" alt="Temas investigacion via Pull" src="https://github.com/user-attachments/assets/21887432-99b2-42f6-9ff6-fd0866e50a36" />
+---
 
 Para Horario 2pm TV
 | Estudiante                          | Tema                                                                                                             |
@@ -96,4 +95,8 @@ Para Horario 2pm TV
 | VALERIA GUADALUPE MARTINEZ REYES   | Diseño de sistemas embebidos para dispositivos portátiles.          |
 | YAEL ALEJANDRO RAMOS CASTRO        | Implementación de buses CAN-FD en sistemas automotrices.            |
 | YARETZI MICHELLE GOMEZ PEREZ       | Uso de lenguajes de descripción de hardware modernos (Chisel, Clash). |
-```
+
+---
+# RUBRICA EVALUACION
+<img width="1034" alt="Temas investigacion via Pull" src="https://github.com/user-attachments/assets/21887432-99b2-42f6-9ff6-fd0866e50a36" />
+
