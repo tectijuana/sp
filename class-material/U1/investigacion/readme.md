@@ -96,6 +96,7 @@ Para Horario 2pm TV
 | YAEL ALEJANDRO RAMOS CASTRO        | Implementación de buses CAN-FD en sistemas automotrices.            |
 | YARETZI MICHELLE GOMEZ PEREZ       | Uso de lenguajes de descripción de hardware modernos (Chisel, Clash). |
 | ZAMORANO  OMAR GARCIA              | Comunicación por Radio Frecuencia en microcontroladores (XBee, Zigbee, otros) |
+| FERNANDO YAEL  PERALTA VIGIL   | 5G para microcontroladores  |
 
 ---
 # RUBRICA EVALUACION
