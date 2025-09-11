@@ -1,7 +1,5 @@
 Ejemplo de Anexo AI por Edwin Hernandez
 
-https://asciinema.org/a/MD4aXwvZNTFTqHkbb1QxE8O24
-De nuevo una practica buena la cual me sirvio para reforzar conocimiento e investigar paOpenWeatherMap soluciones de la propuesta expuesta por el profesor, para poder utilizar correctamente los dashings y que funcionara, pero me parecio muy buena practica.
 
 Documentación Consultada: Para la implementación del dashboard climático con Dashing, consulté las prácticas académicas de la Universidad de Tectijuana que proporcionan ejemplos de widgets y layouts.
 Fuente: Universidad de Tectijuana - Práctica 2: Dashboard
