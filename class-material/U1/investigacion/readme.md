@@ -95,6 +95,7 @@ Para Horario 2pm TV
 | VALERIA GUADALUPE MARTINEZ REYES   | Diseño de sistemas embebidos para dispositivos portátiles.          |
 | YAEL ALEJANDRO RAMOS CASTRO        | Implementación de buses CAN-FD en sistemas automotrices.            |
 | YARETZI MICHELLE GOMEZ PEREZ       | Uso de lenguajes de descripción de hardware modernos (Chisel, Clash). |
+| ZAMORANO  OMAR GARCIA              | Comunicación por Radio Frecuencia en microcontroladores (XBee, Zigbee, otros) |
 
 ---
 # RUBRICA EVALUACION
