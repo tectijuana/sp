@@ -15,30 +15,45 @@
 # RUBRICA EVALUACION
 <img width="1034" alt="Temas investigacion via Pull" src="https://github.com/user-attachments/assets/21887432-99b2-42f6-9ff6-fd0866e50a36" />
 
+Para Horario 2pm TV
+| Estudiante                          | Tema                                                                                                             |
+|:------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
+| AARON CASILDO RUBALCAVA             | Introducción a los sistemas programables – Definición, importancia y aplicaciones en la industria.               |
+| ALFONSO HUMBERTO FONSECA NOVELO     | Arquitectura de los sistemas programables – Componentes clave: CPU, memoria, buses, periféricos.                 |
+| AMERICA FERNANDA NEVAREZ DE LA CRUZ | Diferencias entre microcontroladores, microprocesadores y FPGA – Casos de uso y ventajas de cada uno.            |
+| ANA LUISA LOPEZ RODRIGUEZ           | Lenguajes de programación en sistemas programables – C, C++, Python, ensamblador, VHDL, Verilog.                 |
+| ANGEL ANDRES CASTRO BALBUENA        | Sistemas operativos en sistemas embebidos – Tiempo real (RTOS) vs. sistemas operativos convencionales.           |
+| ANGEL IVAN LOPEZ CALVILLO           | Microcontroladores y su arquitectura interna – Registros, ALU, memoria, GPIOs, periféricos.                      |
+| CESAR MICHAEL PEREZ GARCIA          | Introducción a FPGA y computación reconfigurable – Lógica programable, LUTs, flujos de diseño.                   |
+| CHRISTIAN GAHEL MORALES HERNANDEZ   | Plataformas populares para sistemas programables – Arduino, Raspberry Pi, ESP32, STM32, BeagleBone.              |
+| DANIEL ROMERO BRAVO                 | Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento.                |
+| EDGAR EDUARDO CRUZ HERNANDEZ        | Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos.                            |
+| EMMANUEL ISAI CHAVEZ HERNANDEZ      | Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus.                 |
+| ERNESTO TORRES PINEDA               | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging.                          |
+| FRANCISCO JAVIER VILLEGAS SUAREZ    | Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware.                             |
+| GILBERTO YAHIR BARBOZA URIBE        | Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos.                      |
+| IVAN GUSTAVO MENDOZA SUAREZ         | Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |
+| JAHIR DE JESUS DIAZ ABRAHAM         | Sistemas de tiempo real (RTOS) – FreeRTOS, Zephyr, diferencias con sistemas tradicionales.                       |
+| JAIME ANTONIO ALVAREZ CRISOSTOMO    | Automatización y control en sistemas programables – Aplicaciones en la industria y domótica.                     |
+| JAIR ALBERTO SUAREZ CASTRO          | Seguridad en sistemas embebidos – Criptografía, autenticación, protección contra ataques.                        |
+| JENNIFER NICOLE MACEDO CRUZ         | IoT y sistemas embebidos – Comunicación con la nube, MQTT, REST, Edge Computing.                                 |
+| JESUS ENRIQUE MENDOZA PANDURO       | Tendencias futuras en sistemas programables – IA en dispositivos embebidos, RISC-V, computación neuromórfica.    |
+| JORGE LUIS CASTRO ALVARADO          | Diseño de sistemas embebidos con bajo consumo energético – Estrategias y casos prácticos.                        |
+| JOSE ANDRES FELIX LOPEZ             | Uso de aceleradores hardware en FPGA para aplicaciones de inteligencia artificial.                               |
+| JOSÉ RITO PORTUGAL LAUREÁN          | Comparación entre arquitecturas RISC y CISC en sistemas programables.                                            |
+| JUAN CARLOS MAYA PINO               | Implementación de sistemas embebidos con Linux embebido (Yocto, Buildroot).                                      |
+| KARLA ITZEL VAZQUEZ CRUZ            | Virtualización ligera en sistemas embebidos – Contenedores en dispositivos IoT.                                  |
+| KEVIN EDUARDO REYES MARTINEZ        | Sistemas programables en la industria automotriz – Controladores, ADAS y ECU reconfigurables.                    |
+| LUIS ALBERTO ROLDAN CASTRO          | Herramientas de simulación y modelado en el diseño de sistemas programables.                                     |
+| LUIS MANUEL RAMON HERNANDEZ         | Aplicación de sistemas embebidos en dispositivos médicos inteligentes.                                           |
+| NICOLAS LOPEZ FELIX                 | Procesamiento digital de señales (DSP) en sistemas programables.                                                 |
+| NORBERTO POZOS FLORES               | Diseño de hardware abierto – RISC-V y ecosistema de software libre en sistemas programables.                     |
+| OSCAR ESTEBAN PACHECO CABRERA       | Arquitecturas heterogéneas en SoC – combinación de CPU, GPU, FPGA y NPU.                                         |
+| OSCAR SEBASTIAN SANDOVAL MARQUEZ    | Implementación de protocolos de comunicación inalámbrica en sistemas embebidos (BLE, Zigbee, LoRa).              |
+| RICARDO IBARRA GARCIA               | Ciberseguridad en IoT – vulnerabilidades y técnicas de mitigación en dispositivos embebidos.                     |
+| ROBERTO CARLOS QUINTERO ANGULO      | Diseño de sistemas embebidos tolerantes a fallos – redundancia y seguridad funcional.                            |
+| YAEL KRISTOPH TRIANA SANCHEZ        | Uso de coprocesadores y aceleradores de hardware en microcontroladores modernos.                                 |
 
-# TEMAS SELECTOS
-| **ID Estudiante** | **Descripción** |  
-|------------------|----------------|  
-| C20211692       | Introducción a los sistemas programables – Definición, importancia y aplicaciones en la industria. |  
-| 22210880        | Arquitectura de los sistemas programables – Componentes clave: CPU, memoria, buses, periféricos. |  
-| 22210297        | Diferencias entre microcontroladores, microprocesadores y FPGA – Casos de uso y ventajas de cada uno. |  
-| 22210298        | Lenguajes de programación en sistemas programables – C, C++, Python, ensamblador, VHDL, Verilog. |  
-| 20212404        | Sistemas operativos en sistemas embebidos – Tiempo real (RTOS) vs. sistemas operativos convencionales. |  
-| 22210307        | Microcontroladores y su arquitectura interna – Registros, ALU, memoria, GPIOs, periféricos. |  
-| 23211009        | Introducción a FPGA y computación reconfigurable – Lógica programable, LUTs, flujos de diseño. |  
-| 19211660        | Plataformas populares para sistemas programables – Arduino, Raspberry Pi, ESP32, STM32, BeagleBone. |  
-| 20211802        | Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento. |  
-| 19211675        | Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos. |  
-| 22210780        | Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus. |  
-| 21210403        | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging. |  
-| 22210329        | Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware. |  
-| 21212577        | Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos. |  
-| 20211819        | Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |  
-| 20211823        | Sistemas de tiempo real (RTOS) – FreeRTOS, Zephyr, diferencias con sistemas tradicionales. |  
-| 22210335        | Automatización y control en sistemas programables – Aplicaciones en la industria y domótica. |  
-| 21210860        | Seguridad en sistemas embebidos – Criptografía, autenticación, protección contra ataques. |  
-| C20212322       | IoT y sistemas embebidos – Comunicación con la nube, MQTT, REST, Edge Computing. |  
-| 20210637        | Tendencias futuras en sistemas programables – IA en dispositivos embebidos, RISC-V, computación neuromórfica. |  
-| 22210354        | Tema duplicado | 
+
 
 
