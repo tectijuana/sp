@@ -11,8 +11,8 @@ Desde el punto de vista del autor, siendo un estudiante de ingeniería en sistem
 Actualmente la mayoría de los dispositivos utilizados por las personas utilizan mínimo un tipo de comunicación por radio frecuencia. Las siguientes son algunos de los tipos de comunicaciones por radiofrecuencia:
 
 1. ***Bluetooth***: Es una de las más conocidas y más usadas por las personas. Es el principal medio de transferencia de archivos vía inalámbrica, además, es muy usada para dispositivos de audio como audífonos y bocinas. Existen 2 categorías:
-  1. Bluetooth Clásico (BR/EDR) usado para transmisión de audio (audífonos, bocinas, micrófonos) y datos con mayor velocidad.
-  2. Bluetooth Low Energy (BLE): optimizado para bajo consumo y conexiones rápidas, ideal para IoT, wearables y sensores.
+   1. Bluetooth Clásico (BR/EDR) usado para transmisión de audio (audífonos, bocinas, micrófonos) y datos con mayor velocidad.
+   2. Bluetooth Low Energy (BLE): optimizado para bajo consumo y conexiones rápidas, ideal para IoT, wearables y sensores.
 - **Otras características:**
   - Utiliza una frecuencia de 2.4 GHz, permitiendo un alcance promedio de 10 metros.
   - **Velocidad de transmisión:** BR/EDR hasta 3 Mbps y BLE entre 125 Kbps y 2 Mbps.
