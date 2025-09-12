@@ -29,3 +29,6 @@ Actualmente la mayoría de los dispositivos utilizados por las personas utilizan
 ![Estructura del protocolo Zigbee](https://www.guiahardware.es/wp-content/uploads/2022/10/capaz-ZigBee-1024x648.png)
 
 4. ***XBee:***
+
+## Referencias
+[Zigbee](https://www.guiahardware.es/zigbee/)
