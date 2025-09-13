@@ -67,10 +67,10 @@ Una vez que los datos llegan al gateway o nodo central, este los envía a un ser
 ![Arquitectura de LoRa](https://www.cardinalpeak.com/wp-content/uploads/2020/05/LoRaWAN-Network-Architecture.png)
 
 ## Referencias
-[Bluetooth](https://comofuncionaexplicado.com/tecnologia-y-electronica/bluetooth/)
-[Zigbee](https://www.guiahardware.es/zigbee/)
-[XBee](https://xbee.cl/que-es-xbee/)
-[WiFi](https://www.adslzone.net/reportajes/tecnologia/que-es-wifi-como-funciona/)
-[LTE](https://www.unir.net/revista/ingenieria/lte-que-es/)
-[LoRa](https://www.semtech.com/lora/what-is-lora?utm_source=chatgpt.com)
-[Chirp Spread Spectrum](https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/?utm_source=chatgpt.com)
+- Comofuncionaexplicado.com. (s.f.). Descubre cómo funciona el bluetooth. [https://comofuncionaexplicado.com/tecnologia-y-electronica/bluetooth/](https://comofuncionaexplicado.com/tecnologia-y-electronica/bluetooth/)
+- Rosagro, J. (2024, abril 16). ZigBee: ¿Qué es y para qué sirve? GuiaHardware. [https://www.guiahardware.es/zigbee/](https://www.guiahardware.es/zigbee/)
+- XBee.cl. (s.f.). ¿Qué es XBee? [https://xbee.cl/que-es-xbee/](https://xbee.cl/que-es-xbee/)
+- Gallego, G. (2025, febrero 4). Qué es el WiFi y cómo funciona para conectar todo a Internet. ADSLZone. [https://www.adslzone.net/reportajes/tecnologia/que-es-wifi-como-funciona/](https://www.adslzone.net/reportajes/tecnologia/que-es-wifi-como-funciona/)
+- UNIR Revista. (2025, febrero 13). LTE: qué es, cómo funciona y diferencias con 4G y 5G. Universidad Internacional de La Rioja. [https://www.unir.net/revista/ingenieria/lte-que-es/](https://www.unir.net/revista/ingenieria/lte-que-es/)
+- Semtech Corporation. (s.f.). ¿Qué es LoRa? [https://www.semtech.com/lora/what-is-lora?utm_source=chatgpt.com](https://www.semtech.com/lora/what-is-lora?utm_source=chatgpt.com)
+- The Things Network. (s.f.). Spreading Factors. [https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/?utm_source=chatgpt.com](https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/?utm_source=chatgpt.com)
