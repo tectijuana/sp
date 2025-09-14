@@ -2,7 +2,7 @@
 # Investigación 2: Elabora una participacion de temas selectos de Sistemas Programables para integrarlos a el curso en GH como contribucion (CONTRIB.MD)
 
 ## ¿Cómo contribuir a el repositorio?
-- En URL de donde deja su contribucion via GitHub _https://github.com/tectijuana/sp/tree/main/assignments/temas/____________/readme.md
+- En URL de donde deja su contribucion via GitHub _https://github.com/tectijuana/sp/tree/main/assignments/temas/____________/readme.md_
 - En en encabezado dentro del documento en MARKDOWN estará su nombre como autor
 - Docente revisa el archivo y pasa la calificación manualmente.
 - Docente hace PULL al repositorio para la integración especificamente a ese directorio, fuera de este el trabajo esta invalido.
@@ -97,13 +97,13 @@ Para Horario 2pm TV
 | YARETZI MICHELLE GOMEZ PEREZ       | Uso de lenguajes de descripción de hardware modernos (Chisel, Clash). |
 | ZAMORANO  OMAR GARCIA              | Comunicación por Radio Frecuencia en microcontroladores (XBee, Zigbee, otros) |
 | FERNANDO YAEL  PERALTA VIGIL   | 5G para microcontroladores  |
-| EDWIN YAIR  HERNANDEZ LIMON | .🧠..|
-| IKER SAUL  ALONSO VILLELA  | ..🧠.|
-| MARTIN OMAR  MARCELINO ESCALANTE | ..🧠 |
-| DANIEL BAUTISTA LAGUNAS | ...🧠 |
-| JUAN CARLOS MURIEDAS TORRES| ..🧠 |
- | DIEGO HUERTA ESPINOZA | ...🧠 |
- | JAHZIEL AMADO LOPEZ  | ...🧠 |
+| EDWIN YAIR  HERNANDEZ LIMON | Sensores analógicos y digitales – Principios de funcionamiento y ejemplos en sistemas embebidos..|
+| IKER SAUL  ALONSO VILLELA  | Conversión de señales: ADC y DAC en microcontroladores y FPGA.|
+| MARTIN OMAR  MARCELINO ESCALANTE | Integración de sensores de temperatura, humedad y presión en sistemas IoT.|
+| DANIEL BAUTISTA LAGUNAS | Sensores de movimiento e inerciales (IMU, acelerómetros y giroscopios) en robótica. |
+| JUAN CARLOS MURIEDAS TORRES| Sensores ópticos: cámaras, fotodiodos y LIDAR en sistemas programables. |
+ | DIEGO HUERTA ESPINOZA |Sensores biométricos (frecuencia cardiaca, huella, EEG, EMG) y sus aplicaciones en sistemas embebidos. |
+ | JAHZIEL AMADO LOPEZ  | Sensores inteligentes con comunicación integrada (I2C, SPI, UART) y ejemplos en la industria. |
 
 ---
 # RUBRICA EVALUACION
