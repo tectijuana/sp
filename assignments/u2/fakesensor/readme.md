@@ -5,6 +5,8 @@
 **Entrada:** Ruta marcada manualmente (por clics en un mapa).  
 **Salida:** Lista de sentencias NMEA `$GPRMC`, `$GPGGA` u otras, simulando una ruta GPS.
 
+Video breve explicación de un GPS módulo: https://youtu.be/hgq8-RrEDPc?si=rdFCb4fKIZ1ianfF
+
 ---
 
 ## 🌐 Solución en pasos
