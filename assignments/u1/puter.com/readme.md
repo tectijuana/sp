@@ -14,7 +14,7 @@ REPOSITORIO: https://github.com/HeyPuter/puter
 
 ## 2. Materiales y requisitos
 
-1. **Cuenta en puter.com**: cada equipo o estudiante debe contar con una cuenta activa para acceder a la plataforma.  
+1. **Cuenta en puter.com**: cadaestudiante debe contar con una cuenta activa para acceder a la plataforma.  
 2. **Dispositivo de desarrollo** (opcional según las necesidades y tipo de sensor):  
    - Placas como Arduino, ESP32, Raspberry Pi o similares.  
 3. **Sensores**:  
