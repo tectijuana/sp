@@ -5,7 +5,7 @@
 <h1 align="center">📦 Repositorio Oficial de <em>EmbeddedSP</em> TECNM — Ingeniería en Sistemas Computacionales </h1>
 
 ### GPT del Curso: 
-       https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
+https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
 
 
 ---
