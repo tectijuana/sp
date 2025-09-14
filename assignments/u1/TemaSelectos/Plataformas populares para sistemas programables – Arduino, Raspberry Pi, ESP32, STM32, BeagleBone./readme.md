@@ -3,10 +3,10 @@
 ---
 ## Datos del Alumno
 
-- **Nombre:**  
-- **Número de control:**  
-- **Fecha:**  
-- **Nickname:**  
+- **Nombre:**  Morales Hernandez Christian Gahel
+- **Número de control:**  22210323
+- **Fecha:**  Septiembre 13 del 2025
+- **Nickname:**  gashetas06
 
 ---
 
