@@ -1,5 +1,6 @@
+#  FAKE SENSOR GPS
 
-## 🔧 ¿Qué quieres lograr?  FAKE SENSOR GPS
+## 🔧 ¿Qué quieres lograr? 
 
 **Entrada:** Ruta marcada manualmente (por clics en un mapa).  
 **Salida:** Lista de sentencias NMEA `$GPRMC`, `$GPGGA` u otras, simulando una ruta GPS.
