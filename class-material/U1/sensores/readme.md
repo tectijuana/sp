@@ -8,7 +8,6 @@ Cada estudiante deberá investigar el funcionamiento, aplicaciones, ventajas y d
 
 👉 La tabla completa contiene los **71 alumnos con su sensor, descripción y uso**.
 
-```
 | # | Alumno | Tema (Sensor) | Descripción breve | Uso principal |
 |---|--------|---------------|------------------|---------------|
 | 1 | AARON CASILDO RUBALCAVA | Termopar (K/J/T) | Unión metálica que genera voltaje según la temperatura | Medición industrial de altas temperaturas |
@@ -82,5 +81,4 @@ Cada estudiante deberá investigar el funcionamiento, aplicaciones, ventajas y d
 | 69 | OMAR DANIEL PEREZ LOPEZ | EMG | Actividad eléctrica muscular | Rehabilitación |
 | 70 | OSCAR ALEJANDRO LOPEZ MARTINEZ | EEG | Señales del cerebro | Neurociencia, interfaces BCI |
 | 71 | OSCAR DANIEL RAMIREZ GONZALEZ | GSR/EDA | Respuesta galvánica de la piel | Psicología, estrés |
-```
 
