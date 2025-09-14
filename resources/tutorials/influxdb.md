@@ -1,5 +1,5 @@
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.niagaramarketplace.com%2Finfluxdb.html&psig=AOvVaw2jkyr565WqEGlLSUH51ADj&ust=1757971274203000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODh4ryX2Y8DFQAAAAAdAAAAABAE<img width="265" height="265" alt="image" src="https://github.com/user-attachments/assets/d86c2146-e4dc-418c-9bdd-b595f601e208" />
+<img width="265" height="265" alt="image" src="https://github.com/user-attachments/assets/d86c2146-e4dc-418c-9bdd-b595f601e208" />
 
 
 # 🗃️ Uso de InfluxDB en Sensores, IoT y Nuevas Tecnologías
