@@ -3,8 +3,8 @@
 ![00e446538c79e923988cd49378e4afb8](https://github.com/user-attachments/assets/546d7974-4775-4ee2-bc60-a10013f37ff0)
 
 
-**Actividad 1.5: ¿Qué sensores tiene tu smartphone?**
-s  
+# **Actividad 1.5: ¿Qué sensores tiene tu smartphone?**
+  
 **Fecha de entrega:** Ver IDoceo
 **Puntaje:** 100 puntos (parcial sobre Practicas)
 
