@@ -2,7 +2,7 @@
 # Actividad 3: Elabora una participacion de temas selectos de Sistemas Programables para integrarlos a el curso en GH como contribucion
 
 ## ¿Cómo contribuir a el repositorio?
-- En URL de donde deja su contribucion via GitHub **https://github.com/tectijuana/SP/new/main/class-material/U1/__________/readme.md**
+- En URL de donde deja su contribucion via GitHub **_class-material/U1/investigacion/____________/readme.md_**
 - En en encabezado dentro del documento en MARKDOWN estará su nombre como autor
 - Docente revisa el archivo y pasa la calificación manualmente.
 - Docente hace PULL al repositorio para la integración especificamente a ese directorio, fuera de este el trabajo esta invalido.
