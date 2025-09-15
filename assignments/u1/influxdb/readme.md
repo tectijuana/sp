@@ -1,116 +1,125 @@
 <img width="1124" alt="Screenshot 2025-03-10 at 2 01 54 p m" src="https://github.com/user-attachments/assets/bb9cd28f-a469-40d8-986a-ca4cf0c25edf" />
 
 
+# Práctica: Uso actualizado de InfluxDB en Sensores, IoT y Nuevas Tecnologías
 
-
-
-**Ejercicio Práctico para Ingeniería: Implementación y análisis de datos de sensores usando InfluxDB en AWS Academy**
-
-## 🎯 Objetivo
-Los estudiantes aprenderán a valorar el potencial de **InfluxDB** como base de datos de series temporales para almacenar, consultar y analizar datos provenientes de sensores, aplicando un caso práctico utilizando infraestructura en AWS Academy.
+## Objetivo
+El estudiante será capaz de instalar y configurar **InfluxDB 2** en una instancia **AWS EC2 con Ubuntu 20.04**, crear la organización inicial, buckets y tokens, y comprender su rol en proyectos de **IoT** para almacenar datos de sensores en tiempo real.
 
 ---
 
-### 🚀 Contexto del Caso
+## 1. Contexto y rol de InfluxDB en IoT
 
-Una empresa ficticia, **EcoGrow**, especializada en agricultura vertical inteligente, desea implementar una solución tecnológica que capture datos de sensores ambientales (temperatura, humedad, luminosidad y pH) desde distintos puntos de cultivo vertical, almacenando estos datos para análisis en tiempo real y predicción futura.
+Las bases de datos de series de tiempo (**TSDB**) están diseñadas para almacenar y consultar datos que cambian con el tiempo, como lecturas de sensores o métricas de sistemas.  
+En entornos de **Internet de las Cosas (IoT)**, domótica o monitorización industrial, estas bases de datos permiten:
 
-Tu equipo ha sido contratado para desarrollar una solución robusta y escalable basada en InfluxDB, implementándola sobre AWS.
+- **Almacenamiento eficiente** de flujos constantes de datos.
+- **Consultas en tiempo real** para detectar eventos o anomalías.
+- **Compresión optimizada** e índices temporales para alto rendimiento.
 
----
-
-### 📝 Requisitos Técnicos
-
-- Utilizar una instancia **Amazon EC2** (Ubuntu Server 22.04) en AWS Academy.
-- Instalar y configurar **InfluxDB**.
-- Simular datos generados por sensores con **Mockaroo.com**.
-- Utilizar scripts en **Python** para insertar datos automáticamente en la base de datos.
-- Consultar y visualizar los datos recolectados usando comandos específicos (InfluxQL).
+### ¿Por qué InfluxDB?
+- Lenguajes de consulta: `InfluxQL` y `Flux`.
+- Integración nativa con **Grafana**.
+- Escalabilidad en nubes públicas, edge o servidores locales.
 
 ---
 
-### 🔖 Procedimiento Paso a Paso
+## 2. Instalación de InfluxDB 2 en Ubuntu 20.04 (EC2)
 
-#### 🟢 Paso 1: Preparación del servidor en AWS
-- Accede a AWS Academy y crea una instancia EC2 con Ubuntu Server 22.04.
-- Actualiza el servidor:
+### 2.1 Requisitos previos
+- Cuenta en **AWS Academy** (o AWS).
+- Familiaridad básica con Linux.
+
+### 2.2 Crear la instancia EC2
+1. Inicia sesión en AWS.
+2. Lanza una **Ubuntu Server 20.04 LTS (64 bits)**.
+3. Tipo de instancia: `t2.micro` o `t3.micro`.
+4. Security Group:
+   - Puerto **22** (SSH).
+   - Puerto **8086** (InfluxDB, opcional).
+
+### 2.3 Conexión y actualización del sistema
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 ```
 
-#### 🟢 Paso 2: Instalación de InfluxDB
-- Instala InfluxDB en la instancia Ubuntu:
+### 2.4 Agregar repositorio oficial
 ```bash
-wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.6-amd64.deb
-sudo dpkg -i influxdb2*.deb
-sudo systemctl start influxdb
-sudo systemctl enable influxdb
+curl -fsSL https://repos.influxdata.com/influxdata-archive_compat.key | \
+  sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/influxdata.gpg
+
+echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata.gpg] https://repos.influxdata.com/debian stable main' \
+  | sudo tee /etc/apt/sources.list.d/influxdata.list
 ```
 
-- Configura inicialmente InfluxDB (crear usuario, contraseña y organización).
-
-#### 🟢 Paso 2: Creación de datos de sensores usando Mockaroo
-- Utiliza [mockaroo.com](https://www.mockaroo.com/) con el siguiente prompt del bot generador:
-
-> 🔸 **Prompt para Mockaroo:**  
-> Crea un dataset llamado "sensores_ecogrow" con campos:  
-> - `sensor_id` (UUID)  
-- `sensor_type` (ej. temperatura, humedad, luminosidad, humedad_suelo)
-- `value` (número decimal, según el tipo de sensor)
-- `timestamp` (tipo fecha y hora, intervalo cada minuto durante 24 horas)
-
-- Exporta el archivo generado en formato CSV.
-
-#### 🟢 Paso 3: Importación automática en InfluxDB
-- Copia el archivo CSV al servidor AWS.
-- Usa el cliente CLI de InfluxDB para importar los datos:
+### 2.5 Instalar InfluxDB 2
 ```bash
-influx write -b ecogrow_data -f sensores.csv --header "sensor_data,sensor_type=value,value=value timestamp"
+sudo apt update
+sudo apt install -y influxdb2
 ```
 
-#### 🟢 Paso 4: Análisis básico de los datos
-- Realiza consultas desde la interfaz de InfluxDB para obtener:
-  - Promedio, mínimo y máximo de temperatura por hora.
-  - Intervalos de humedad del suelo críticos.
-
-#### Ejemplo consulta:
-```sql
-from(bucket:"eco_grow")
-  |> range(start: -24h)
-  |> filter(fn: (r) => r["sensor_type"] == "temperatura")
-  |> aggregateWindow(every: 1h, fn: mean)
+### 2.6 Habilitar servicio
+```bash
+sudo systemctl enable --now influxdb
+sudo systemctl status influxdb
 ```
 
-#### 🟢 Paso 5: Visualización
-- Usa el dashboard integrado de InfluxDB para crear gráficos interactivos que muestren tendencias y comportamientos de los sensores.
+### 2.7 Configuración inicial
+Ejecuta:
+```bash
+influx setup
+```
+
+Configura:
+- Organización: `SistemasProgramables`. (puede cambiarla)
+- Usuario y contraseña. (no la olvide)
+- Bucket inicial.
+- Retención (infinita o personalizada).
+- Se genera un **token de autenticación** (guardar y no perder use Google KEEP).
+
+### 2.8 Verificación
+- `influx version`
+- `systemctl status influxdb`
+- Navegador: `http://<TU_IP_PUBLICA>:8086`
 
 ---
 
-### 🤖 Prompt para Bot asistente (Mockaroom.com)
-
-Copia el siguiente prompt en **mockaroom.com** para generar automáticamente datos realistas del caso:
-
-> " Crea un conjunto de datos realista simulando la captura de múltiples sensores agrícolas durante un día entero. Incluye sensores de temperatura (entre 10 y 30 ºC), humedad ambiental (entre 40% y 90%), luminosidad (0 a 1000 lux), y humedad del suelo (20% a 80%). El intervalo debe ser de 1 minuto para representar datos continuos. Entrega el resultado en CSV para fácil importación a InfluxDB."
+## 3. (Opcional) Acceso externo
+En el **Security Group** agrega regla TCP 8086 con tu IP pública a todo el mundo IP 0.0.0.0 o el de su routeador.
 
 ---
 
-### 🎯 Objetivos de aprendizaje del ejercicio
-- Identificar ventajas de InfluxDB para datos de series temporales.
-- Desarrollar habilidades para manejar herramientas de simulación (Mockaroo).
-- Practicar configuraciones en entornos de nube AWS.
-- Aplicar análisis y visualización básica de datos en contexto ingenieril.
+## 4. Actividad práctica
+
+1. Documenta en un archivo Markdown los pasos realizados con **capturas de pantalla** (consola AWS, estado del servicio, interfaz web).  
+2. Inserta al menos **una consulta simple** desde CLI o interfaz web (ejemplo: listar buckets).  
+3. Incluye el **token generado** en el reporte (en texto tachado o bloqueado).  
+4. Sube tu archivo final un GIST.github.com, bien estructurado por favor.
 
 ---
 
-### 🧑‍💻 Entrega del ejercicio
-
-Cada estudiante entregará:
-- Captura del dashboard con gráficos generados.
-- Documento corto explicando resultados de consultas hechas.
-- Breve reflexión sobre las ventajas observadas en el uso de InfluxDB para datos de sensores.
+## 5. Recomendaciones
+- Detén la instancia EC2 cuando no la uses.
+- Usa autenticación y TLS en producción.
+- Integra con **Grafana** para visualización.
+- Usar http://mockaroo.com para datos simulador (o ChatGPT tambien)
 
 ---
-NOTA: Recuerde que AWS el Security Groups para exponer el puerto TCP 8080
 
-✨ ¡Éxito en tu actividad! 🌱📈
+## 7. Rúbrica de evaluación
 
+| Criterio                               | Excelente (100%)                              | Satisfactorio (80%)            | Insuficiente (50%)         | Nulo (0%)        |
+|----------------------------------------|-----------------------------------------------|--------------------------------|-----------------------------|------------------|
+| **Instancia EC2**                      | Instancia creada y funcionando con Ubuntu 20.04 | Instancia con errores menores | Instancia con errores graves | No entregado     |
+| **Instalación InfluxDB 2**             | Instalada y corriendo correctamente            | Instalación con errores leves  | Servicio no corre correctamente | No entregado |
+| **Configuración inicial (`setup`)**    | Organización, bucket y token creados           | Configuración incompleta       | Configuración incorrecta    | No entregado     |
+| **Documentación y evidencia**          | Markdown completo con capturas y consultas     | Markdown con capturas parciales | Evidencia mínima            | No entregado     |
+
+---
+
+## 8. Conclusión
+Con esta práctica el estudiante comprende el proceso de despliegue de **InfluxDB 2** en AWS, asegura su funcionamiento, y documenta su experiencia con un enfoque en **IoT y datos de sensores en tiempo real**.
+````
+
+¿Quieres que también te prepare esta práctica fusionada en un **.md listo para tu repo GitHub (`tectijuana/sp`)** o en un **.docx para Classroom**?
