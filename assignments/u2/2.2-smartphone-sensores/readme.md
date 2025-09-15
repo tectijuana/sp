@@ -199,4 +199,6 @@ En el portal sube:
 | **Evidencia en Asciinema**             | Grabación completa y con nombre correcto, portal documentado en markdown | Grabación incompleta | Archivo dañado o incompleto | No entregado  |
 | **Conclusión personal**                | Clara y reflexiva                        | Superficial          | Muy breve                   | No entregada  |
 
+---<img width="1504" height="1361" alt="asciinema documentar profesionalmente" src="https://github.com/user-attachments/assets/c487358d-0c86-414a-bdca-2977ff6cc638" />
+
 
