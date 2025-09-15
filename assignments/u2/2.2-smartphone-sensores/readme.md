@@ -108,11 +108,15 @@ Crea `sensores.sh` con:
 
 ```bash
 #!/bin/bash
+# sensores.sh - Lista y muestra sensores del teléfono en Termux
+
 echo "===== Sensores disponibles ====="
 termux-sensor -l
 echo
-echo "Para ver datos en vivo de un sensor específico:"
+echo "Para ver datos en vivo de un sensor específico,"
+echo "ejecuta: termux-sensor -s <NOMBRE_SENSOR>"
 echo "Ejemplo: termux-sensor -s AccelSensor"
+
 ```
 
 Permisos y ejecución:
