@@ -1,5 +1,7 @@
+
 <img width="1124" alt="Screenshot 2025-03-10 at 2 01 54 p m" src="https://github.com/user-attachments/assets/bb9cd28f-a469-40d8-986a-ca4cf0c25edf" />
 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/7b9f47eb-b0d1-4f6e-9469-b78c67b4c299" />
 
 # Práctica: Uso actualizado de InfluxDB en Sensores, IoT y Nuevas Tecnologías
 
