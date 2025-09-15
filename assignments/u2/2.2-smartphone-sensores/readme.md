@@ -43,7 +43,7 @@ En esta actividad, exploraremos los sensores que integran los dispositivos móvi
 
 ----
 
-#**Seccion 2 Android:**
+# **Seccion 2 Android:**
 ---
 
 
