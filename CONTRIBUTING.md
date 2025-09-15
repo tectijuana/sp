@@ -1,59 +1,85 @@
-# Guía de Contribución — EmbeddedSP
+
+# Guía de Contribución — Carpeta `assignments/temas`
 
 <img src="https://github.com/tectijuana/sp/blob/main/resources/images/Cyberpunk%20Tux.PNG" width="50%">
 
-
-Gracias por tu interés en mejorar este curso.
-
-## Flujo de contribución
-
-1. **Fork** al repositorio
-2. Crea una rama descriptiva:
-   `git checkout -b mejora/U03-sensor-ultrasonico`
-3. Aplica cambios y agrega documentación
-4. Haz un **Pull Request** describiendo con claridad la contribución
-
-## Nomenclatura de carpetas
-
-* **Unidades:** `U##-nombre/`
-* **Lecciones:** `L##-nombre/`
-* **Prácticas:** `P##-nombre/`
-* **Evaluaciones:** `E##-nombre/`
-* Todo en **kebab-case** y numeración secuencial \*
-
-## Buenas prácticas
-
-* Documenta con README.md cada práctica
-* Incluye diagramas o simulaciones (Wokwi, Fritzing, Proteus)
-* Valida código en hardware real o simulador
-* Usa comentarios claros y código legible
-
-## Uso de herramientas de IA
-
-Puedes apoyarte en herramientas de inteligencia artificial para:
-
-* Generar o depurar código (ej. funciones en C/C++, scripts en Python)
-* Redactar o corregir documentación (README, instrucciones de uso)
-* Sugerir nombres, estructuras o enfoques pedagógicos
-* Crear descripciones o explicaciones técnicas
-
-**Recomendaciones:**
-
-* No subir contenido generado automáticamente sin supervisión o validación humana.
-* Si utilizas IA para una contribución, incluye una nota breve en el Pull Request explicando cómo fue utilizada (ej. "README generado con ayuda de ChatGPT, revisado y adaptado").
-* Entrega de prompts como anexos.
-* Evita depender completamente de IA para temas críticos o prácticos no verificados en hardware o simulador.
-
-> Consulta la guía completa de uso de IA aquí: [AI\_GUIDANCE.md](https://github.com/tectijuana/sp/blob/main/AI_GUIDANCE.md)
-
-## Revisión de PRs
-
-* Los docentes revisarán cada PR
-* Se pueden solicitar cambios antes de aceptar
-* Una vez aprobado, se integrará en la rama principal
+Gracias por tu interés en mejorar los **temas de asignación** de este curso.
+Aquí encontrarás las reglas para organizar, documentar y contribuir dentro de esta carpeta.
 
 ---
 
-**NOTA:** *Kebab-case es una convención de nomenclatura en la que todas las palabras de un nombre se escriben en minúsculas y se separan mediante guiones (-), similar a la forma en que las piezas de carne se ensartan en un shish kebab, de ahí su nombre. Es una alternativa legible a usar espacios, que no son permitidos en muchos lenguajes de programación, y se usa comúnmente en CSS, HTML y URL.*
+## Flujo de contribución
 
+1. Haz **Fork** del repositorio.
+2. Crea una rama descriptiva:
 
+   ```bash
+   git checkout -b tema/U05-protocolos-comunicacion
+   ```
+3. Aplica cambios y agrega documentación.
+4. Haz un **Pull Request** describiendo con claridad tu aportación.
+
+---
+
+## Nomenclatura de carpetas y archivos
+
+En `assignments/temas` cada tema debe seguir esta estructura:
+
+* **Tema:** `T##-nombre/`
+* Dentro de cada tema:
+
+  * `README.md` → Introducción y explicación del tema
+  * `recursos/` → Diagramas, simulaciones o imágenes de apoyo
+  * `codigo/` → Ejemplos en C/C++, Python, o pseudocódigo
+  * `referencias.md` → Bibliografía, enlaces o fuentes
+
+**Reglas:**
+
+* Todo en **kebab-case** (minúsculas, palabras separadas con guiones).
+* Numeración secuencial en los temas: `T01`, `T02`, `T03`…
+* Evitar espacios y caracteres especiales.
+
+---
+
+## Buenas prácticas
+
+* Cada tema debe tener un **README.md claro y estructurado**.
+* Incluye **diagramas o simulaciones** cuando sea posible (Wokwi, Fritzing, Proteus).
+* El código debe estar probado en hardware real o simulador.
+* Usa comentarios y estilos de programación consistentes.
+* Cita fuentes o referencias cuando uses material externo.
+
+---
+
+## Uso de herramientas de IA
+
+Puedes apoyarte en IA para:
+
+* Generar o depurar código (C/C++, Python).
+* Redactar o corregir documentación (README, instrucciones de uso).
+* Proponer nombres o estructuras pedagógicas.
+* Explicar conceptos técnicos de manera más clara.
+
+**Recomendaciones:**
+
+* No subir contenido sin **validación humana**.
+* Si usaste IA, indica en el **Pull Request** cómo la utilizaste
+  (ejemplo: *"README creado con ayuda de ChatGPT, revisado por estudiante"*).
+* Agrega los *prompts* como anexo cuando sea relevante.
+* Evita depender únicamente de IA para pruebas en hardware o prácticas críticas.
+
+> Consulta la guía completa aquí: [AI\_GUIDANCE.md](https://github.com/tectijuana/sp/blob/main/AI_GUIDANCE.md)
+
+---
+
+## Revisión de PRs
+
+* Los docentes revisarán cada Pull Request.
+* Se podrán solicitar cambios antes de su aceptación.
+* Una vez aprobado, se integrará en la rama principal.
+
+---
+
+**NOTA:** *Kebab-case es una convención en la que todas las palabras se escriben en minúsculas y separadas por guiones (-). Ejemplo: `t05-sensor-ultrasonico`.*
+
+---

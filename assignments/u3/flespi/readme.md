@@ -1,7 +1,7 @@
 <img width="616" alt="Screenshot 2025-03-24 at 2 07 05 p m" src="https://github.com/user-attachments/assets/2ae4420a-41a1-4b4a-9f3f-5cc655030285" />
 
 
-### Bloque 2:  Sistemas Programables e IoT con Raspberry Pi, flespi.com y AWS Academy
+### Bloque 3:  Sistemas Programables e IoT con Raspberry Pi, flespi.com
 
 **Curso:** Sistemas Programables  
 **Nivel:** Ingeniería en Sistemas Computacionales  
@@ -13,7 +13,7 @@
 
 Al finalizar esta práctica, el estudiante será capaz de:
 
-- Configurar dispositivos Raspberry Pi Zero 2W y Raspberry Pi Pico W para la captura de datos mediante sensores.
+- Configurar dispositivos Raspberry Pi Zero 2W, FakeSensors y Raspberry Pi Pico W para la captura de datos mediante sensores.
 - Integrar y enviar información utilizando protocolos MQTT a la plataforma IoT flespi.com.
 - Implementar soluciones básicas en AWS Academy para recibir, almacenar y visualizar datos IoT.
 - Aplicar conocimientos prácticos sobre sistemas embebidos, comunicaciones inalámbricas y servicios en la nube.

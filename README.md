@@ -2,18 +2,17 @@
 
 <img width="717" alt="Screenshot 2025-03-31 at 2 54 51 p m" src="https://github.com/user-attachments/assets/90f89108-192c-48b0-baef-558bf4ad686f" />
 
-<h1 align="center">📦 Repositorio Oficial de <em>EmbeddedSP</em></h1>
+<h1 align="center">📦 Repositorio Oficial de <em>EmbeddedSP</em> TECNM — Ingeniería en Sistemas Computacionales </h1>
 
-### GPT del Curso:  https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
+### GPT del Curso: 
+https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
 
-<p align="center">
-  Bienvenido al repositorio de <strong>EmbeddedSP</strong>, un espacio creado como apoyo integral al curso de <strong>Sistemas Programables</strong> del <em>TECNM Campus ITT</em>.
-</p>
 
 ---
 # Sistemas Programables — EmbeddedSP
 
-Repositorio oficial del curso **Sistemas Programables** (TECNM — Ingeniería en Sistemas Computacionales).  
+Repositorio oficial del curso **Sistemas Programables**.
+
 Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herramientas para diseño y desarrollo de sistemas embebidos con sensores, actuadores y automatización.
 
 ---
