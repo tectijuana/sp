@@ -1,4 +1,4 @@
-# AI_GUIDANCE.md – Uso responsable de IA en el curso *Sistemas Embebidos*
+# AI_GUIDANCE.md – Uso responsable de IA en el curso *Sistemas Embebidos* y otros cursos
 
 Este documento establece las pautas para el uso ético y responsable de herramientas de **Inteligencia Artificial (IA)** en el curso de *Sistemas Embebidos*.
 

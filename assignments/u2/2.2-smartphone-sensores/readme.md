@@ -41,4 +41,4 @@ En esta actividad, exploraremos los sensores que integran los dispositivos móvi
 | **No entregado en tiempo y forma**                  | 0%             |
 
 ---
-# Entrega el Link de LOOM (no archivo) en Idoceo
+# Entrega el Link de LOOM (no archivo) en Idoceo, este da 5 minutos máx de grabación es un vistazo a sus sensores.

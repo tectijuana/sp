@@ -44,6 +44,10 @@
 Aquí los sensores no solo hablan con microcontroladores, sino con la **nube**, aplicaciones web o bases de datos.
 
 ### 2. Protocolos comunes de capa de aplicación
+
+El protocolo MQTT, ampliamente usado en entornos de automatización industrial (IIoT), es ideal para conectar dispositivos con limitaciones de recursos debido a su modelo ligero de publicación/suscripción, pero su despliegue sin medidas de seguridad adecuadas introduce riesgos graves. El artículo de CCI detalla cómo muchas implementaciones operan sin cifrado TLS o utilizan versiones vulnerables del protocolo, exponiéndose a ataques como la interceptación de mensajes, suplantación de identidad o manipulación en tránsito. Se enfatiza la necesidad de aplicar una estrategia de seguridad en capas conforme a normas como IEC 62443: uso de autenticación fuerte (certificados X.509 o SCRAM), autorización granular mediante ACLs, segmentación de red, monitoreo continuo, actualización constante de software y una gobernanza sólida para mantener la integridad, confidencialidad y resiliencia operativa.
+
+
 #### ➤ MQTT (Message Queuing Telemetry Transport)
 - Basado en publish/subscribe
 - Muy ligero, ideal para sensores remotos
@@ -98,8 +102,6 @@ sequenceDiagram
 - **Encripta si es remoto** (usa TLS en MQTT o HTTPS)
 
 ---
-
-¡Perfecto! Aquí tienes la **segunda parte de la lección** sobre *Protocolos de Comunicación para Sensores*, centrada ahora en la **implementación práctica con microcontroladores** y la **simulación de problemas reales** en entornos de IoT.
 
 ---
 
@@ -208,3 +210,4 @@ def get_sensor_data():
 - *IoT Fundamentals with a Practical Approach* – Capítulo 2 y 3
 - *Mastering Python for IoT Development* – Capítulo 7 (MQTT en la nube)
 - *Raspberry Pi IoT in Python Using GPIO Zero* – Capítulo 5: On/Off Devices
+- Seguridad en MQTT https://www.cci-es.org/seguridad-en-mqtt-en-entornos-de-ciberseguridad-industrial/

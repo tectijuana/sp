@@ -110,6 +110,7 @@ Cada estudiante entregará:
 - Breve reflexión sobre las ventajas observadas en el uso de InfluxDB para datos de sensores.
 
 ---
-NOTA: Recuerde que AWS el Security Groups para exponer el puerto TCP 8080s
+NOTA: Recuerde que AWS el Security Groups para exponer el puerto TCP 8080
+
 ✨ ¡Éxito en tu actividad! 🌱📈
 

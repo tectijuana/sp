@@ -1,4 +1,4 @@
-
+# Esta sección son CONTRIBS del hace 7 meses que se unirán al cierre de esta actividad
 
  
 Sensor de temperatura – ❌

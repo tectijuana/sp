@@ -1,3 +1,4 @@
+.
 
 
 # Grabar la sesión con Asciinema
@@ -75,3 +76,5 @@
    ```
 
 8. Copia y guarda el **enlace generado** por Asciinema.
+
+9. Checar Rubrica hay mas detalles por realizar
