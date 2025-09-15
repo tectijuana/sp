@@ -13,6 +13,9 @@ Además de C, C++, Python, ensamblador, VHDL y Verilog, existen otros lenguajes 
 
 ## **Lenguaje Java**
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e52279bd-0b99-49dc-bfbf-497e3b399935" />
+
+
 Java es un lenguaje orientado a objetos de alto nivel que se caracteriza por su **portabilidad** y ejecución en la **Máquina Virtual de Java (JVM)**.
 
 - **Ventajas**:
@@ -25,6 +28,9 @@ Java es un lenguaje orientado a objetos de alto nivel que se caracteriza por su 
 ---
 
 ## **Lenguaje Rust**
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a79550d9-b096-4dc9-b844-1eceaf4ab575" />
+
 
 Rust es un lenguaje moderno enfocado en la seguridad y el rendimiento, diseñado para ofrecer control de bajo nivel sin los errores comunes de punteros y memoria.
 
@@ -39,6 +45,9 @@ Rust es un lenguaje moderno enfocado en la seguridad y el rendimiento, diseñado
 
 ## **Lenguaje Go (Golang)**
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/116c6c86-64de-4caa-8e26-af945efcf530" />
+
+
 Go, desarrollado por Google, destaca por su simplicidad y eficiencia en la concurrencia, lo que lo hace atractivo en ciertos entornos de red y sistemas embebidos modernos.
 
 - **Ventajas**:
@@ -51,6 +60,9 @@ Go, desarrollado por Google, destaca por su simplicidad y eficiencia en la concu
 ---
 
 ## **Lenguaje MATLAB**
+
+<img width="280" height="300" alt="image" src="https://github.com/user-attachments/assets/50a3282f-9aa5-4232-9bce-0ecce095510d" />
+
 
 MATLAB es un lenguaje especializado en cómputo científico, simulación y procesamiento de señales. Aunque no se usa directamente en hardware, es crucial para el diseño y la verificación de sistemas programables.
 
@@ -65,6 +77,9 @@ MATLAB es un lenguaje especializado en cómputo científico, simulación y proce
 
 ## **Lenguaje Ada**
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/1de637d6-4191-4528-9241-d7ce0680e50b" />
+
+
 Ada es un lenguaje estructurado y fuertemente tipado, orientado a sistemas críticos en tiempo real como los usados en aviación, defensa y transporte.
 
 - **Ventajas**:
@@ -77,6 +92,9 @@ Ada es un lenguaje estructurado y fuertemente tipado, orientado a sistemas crít
 ---
 
 ## **Lenguaje Julia**
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/1683aec2-f761-4069-8670-f2e26958138e" />
+
 
 Julia es un lenguaje muy eficiente para el cómputo numérico y científico, combinando facilidad de uso con alta velocidad cercana a C.
 
@@ -101,3 +119,22 @@ Los lenguajes de programación aplicados en sistemas programables abarcan desde 
 - **Julia** para algoritmos numéricos y científicos con hardware embebido.
 
 La selección de estos lenguajes depende del tipo de sistema a desarrollar, sus requerimientos de rendimiento, seguridad y nivel de abstracción sobre el hardware.
+
+---
+
+## Referencias
+
+ **Java**
+- Oracle. (n.d.). Oracle Java SE Embedded [Software]. Recuperado de https://www.oracle.com/java/technologies/javase-embedded/javase-embedded.htmltranslate.google
+
+- MDPI. (2024). Una herramienta de generación automática de código que utiliza Java en sistemas embebidos. Electronics, 14(11), 2261. https://www.mdpi.com/2079-9292/14/11/2261translate.google
+
+**Rust**
+- Rust Project Developers. (n.d.). Dispositivos integrados - Rust, el lenguaje de programación [Software]. Recuperado de https://www.rust-lang.org/es/what/embeddedrust-lang
+
+- Plauska, I. (2022). Evaluación del rendimiento de los lenguajes TinyGo, Rust y otros en sistemas embebidos. Electronics, 12(1), 143. https://www.mdpi.com/2079-9292/12/1/143translate.google+1
+
+**Go (Golang)**
+- Google. (2009). Go (Golang) [Software]. Recuperado de https://golang.org/wikipedia
+
+- Plauska, I. (2022). Evaluación del rendimiento de los lenguajes TinyGo, Rust y otros en sistemas embebidos. Electronics, 12(1), 143. https://www.mdpi.com/2079-9292/12/1/143translate.google
