@@ -1,6 +1,10 @@
 # Uso de Coprocesadores y Aceleradores de Hardware en Microcontroladores Modernos
-**Autor: Yael Kristoph Triana Sánchez**
+### **Autor: Yael Kristoph Triana Sánchez**
 
+### **Número de control: 22211667**
+Asistencia de IA: Ayuda en formatear fuentes tipo apa, organización general, faltas de ortografía y formato md con emojis.
+Herramienta: ChatGPT
+Fecha: 15/09/2025
 ## Introducción
 
 Los microcontroladores modernos han evolucionado significativamente desde sus versiones más simples. Ya no son solo unidades de procesamiento único que ejecutan instrucciones secuencialmente. Hoy en día, incorporan múltiples elementos de procesamiento especializados que trabajan en conjunto con el núcleo principal del CPU para acelerar tareas específicas y mejorar la eficiencia energética.
@@ -263,153 +267,33 @@ Los coprocesadores y aceleradores de hardware han transformado los microcontrola
 
 La clave del éxito está en identificar los cuellos de botella de tu aplicación y seleccionar el hardware apropiado para resolverlos. No se trata de usar todos los aceleradores disponibles, sino de usar los correctos de la manera correcta. Con la práctica y experiencia, aprenderás a orquestar estos recursos para crear sistemas que sean no solo más rápidos, sino también más eficientes energéticamente y más capaces de manejar las demandas del mundo conectado moderno.
 
-## Referencias y Recursos Adicionales
+📚 Referencias Bibliográficas
+📖 Libros Fundamentales
 
-Para profundizar en estos temas, considera explorar:
+Ball, S. R. (2020). Embedded Microprocessor Systems: Real World Design (4th ed.). Newnes.
 
-- Documentación técnica de ARM sobre arquitecturas Cortex-M
-- Application Notes de fabricantes como STMicroelectronics, NXP, y Espressif
-- Libros especializados en arquitectura de sistemas embebidos
-- Proyectos open source que demuestran uso efectivo de coprocesadores
-- Herramientas de profiling para identificar oportunidades de optimización
+Noergaard, T. (2019). Embedded Systems Architecture: A Comprehensive Guide for Engineers and Programmers (2nd ed.). Newnes.
 
----
-# Referencias Bibliográficas
-## Coprocesadores y Aceleradores de Hardware en Microcontroladores Modernos
+Yiu, J. (2021). The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors (3rd ed.). Newnes.
 
-### Libros y Textos Fundamentales
+🛠️ Documentación Técnica de Fabricantes
 
-ARM Limited. (2020). *ARM Cortex-M4 Processor Technical Reference Manual* (Revision r0p1). ARM Limited. https://developer.arm.com/documentation/100166/0001
+ARM Limited. (2020). ARM Cortex-M4 Processor Technical Reference Manual. ARM Limited.
 
-ARM Limited. (2021). *ARM Cortex-M55 Processor Technical Reference Manual* (Revision r1p0). ARM Limited. https://developer.arm.com/documentation/101051/0101
+ARM Limited. (2021). ARM Cortex-M55 Processor Technical Reference Manual. ARM Limited.
 
-Ball, S. R. (2020). *Embedded Microprocessor Systems: Real World Design* (4th ed.). Newnes.
+STMicroelectronics. (2021). STM32F4 Series Cortex-M4 Programming Manual. STMicroelectronics.
 
-Barry, R. (2019). *Mastering the FreeRTOS Real Time Kernel: A Hands-On Tutorial Guide*. Real Time Engineers Ltd.
+Espressif Systems. (2023). ESP32 Technical Reference Manual. Espressif Systems.
 
-Brown, G. (2018). *Discovering the STM32 Microcontroller* (Revision 2.0). Indiana University.
+🌐 Recursos Online Oficiales
 
-Catsoulis, J. (2019). *Designing Embedded Hardware: Create New Computers and Devices* (3rd ed.). O'Reilly Media.
+ARM Developer. (2023). Helium Technology. https://developer.arm.com/architectures/instruction-sets/simd-isas/helium
 
-Di Jasio, L. (2018). *Programming 32-bit Microcontrollers in C: Exploring the PIC32*. Newnes.
+CMSIS Documentation. (2023). CMSIS-DSP Software Library. https://arm-software.github.io/CMSIS_5/DSP/html/index.html
 
-Ibrahim, D. (2020). *ARM-Based Microcontroller Projects Using mbed*. Newnes.
+STM32CubeAI Documentation. (2023). Artificial Intelligence Ecosystem for STM32. https://www.st.com/en/embedded-software/x-cube-ai.html
 
-Noergaard, T. (2019). *Embedded Systems Architecture: A Comprehensive Guide for Engineers and Programmers* (2nd ed.). Newnes.
-
-Peckol, J. K. (2019). *Embedded Systems: A Contemporary Design Tool* (2nd ed.). Wiley.
-
-White, E. (2020). *Making Embedded Systems: Design Patterns for Great Software* (2nd ed.). O'Reilly Media.
-
-Wolf, W. (2022). *Computers as Components: Principles of Embedded Computing System Design* (5th ed.). Morgan Kaufmann.
-
-Yiu, J. (2020). *The Definitive Guide to ARM Cortex-M23 and Cortex-M33 Processors*. Newnes.
-
-Yiu, J. (2021). *The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors* (3rd ed.). Newnes.
-
-### Documentación Técnica y Manuales de Referencia
-
-Espressif Systems. (2023). *ESP32 Technical Reference Manual* (Version 4.6). Espressif Systems. https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf
-
-Microchip Technology Inc. (2021). *dsPIC33/PIC24 Family Reference Manual - DSP Engine*. Microchip Technology Inc. http://ww1.microchip.com/downloads/en/DeviceDoc/70000598g.pdf
-
-Nordic Semiconductor. (2022). *nRF52840 Product Specification* (Version 1.7). Nordic Semiconductor. https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.7.pdf
-
-NXP Semiconductors. (2021). *i.MX RT1060 Processor Reference Manual* (Rev. 3). NXP Semiconductors. https://www.nxp.com/docs/en/reference-manual/IMXRT1060RM.pdf
-
-STMicroelectronics. (2021). *STM32F4 Series Cortex-M4 Programming Manual* (PM0214 Rev 10). STMicroelectronics. https://www.st.com/resource/en/programming_manual/pm0214-stm32-cortexm4-mcus-and-mpus-programming-manual-stmicroelectronics.pdf
-
-STMicroelectronics. (2022). *STM32H7 Series Cortex-M7 Programming Manual* (PM0253 Rev 6). STMicroelectronics. https://www.st.com/resource/en/programming_manual/pm0253-stm32h7-series-cortexm7-processor-programming-manual-stmicroelectronics.pdf
-
-STMicroelectronics. (2023). *Using the Hardware Real-Time Clock (RTC) and the Low-Power Modes with STM32 Microcontrollers* (AN4759 Rev 6). STMicroelectronics.
-
-Texas Instruments. (2020). *TMS320C28x DSP CPU and Instruction Set Reference Guide* (SPRU430F). Texas Instruments. https://www.ti.com/lit/ug/spru430f/spru430f.pdf
-
-### Artículos Académicos y Papers
-
-Chen, Y., Liu, T., & Wang, X. (2021). Energy-efficient neural network acceleration in edge devices using hardware-software co-design. *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*, 40(8), 1567-1580.
-
-Gwennap, L. (2020). Cortex-M55 brings AI to MCUs: ARM's newest embedded core adds Helium vector extensions. *Microprocessor Report*, 34(2), 1-5.
-
-Jouppi, N. P., Young, C., Patil, N., & Patterson, D. (2018). A domain-specific architecture for deep neural networks. *Communications of the ACM*, 61(9), 50-59.
-
-Kumar, A., & Singh, P. (2022). Hardware accelerators for cryptographic algorithms in IoT devices: A comprehensive survey. *IEEE Internet of Things Journal*, 9(3), 1832-1851.
-
-Lee, E. A. (2018). What is real time computing? A personal view. *IEEE Design & Test*, 35(2), 64-72.
-
-Liu, S., & Wang, Z. (2021). DMA-based acceleration techniques for embedded systems: A systematic review. *ACM Computing Surveys*, 54(2), 1-35.
-
-Patterson, D., & Hennessy, J. (2020). A new golden age for computer architecture. *Communications of the ACM*, 62(2), 48-60.
-
-Reddi, V. J., Cheng, C., Kanter, D., Mattson, P., Schmuelling, G., Wu, C. J., ... & Zhou, Y. (2020). MLPerf inference benchmark. *Proceedings of the 47th International Symposium on Computer Architecture*, 446-459.
-
-### Application Notes y Recursos Técnicos
-
-ARM Limited. (2019). *Cortex-M DSP Instructions and Their Applications* (Application Note AN218). ARM Limited.
-
-Atmel Corporation. (2016). *Using the DMA Controller on SAM Microcontrollers* (Application Note AT07890). Microchip Technology Inc.
-
-Espressif Systems. (2022). *ESP32 ULP Coprocessor Programming* (Programming Guide). Espressif Systems.
-
-Infineon Technologies. (2021). *Using the Cryptographic Hardware Accelerators* (Application Note AN221111). Infineon Technologies.
-
-Nordic Semiconductor. (2020). *Power Optimization with FPU and DSP Instructions* (Application Note nAN36). Nordic Semiconductor.
-
-NXP Semiconductors. (2022). *Implementing DSP Functions Using Cortex-M4* (Application Note AN5213). NXP Semiconductors.
-
-STMicroelectronics. (2020). *Digital Signal Processing for STM32 Microcontrollers Using CMSIS* (Application Note AN4841). STMicroelectronics.
-
-STMicroelectronics. (2021). *How to Use the DMA Controller in STM32 MCUs* (Application Note AN4031). STMicroelectronics.
-
-STMicroelectronics. (2022). *Getting Started with X-CUBE-AI Expansion Package for Artificial Intelligence* (User Manual UM2526). STMicroelectronics.
-
-Texas Instruments. (2019). *Real-Time Control Reference Guide* (SPRUHM8I). Texas Instruments.
-
-### Estándares y Especificaciones
-
-IEEE Computer Society. (2019). *IEEE Standard for Floating-Point Arithmetic* (IEEE Std 754-2019). IEEE.
-
-IEEE Computer Society. (2021). *IEEE Standard for Cryptographic Protection of Data on Storage Devices* (IEEE Std 1619-2018). IEEE.
-
-Khronos Group. (2019). *OpenCL 3.0 Specification*. Khronos Group. https://www.khronos.org/registry/OpenCL/specs/3.0-unified/html/OpenCL_API.html
-
-MIPI Alliance. (2020). *MIPI DSI-2 Specification for Display Serial Interface*. MIPI Alliance.
-
-### Recursos Web y Documentación Online
-
-ARM Developer. (2023). *Helium Technology*. ARM Limited. https://developer.arm.com/architectures/instruction-sets/simd-isas/helium
-
-CMSIS Documentation. (2023). *CMSIS-DSP Software Library*. ARM Limited. https://arm-software.github.io/CMSIS_5/DSP/html/index.html
-
-Embedded.com. (2022). *Using Hardware Accelerators in Modern MCUs*. AspenCore. https://www.embedded.com
-
-FreeRTOS.org. (2023). *FreeRTOS Real Time Kernel Documentation*. Amazon Web Services. https://www.freertos.org/Documentation/RTOS_book.html
-
-STM32CubeAI Documentation. (2023). *Artificial Intelligence Ecosystem for STM32*. STMicroelectronics. https://www.st.com/en/embedded-software/x-cube-ai.html
-
-TensorFlow Lite for Microcontrollers. (2023). *TensorFlow Lite for Microcontrollers Documentation*. Google. https://www.tensorflow.org/lite/microcontrollers
-
-### Conferencias y Presentaciones
-
-Gregg, B. (2020, February). *Performance analysis of embedded systems with hardware accelerators* [Conference presentation]. Embedded World Conference 2020, Nuremberg, Germany.
-
-Molnar, K. (2021, October). *Edge AI: Bringing intelligence to microcontrollers* [Conference presentation]. ARM DevSummit 2021, Virtual Conference.
-
-Patterson, D. (2019, June). *Domain specific architectures for deep learning* [Keynote presentation]. International Symposium on Computer Architecture (ISCA), Phoenix, AZ.
-
-Segars, S. (2020, October). *The future of AI at the edge* [Keynote presentation]. ARM TechCon 2020, Virtual Conference.
-
----
-
-### Nota sobre las Referencias
-
-Este documento compila las principales fuentes de referencia utilizadas para la elaboración del documento "Uso de Coprocesadores y Aceleradores de Hardware en Microcontroladores Modernos". Las referencias están organizadas por categorías para facilitar su consulta y seguimiento.
-
-Las referencias técnicas de los fabricantes (ARM, STMicroelectronics, Espressif, NXP, etc.) representan las fuentes primarias más actualizadas sobre las arquitecturas y características específicas de cada plataforma. Los libros académicos proporcionan el marco teórico fundamental, mientras que los artículos y papers ofrecen perspectivas sobre las últimas tendencias e investigaciones en el campo.
-
-Para acceder a la documentación más reciente, se recomienda visitar directamente los portales de desarrolladores de cada fabricante, ya que estos documentos se actualizan periódicamente con nuevas revisiones y correcciones.
-
----
-
+TensorFlow Lite for Microcontrollers. (2023). https://www.tensorflow.org/lite/microcontrollers
 *Última actualización: Enero 2025*
 *Este documento es parte de una serie sobre arquitecturas avanzadas de microcontroladores. Para consultas y contribuciones, por favor revisa las guías de contribución del repositorio.*
