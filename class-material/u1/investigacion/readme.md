@@ -53,6 +53,7 @@ Para Horario 2pm TV
 | RICARDO IBARRA GARCIA               | Ciberseguridad en IoT – vulnerabilidades y técnicas de mitigación en dispositivos embebidos.                     |
 | ROBERTO CARLOS QUINTERO ANGULO      | Diseño de sistemas embebidos tolerantes a fallos – redundancia y seguridad funcional.                            |
 | YAEL KRISTOPH TRIANA SANCHEZ        | Uso de coprocesadores y aceleradores de hardware en microcontroladores modernos.                                 |
+| YLIZETH ROXANA CASTRO REYES      | Tipos de programacion en FPGA, ejemplos en los 2 plataformas mas demandadas                                 |
 
 ---
 
