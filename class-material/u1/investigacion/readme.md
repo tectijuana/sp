@@ -64,43 +64,6 @@ Para Horario 2pm TV
 
 
 
-| Estudiante                      | Tema asignado                                                                                          |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Adan Eric Ojeda                 | Diseño de sistemas en chip (SoC) para aplicaciones embebidas.                                          |
-| Alejandro Suarez                | Implementación de algoritmos de inteligencia artificial en microcontroladores.                         |
-| Alexis Sebastian                | Análisis comparativo de buses de comunicación de alta velocidad (PCIe, AXI).                           |
-| Allen Jacob                     | Diseño de sistemas programables para control de drones.                                                |
-| Belen Perez Villa               | Uso de memoria caché y jerarquías de memoria en sistemas embebidos.                                    |
-| Brisa Julianna Aguayo           | Integración de sensores MEMS en plataformas programables.                                              |
-| Carlos Alfonso Marin            | Procesamiento paralelo en FPGA para visión por computadora.                                            |
-| Cesar Gonzalez Salazar          | Desarrollo de firmware seguro para IoT.                                                                |
-| Cesar Ricardo Garcia            | Aplicación de microcontroladores en sistemas biomédicos.                                               |
-| Diana Sahian Quiñonez           | Diseño de sistemas de control de motores con FPGA.                                                     |
-| Diego Huerta Espinoza           | Sensores biométricos (frecuencia cardiaca, huella, EEG, EMG) y sus aplicaciones en sistemas embebidos. |
-| Edwin Yair Hernandez Limon      | Sensores analógicos y digitales – Principios de funcionamiento y ejemplos en sistemas embebidos.       |
-| Fernando Yael Peralta Vigil     | 5G para microcontroladores.                                                                            |
-| Gabriel Eli Rojas               | Uso de técnicas de verificación formal en el diseño de hardware.                                       |
-| Gonzalo Cortez                  | Sistemas embebidos para realidad aumentada y realidad virtual.                                         |
-| Hugo Castillo                   | Implementación de protocolos de seguridad en sistemas vehiculares.                                     |
-| Iker Saul Alonso Villela        | Conversión de señales: ADC y DAC en microcontroladores y FPGA.                                         |
-| Ivan Solano                     | Diseño de sistemas embebidos con energías renovables (solar, eólica).                                  |
-| Jahziel Amado Lopez             | Sensores inteligentes con comunicación integrada (I2C, SPI, UART) y ejemplos en la industria.          |
-| Jared Emmanuel                  | Sistemas de adquisición de datos (DAQ) con plataformas programables.                                   |
-| Javier Machado                  | Optimización de consumo energético en sistemas IoT.                                                    |
-| Jesus Eduardo Villalobos        | Diseño de controladores digitales para robótica.                                                       |
-| Jorge Joshel                    | Aplicación de FPGA en criptografía y seguridad informática.                                            |
-| Jose Daniel                     | Implementación de sistemas embebidos para agricultura inteligente.                                     |
-| Juan Carlos Muriedas Torres     | Sensores ópticos: cámaras, fotodiodos y LIDAR en sistemas programables.                                |
-| Luis Alessandr Perez            | Integración de sistemas embebidos con servicios en la nube.                                            |
-| Manuela Hernandez Ramirez       | Diseño de sistemas embebidos para monitoreo ambiental.                                                 |
-| Martin Omar Marcelino Escalante | Integración de sensores de temperatura, humedad y presión en sistemas IoT.                             |
-| Miguel Alejandro Reyes Ortiz    | Aplicación de técnicas de aprendizaje profundo en FPGA.                                                |
-| Miguel Guadalupe                | Desarrollo de sistemas embebidos con FreeRTOS.                                                         |
-| Oscar Paul Martinez             | Diseño de hardware reconfigurable para aplicaciones aeroespaciales.                                    |
-| Roberto Eduardo                 | Implementación de interfaces hombre-máquina (HMI) en sistemas programables.                            |
-| Victor Manuel                   | Aplicaciones de sistemas embebidos en ciudades inteligentes.                                           |
-| Zamorano Omar Garcia            | Comunicación por Radio Frecuencia en microcontroladores (XBee, Zigbee, otros).                         |
-
 
 
 
