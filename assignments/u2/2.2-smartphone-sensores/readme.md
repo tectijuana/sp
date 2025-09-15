@@ -9,7 +9,7 @@ s
 **Descripción:**  
 En esta actividad, exploraremos los sensores que integran los dispositivos móviles y cómo interactúan con ellos mediante aplicaciones. Deberás utilizar una app que te permita identificar los sensores en tu smartphone y presentar un informe claro y conciso. Dependera del tipo de celular sección 1 es para Iphone 
 
-#**Seccion 1 iOS:**
+# **Seccion 1 iOS:**
 
 1. **Descargar Aplicaciones:**
    - **iPhone:** "Sensor-app"
