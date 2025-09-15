@@ -1,4 +1,5 @@
 <img width="546" alt="Screenshot 2025-02-24 at 2 09 42 p m" src="https://github.com/user-attachments/assets/ca3ef569-c3e2-4ed6-9f6f-e1bea41bc9fc" />
+![00e446538c79e923988cd49378e4afb8](https://github.com/user-attachments/assets/546d7974-4775-4ee2-bc60-a10013f37ff0)
 
 
 **Actividad 1.5: ¿Qué sensores tiene tu smartphone?**
