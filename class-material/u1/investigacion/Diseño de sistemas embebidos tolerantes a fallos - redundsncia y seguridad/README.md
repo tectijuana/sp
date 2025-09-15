@@ -84,3 +84,13 @@ DO-254: Estándar específico para sistemas de hardware en la aviación.
 ## Conclusión
 
 El diseño de sistemas embebidos tolerantes a fallos en entornos programables involucra redundancia de hardware y software, y una estricta adherencia a estándares de seguridad funcional para asegurar su operación continua y segura ante cualquier fallo.
+## Referencias 
+Diseño de tolerancia a fallos. (s. f.). En Wikipedia, la enciclopedia libre. Recuperado de https://es.wikipedia.org/wiki/Dise%C3%B1o_de_tolerancia_a_fallos
+ 
+Wikipedia
+
+Logic-Fruit. (s. f.). Embedded system design challenges & market trends. Recuperado de https://www.logic-fruit.com/blog/embedded/embedded-system-design-challenges-market-trends/?srsltid=AfmBOor7l4Bbkk-NFAZhu5NSIgCbogmohvTHQ5IUKz94xL09Uae1_bXL
+ 
+No URL provided.
+
+LinkedIn Advice. (s. f.). How can you implement fault tolerance in embedded systems. Recuperado de https://es.linkedin.com/advice/0/how-can-you-implement-fault-tolerance-embedded-systems-yefce?lang=es
