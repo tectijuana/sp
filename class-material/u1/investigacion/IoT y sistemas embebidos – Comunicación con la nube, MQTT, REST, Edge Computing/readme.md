@@ -311,5 +311,3 @@ ITU-T. (2024). *Overview of the Internet of Things*. ITU-T Y.2060 Recommendation
 MQTT.org. (2025). *MQTT Version 5.0 - OASIS Standard*. Organization for the Advancement of Structured Information Standards.
 
 ---
-
-**Nota Metodológica:** Esta investigación se fundamenta en fuentes académicas revisadas por pares, estándares internacionales y casos de estudio documentados. Todas las referencias siguen el formato APA 7ª edición y han sido verificadas por su actualidad y relevancia académica.
