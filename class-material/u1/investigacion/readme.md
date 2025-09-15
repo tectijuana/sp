@@ -29,7 +29,7 @@ Para Horario 2pm TV
 | DANIEL ROMERO BRAVO                 | Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento.                |
 | EDGAR EDUARDO CRUZ HERNANDEZ        | Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos.                            |
 | EMMANUEL ISAI CHAVEZ HERNANDEZ      | Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus.                 |
-| ERNESTO TORRES PINEDA               | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging.                          |
+| ERNESTO TORRES PINEDA               | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging para FPGA controladores                         |
 | FRANCISCO JAVIER VILLEGAS SUAREZ    | Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware.                             |
 | GILBERTO YAHIR BARBOZA URIBE        | Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos.                      |
 | IVAN GUSTAVO MENDOZA SUAREZ         | Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |
