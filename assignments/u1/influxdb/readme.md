@@ -114,12 +114,10 @@ En el **Security Group** agrega regla TCP 8086 con tu IP pública a todo el mund
 | **Instancia EC2**                      | Instancia creada y funcionando con Ubuntu 20.04 | Instancia con errores menores | Instancia con errores graves | No entregado     |
 | **Instalación InfluxDB 2**             | Instalada y corriendo correctamente            | Instalación con errores leves  | Servicio no corre correctamente | No entregado |
 | **Configuración inicial (`setup`)**    | Organización, bucket y token creados           | Configuración incompleta       | Configuración incorrecta    | No entregado     |
-| **Documentación y evidencia**          | Markdown completo con capturas y consultas     | Markdown con capturas parciales | Evidencia mínima            | No entregado     |
+| **Documentación y evidencia**          | Markdown completo con capturas y consultas, asciinemas, etc.     | Markdown con capturas parciales | Evidencia mínima            | No entregado     |
 
 ---
 
 ## 8. Conclusión
 Con esta práctica el estudiante comprende el proceso de despliegue de **InfluxDB 2** en AWS, asegura su funcionamiento, y documenta su experiencia con un enfoque en **IoT y datos de sensores en tiempo real**.
 ````
-
-¿Quieres que también te prepare esta práctica fusionada en un **.md listo para tu repo GitHub (`tectijuana/sp`)** o en un **.docx para Classroom**?
