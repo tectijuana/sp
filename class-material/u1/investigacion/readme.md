@@ -2,7 +2,7 @@
 # Investigación 2: Elabora una participacion de temas selectos de Sistemas Programables para integrarlos a el curso en GH como contribucion (CONTRIB.MD)
 
 ## ¿Cómo contribuir a el repositorio?
-- En URL de donde deja su contribucion via GitHub _https://github.com/tectijuana/sp/tree/main/assignments/temas/____________/readme.md_
+- En URL de donde deja su contribucion via GitHub _class-material/U1/investigacion/____________/readme.md_
 - En en encabezado dentro del documento en MARKDOWN estará su nombre como autor
 - Docente revisa el archivo y pasa la calificación manualmente.
 - Docente hace PULL al repositorio para la integración especificamente a ese directorio, fuera de este el trabajo esta invalido.
@@ -29,7 +29,7 @@ Para Horario 2pm TV
 | DANIEL ROMERO BRAVO                 | Manejo de memoria en sistemas embebidos – RAM, ROM, Flash, EEPROM y su impacto en el rendimiento.                |
 | EDGAR EDUARDO CRUZ HERNANDEZ        | Periféricos y buses de comunicación – UART, SPI, I2C, CAN, USB en sistemas embebidos.                            |
 | EMMANUEL ISAI CHAVEZ HERNANDEZ      | Entornos de desarrollo integrados (IDE) y toolchains – MPLAB, Keil, PlatformIO, Vivado, Quartus.                 |
-| ERNESTO TORRES PINEDA               | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging.                          |
+| ERNESTO TORRES PINEDA               | Compilación y depuración de programas embebidos – Herramientas y técnicas de debugging para FPGA controladores                         |
 | FRANCISCO JAVIER VILLEGAS SUAREZ    | Programación a bajo nivel (ensamblador y bit-banging) – Control directo de hardware.                             |
 | GILBERTO YAHIR BARBOZA URIBE        | Programación de interrupciones y manejo del tiempo – Timers, watchdogs, eventos asíncronos.                      |
 | IVAN GUSTAVO MENDOZA SUAREZ         | Optimización de código en sistemas embebidos – Gestión de memoria, eficiencia energética, reducción de latencia. |
@@ -53,6 +53,7 @@ Para Horario 2pm TV
 | RICARDO IBARRA GARCIA               | Ciberseguridad en IoT – vulnerabilidades y técnicas de mitigación en dispositivos embebidos.                     |
 | ROBERTO CARLOS QUINTERO ANGULO      | Diseño de sistemas embebidos tolerantes a fallos – redundancia y seguridad funcional.                            |
 | YAEL KRISTOPH TRIANA SANCHEZ        | Uso de coprocesadores y aceleradores de hardware en microcontroladores modernos.                                 |
+| YLIZETH ROXANA CASTRO REYES      | Tipos de programacion en FPGA, ejemplos en los 2 plataformas mas demandadas                                 |
 
 ---
 
