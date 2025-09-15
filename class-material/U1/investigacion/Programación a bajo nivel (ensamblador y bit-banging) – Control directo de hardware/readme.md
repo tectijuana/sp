@@ -104,7 +104,7 @@ Sin estas técnicas, sería imposible desarrollar sistemas confiables en áreas 
 ---
 
 ## Link de la Actividad
-👉 [Pega aquí el link cuando lo tengas listo]  
+👉 [https://www.loom.com/share/f0c451bc39bb4861a695119a43fe9c94?sid=4eb00668-6a66-4725-93b9-1b3f72157232]  
 
 ---
 
