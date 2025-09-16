@@ -1,3 +1,4 @@
+![ITT Wallpaper](/recursos/wallpaper_itt.png)
 # Optimización de consumo energético en sistemas IoT
 **Autor:** Javier Machado Sanchez
   
