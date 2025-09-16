@@ -14,13 +14,20 @@ La convergencia entre los sistemas embebidos y las tecnologías de realidad aume
 
 Este texto analiza tres aportaciones relevantes en el área: un sistema embebido para la seguridad en incendios, el marco OpenUVR para experiencias de VR inalámbricas, y el sistema de evaluación ILLIXR, que proporciona una visión integral de los retos en XR.
 ## Sistemas embebidos para aplicaciones críticas: el caso de la seguridad contra incendios
-El artículo *An embedded deep learning system for augmented reality in firefighting applications* presenta un sistema que integra cámaras RGB, sensores térmicos y de profundidad en un dispositivo embebido capaz de asistir a bomberos en situaciones de riesgo. A través de algoritmos de deep learning ejecutados en tiempo real, se genera una visualización aumentada del entorno, resaltando zonas de calor y posibles obstáculos invisibles a simple vista.  
+El artículo *An embedded deep learning system for augmented reality in firefighting applications* presenta un sistema que integra cámaras RGB, sensores térmicos y de profundidad en un dispositivo embebido capaz de asistir a bomberos en situaciones de riesgo. A través de algoritmos de deep learning ejecutados en tiempo real, se genera una visualización aumentada del entorno, resaltando zonas de calor y posibles obstáculos invisibles a simple vista.
+> *Representación gráfica de la implementación del sistema embebido*
+  
+> ![Embedded system deployment](recursos/embedded-system-deployment.PNG)
   
 Este caso evidencia dos retos principales de los sistemas embebidos en AR:
 - **Procesamiento en tiempo real con recursos limitados:** los modelos de visión computacional requieren optimización para ejecutarse eficientemente en hardware reducido.
 - **Confiabilidad en entornos extremos:** los dispositivos deben soportar altas temperaturas, interferencias y condiciones de baja visibilidad.
   
 La aplicación demuestra cómo la AR embebida no solo mejora la eficiencia, sino que salva vidas al proveer información crítica en tiempo real.
+
+> *Demostración de la segmentación de instancias de objetos implementada con Mask RCNN. Cada instancia de un objeto significativo se encierra con una máscara diferente. Las instancias de bombero se sombrean con distintos colores. Las puertas y ventanas se sombrean con los límites de la instancia.*
+  
+>  ![RCNN mask segmentation](recursos/RCNN-mask-segmentation.PNG)
 ## OpenUVR: arquitecturas abiertas para realidad virtual sin cables
 La segunda aportación, OpenUVR, aborda una de las limitaciones históricas de la VR: la dependencia de conexiones cableadas entre el visor y el sistema de procesamiento. Este marco abierto propone un sistema embebido que permite experiencias *untethered* (sin cables), garantizando baja latencia y alto rendimiento mediante optimizaciones en la transmisión de datos y la gestión de recursos gráficos.
   
