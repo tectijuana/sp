@@ -262,8 +262,8 @@ python3 simulador.py
 
 ```mermaid
 graph TD
-    A[Celular con Tailscale] -->|VPN| C[Dashboard‑Server (EC2 Ubuntu)]
-    B[Laptop con Tailscale] -->|VPN| C
+    A[Celular c/Tailscale] -->|VPN| C[Dashboard-Server - EC2 Ubuntu]
+    B[Laptop c/Tailscale] -->|VPN| C
     C -->|Series temporales| D[InfluxDB]
     C -->|Métricas servidor| E[Prometheus + Node Exporter]
     C -->|Dashboards| F[Grafana]
