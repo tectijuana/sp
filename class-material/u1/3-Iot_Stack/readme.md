@@ -1,4 +1,4 @@
-https://sdmntpreastus.oaiusercontent.com/files/00000000-c234-61f9-a196-4166a7da3d17/raw?se=2025-09-16T18%3A41%3A39Z&sp=r&sv=2024-08-04&sr=b&scid=482a9004-1dc6-535b-a8d3-864bcfbb4d17&skoid=02b7f7b5-29f8-416a-aeb6-99464748559d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-16T00%3A12%3A10Z&ske=2025-09-17T00%3A12%3A10Z&sks=b&skv=2024-08-04&sig=UbKkQfIDM%2BJN%2B5qmGhrQAfCX8UGPsm6suCG2bIAR%2Bx4%3D<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/889a8369-2459-4dfe-917a-a82997c0b54f" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/889a8369-2459-4dfe-917a-a82997c0b54f" />
 
 
 ## 🧪 Práctica 3: Monitoreo IoT con InfluxDB, Prometheus y Grafana en EC2 + Tailscale
