@@ -107,6 +107,46 @@ Julia es un lenguaje muy eficiente para el cómputo numérico y científico, com
     - Prototipado en ciencias aplicadas y luego migración a hardware programable.
 ---
 
+## Lenguaje C++ para microcontroladores
+
+<img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/d3a7120b-fd90-45eb-a060-56cf152f36d2" />
+
+
+C++ es ampliamente utilizado en la programación de microcontroladores modernos por su potencia, flexibilidad y soporte para programación orientada a objetos.
+
+**Ventajas:**
+
+- Permite abstracción, modularidad y reutilización del código.
+
+- Soporta tanto programación de bajo nivel como alto nivel, facilitando desde controladores hasta aplicaciones complejas.
+
+**Aplicaciones comunes:**
+
+- Firmware para dispositivos IoT, sensores y actuadores.
+
+- Proyectos avanzados en plataformas como Arduino, STM32, ESP32 y otras familias de microcontroladores.
+
+- Sistemas embebidos que requieren estructura y escalabilidad.
+
+  ---
+## Lenguaje MicroPython para microcontroladores
+
+<img width="765" height="779" alt="image" src="https://github.com/user-attachments/assets/cbbf0feb-e942-4000-8876-f46ff8a7e0c5" />
+
+MicroPython es una implementación eficiente y ligera de Python 3, diseñada para funcionar en microcontroladores con recursos limitados.
+
+**Ventajas:**
+
+- Sintaxis sencilla y fácil de aprender, ideal para prototipado rápido y enseñanza.
+
+- Gran comunidad de desarrollo y abundante documentación orientada a plataformas embebidas.
+
+**Aplicaciones comunes:**
+
+- Automatización, robótica educativa y sistemas IoT en tarjetas como ESP8266, ESP32, Pyboard y Raspberry Pi Pico.
+
+- Desarrollo rápido de pruebas de concepto y scripts de control.
+
 ## **Conclusión**
 
 Los lenguajes de programación aplicados en sistemas programables abarcan desde el control directo del hardware hasta la simulación y la inteligencia artificial:
@@ -117,6 +157,7 @@ Los lenguajes de programación aplicados en sistemas programables abarcan desde 
 - **MATLAB** para modelado, simulación y verificación.
 - **Ada** para aplicaciones críticas en tiempo real.
 - **Julia** para algoritmos numéricos y científicos con hardware embebido.
+- **C++ y MicroPython** para microcontroladores.
 
 La selección de estos lenguajes depende del tipo de sistema a desarrollar, sus requerimientos de rendimiento, seguridad y nivel de abstracción sobre el hardware.
 
@@ -138,3 +179,8 @@ La selección de estos lenguajes depende del tipo de sistema a desarrollar, sus 
 - Google. (2009). Go (Golang) [Software]. Recuperado de https://golang.org/wikipedia
 
 - Plauska, I. (2022). Evaluación del rendimiento de los lenguajes TinyGo, Rust y otros en sistemas embebidos. Electronics, 12(1), 143. https://www.mdpi.com/2079-9292/12/1/143translate.google
+
+**MicroPython**
+- George Robotics Limited. (2024). MicroPython documentation. https://docs.micropython.org/en/latest/
+
+- Martínez, J. (2021). Programación en MicroPython: Aplicaciones para IoT y microcontroladores. Editorial Alfaomega.
