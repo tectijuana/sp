@@ -7,35 +7,45 @@ La proliferación de dispositivos IoT (Internet de las Cosas) ha transformado m�
 ## Principales Vulnerabilidades en IoT
 
 **Contraseñas débiles o predeterminadas**
+
 Muchos dispositivos IoT al configurarlos te dan credenciales génericas, como usuario admin o contraseñas desde 0000 hasta 1234, a pesar de que algunos fabricantes te recomiendan que les cambies las credenciales, muchos usuarios las ignoran, y debido a que los dispositivos IoT reducen sus costos y hay mas fabricantes para hacerlos, también hay falta de seguridad. 
 
 **Actualizaciones de firmware insuficientes**
+
 Muchos dispositivos IoT que son baratos y de fácil acceso, al hacerse en masa, reciben pocas o nulas actualizaciones, en la actualidad, esto es demasiado peligroso, pues las herramientas de cracking evolucionan cada día más rápido, dejando dispositivos vulnerables a estas herramientas.
 
 **Comunicación no cifrada**
+
 Los dispositivos IoT generan una estimación de 80 zettabytes de datos por año (eso equivale a 80 mil millones de terabytes), donde asegurar esos datos es todo un reto, muchos dispositivos IoT usan encriptación desactualizada o no la encriptan del todo, y como estos datos son suceptibles a ser interceptados, una filtración puede revelar información delicada como las rutinas o ubicación del usuario.
 
 **Falta de protecciones de privacidad**
+
 Muchos dispositivos IoT toman demasiados datos personales, como ubicación, salud y rutinas del usuario, esto sin una clara politica de transparencia o sin la concientización del usuario.
 
 **Vulnerabilidades en los proveedores**
+
 La compra y venta de dispositivos IoT involucra diferentes actores, incrementando el riesgo de componentes de hardware o software, una cadena débil sin control incrementa el riesgo de backdoors o malware, un incidente de 2025 reveló malware pre-instalado en sensores IoT low-cost, afectando sistemas industriales.
 
 ## Técnicas de Mitigación
 
 **Uso de contraseñas fuertes y únicas**
+
 Personaliza el nombre de usuario y la contraseña asignada, utilizando contraseñas seguras para acceder a tu dispositivo y cuenta asociada, y si es posible, usar autenticación de dos pasos mediante una aplicación o mensajes SMS.
 
 **Implementación de actualizaciones automáticas y seguras**
+
 Verificar si las actualizaciones de software de tu dispositivo se realizan de manera automática o no, y procura mantenerlo actualizado.
 
 **Cifrado de datos en tránsito y en reposo**
+
 Hacer uso de encriptación punto a punto y protocolos como TLS 1.3, los fabricantes deben priorizar estos cifrados y los usuarios deben revisar que se cumplan estos estándares de encriptación.
 
 **Políticas claras y transparentes**
+
 Leer los Términos y Condiciones de los dispositivos proporcionados por el fabricante, y si es posible, usar dispositivos de compañias reconocidas con sus respectivas certificaciones.
 
 **Auditorías de seguridad**
+
 Implementar auditorías y asegurar los procesos de manufactura, que los proveedores sean vendedores confiables y verificar la integridad de los componentes, tambien asegurar que cumplan con los certificados como la NOM o la FCC.
 
 
