@@ -16,7 +16,7 @@
 
 **Herramienta:** ChatGPT (GPT-5 Thinking mini) modo investiga a fondo.
 
-**Fecha:** 2025-09-16.
+**Fecha:** 2025-09-15.
 
 **Plataforma:** Imagen de la triada CIA (recomendación de recursos y formato de inserción).
 
