@@ -274,3 +274,30 @@ graph TD
 * **Recarga de systemd**: recuerda usar `systemctl daemon‑reload` cada vez que crees o edites un servicio para que systemd cargue las nuevas unidades. La opción `daemon‑reexec` reejecuta el gestor de systemd; su uso está destinado a depuración o actualizaciones del propio systemd y no es necesario en este contexto.
 * **Uso de claves GPG**: evita el uso de `apt-key` (obsoleto). En su lugar, almacena las claves en `/etc/apt/trusted.gpg.d` como muestra la guía.
 
+
+---
+
+# 📑 Rúbrica de Evaluación – Práctica Monitoreo IoT en EC2 con InfluxDB, Prometheus y Grafana
+
+| Criterio                                            | Excelente (100%)                                                                                                               | Satisfactorio (80%)                                                         | Básico (60%)                                             | Deficiente (40% o menos)                                 |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| **Configuración de Tailscale** (20%)                | Instalación y conexión de EC2, laptop y celular correctamente, con nombre de nodo definido y evidencia en panel.               | Instalación completa, pero sin hostname o con un nodo faltante.             | Conexión parcial (ej. solo EC2 y un dispositivo).        | No logró conectar con Tailscale o no presenta evidencia. |
+| **Instalación de InfluxDB** (15%)                   | InfluxDB instalado con repositorio actualizado (sin `apt-key`), servicio habilitado y bucket/token creados.                    | InfluxDB instalado pero con pasos incompletos (ej. bucket no creado).       | Instalación funcional pero con errores de configuración. | No se logró instalar ni acceder a InfluxDB.              |
+| **Instalación de Prometheus + Node Exporter** (15%) | Prometheus en versión estable/LTS, Node Exporter activo, archivo `prometheus.yml` configurado y servicios systemd funcionando. | Prometheus o Node Exporter instalados con errores menores en configuración. | Instalación parcial (ej. solo Prometheus o sin systemd). | No se ejecutan métricas o falla la instalación.          |
+| **Instalación de Grafana** (15%)                    | Grafana funcionando, con datasources configurados (InfluxDB y Prometheus) y acceso seguro por Tailscale.                       | Grafana instalado pero con un datasource incompleto o con errores menores.  | Grafana accesible pero sin datasources configurados.     | No se logra acceder a Grafana o no se instala.           |
+| **Simulación de datos IoT** (15%)                   | Script Python funcionando, enviando datos periódicos a InfluxDB con impresión en consola y bucket actualizado.                 | Script ejecutado pero sin escritura continua o con errores de formato.      | Script incompleto o sin conexión a InfluxDB.             | No entrega el script o no ejecuta.                       |
+| **Dashboard en Grafana** (15%)                      | Dashboard con paneles claros: temperatura, humedad (InfluxDB) y métricas de CPU/memoria (Prometheus).                          | Dashboard creado pero con paneles incompletos o mal configurados.           | Dashboard básico con solo un tipo de métrica.            | No entrega dashboard o está vacío.                       |
+| **Informe escrito y reflexiones** (5%)              | Explicación clara sobre uso de Tailscale y diferencia entre métricas IoT (InfluxDB) y sistema (Prometheus).                    | Explicación entregada pero incompleta en uno de los puntos.                 | Explicación poco clara o superficial.                    | No entrega explicación.                                  |
+
+---
+
+## 🔢 Escala de calificación
+
+* 90 – 100: Dominio completo, práctica impecable y reflexión crítica.
+* 80 – 89: Cumple con casi todos los puntos, errores menores.
+* 70 – 79: Cumplimiento parcial, pero práctica funcional.
+* < 70: Práctica incompleta o sin funcionalidad.
+
+---
+
+
