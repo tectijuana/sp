@@ -1,4 +1,5 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/889a8369-2459-4dfe-917a-a82997c0b54f" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/df34b3e1-4a22-467c-ad80-8fb9e11c6b0c" />
+
 
 
 ## 🧪 Práctica 3: Monitoreo IoT con InfluxDB, Prometheus y Grafana en EC2 + Tailscale
