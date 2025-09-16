@@ -5,9 +5,6 @@
 
 **Materia:** Sistemas programables
 
-**Asistencia de IA:** Consulté a ChatGPT sobre fuentes o sitios web confiables para obtener la información del tema.
-**Herramienta:** ChatGPT (GPT-5)
-
 **Fecha:** 2025-09-15
 
 ---
