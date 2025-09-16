@@ -52,3 +52,6 @@ El desarrollo de estas tecnologías no solo apunta a un IoT más sostenible y ec
 **Herramienta:** ChatGPT 5
   
 **Fecha:** 15/09/2025 20:25:00
+
+## Referencias
+[Ir a las referencias bibliográficas](referencias.md)
