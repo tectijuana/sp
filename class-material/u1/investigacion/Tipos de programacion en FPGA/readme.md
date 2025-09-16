@@ -8,10 +8,13 @@ La programación en FPGA (Field Programmable Gate Array) consiste en configurar 
 
 ---
 
-## 1. Tipos
+## 1. Programación en HDL (Hardware Description Language)
 
 Los lenguajes de descripción de hardware (HDL) permiten definir el comportamiento del circuito digital a nivel de compuertas lógicas y registros.  
 Los más utilizados son **VHDL** y **Verilog**.  
+
+<img width="551" height="238" alt="imagen" src="https://github.com/user-attachments/assets/041835a9-ceb0-4bd4-b823-1121fdd731fd" />
+
 
 - **Características:**
   - Bajo nivel, control detallado del hardware.
@@ -28,6 +31,9 @@ Los más utilizados son **VHDL** y **Verilog**.
 
 El **HLS (Síntesis de Alto Nivel)** permite programar FPGAs usando lenguajes de alto nivel como **C, C++ o SystemC**, que posteriormente se convierten en hardware mediante herramientas de síntesis.
 
+<img width="557" height="272" alt="imagen" src="https://github.com/user-attachments/assets/7fff117f-b069-4c7a-b476-2ad2f10643e5" />
+
+
 - **Características:**
   - Nivel de abstracción más alto.
   - Desarrollo más rápido y fácil de mantener.
@@ -42,6 +48,8 @@ El **HLS (Síntesis de Alto Nivel)** permite programar FPGAs usando lenguajes de
 ## 3. Programación mediante IP Cores y Block Design
 
 Consiste en utilizar bloques predefinidos de hardware (**IP cores**) que se integran gráficamente mediante entornos de desarrollo.
+
+<img width="2048" height="965" alt="EAVB-IP-Core-Block-Diagram-01-01" src="https://github.com/user-attachments/assets/dff02b2c-ea0c-466c-88ac-6367c7195645" />
 
 - **Características:**
   - Uso visual e intuitivo.
@@ -58,6 +66,9 @@ Consiste en utilizar bloques predefinidos de hardware (**IP cores**) que se inte
 
 OpenCL permite programar FPGAs desde la perspectiva del cómputo heterogéneo, orientado a **aceleración de aplicaciones de alto rendimiento (HPC)**.
 
+<img width="897" height="323" alt="imagen" src="https://github.com/user-attachments/assets/57e31824-86f2-434b-98ba-f140534b6268" />
+
+
 - **Características:**
   - Uso de kernels en OpenCL.
   - Adecuado para procesamiento paralelo intensivo.
@@ -71,7 +82,16 @@ OpenCL permite programar FPGAs desde la perspectiva del cómputo heterogéneo, o
 
 # Conclusión
 
-En resumen, los principales **tipos de programación en FPGA** abarcan desde lenguajes de bajo nivel como **VHDL/Verilog**, hasta enfoques de alto nivel como **HLS y OpenCL**, pasando por la integración visual de **IP cores**.  
+La programación en FPGA representa una de las alternativas más potentes para el diseño de sistemas digitales, ya que combina la flexibilidad del software con el rendimiento del hardware dedicado. Dependiendo de las necesidades del proyecto, se puede optar por lenguajes de bajo nivel (HDL) para un control detallado, herramientas de alto nivel (HLS) para acelerar el desarrollo de algoritmos complejos, o entornos de diseño por bloques para simplificar la implementación en áreas como control y procesamiento de señales.
 
 Las plataformas más demandadas, **Xilinx (Vivado/Vitis)** e **Intel/Altera (Quartus/Intel HLS)**, ofrecen soporte a todas estas metodologías, permitiendo al desarrollador elegir la que mejor equilibre **rendimiento, complejidad y productividad**.
 
+---
+
+# Referencias
+
+- Data Center Knowledge. (2023, agosto 17). What is an FPGA? Definition, Types, Programming, and More. Datacenterknowledge.com; DataCenterKnowledge. https://www.datacenterknowledge.com/data-center-hardware/what-is-an-fpga-definition-types-programming-and-more
+
+- Kamunya, T. (2023, enero 31). ¿Cómo funciona la programación FPGA? Geekflare Spain. https://geekflare.com/es/fpga-programming/
+
+- Romero, J. (2021, diciembre 21). ¿Qué es un FPGA y para qué sirve? GEEKNETIC. https://www.geeknetic.es/FPGA/que-es-y-para-que-sirve
