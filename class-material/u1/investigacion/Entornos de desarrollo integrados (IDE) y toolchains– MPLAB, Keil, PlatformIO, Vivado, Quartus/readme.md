@@ -1,3 +1,4 @@
+![IDESs Populares](https://www.tijuana.tecnm.mx//wp-content/uploads/2022/03/TecNM-ITT-sgc-2018-color-scaled-e1646127126124-1568x479.jpg)
 ## Datos del Alumno
 #### Nombre: Emmanuel Isai Chavez Hernandez
 #### No. Control: 23211005
@@ -195,6 +196,93 @@ Quartus es un software de Intel (antes Altera) que proporciona un entorno de dis
 **Captura de pantalla  IDE Quartus (Intel) Pro Edition**
 
 ![IDE Quartus](https://www.intel.com/content/dam/docs/us/en/683498/17-1/guc1507676482989.png)
+
+> Fuente: intel.com
+
+---
+
+## **Ejemplo compilación del diseño en el software Quartus® Prime obtenido de la página ofical de intel**
+
+Para compilar el ejemplo de diseño de Qsys en el software Quartus® Prime, debe crear un proyecto de Quartus® Prime y agregar sus archivos de Qsys a él.
+
+Complete los siguientes pasos para crear su proyecto de Quartus® Prime:
+
+1.	Haga clic en el icono del Asistente para crear un nuevo proyecto.
+
+2.	Haga clic en Siguiente en el Asistente para crear un nuevo proyecto: Introducción (La introducción no aparece si la ha desactivado previamente).
+
+3.	En la página Directorio, Nombre, Entidad de nivel superior, introduzca la siguiente información:
+- a.	El directorio de trabajo mostrado es correcto. No es necesario cambiarlo.
+- b.	Para el nombre del proyecto, busque el directorio de síntesis que incluye su proyecto de Qsys: <working_dir>/pcie_de_gen1_x4_ast64/synthesis. Seleccione el nombre de la variante: pcie_de_gen1_x4_ast64.v. A continuación, haga clic en Abrir. 
+- c.	Si los nombres de la entidad de diseño de nivel superior y del sistema Qsys son idénticos, el software Quartus® Prime considera el sistema Qsys como la entidad de diseño de nivel superior.
+
+4.	Haga clic en Siguiente para abrir la página "Agregar archivos".
+
+5.	Complete los siguientes pasos para agregar el archivo IP de Quartus® Prime (.qip) al proyecto:
+- a.	Haga clic en el botón "Examinar". Aparecerá el cuadro de diálogo "Seleccionar archivo".
+- b.	En la lista "Tipo de archivo", seleccione "Archivos de variación de IP (*.qip)".
+- c.	Busque el directorio <working_dir>/pcie_de_gen1_x4_ast64/synthesis.
+- d.	Haga clic en pcie_de_gen1_x4_ast64.qip y, a continuación, en "Abrir".
+- e.	En la página "Agregar archivos", haga clic en "Agregar" y, a continuación, en "Aceptar".
+
+6.	Haga clic en Siguiente para abrir la página "Dispositivo". 
+
+7.	En la página Configuración de familia y dispositivo, seleccione la siguiente familia de dispositivos de destino y las siguientes opciones:
+- a.	En la lista Familia, seleccione Cyclone V (E/GX/GT/SX/SE/ST).
+- b.	En la lista Dispositivos, seleccione Cyclone V GX Extended Features.
+- c.	En la lista Dispositivos disponibles, seleccione 5CGXFC7D6F31C7.
+
+8.	Haga clic en Siguiente para cerrar esta página y mostrar la página Configuración de la herramienta EDA.
+
+9.	En la lista Simulación, seleccione ModelSim®. En la lista Formato, seleccione el lenguaje HDL que desea utilizar para la simulación.
+
+10.	Haga clic en Siguiente para mostrar la página Resumen.
+
+11.	Compruebe la página Resumen para asegurarse de haber introducido toda la información correctamente.
+
+12.	Haga clic en Finalizar para crear el proyecto de Quartus® Prime.
+
+13.	Agregue los comandos de Restricción de diseño de Synopsys (SDC) que se muestran en el siguiente ejemplo al archivo de diseño de nivel superior de su proyecto de Quartus® Prime.
+
+14.	Para compilar su diseño con el software Quartus® Prime, en el menú Procesamiento, haga clic en Iniciar compilación. El software Quartus® Prime realiza todos los pasos necesarios para compilar su diseño.
+
+15.	Tras la compilación, expanda la carpeta TimeQuest Timing Analyzer en el Informe de Compilación. Observe si se cumplen las restricciones de tiempo en el Informe de Compilación.
+
+16.	Si su diseño no cumple inicialmente con las restricciones de tiempo, puede encontrar la configuración óptima de Fitter utilizando el Explorador del Espacio de Diseño. Para usar el Explorador del Espacio de Diseño, haga clic en "Iniciar Explorador del Espacio de Diseño" en el menú de herramientas.
+
+> Fuente: https://www.intel.com/content/www/us/en/docs/programmable/683524/18-0/compiling-the-design-in-the-quartus.html
+    
+### Restricciones de diseño de Synopsys
+
+```
+create_clock -period “100 MHz” -name {refclk_pci_express}{*refclk_*}
+derive_pll_clocks
+derive_clock_uncertainty
+
+# PHY IP reconfig controller constraints
+# Set reconfig_xcvr clock
+# Modify to match the actual clock pin name
+# used for this clock, and also changed to have the correct period set
+create_clock -period "125 MHz" -name {reconfig_xcvr_clk}{*reconfig_xcvr_clk*}
+
+# HIP Soft reset controller SDC constraints
+set_false_path -to [get_registers* altpcie_rs_serdes|fifo_err_sync_r[0]]
+set_false_path -from [get_registers *sv_xcvr_pipe_native*] -to[get_registers *altpcie_rs_serdes|*]
+
+# Hard IP testin pins SDC constraints
+set_false_path -from [get_pins -compatibilitly_mode *hip_ctrl*]
+
+```
+
+> Fuente: intel.com
+
+---
+
+### Archivos generados para los núcleos IP de Altera
+
+**Captura de pantalla  IP de Altera**
+
+![IP Quartus](https://github.com/EICH58/Imagenes-LI/blob/main/Screenshot%202025-09-16%20123429.png)
 
 > Fuente: intel.com
 
