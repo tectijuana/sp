@@ -1,6 +1,6 @@
 # Lenguajes de programación en sistemas programables
 
-## Java, Rust, Go, MATLAB, Ada, Julia
+## Java, Rust, Go, MATLAB, Ada, Julia, C++, Micropython
 
 ### **Eduardo Manuel Meza Rodriguez - 21211997**
 
@@ -8,7 +8,7 @@
 ---
 ## **Introducción**
 
-Además de C, C++, Python, ensamblador, VHDL y Verilog, existen otros lenguajes de programación que también se utilizan en sistemas programables, ya sea para control de dispositivos, simulación, análisis o aplicaciones críticas en tiempo real. En este documento se presentan: **Java**, **Rust**, **Go**, **MATLAB**, **Ada** y **Julia**.
+Además de C, ensamblador, VHDL y Verilog, existen otros lenguajes de programación que también se utilizan en sistemas programables, ya sea para control de dispositivos, simulación, análisis o aplicaciones críticas en tiempo real. En este documento se presentan: **Java**, **Rust**, **Go**, **MATLAB**, **Ada** , **Julia**, **C++** y **MicroPython**.
 ---
 
 ## **Lenguaje Java**
