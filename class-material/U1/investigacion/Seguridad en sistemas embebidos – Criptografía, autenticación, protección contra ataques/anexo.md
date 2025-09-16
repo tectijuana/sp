@@ -19,3 +19,11 @@
 **Fecha:** 2025-09-16.
 
 **Plataforma:** Imagen de la triada CIA (recomendación de recursos y formato de inserción).
+
+## PROMPTS utilizados
+
+“Necesito investigar sobre seguridad en sistemas embebidos (criptografía, autenticación y protección contra ataques). ¿Podrías indicarme qué fuentes o sitios web confiables puedo usar para sustentar la información?”
+
+“Cuando me expliques el tema, por favor agrega las referencias en formato APA para poder citarlas en mi trabajo.”
+
+“Quiero complementar mi investigación con un diagrama visual. ¿Qué tipo de esquemas o diagramas puedo incluir para ilustrar la triada CIA aplicada a la seguridad en sistemas embebidos?”
