@@ -64,7 +64,8 @@ La seguridad se construye sobre tres principios:
 - **Disponibilidad** → Mantener el sistema en operación continua.  
 
 ### Representación Gráfica  
-![Triada CIA](https://upload.wikimedia.org/wikipedia/commons/0/07/CIAJMK-1.png)  
+![Triada CIA](https://github.com/TU_USUARIO/TU_REPO/blob/main/class-material/U1/investigacion/SuarezCastroJairAlberto22211663/img/cia.png?raw=true)
+ 
 
 _Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._   
 
