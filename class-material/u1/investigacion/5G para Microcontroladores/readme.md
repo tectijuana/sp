@@ -64,15 +64,3 @@ La compatibilidad entre los microcontroladores y la tecnología 5G es un aspecto
 3. Barros, G., Boshoff, M., Luong, T., & Kuhlenkötter, B. (2023). Deployment of a 5G networking module for robotics and IoT applications. Procedia CIRP, 107, 535–540. https://www.sciencedirect.com/science/article/pii/S2212827123007655?via%3Dihub
 
 4. Palarimath, S., Maqsood, M., Pyingkodi, M., Thenmozhi, K., & [los demás autores]. (2023, junio). Powering IoT Systems with 5G Wireless Communication: A Comprehensive Review. En Proceedings of the 8th International Conference on Communication and Electronics Systems (ICCES 2023). IEEE. https://doi.org/10.1109/ICCES57224.2023.10192678
-
-## Asistencia de IA
-
-Asistencia de IA: Pedí a Chat GPT que me diera referencias con respecto al tema de microcontroladores y 5G
-Herramienta: Chat GPT (GPT-5)
-Fecha: 2025-09-14
-Plataforma de hardware utilizada: Chrome
-
-Asistencia de IA: Pedí a Chat GPT que me ayudara a acomodar mis anotaciones de una manera más limpia y presentable
-Herramienta: Chat GPT (GPT-5)
-Fecha: 2025-09-15
-Plataforma de hardware utilizada: Chrome
