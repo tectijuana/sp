@@ -143,7 +143,10 @@ Registra la actividad eléctrica muscular mediante electrodos en la piel.
 ---
 
 ## 8. Conclusión
+
 Los sensores biométricos como PPG/ECG, huella dactilar, EEG y EMG son fundamentales en la integración de sistemas embebidos modernos. Permiten desarrollar aplicaciones médicas, de seguridad y de interacción avanzada, siempre considerando el reto del procesamiento en tiempo real, la eficiencia energética y la protección de datos sensibles.
+
+
 ---
 
 ## 9. Referencias
