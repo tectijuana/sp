@@ -55,20 +55,23 @@ Los sistemas embebidos enfrentan diversas amenazas:
 - **Actualizaciones OTA (Over-The-Air)** seguras.  
 
 ---
-
-## La Triada CIA en Sistemas Embebidos
+ 
+## La Triada CIA en Sistemas Embebidos  
 
 La seguridad en sistemas embebidos se basa en tres principios esenciales conocidos como la **Triada CIA**:
 
 - **Confidencialidad (C)** → Protege los datos frente a accesos no autorizados. Es fundamental en sistemas que manejan información sensible, como datos personales, financieros o médicos.  
 - **Integridad (I)** → Garantiza que la información y el funcionamiento del sistema no sean alterados sin autorización, evitando modificaciones accidentales o maliciosas.  
-- **Disponibilidad (A)** → Mantiene el sistema operativo y los datos accesibles cuando se necesitan, asegurando la continuidad del servicio en entornos críticos.
+- **Disponibilidad (A)** → Mantiene el sistema operativo y los datos accesibles cuando se necesitan, asegurando la continuidad del servicio en entornos críticos.  
 
-### Representación Gráfica
+---
 
-![Triada CIA](https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/class-material/U1/investigacion/AlonsoVillelaIkerSaul22211517/img/cia.png)
+### Representación Gráfica  
 
-_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._
+[<img width="800" height="400" alt="Triada CIA" src="./img/cia.png" />](https://upload.wikimedia.org/wikipedia/commons/2/2c/ADSL_modem_router_internals_labeled.jpg)  
+
+_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._  
+
 
 
 ---
