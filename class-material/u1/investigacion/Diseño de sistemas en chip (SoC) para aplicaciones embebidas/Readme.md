@@ -68,11 +68,12 @@ La seguridad en sistemas embebidos se basa en tres principios esenciales conocid
 
 ### Representación Gráfica  
 
-<a href="https://upload.wikimedia.org/wikipedia/commons/2/2c/ADSL_modem_router_internals_labeled.jpg">
-  <img src="./img/cia.png" alt="Triada CIA" width="800" height="400">
-</a>  
+### Representación Gráfica
 
-_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._  
+![Triada CIA](https://i0.wp.com/lab.wallarm.com/wp-content/uploads/2024/09/270-Preview-min.jpg?w=800&ssl=1)
+
+_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._
+
 ---
 
 ## Conclusiones  
