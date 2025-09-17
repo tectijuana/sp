@@ -32,6 +32,7 @@ MQTT funciona con tres componentes clave:
 * Ideal para aplicaciones en **IoT, industria, agricultura, domótica, etc.**
 
 ---
+<img width="1273" height="519" alt="image" src="https://github.com/user-attachments/assets/e662418e-d126-45ee-98d9-7cf7a68c5325" />
 
 **Ejemplo sencillo**:
 
