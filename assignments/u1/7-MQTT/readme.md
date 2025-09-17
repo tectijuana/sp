@@ -32,6 +32,35 @@ MQTT funciona con tres componentes clave:
 * Ideal para aplicaciones en **IoT, industria, agricultura, domótica, etc.**
 
 ---
+
+# **Tabla comparativa** entre **MQTT** y **OpenWeather API**
+
+---
+
+### 🧾 Comparación técnica: MQTT vs OpenWeather API
+
+| Característica           | **MQTT**                                                  | **OpenWeather API**                                  |
+| ------------------------ | --------------------------------------------------------- | ---------------------------------------------------- |
+| Tipo de tecnología       | Protocolo de mensajería ligera                            | API RESTful (servicio web)                           |
+| Arquitectura base        | Publicador / Suscriptor (Pub/Sub)                         | Cliente / Servidor (Request / Response)              |
+| Comunicación             | Bidireccional (push de mensajes en tiempo real)           | Unidireccional (cliente consulta y espera respuesta) |
+| Lenguaje de comunicación | MQTT (basado en TCP/IP, binario, bajo overhead)           | HTTP / HTTPS con formato JSON o XML                  |
+| Modelo de conexión       | Persistente (mantiene conexión abierta al broker)         | No persistente (nueva conexión por cada consulta)    |
+| Tipo de datos            | Agnóstico (binario, JSON, texto, etc.)                    | JSON (estructurado y definido por la API)            |
+| Casos de uso típicos     | IoT, automatización industrial, monitoreo de sensores     | Clima en tiempo real, predicción meteorológica       |
+| Latencia                 | Muy baja (ideal para tiempo real)                         | Media/alta (depende del servidor y red)              |
+| Seguridad                | TLS, autenticación con certificados, usuarios/contraseñas | HTTPS (TLS), autenticación por API Key               |
+| Ejemplo de plataforma    | Arduino, ESP32, Node-RED, SCADA                           | Python, JavaScript, Apps móviles, Web APIs           |
+
+---
+
+### 🧠 Interpretación:
+
+* **MQTT** es ideal cuando necesitas **transmisión continua y eficiente** entre múltiples dispositivos.
+* **OpenWeather API** es ideal cuando necesitas consultar **información externa** bajo demanda, como el clima de una ciudad específica.
+
+
+---
 <img width="1273" height="519" alt="image" src="https://github.com/user-attachments/assets/e662418e-d126-45ee-98d9-7cf7a68c5325" />
 
 **Ejemplo sencillo**:
