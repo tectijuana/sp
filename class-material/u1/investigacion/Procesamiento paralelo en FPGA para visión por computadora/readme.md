@@ -12,6 +12,9 @@ Este proyecto investiga el **procesamiento paralelo en FPGAs** (Field-Programmab
 
 Con el uso de **paralelismo espacial** y **arquitecturas en flujo (streaming)**, las FPGAs se han convertido en un componente clave en sistemas embebidos y de alto rendimiento que requieren análisis visual rápido, como vehículos autónomos, drones y robots industriales.  
 
+![Imagen FPGA](https://raw.githubusercontent.com/github/explore/main/topics/fpga/fpga.png)  
+*Diagrama conceptual de una FPGA con bloques configurables.*  
+
 ---
 
 ## 🎯 Objetivo del Proyecto  
@@ -20,6 +23,9 @@ Con el uso de **paralelismo espacial** y **arquitecturas en flujo (streaming)**,
 - Explorar las técnicas de **streaming de datos**, **buffers de línea** y **ventanas deslizantes** para filtros 2D.  
 - Analizar su aplicación tanto en **visión clásica** (Sobel, Gauss, Morfología) como en **redes neuronales convolucionales (CNNs)**.  
 - Identificar casos de uso donde las FPGAs superan a CPU y GPU en rendimiento y eficiencia energética.  
+
+![Imagen de procesamiento paralelo](https://raw.githubusercontent.com/github/explore/main/topics/parallel-computing/parallel-computing.png)  
+*Ejemplo de procesamiento paralelo aplicado a datos en hardware.*  
 
 ---
 
@@ -32,6 +38,9 @@ En CPU y GPU, el paralelismo se logra con **hilos y SIMD**. En FPGA, se construy
 - **Optimización energética para dispositivos embebidos.**  
 
 Las FPGAs también facilitan **co-diseño hardware/software**, donde se combina el control de alto nivel con aceleradores personalizados para cada algoritmo.  
+
+![Imagen visión por computadora](https://raw.githubusercontent.com/github/explore/main/topics/computer-vision/computer-vision.png)  
+*Relación entre visión por computadora y aceleración en hardware.*  
 
 ---
 
@@ -59,6 +68,9 @@ Las FPGAs también facilitan **co-diseño hardware/software**, donde se combina 
 - **Aceleración de CNNs:** uso de arreglos sistólicos, cuantización y tiling.  
 - **Visión por eventos:** procesamiento de datos asíncronos provenientes de sensores neuromórficos.  
 
+![Aplicaciones FPGA](https://raw.githubusercontent.com/github/explore/main/topics/machine-learning/machine-learning.png)  
+*Ejemplo de aplicaciones de hardware para visión y ML.*  
+
 ---
 
 ## 🔧 Ventajas del Uso de FPGA en Visión  
@@ -76,6 +88,9 @@ Las FPGAs también facilitan **co-diseño hardware/software**, donde se combina 
 - **Intel:** Quartus, SDK for OpenCL, uso de pipes/channels.  
 - **Placas recomendadas:** Zynq, Versal, Arria, Stratix.  
 - **Frameworks:** OpenCL, HLS C++, Python con PYNQ para prototipado rápido.  
+
+![Imagen herramientas FPGA](https://raw.githubusercontent.com/github/explore/main/topics/python/python.png)  
+*Entorno de desarrollo y prototipado con Python y PYNQ.*  
 
 ---
 
@@ -107,9 +122,9 @@ Cámara o Fuente de Video
   Postprocesamiento (umbralización, detección)
         │
         ▼
+   Salida (HDMI, almacenamiento, transmisión)
 
 ```
-
 ---
 
 ## 🚀 Conclusión  
