@@ -65,9 +65,9 @@ La seguridad se construye sobre tres principios:
 
 ### Representación Gráfica  
 ![Triada CIA](https://github.com/TU_USUARIO/TU_REPO/blob/main/class-material/U1/investigacion/SuarezCastroJairAlberto22211663/img/cia.png?raw=true)
- 
 
-_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._   
+_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._
+
 
 ---
 
