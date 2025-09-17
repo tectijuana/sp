@@ -29,6 +29,12 @@
 ```bash
 pkg update && pkg upgrade
 pkg install python
+pkg install asciinema
+
+# iniciamos la grabaciòn de Asciinema
+ascinnema rec
+
+
 python -m venv venv
 source venv/bin/activate
 ```
@@ -36,6 +42,7 @@ source venv/bin/activate
 ### 3. Instalar Flask y requests dentro del venv
 
 ```bash
+
 pip install flask requests
 ```
 
@@ -105,6 +112,10 @@ Usar la IP de Tailscale del teléfono Android.
 ```sh
 apk update
 apk add python3 py3-pip
+apk add asciinema
+
+
+# Asciinema no es completamente compatible en iSh shell, por tal usar www.loom.com da 5 minutos para un tour de su soluciòn
 ```
 
 ### 3. Crear entorno virtual
