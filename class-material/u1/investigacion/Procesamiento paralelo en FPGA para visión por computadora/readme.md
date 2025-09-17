@@ -110,6 +110,14 @@ Cámara o Fuente de Video
 
 ```
 
+---
+
+## 🚀 Conclusión  
+
+El **procesamiento paralelo en FPGA** ofrece un camino sólido para implementar **sistemas de visión por computadora en tiempo real**. Gracias a su arquitectura configurable, pipelines deterministas y eficiencia energética, las FPGAs son la plataforma ideal para aplicaciones embebidas y de alto rendimiento.  
+
+---
+
 ## 📚 Referencias  
 
 1. AMD/Xilinx. [AXI4-Stream Video IP and System Design Guide](https://docs.xilinx.com/)  
