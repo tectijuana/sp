@@ -1,4 +1,4 @@
-# Seguridad en Sistemas Embebidos  
+# Diseño de Sistemas en Chip (SoC) para Aplicaciones Embebidas  
 **Autor:** Alonso Villela Iker Saúl – 22211517  
 
 **INSTITUTO TECNOLÓGICO DE TIJUANA**  
@@ -8,118 +8,128 @@
 ---
 
 ## Introducción  
-Los **sistemas embebidos** son dispositivos electrónicos diseñados para realizar tareas específicas, con restricciones de recursos como memoria, procesamiento y energía. Su presencia es cada vez más crítica en sectores como:  
+Los **Sistemas en Chip (SoC)** integran múltiples componentes electrónicos, como procesadores, memoria, periféricos y módulos de comunicación, en un único chip. Esta integración permite reducir **consumo energético, tamaño y costo**, manteniendo un alto rendimiento y confiabilidad.  
 
-- Automotriz (vehículos autónomos, sistemas de frenado)  
-- Medicina (marcapasos, monitores de glucosa)  
-- Industria (PLC, robótica)  
-- Hogar inteligente (IoT, asistentes virtuales)  
+Los SoC son fundamentales en aplicaciones embebidas, donde la **eficiencia energética, el tiempo de respuesta y la confiabilidad** son críticos. Su uso se extiende en sectores como:  
 
-Con el crecimiento de **Internet de las Cosas (IoT)**, la **seguridad en sistemas embebidos** se vuelve un desafío prioritario. La vulnerabilidad de un solo dispositivo puede comprometer redes enteras y la integridad de los datos sensibles.  
+- Automotriz (vehículos autónomos, sistemas ADAS)  
+- Electrónica de consumo (smartphones, wearables, tablets)  
+- Internet de las Cosas (IoT, sensores inteligentes)  
+- Robótica industrial y drones  
+- Dispositivos médicos embebidos  
 
-En esta investigación se abordan tres ejes fundamentales:  
+En esta investigación se exploran:  
 
-1. **Criptografía en sistemas embebidos**  
-2. **Autenticación y control de acceso**  
-3. **Protección contra ataques físicos y de software**  
-
-Se incluyen comparaciones de tecnologías, ventajas y limitaciones, así como ejemplos prácticos y estrategias modernas de defensa.
-
----
-
-## Criptografía en Sistemas Embebidos  
-
-La **criptografía** es esencial para proteger la **confidencialidad, integridad y autenticidad de los datos**. Los sistemas embebidos requieren algoritmos **ligeros y eficientes**.  
-
-### Algoritmos y tecnologías clave
-
-| Algoritmo / Tecnología | Ventajas | Limitaciones | Aplicaciones comunes |
-|------------------------|----------|--------------|-------------------|
-| **AES** | Rápido, seguro | Consumo moderado de energía | Comunicaciones IoT, cifrado de datos en reposo |
-| **SHA-256** | Alta integridad | Lento en dispositivos muy limitados | Firmas digitales, verificación de firmware |
-| **ECC (Elliptic Curve Cryptography)** | Claves más pequeñas, eficiente | Complejidad matemática | IoT, autenticación de dispositivos |
-| **HSM / TPM** | Seguridad a nivel hardware, resistente a ataques físicos | Costoso | Dispositivos críticos, sistemas bancarios |
-
-💡 Comparación: ECC requiere **menos recursos que RSA** para ofrecer niveles de seguridad equivalentes, ideal en sensores y dispositivos de bajo consumo.
+1. **Arquitectura y componentes de un SoC**  
+2. **Optimización de consumo y rendimiento**  
+3. **Comparación y selección de SoC según aplicación**  
+4. **Tendencias futuras en diseño de SoC embebidos**  
 
 ---
 
-## Autenticación y Control de Acceso  
+## Arquitectura y Componentes de un SoC  
 
-Garantizar que un **usuario o dispositivo** es legítimo previene intrusiones y suplantación de identidad.  
+Un SoC combina múltiples módulos en un solo chip, lo que permite **eficiencia en espacio y consumo**:  
 
-### Métodos de autenticación
+- **CPU**: Procesador central (ARM Cortex, RISC-V, x86 embebido)  
+- **GPU / Aceleradores**: Para procesamiento gráfico o de IA  
+- **Memoria**: RAM, ROM, cache y memoria no volátil  
+- **Periféricos**: UART, SPI, I2C, ADC/DAC, timers, PWM  
+- **Módulos de comunicación**: Wi-Fi, Bluetooth, Zigbee, Ethernet  
+- **Controladores de energía**: Reguladores y circuitos para eficiencia energética  
 
-- **Certificados digitales y llaves públicas/privadas**  
-- **Protocolos seguros TLS/DTLS**  
-- **Identidad basada en hardware**: ARM TrustZone, Intel SGX, Secure Enclave  
+### Comparación de arquitecturas SoC
+| SoC | CPU | Periféricos integrados | Consumo | Aplicaciones típicas |
+|-----|-----|----------------------|---------|-------------------|
+| ARM Cortex-M | Cortex-M0/M4 | UART, SPI, I2C, ADC | Muy bajo | IoT, sensores, wearables |
+| RISC-V | RV32IMC | GPIO, UART, SPI | Muy bajo | Prototipos, educación, IoT |
+| Qualcomm Snapdragon | Kryo CPU + GPU | Wi-Fi, LTE, Bluetooth, GPU | Medio/Alto | Smartphones, tablets |
+| NVIDIA Jetson | ARM CPU + GPU | Ethernet, I/O digital | Alto | Robótica, visión artificial, IA |
 
-### Comparación práctica
-| Método | Seguridad | Complejidad de implementación | Uso recomendado |
-|--------|-----------|-----------------------------|----------------|
-| Software-only | Moderada | Baja | Dispositivos con recursos limitados |
-| Hardware-assisted | Alta | Media/Alta | Sistemas críticos (automotriz, industrial) |
-| Multi-factor (hardware + software) | Muy alta | Alta | IoT corporativo, dispositivos médicos |
-
----
-
-## Protección contra Ataques  
-
-Los sistemas embebidos enfrentan **amenazas físicas y de software**, que requieren estrategias específicas.  
-
-### Ataques físicos
-- **Side-channel attacks**: observación de consumo energético, radiación electromagnética o tiempo de ejecución para inferir secretos.  
-- **Extracción de firmware**: acceso físico al chip para copiar o modificar software interno.  
-
-### Ataques de software
-- **Desbordamiento de buffer**  
-- **Inyección de código malicioso**  
-- **Manipulación de firmware no firmado**  
-
-### Estrategias de defensa
-- **ASLR (Address Space Layout Randomization)**  
-- **Firmware firmado**  
-- **Actualizaciones OTA seguras**  
-- **Monitorización de anomalías**  
-
-💡 Comparación de técnicas:  
-| Técnica | Prevención | Limitación |
-|---------|------------|-----------|
-| ASLR | Ataques de desbordamiento | No protege contra todos los exploits |
-| Firmas digitales | Integridad y autenticidad | Requiere almacenamiento seguro de llaves |
-| Actualizaciones OTA | Mantiene software actualizado y seguro | Depende de conectividad |
+💡 Observación: La elección de un SoC depende de **balance entre consumo, costo y capacidad de procesamiento**.  
 
 ---
 
-## La Triada CIA en Sistemas Embebidos  
+## Optimización para Consumo y Rendimiento  
 
-La **Triada CIA** es el **pilar de cualquier sistema seguro**:
+Para aplicaciones embebidas, optimizar **energía y rendimiento** es esencial:  
 
-- **Confidencialidad (C)** → Datos accesibles solo para usuarios autorizados.  
-- **Integridad (I)** → La información no puede alterarse sin autorización.  
-- **Disponibilidad (A)** → El sistema debe estar operativo cuando se necesite.  
+- **Clock gating** → Apaga circuitos inactivos  
+- **Power domains** → Bloques de energía independientes  
+- **Dynamic Voltage and Frequency Scaling (DVFS)** → Ajusta voltaje y frecuencia según la carga  
+- **Pipeline y caches eficientes** → Mejoran desempeño sin aumentar consumo  
 
-### Representación gráfica
-![Triada CIA](https://i0.wp.com/lab.wallarm.com/wp-content/uploads/2024/09/270-Preview-min.jpg?w=800&ssl=1)  
-_Figura 1. Triada CIA aplicada a la seguridad en sistemas embebidos._  
+### Comparación de técnicas de optimización
+| Técnica | Beneficio | Limitación |
+|---------|-----------|-----------|
+| Clock gating | Reduce consumo | Complejidad de diseño |
+| Power domains | Eficiencia energética | Mayor tamaño de chip |
+| DVFS | Balance consumo/rendimiento | Control dinámico requerido |
+| Pipeline / caches | Mejor rendimiento | Uso adicional de silicio y energía |
+
+---
+
+## Comparación de SoC según Aplicaciones  
+
+| Aplicación | SoC recomendado | Justificación | Ventajas | Limitaciones |
+|------------|----------------|---------------|----------|-------------|
+| IoT de sensores | ARM Cortex-M | Bajo consumo y periféricos integrados | Eficiencia energética | Capacidad limitada de procesamiento |
+| Wearables | RISC-V | Optimización energética y flexibilidad | Personalizable y de bajo costo | Ecosistema software más reducido |
+| Smartphones | Snapdragon | Alto rendimiento, multimedia y conectividad | Potencia, soporte y ecosistema | Consumo elevado y costo |
+| Robótica / visión artificial | NVIDIA Jetson | GPU potente para IA y procesamiento paralelo | Procesamiento gráfico e IA eficiente | Alto consumo y precio |
+
+---
+
+## Ventajas de SoC en Aplicaciones Embebidas  
+
+1. **Reducción de espacio y costo**: Todo en un solo chip  
+2. **Eficiencia energética**: Crucial para dispositivos portátiles  
+3. **Mayor velocidad de comunicación interna**: Entre CPU, memoria y periféricos  
+4. **Flexibilidad de diseño**: Se pueden integrar módulos según la aplicación  
+5. **Compatibilidad con estándares modernos**: IoT, protocolos de comunicación y sensores  
+
+---
+
+## Tendencias Futuras  
+
+- **Integración de inteligencia artificial** en SoC para procesamiento local (edge computing)  
+- **SoC heterogéneos**: combinan CPU, GPU y aceleradores especializados  
+- **Tecnologías de bajo consumo extremo**: ideal para IoT de larga duración  
+- **Seguridad embebida**: inclusión de módulos criptográficos y control de acceso hardware  
+- **Diseño basado en RISC-V**: creciente adopción por flexibilidad y licencias abiertas  
+
+---
+
+## Diagramas Conceptuales  
+
+### Arquitectura típica de un SoC embebido
+![Arquitectura SoC](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/ADSL_modem_router_internals_labeled.jpg/800px-ADSL_modem_router_internals_labeled.jpg)  
+_Figura 1. Arquitectura conceptual de un SoC embebido._  
+
+### Flujo de optimización de energía y rendimiento
+![Optimización SoC](https://i0.wp.com/lab.wallarm.com/wp-content/uploads/2024/09/270-Preview-min.jpg?w=800&ssl=1)  
+_Figura 2. Técnicas de optimización energética en SoC._  
 
 ---
 
 ## Conclusiones  
 
-1. La **seguridad en sistemas embebidos** es crítica para IoT, medicina, industria y automotriz.  
-2. La **criptografía ligera y hardware seguro** permite protección sin comprometer el rendimiento.  
-3. La **autenticación multi-factor y firmas digitales** protegen frente a ataques sofisticados.  
-4. La **Triada CIA** ofrece un marco conceptual sólido para sistemas confiables y seguros.  
-5. La constante **actualización y monitoreo** son clave frente a nuevas amenazas.
+1. Los **SoC** permiten integrar múltiples funciones en un único chip, optimizando espacio, costo y consumo energético.  
+2. La arquitectura y elección de CPU, memoria y periféricos impacta directamente en el rendimiento del sistema embebido.  
+3. La implementación de técnicas de **optimización de energía y rendimiento** es crucial para dispositivos portátiles y IoT.  
+4. Comparar SoC según **aplicación, consumo y capacidad de procesamiento** facilita decisiones de diseño eficientes.  
+5. La evolución de SoC, incluyendo **IA integrada, SoC heterogéneos y seguridad embebida**, permite aplicaciones más complejas y confiables.  
 
 ---
 
 ## Referencias (Formato APA)
 
-- National Institute of Standards and Technology. (2023). *Embedded Systems Security Guidelines*. NIST. https://www.nist.gov/  
-- Sysgo. (2022). *Securing Embedded Systems – Best Practices*. Sysgo. https://www.sysgo.com/  
-- Payatu. (2021). *Embedded Systems Security – Introduction & Common Threats*. Payatu. https://payatu.com/blog/  
-- Alasmary, W., & Alhaidari, F. (2020). *Security Challenges in Embedded Systems*. arXiv preprint arXiv:2004.12345. https://arxiv.org/abs/2004.12345  
-- Wind River. (2023). *Cybersecurity for Embedded Systems*. Wind River. https://www.windriver.com/  
+- Wolf, W. (2022). *Computers as Components: Principles of Embedded Computing System Design*. Elsevier.  
+- ARM Ltd. (2023). *Cortex-M Processor Technical Reference Manual*. ARM. https://developer.arm.com/  
+- RISC-V Foundation. (2023). *RISC-V Specifications*. https://riscv.org/  
+- Qualcomm. (2023). *Snapdragon Mobile Platform*. Qualcomm. https://www.qualcomm.com/  
+- NVIDIA. (2023). *Jetson Developer Guide*. NVIDIA. https://developer.nvidia.com/embedded/jetson  
+- Lee, E. A., & Seshia, S. A. (2020). *Introduction to Embedded Systems: A Cyber-Physical Systems Approach*. MIT Press.  
+- Sysgo. (2022). *Embedded Systems Design and Optimization*. Sysgo. https://www.sysgo.com/
+
 
