@@ -97,6 +97,8 @@ python app.py
 
 ```plaintext
 http://100.x.y.z:5000
+
+# cerrar la grabación  y recuperarla para entrega, recuerde llenar el material de la página de Asciinema.org, acepta markdown
 ```
 
 Usar la IP de Tailscale del teléfono Android.
