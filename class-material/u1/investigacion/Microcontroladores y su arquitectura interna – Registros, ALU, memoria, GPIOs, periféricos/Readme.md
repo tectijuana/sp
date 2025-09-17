@@ -1,4 +1,5 @@
-# Microcontroladores y su Arquitectura Interna
+# Microcontroladores y su Arquitectura Interna- Angel Lopez 22211596
+
 
 Los **microcontroladores** son circuitos integrados que combinan en un solo chip los elementos esenciales de un sistema de cómputo: procesador, memoria y periféricos. Están diseñados para controlar dispositivos electrónicos de manera autónoma y eficiente, siendo ampliamente utilizados en sistemas embebidos, electrodomésticos, automóviles e IoT.
 
