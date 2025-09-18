@@ -5,7 +5,7 @@
 # Introducción
 
 ### Sensor MEMS (Micro-Electro-Mechanical Systems)
-Un sensor MEMS es un sistema microelectromecánico que nos permite detectar cambios magnéticos, mecánicos e incluso químicos, para convertirlos en información eléctrica. Dependiendo de la construcción que contenga, los sensores MEMS pueden medir presión, movimiento, acelearción, temperatura o gas, permitiendo realizar funciones importantese en los dispositivos eléctronicos.
+Un sensor MEMS es un sistema microelectromecánico que nos permite detectar cambios magnéticos, mecánicos e incluso químicos, para convertirlos en información eléctrica. Dependiendo de la construcción que contenga, los sensores MEMS pueden medir presión, movimiento, aceleración, temperatura o gas, permitiendo realizar funciones importantes en los dispositivos electrónicos.
 
 ![Imagen de un sensor MEMS](https://www.bosch-sensortec.com/media/boschsensortec/products/product_overview/16_10/bosch_sensortec-productoverview-stage-16-9_res_800x450.jpg)
 
@@ -17,7 +17,7 @@ Un estudiante de la universidad politécnica de Cataluña realizó un proyecto q
 
 ![Imagen de un Arduino DUE](https://www.openhacks.com/uploadsproductos/arduinodue_front.jpg)
 
-Se utilizan dos sensores dentro del sistema, siendo un sensor de referencia LIS3MDL, utilizado como un sensor magnético de tres ejes con una resolución de 16 bits, y el otro es un sensor de temperatura LM95071, el cual cuenta con una resolución de temperatura de señal de 13 bits y una sensiblidad de 0.03125˚C/LSB, permitiendo un rango desde -40˚C hasta 150˚C. 
+Se utilizan dos sensores dentro del sistema, siendo un sensor de referencia LIS3MDL, utilizado como un sensor magnético de tres ejes con una resolución de 16 bits, y el otro es un sensor de temperatura LM95071, el cual cuenta con una resolución de temperatura de señal de 13 bits y una sensibilidad de 0.03125˚C/LSB, permitiendo un rango desde -40˚C hasta 150˚C. 
 Para comunicar el sensor de temperatura con el Arduino, se utiliza una comunicación SPI.
 
 Para poder implementar el sensor de temperatura en Arduino, el alumno realizó el sketch en Arduino para poder comunicarse con el sensor, verificando el que funcionara correctamente por medio del monitor serie. Para que contenga un funcionamiento correcto, requiere de la recepción de dos bytes, por lo cual implementó SPI_CONTINUE dentro de la transmisión de la siguiente forma:
@@ -49,11 +49,12 @@ El uso de una plataforma programable es una parte fundamental para el uso de los
 
 # Referencias
 * Euroinnova International Online Education. (2024, 5 julio). plataformas de programacion. https://www.euroinnova.com/blog/plataformas-de-programacion#plataformas-de-programacion
-* MEMS sensors. (s. f.). Bosch Sensortec. https://www.bosch-sensortec.com/about-us/our-company/mems/
+* MEMS sensors. (s. f.). Bosch Sensortec. https://www.bosch-sensortec.com/about-us/our-company/mems/
 * Forrellad Munné, E. (2017). MEMS Sensor Data Acquisition Framework Based on Arduino Platform (Trabajo de Fin de Grado). Universitat Politècnica de Catalunya. https://upcommons.upc.edu/handle/2117/106686.
 
  ```text
-Asistenca de IA: Se utilizo la IA para obtener fuentes de información acerca del tema abarcado en la investigación
+Asistencia de IA: Se utilizó la IA para obtener fuentes de información acerca del tema abarcado en la investigación.
 Herramienta: ChatGPT (GPT-5)
 Fecha: 17/09/2025
   ```
+
