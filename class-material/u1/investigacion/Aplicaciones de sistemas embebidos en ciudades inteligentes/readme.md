@@ -1,4 +1,4 @@
- # Aplicaciones de sistemas embebidos en ciudades inteligentes 
+# Aplicaciones de sistemas embebidos en ciudades inteligentes 
 ## Alumno: Aguayo Virgen Brisa Julianna
 
 ### Introducción
