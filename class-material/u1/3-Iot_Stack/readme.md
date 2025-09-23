@@ -52,7 +52,7 @@ echo "deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https
 
 # Actualiza e instala InfluxDB
 sudo apt update
-sudo apt install influxdb2 -y
+sudo apt install influxdb -y
 
 # Habilita y arranca el servicio
 sudo systemctl enable --now influxdb
