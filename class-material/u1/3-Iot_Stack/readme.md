@@ -66,6 +66,8 @@ http://<ip-tailscale-de-ec2>:8086
 
 Sigue el asistente para crear la organización (`iot-lab`), el bucket (`sensores`) y copia el token de escritura.
 
+Manuel en linea: https://docs.influxdata.com/influxdb/v2/install/?t=Linux#start-influxdb
+
 ---
 
 ## 3. Instalar Prometheus y Node Exporter
