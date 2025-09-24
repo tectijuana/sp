@@ -78,7 +78,10 @@ Actualmente la rama de soporte a largo plazo (LTS) es la serie 3.x (publicada en
 
 URLs de descarga de Prometheus: https://prometheus.io/download/ en el apartado prometheus
 
-(Hacer clic derecho sobre el paquete que quiere descargar y despues hacer clic en copiar enlace)
+(Hacer clic derecho sobre el paquete que dice linux y despues hacer clic en copiar enlace)
+
+<img width="1239" height="302" alt="imagen" src="https://github.com/user-attachments/assets/6544aa85-bb96-4126-973c-5f973ea650f5" />
+
 
 ```bash
 # Descarga el tarball oficial de Prometheus (sustituye <VERSION>)
