@@ -108,7 +108,9 @@ scrape_configs:
       - targets: ['localhost:9100']
 ```
 
-Genera un servicio systemd para Prometheus. Después de crear o modificar archivos de unidad, es necesario recargar la configuración de systemd mediante `systemctl daemon‑reload`:
+Genera un servicio systemd para Prometheus. Después de crear o modificar archivos de unidad, es necesario recargar la configuración de systemd mediante `sudo systemctl daemon‑reload`:
+
+(Super importante escribir `sudo` antes de, por que te pedirá una contraseña y te dará error)
 
 ```bash
 sudo tee /etc/systemd/system/prometheus.service <<'EOF'
