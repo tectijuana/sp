@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Instalar InfluxDB 2.x
+## 2. Instalar InfluxDB 3.x
 
 La herramienta `apt-key` está obsoleta en las versiones recientes de Ubuntu, por lo que las claves GPG deben almacenarse en `trusted.gpg.d`. Utiliza el siguiente procedimiento, que agrega el repositorio oficial y firma la clave correctamente:
 
