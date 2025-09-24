@@ -66,7 +66,7 @@ http://<ip-tailscale-de-ec2>:8086
 
 Sigue el asistente para crear la organización (`iot-lab`), el bucket (`sensores`) y copia el token de escritura.
 
-Manuel en linea: https://docs.influxdata.com/influxdb/v2/install/?t=Linux#start-influxdb y 
+Manual en linea: https://docs.influxdata.com/influxdb/v2/install/?t=Linux#start-influxdb  
 
 ---
 
@@ -75,6 +75,10 @@ Manuel en linea: https://docs.influxdata.com/influxdb/v2/install/?t=Linux#start-
 ### Descargar y configurar Prometheus
 
 Actualmente la rama de soporte a largo plazo (LTS) es la serie 3.x (publicada en julio 2025), mientras que la serie 2.53 está en mantenimiento hasta julio 2025. Se recomienda emplear la versión LTS más reciente. Sustituye `<VERSION>` por la versión elegida (por ejemplo, `3.5.0`):
+
+URLs de descarga de Prometheus: https://prometheus.io/download/ en el apartado prometheus
+
+(Hacer clic derecho sobre el paquete que quiere descargar y despues hacer clic en copiar enlace)
 
 ```bash
 # Descarga el tarball oficial de Prometheus (sustituye <VERSION>)
