@@ -1,45 +1,75 @@
-# AI_GUIDANCE.md – Uso responsable de IA en el curso *Sistemas Embebidos* y otros cursos
+# AI_GUIDANCE.md  
+**Uso responsable y profesional de Inteligencia Artificial en el curso de *Sistemas Embebidos***
 
-Este documento establece las pautas para el uso ético y responsable de herramientas de **Inteligencia Artificial (IA)** en el curso de *Sistemas Embebidos*.
-
-## 🎯 Objetivo
-Aprovechar la IA como apoyo al aprendizaje en el desarrollo de aplicaciones embebidas, sin sustituir el razonamiento técnico, la experimentación en hardware ni el trabajo individual.
-
-## ✅ Usos recomendados
-- Solicitar explicaciones de conceptos teóricos (ej. comunicación UART, I2C, SPI, interrupciones, manejo de timers).
-- Generar ejemplos de código **de referencia** en C, C++ o ensamblador para microcontroladores.
-- Apoyarse en la IA para comparar distintas formas de implementar controladores o algoritmos.
-- Usar IA para documentar código y generar comentarios claros.
-- Traducir documentación técnica de manuales de microcontroladores.
-
-## 🚫 Usos no permitidos
-- Entregar programas completos generados por IA como propios sin pruebas ni comprensión.
-- Usar IA para diseñar proyectos de hardware sin validación experimental.
-- Confiar en la IA para cálculos eléctricos, temporizaciones o consumo energético sin verificarlos con datasheets o pruebas reales.
-
-## 📋 Recomendaciones prácticas
-1. **Valida siempre en hardware real**: La IA puede sugerir código que compile, pero no siempre funciona en microcontroladores.
-2. **Consulta el datasheet**: Usa IA como complemento, nunca como reemplazo de la documentación oficial.
-3. **Transparencia**: Declara el uso de IA en tus entregas.
-4. **Aprendizaje activo**: Comprende cada línea de código sugerido antes de implementarla.
-
-## 📌 Declaración sugerida en prácticas y proyectos
-
-```text
-Asistencia de IA: Explique qué pidió, qué recibió y qué cambios realizó.
-Herramienta: (ChatGPT u otra)
-Fecha:
-Plataforma de hardware utilizada:
-```
-
-## 📌 Ejemplo
-```text
-Asistencia de IA: Consulté a ChatGPT sobre cómo configurar interrupciones externas en un PIC18. Usé su código como guía, pero lo adapté al compilador XC8 y validé en hardware real.
-Herramienta: ChatGPT (GPT-5)
-Fecha: 2025-08-25
-Plataforma: PIC18F4550 en protoboard con oscilador externo de 20 MHz.
-```
+## 📘 Guía para estudiantes  
+Este documento establece las pautas para el uso ético, reflexivo y técnicamente riguroso de herramientas de **Inteligencia Artificial (IA)** en el contexto del desarrollo de software y hardware embebido.
 
 ---
 
-> ℹ️ En sistemas embebidos, la IA es útil como **asistente teórico y de documentación**, pero el **trabajo experimental en laboratorio** es insustituible.
+## 🎯 Objetivo
+
+Aprovechar herramientas de IA como apoyo en el **aprendizaje técnico, la documentación y la exploración de código**, sin sustituir la **validación experimental**, el **razonamiento ingenieril** ni el **trabajo personal** sobre plataformas de hardware reales.
+
+---
+
+## ✅ Usos recomendados y valorados
+- Solicitar explicaciones de conceptos clave: comunicación UART, I2C, SPI, interrupciones, timers, ADC, DMA.
+- Generar **ejemplos de código de referencia** en C, C++ o ensamblador.
+- Explorar variantes en la implementación de controladores, protocolos o rutinas de bajo nivel.
+- Apoyarse en IA para generar **comentarios explicativos** o documentación técnica del código.
+- Traducir o resumir secciones complejas de manuales técnicos o datasheets.
+
+---
+
+## 🚫 Usos no permitidos
+- Entregar código generado por IA sin comprender su funcionamiento ni realizar pruebas en hardware.
+- Utilizar IA para diseñar esquemas eléctricos o temporizaciones sin consultar **fuentes oficiales ni validar experimentalmente**.
+- Delegar en IA la selección de componentes o estimación de consumo energético sin análisis ingenieril.
+
+---
+
+## 🧠 Buenas prácticas recomendadas
+
+1. **Valida en hardware real**  
+   La IA puede generar código que compila, pero solo tú puedes verificar su funcionamiento en un entorno físico.
+
+2. **Consulta siempre el datasheet**  
+   Usa la IA como apoyo complementario, pero **la fuente oficial es el fabricante**.
+
+3. **Transparencia profesional**  
+   Declara claramente qué parte de tu trabajo fue asistida por IA.
+
+4. **Prompts técnicos y reflexión**  
+   Formula preguntas específicas y registra tus *prompts*. Evalúa críticamente las respuestas.
+
+5. **Explora con criterio múltiples herramientas**  
+   Puedes usar ChatGPT, Copilot, Perplexity, etc., pero sé selectivo y consciente de sus limitaciones.
+
+6. **Incluye reflexión final**  
+   Comenta qué aprendiste, qué ajustaste y cómo validaste tus resultados.
+
+---
+
+## 📝 Formato obligatorio de declaración en prácticas o proyectos
+
+```markdown
+### Asistencia de Inteligencia Artificial
+
+- **Prompts utilizados**:
+  - "¿Cómo configurar el módulo ADC del PIC18F4550 en modo continuo con interrupciones?"
+  - "Genera un ejemplo de manejo de SPI en STM32 con HAL."
+
+- **Herramientas utilizadas**:
+  - ChatGPT (GPT-4o)
+  - GitHub Copilot
+
+- **Cambios y validación**:
+  - El código generado fue modificado para adaptarse al compilador XC8.
+  - Se realizaron pruebas en protoboard con señales de entrada reales.
+  - Verifiqué el funcionamiento usando lógica de test con LEDs y osciloscopio.
+
+- **Reflexión personal**:
+  La IA me ayudó a clarificar la configuración inicial, pero tuve que corregir errores de temporización. Esto reforzó mi entendimiento del ciclo de reloj y del manejo de interrupciones.
+
+- **Fecha**: 2025-09-18  
+- **Plataforma de hardware utilizada**: PIC18F4550 en protoboard, oscilador de 20 MHz  
