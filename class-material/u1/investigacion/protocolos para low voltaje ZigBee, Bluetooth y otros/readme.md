@@ -16,7 +16,7 @@ Los sistemas embebidos modernos requieren conectividad inalámbrica para aplicac
 
 ## 🔌 Protocolos Analizados
 
-### 1. **Bluetooth Low Energy (BLE)**
+### 1. **Bluetooth Low Energy (BLE)**a``
 
 - **Estándar:** IEEE 802.15.1  
 - **Frecuencia:** 2.4 GHz  

@@ -52,7 +52,7 @@ echo "deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https
 
 # Actualiza e instala InfluxDB
 sudo apt update
-sudo apt install influxdb2 -y
+sudo apt install influxdb-client influxdb -y
 
 # Habilita y arranca el servicio
 sudo systemctl enable --now influxdb
@@ -65,6 +65,8 @@ http://<ip-tailscale-de-ec2>:8086
 ```
 
 Sigue el asistente para crear la organización (`iot-lab`), el bucket (`sensores`) y copia el token de escritura.
+
+Manual en linea: https://docs.influxdata.com/influxdb/v2/install/?t=Linux#start-influxdb  
 
 ---
 
