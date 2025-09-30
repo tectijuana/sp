@@ -97,6 +97,13 @@ Para lograr un monitoreo eficiente en tiempo real:
 | TLS/SSL | Seguridad en la comunicación | Aumento de consumo y latencia |
 
 ---
+### Arquitectura típica MQTT + SoC
+```mermaid
+flowchart TD
+    A[Sensor IoT] --> B[SoC con Cliente MQTT]
+    B --> C[Broker MQTT]
+    C --> D[Servidor en la Nube]
+    D --> E[Dashboard en Tiempo Real]
 
 ## Diagramas Conceptuales  
 
