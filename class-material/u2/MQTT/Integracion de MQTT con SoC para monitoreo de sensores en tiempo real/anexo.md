@@ -51,4 +51,14 @@ flowchart TD
     B --> C[Broker MQTT]
     C --> D[Servidor en la Nube]
     D --> E[Dashboard en Tiempo Real]
+---
+## Referencias (Formato APA)  
+
+- Banks, A., & Gupta, R. (2014). *MQTT Version 3.1.1*. OASIS Standard. https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html  
+- ARM Ltd. (2023). *Cortex-M Processor Technical Reference Manual*. ARM. https://developer.arm.com/  
+- Espressif Systems. (2023). *ESP32 Technical Reference Manual*. Espressif. https://www.espressif.com/  
+- Eclipse Foundation. (2023). *Eclipse Mosquitto - An Open Source MQTT Broker*. https://mosquitto.org/  
+- NVIDIA. (2023). *Jetson Developer Guide*. NVIDIA. https://developer.nvidia.com/embedded/jetson  
+- Sysgo. (2022). *Embedded Systems Design and Optimization*. Sysgo. https://www.sysgo.com/  
+- Lee, E. A., & Seshia, S. A. (2020). *Introduction to Embedded Systems: A Cyber-Physical Systems Approach*. MIT Press.   daemlo que se vea y no hala fallas
 
