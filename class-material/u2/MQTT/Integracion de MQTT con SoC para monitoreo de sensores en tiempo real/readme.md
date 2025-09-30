@@ -97,14 +97,54 @@ Para lograr un monitoreo eficiente en tiempo real:
 | TLS/SSL | Seguridad en la comunicación | Aumento de consumo y latencia |
 
 ---
-
 ## Diagramas Conceptuales  
 
-### Arquitectura típica MQTT + SoC  
-```mermaid
-flowchart TD
-    A[Sensores IoT] --> B[SoC con Cliente MQTT]
-    B --> C[Broker MQTT]
-    C --> D[Servidor en la Nube]
-    D --> E[Dashboard en Tiempo Real]
+### Arquitectura de monitoreo con MQTT y SoC  
+![Arquitectura MQTT SoC](https://solutec-latam.com/wp-content/uploads/2020/08/Esquema-b%C3%A1sico-MQTT-e1596736746443.png)  
+_Figura 1. Integración de MQTT con SoC para monitoreo en tiempo real._  
 
+### Flujo de publicación-suscripción MQTT  
+![MQTT flujo](https://alotceriot.com/wp-content/uploads/2023/11/Publish-subscribe-architecture-of-MQTT.jpg)  
+_Figura 2. Comunicación entre Publisher, Broker y Subscriber._  
+
+---
+
+## Ventajas de Integrar MQTT con SoC  
+
+1. **Bajo consumo de ancho de banda**, ideal para redes IoT.  
+2. **Escalabilidad** mediante modelo pub/sub.  
+3. **Interoperabilidad** con múltiples lenguajes y plataformas.  
+4. **Optimización energética** en SoC con modos de bajo consumo.  
+5. **Monitoreo en tiempo real**, clave en aplicaciones críticas.  
+
+---
+
+## Tendencias Futuras  
+
+- **MQTT-SN (Sensor Networks)**: optimizado para redes sin IP y dispositivos ultra low-power.  
+- **Integración con 5G y edge computing** para latencias mínimas.  
+- **SoC heterogéneos** con aceleradores de IA para análisis en tiempo real.  
+- **Mayor seguridad embebida** con hardware criptográfico en SoC.  
+- **Uso de brokers distribuidos** para reducir la dependencia de un solo servidor.  
+
+---
+
+## Conclusiones  
+
+1. La **integración de MQTT con SoC** permite construir sistemas embebidos de monitoreo en tiempo real con **alta eficiencia energética y escalabilidad**.  
+2. La elección del SoC depende de la **aplicación**, equilibrando **costo, consumo y procesamiento**.  
+3. El uso de **QoS, edge computing y seguridad TLS** asegura comunicación confiable en entornos críticos.  
+4. Los avances en **RISC-V, IA embebida y MQTT-SN** apuntan a una evolución hacia sistemas más autónomos y seguros.  
+5. Esta combinación es clave para el **IoT industrial, dispositivos médicos y smart cities**.  
+
+---
+
+## Referencias (Formato APA)  
+
+- Banks, A., & Gupta, R. (2014). *MQTT Version 3.1.1*. OASIS Standard. https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html  
+- ARM Ltd. (2023). *Cortex-M Processor Technical Reference Manual*. ARM. https://developer.arm.com/  
+- Espressif Systems. (2023). *ESP32 Technical Reference Manual*. Espressif. https://www.espressif.com/  
+- Eclipse Foundation. (2023). *Eclipse Mosquitto - An Open Source MQTT Broker*. https://mosquitto.org/  
+- NVIDIA. (2023). *Jetson Developer Guide*. NVIDIA. https://developer.nvidia.com/embedded/jetson  
+- Sysgo. (2022). *Embedded Systems Design and Optimization*. Sysgo. https://www.sysgo.com/  
+- Lee, E. A., & Seshia, S. A. (2020). *Introduction to Embedded Systems: A Cyber-Physical Systems Approach*. MIT Press.   daemlo que se vea y no hala fallas
