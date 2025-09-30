@@ -43,6 +43,20 @@
 | TORRES RODELO MIGUEL ALEJANDRO   | Transmisión de datos de sensores ambientales vía MQTT con retención de mensajes        |
 | ZAMORANO GARCIA OMAR             | Implementación de aprendizaje profundo en FPGA con publicación de inferencias por MQTT |
 
+NOTAS:
+
+| Estudiante                       | Tema original                                                                          | Recomendación de ajuste                                                                                                                             |
+| -------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BAUTISTA LAGUNAS JOSE DANIEL** | Uso de MQTT para transmitir inferencias de IA desde microcontroladores a la nube       | ➤ Cambiar a: **"Revisión de herramientas para inferencia de IA en microcontroladores con MQTT"** (ej. TensorFlow Lite, Edge Impulse, ESP32 + MQTT). |
+| **CORTEZ HUERTA GONZALO**        | Jerarquías de memoria en dispositivos que usan MQTT para telemetría                    | ➤ Cambiar a: **"Optimización de memoria en dispositivos IoT que usan MQTT para telemetría"** (enfocado en SRAM, Flash, persistencia).               |
+| **GOMEZ AGUILAR JARED EMMANUEL** | Transmisión de datos de visión por computadora usando MQTT en FPGAs                    | ➤ Cambiar a: **"Análisis del uso de MQTT para transmisión de datos de visión desde plataformas embebidas (incluyendo FPGA)"**.                      |
+| **HERNANDEZ LIMON EDWIN YAIR**   | MQTT aplicado al control de motores con FPGA y telemetría en tiempo real               | ➤ Cambiar a: **"Diseño conceptual de controladores de motores con telemetría MQTT usando FPGA"** (sin requerir implementación completa).            |
+| **LOPEZ ANGULO JAHZIEL AMADO**   | Verificación formal de flujos de datos en sistemas MQTT                                | ➤ Cambiar a: **"Buenas prácticas y validación de integridad de datos en sistemas MQTT"** (QoS, LWT, Retain, Packet ID).                             |
+| **LEON CRUZ JORGE JOSHEL**       | Aplicaciones de MQTT sobre redes 5G para sistemas embebidos                            | ➤ Cambiar a: **"Impacto de 5G en la transmisión de datos IoT usando MQTT: oportunidades y desafíos"**.                                              |
+| **QUIÑONEZ YAÑEZ DIANA SAIHAN**  | Transmisión segura de datos cifrados en FPGA vía MQTT con QoS 2                        | ➤ Cambiar a: **"Estado del arte de la seguridad de datos en FPGA con MQTT (TLS, QoS, cifrado en hardware)"**.                                       |
+| **ZAMORANO GARCIA OMAR**         | Implementación de aprendizaje profundo en FPGA con publicación de inferencias por MQTT | ➤ Cambiar a: **"Aplicación de aprendizaje profundo en FPGA con salida MQTT: revisión de técnicas actuales"**.                                       |
+
+
 
 ---
 
