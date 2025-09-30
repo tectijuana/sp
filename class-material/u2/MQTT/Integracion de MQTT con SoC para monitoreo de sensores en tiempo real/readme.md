@@ -107,13 +107,6 @@ _Figura 1. Integración de MQTT con SoC para monitoreo en tiempo real._
 ![MQTT flujo](https://alotceriot.com/wp-content/uploads/2023/11/Publish-subscribe-architecture-of-MQTT.jpg)  
 _Figura 2. Comunicación entre Publisher, Broker y Subscriber._  
 
-### Arquitectura típica MQTT + SoC  
-```mermaid
-flowchart TD
-    A[Sensor IoT] --> B[SoC con Cliente MQTT]
-    B --> C[Broker MQTT]
-    C --> D[Servidor en la Nube]
-    D --> E[Dashboard en Tiempo Real]
 ---
 
 ## Ventajas de Integrar MQTT con SoC  
