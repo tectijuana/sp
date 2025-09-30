@@ -101,11 +101,11 @@ Para lograr un monitoreo eficiente en tiempo real:
 ## Diagramas Conceptuales  
 
 ### Arquitectura de monitoreo con MQTT y SoC  
-![Arquitectura MQTT SoC](https://i.imgur.com/fkD7uUu.png)  
+![Arquitectura MQTT SoC](https://solutec-latam.com/wp-content/uploads/2020/08/Esquema-b%C3%A1sico-MQTT-e1596736746443.png)  
 _Figura 1. Integración de MQTT con SoC para monitoreo en tiempo real._  
 
 ### Flujo de publicación-suscripción MQTT  
-![MQTT flujo](https://i.imgur.com/v7UwrIM.png)  
+![MQTT flujo](https://alotceriot.com/wp-content/uploads/2023/11/Publish-subscribe-architecture-of-MQTT.jpg)  
 _Figura 2. Comunicación entre Publisher, Broker y Subscriber._  
 
 ---
