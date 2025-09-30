@@ -32,7 +32,7 @@ pkg install python
 pkg install asciinema
 
 # iniciamos la grabaciòn de Asciinema
-ascinnema rec
+asciinema rec
 
 
 python -m venv venv
