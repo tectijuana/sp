@@ -3,7 +3,9 @@
 # **Temas de investigación relacionados con MQTT**  pensada para ser integrada como *pull request* por cada estudiante en el repositorio:
 
 📁 Ruta: `class-material/u2/MQTT/_______tema______/readme.md`
+
 📅 Turno: **3PM TV**
+
 🔗 GitHub: `github.com/tectijuana/sp`
 
 
