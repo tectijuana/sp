@@ -6,6 +6,9 @@
 📅 Turno: **3PM TV**
 🔗 GitHub: `github.com/tectijuana/sp`
 
+
+🔧 Todos los temas integran MQTT de forma práctica, explorando seguridad, eficiencia, arquitectura, protocolos, integración cloud, edge computing, etc.
+
 ---
 
 | Estudiante                       | Tema asignado relacionado con MQTT                                                     |
@@ -39,5 +42,61 @@
 | SOLANO CORTEZ IVAN ISRAEL        | Monitoreo ambiental con sensores conectados por MQTT y topologías escalables           |
 | TORRES RODELO MIGUEL ALEJANDRO   | Transmisión de datos de sensores ambientales vía MQTT con retención de mensajes        |
 | ZAMORANO GARCIA OMAR             | Implementación de aprendizaje profundo en FPGA con publicación de inferencias por MQTT |
+
+
+---
+
+📁 Ruta sugerida para los archivos:
+`class-material/u2/MQTT/2PM-TV/`
+
+---
+
+| Estudiante                          | Tema asignado relacionado con MQTT                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------------------- |
+| AARON CASILDO RUBALCAVA             | Introducción al modelo pub/sub con MQTT y su impacto en la industria 4.0              |
+| ALFONSO HUMBERTO FONSECA NOVELO     | Arquitectura cliente-servidor en MQTT: análisis del rol del broker y los clientes     |
+| AMERICA FERNANDA NEVAREZ DE LA CRUZ | Comparativa de microcontroladores, FPGAs y microprocesadores como clientes MQTT       |
+| ANA LUISA LOPEZ RODRIGUEZ           | Uso de Python y C para desarrollo de clientes MQTT embebidos                          |
+| ANGEL ANDRES CASTRO BALBUENA        | Implementación de MQTT en RTOS: tareas concurrentes y sincronización                  |
+| ANGEL IVAN LOPEZ CALVILLO           | Arquitectura interna de clientes MQTT ligeros en microcontroladores ARM Cortex-M      |
+| CESAR MICHAEL PEREZ GARCIA          | Flujo de diseño para implementar un cliente MQTT en FPGA usando lógica reconfigurable |
+| CHRISTIAN GAHEL MORALES HERNANDEZ   | Comparativa de plataformas (ESP32, STM32, Raspberry Pi) para proyectos con MQTT       |
+| DANIEL ROMERO BRAVO                 | Persistencia de datos y sesiones en MQTT para sistemas con memoria limitada           |
+| EDGAR EDUARDO CRUZ HERNANDEZ        | Implementación de comunicación UART–MQTT bridge en sistemas embebidos                 |
+| EMMANUEL ISAI CHAVEZ HERNANDEZ      | Configuración y uso de toolchains para proyectos MQTT en dispositivos embebidos       |
+| ERNESTO TORRES PINEDA               | Técnicas de debugging para fallas de conexión MQTT en controladores y FPGAs           |
+| FRANCISCO JAVIER VILLEGAS SUAREZ    | Bit-banging y MQTT: implementación de protocolos caseros con publicación en red       |
+| GILBERTO YAHIR BARBOZA URIBE        | Uso de timers e interrupciones para publicar mensajes MQTT periódicos                 |
+| IVAN GUSTAVO MENDOZA SUAREZ         | Optimización de consumo energético en nodos MQTT mediante QoS y retención             |
+| JAHIR DE JESUS DIAZ ABRAHAM         | Integración de FreeRTOS con MQTT: caso práctico en ESP32                              |
+| JAIME ANTONIO ALVAREZ CRISOSTOMO    | Automatización doméstica con MQTT: control distribuido de dispositivos                |
+| JAIR ALBERTO SUAREZ CASTRO          | Seguridad en MQTT: TLS, autenticación con certificados y usuario/clave                |
+| JENNIFER NICOLE MACEDO CRUZ         | Edge computing con MQTT: arquitectura distribuida para IoT                            |
+| JESUS ENRIQUE MENDOZA PANDURO       | Tendencias en MQTT 5.0: propiedades de usuario, alias de temas y control de flujo     |
+| JORGE LUIS CASTRO ALVARADO          | Diseño de nodos IoT con bajo consumo energético y comunicación MQTT                   |
+| JOSE ANDRES FELIX LOPEZ             | Aceleración de inferencias de IA transmitidas por MQTT desde FPGAs                    |
+| JOSÉ RITO PORTUGAL LAUREÁN          | Arquitecturas RISC/CISC y su rendimiento como clientes de publicación MQTT            |
+| JUAN CARLOS MAYA PINO               | Publicación de eventos del sistema Linux embebido vía MQTT (DBus + Mosquitto)         |
+| KARLA ITZEL VAZQUEZ CRUZ            | Contenedores ligeros en IoT para servicios MQTT escalables                            |
+| KEVIN EDUARDO REYES MARTINEZ        | MQTT en la industria automotriz: monitoreo de ADAS y ECU remota                       |
+| LUIS ALBERTO ROLDAN CASTRO          | Simulación de redes MQTT para pruebas de sistemas distribuidos embebidos              |
+| LUIS MANUEL RAMON HERNANDEZ         | Aplicaciones médicas conectadas mediante MQTT en tiempo real                          |
+| NICOLAS LOPEZ FELIX                 | Transmisión de datos DSP en tiempo real usando MQTT y análisis remoto                 |
+| NORBERTO POZOS FLORES               | Uso de MQTT con RISC-V: integración en hardware libre                                 |
+| OSCAR ESTEBAN PACHECO CABRERA       | SoC heterogéneos con clientes MQTT en CPU y procesamiento paralelo en GPU/NPU         |
+| OSCAR SEBASTIAN SANDOVAL MARQUEZ    | Implementación de MQTT sobre LoRa y Zigbee: análisis de eficiencia y latencia         |
+| RICARDO IBARRA GARCIA               | Ciberseguridad en IoT con MQTT: ataques comunes y contramedidas                       |
+| ROBERTO CARLOS QUINTERO ANGULO      | Alta disponibilidad y tolerancia a fallos en topologías MQTT distribuidas             |
+| YAEL KRISTOPH TRIANA SANCHEZ        | Aceleración por hardware en microcontroladores con publicación en MQTT                |
+| YLIZETH ROXANA CASTRO REYES         | Programación en VHDL y Verilog para publicar sensores FPGA vía MQTT                   |
+
+NOTA: 
+| Estudiante                    | Ajuste sugerido                                                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| CESAR MICHAEL PEREZ GARCIA    | No enfocarse en codificar MQTT en FPGA. Mejor: “**Análisis del flujo de diseño de un cliente MQTT en FPGAs**”.                 |
+| JOSE ANDRES FELIX LOPEZ       | No hacer IA en FPGA + MQTT con implementación. Mejor: “**Aplicaciones de IA en FPGA con comunicación MQTT: estado del arte**”. |
+| OSCAR ESTEBAN PACHECO CABRERA | Tema es muy complejo para implementación. Mejor: “**SoC heterogéneos como nodos MQTT: análisis de arquitectura**”.             |
+
+---
 
 
