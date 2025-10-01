@@ -1,5 +1,5 @@
 # Técnicas de Debugging para Fallas de Conexión MQTT en Controladores y FPGAs
-### Fecha: 30/09/2025
+### Fecha: 01/10/2025
 ### Nombre: Ernesto Torres Pineda 
 ### No. Control: 22211665
 
