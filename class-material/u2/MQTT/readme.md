@@ -1,9 +1,11 @@
 
 
-# **Temas de investigación relacionados con MQTT**  pensada para ser integrada como *pull request* por cada estudiante en el repositorio:
+# **Temas de investigación relacionados con MQTT** para ser integrada como *pull request* por cada estudiante en el repositorio:
 
 📁 Ruta: `class-material/u2/MQTT/_______tema______/readme.md`
+
 📅 Turno: **3PM TV**
+
 🔗 GitHub: `github.com/tectijuana/sp`
 
 
@@ -57,11 +59,6 @@ NOTAS:
 | **ZAMORANO GARCIA OMAR**         | Implementación de aprendizaje profundo en FPGA con publicación de inferencias por MQTT | ➤ Cambiar a: **"Aplicación de aprendizaje profundo en FPGA con salida MQTT: revisión de técnicas actuales"**.                                       |
 
 
-
----
-
-📁 Ruta sugerida para los archivos:
-`class-material/u2/MQTT/2PM-TV/`
 
 ---
 
