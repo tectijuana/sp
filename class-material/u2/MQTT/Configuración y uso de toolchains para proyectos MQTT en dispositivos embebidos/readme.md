@@ -1,24 +1,15 @@
 # Configuración y uso de toolchains para proyectos MQTT en dispositivos embebidos
 
-## 1. Elección y Configuración del Toolchain
+Antes de configurar y usar toolchains en proyectos MQTT en dispositivos embebidos, primero es necesario elegir el toolchain adecuado para el microcontrolador a utilizar (como GCC for ARM para sistemas basados en ARM) y configurarlo con las bibliotecas MQTT necesarias (por ejemplo, Paho MQTT). Luego, en el código, se inicializara el cliente MQTT, para conectarse a un broker, al conectarse existe la opcion de suscribirse o publicar mensajes en tópicos, gestionando la autenticación y la reconexión para asegurar la comunicación eficiente en la red con recursos limitados. 
 
-### Selección del Toolchain Específico
+## 1. Elegir y Configurar el Toolchain
+**Seleccionar Toolchain:** Para dispositivos embebidos, el toolchain más común es el GNU Compiler Collection (GCC) para la arquitectura del microcontrolador a utilizar, como ARM Cortex-M. También se puedes usar el SDK del fabricante del chip (por ejemplo, el ESP-IDF para ESP32) que incluye bibliotecas para MQTT y el toolchain necesario. 
 
-**Para diferentes arquitecturas:**
-- **ARM Cortex-M**: GNU Arm Embedded Toolchain
-- **ESP32**: ESP-IDF (incluye toolchain completo)
-- **RISC-V**: RISC-V GNU Toolchain
-- **AVR**: AVR-GCC
+**Instalar las Bibliotecas Necesarias:** Descargar e integrar las bibliotecas cliente MQTT en el proyecto. La biblioteca PubSubClient para Arduino, para microcontroladores como el ESP32, o la biblioteca Paho MQTT para Rust son opciones populares. Estas bibliotecas permitirán implementar el protocolo MQTT. 
 
-**Consideraciones importantes:**
-- **Tamaño del código**: Optar por optimizaciones -Os para minimizar footprint
-- **Compatibilidad de librerías**: Verificar que las librerías MQTT sean compatibles
-- **Debugging**: Incluir GDB para debugging remoto
+**Instalación de Bibliotecas MQTT**
 
-### Instalación de Bibliotecas MQTT
-
-**Opciones populares:**
-```c
+```
 // Paho MQTT C (para sistemas embebidos)
 #include "MQTTClient.h"
 
@@ -29,16 +20,16 @@
 #include "aws_iot_mqtt_client.h"
 ```
 
-**Gestión de dependencias:**
-- Usar CMake o Make para automatizar la construcción
-- Considerar sistemas de paquetes como PlatformIO
-- Verificar compatibilidad de versiones
+## 2. Configurar la Comunicación MQTT
+**Configura el Cliente MQTT:** En el código, se crea una instancia del cliente MQTT (como Paho o PubSubClient), especificando la dirección del broker MQTT, el puerto y un ID de cliente único para el dispositivo a utilizar. 
 
-## 2. Configuración Detallada de Comunicación MQTT
+**Conectarse al Broker:** Establecer la conexión TCP/IP entre el dispositivo y el broker MQTT. 
 
-### Configuración del Cliente MQTT
+**Gestionar la Autenticación:** Si es necesario, configurar credenciales de usuario y contraseña para que el dispositivo pueda autenticarse en el broker, lo cual es un paso clave para una conexión segura y válida. 
 
-```c
+**Configuración del Cliente MQTT**
+
+```
 // Ejemplo con Paho MQTT
 MQTTClient client;
 MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
@@ -56,9 +47,9 @@ ssl_opts.keyStore = "/cert/client.crt";
 ssl_opts.privateKey = "/cert/client.key";
 ```
 
-### Parámetros de Conexión Críticos
+**Parámetros de Conexión Críticos**
 
-```c
+```
 typedef struct {
     char *broker_host;
     int broker_port;
@@ -70,18 +61,18 @@ typedef struct {
 } mqtt_config_t;
 ```
 
-## 3. Implementación de Publicación y Suscripción
+## 3. Publicar y Suscribirse a Tópicos
+***Crear Tópicos MQTT:** Definir los tópicos para el intercambio de mensajes, que son cadenas de texto que funcionan como canales de comunicación. Por ejemplo, sensor/temperatura o actuador/luz.
 
-### Gestión de Tópicos
+**Publicar Mensajes:** Envía datos (cargas útiles) a un tópico específico para que los suscriptores reciban la información.
 
-**Estructura recomendada:**
+**Suscribirse a Tópicos:** Suscribe el dispositivo a tópicos para recibir los mensajes publicados por otros clientes. 
+
 ```
-dispositivo/{ID_DISPOSITIVO}/{SENSOR}/{COMANDO}
-ejemplo: dispositivo/ESP32_001/temperatura/lectura
-```
+// Estructura recomendada
+// dispositivo/{ID_DISPOSITIVO}/{SENSOR}/{COMANDO}
+// ejemplo: dispositivo/ESP32_001/temperatura/lectura
 
-**Implementación de callbacks:**
-```c
 void message_arrived_callback(MQTTClient_message *message) {
     char *topic = message->payload;
     char *payload = (char*)message->payload;
@@ -93,10 +84,9 @@ void message_arrived_callback(MQTTClient_message *message) {
     MQTTClient_free(topic);
 }
 ```
+**Publicación Eficiente**
 
-### Publicación Eficiente
-
-```c
+```
 int publish_sensor_data(MQTTClient client, const char* topic, float value) {
     char payload[50];
     snprintf(payload, sizeof(payload), "{\"value\":%.2f,\"timestamp\":%ld}", 
@@ -112,11 +102,14 @@ int publish_sensor_data(MQTTClient client, const char* topic, float value) {
 }
 ```
 
-## 4. Gestión Avanzada de Conexiones y Errores
+## 4. Gestión de Conexiones y Errores
+**Habilitar la Reconexión Automática:** Implementar la funcionalidad de reconexión para gestionar la inestabilidad de la conexión a internet y asegurar que el dispositivo se vuelva a conectar si se pierde la conexión con el broker. 
 
-### Mecanismo de Reconexión Robusto
+**Manejo de los Errores:** Utilizar métodos de gestión de errores robustos para que la aplicación se mantenga fiable y no falle abruptamente si hay problemas durante la comunicación. 
 
-```c
+**Mecanismo de Reconexión Robusto**
+
+```
 typedef struct {
     int max_retry_attempts;
     int retry_delay_ms;
@@ -141,9 +134,9 @@ bool reconnect_with_backoff(MQTTClient client, reconnect_config_t *config) {
 }
 ```
 
-### Manejo de Errores Completo
+**Manejo de Errores Completo**
 
-```c
+```
 typedef enum {
     MQTT_ERROR_NONE = 0,
     MQTT_ERROR_CONNECTION_LOST,
@@ -165,109 +158,36 @@ void handle_mqtt_error(mqtt_error_t error, const char* context) {
     }
 }
 ```
+## 5. Consideraciones Adicionales para Producción
 
-## 5. Ejemplo Completo con ESP32 y ESP-IDF
+**Seguridad**
 
-### Configuración del Proyecto
-
-**CMakeLists.txt:**
-```cmake
-cmake_minimum_required(VERSION 3.5)
-set(CMAKE_C_STANDARD 99)
-
-include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(mqtt_temperature_sensor)
-
-# Componentes requeridos
-set(COMPONENTS esp32 mbedtls esp-tls tcp_transport esp_http_client)
-
-# Configuración MQTT
-set(MQTT_PROTOCOL_311 true)
-set(MQTT_TASK_STACK_SIZE 6144)
-```
-
-### Código Principal
-
-```c
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_system.h"
-#include "esp_log.h"
-#include "mqtt_client.h"
-
-static const char *TAG = "MQTT_EXAMPLE";
-
-// Callback para eventos MQTT
-static void mqtt_event_handler(void *handler_args, esp_event_base_t base, 
-                              int32_t event_id, void *event_data) {
-    esp_mqtt_event_handle_t event = event_data;
-    esp_mqtt_client_handle_t client = event->client;
-    
-    switch ((esp_mqtt_event_id_t)event_id) {
-        case MQTT_EVENT_CONNECTED:
-            ESP_LOGI(TAG, "MQTT conectado");
-            esp_mqtt_client_subscribe(client, "casa/sala/luz", 0);
-            break;
-            
-        case MQTT_EVENT_DISCONNECTED:
-            ESP_LOGI(TAG, "MQTT desconectado");
-            break;
-            
-        case MQTT_EVENT_DATA:
-            ESP_LOGI(TAG, "Datos recibidos: %.*s", event->data_len, event->data);
-            process_command(event->topic, event->topic_len, event->data, event->data_len);
-            break;
-            
-        case MQTT_EVENT_ERROR:
-            ESP_LOGI(TAG, "Error MQTT");
-            break;
-            
-        default:
-            break;
-    }
-}
-
-void app_main(void) {
-    // Configuración MQTT
-    esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = "mqtt://broker.emqx.io",
-        .credentials.client_id = "esp32_temperature_sensor",
-    };
-    
-    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, 
-                                  mqtt_event_handler, NULL);
-    esp_mqtt_client_start(client);
-    
-    // Publicar datos periódicamente
-    while(1) {
-        float temperature = read_temperature_sensor();
-        char payload[30];
-        snprintf(payload, sizeof(payload), "{\"temp\":%.2f}", temperature);
-        
-        esp_mqtt_client_publish(client, "casa/salon/temperatura", 
-                               payload, 0, 1, 0);
-        
-        vTaskDelay(10000 / portTICK_PERIOD_MS); // 10 segundos
-    }
-}
-```
-
-## 6. Consideraciones Adicionales para Producción
-
-### Seguridad
 - Usar TLS/SSL para todas las comunicaciones
+
 - Implementar autenticación con certificados clientes
+
 - Rotar credenciales periódicamente
 
-### Optimización de Recursos
+**Optimización de Recursos**
+
 - Usar QoS 0 para datos no críticos
+
 - Limitar tamaño de mensajes
+
 - Implementar sleep modes cuando sea posible
 
-### Monitoreo
+**Monitoreo**
+
 - Logging de eventos MQTT
+
 - Métricas de conexión
+
 - Alertas de desconexión prolongada
 
-Esta estructura proporciona una base sólida para implementar MQTT en dispositivos embebidos, considerando tanto el desarrollo como aspectos de producción.
+## Bibliografia
+- Trovò, M. (2025, 22 enero). How to Use the Paho MQTT Client Library in a Rust Project. Cedalo. https://cedalo.com/blog/integrating-mqtt-in-rust/#:~:text=Conexi%C3%B3n%20al%20br%C3%B3ker%20Mosquitto%20MQTT&text=Este%20c%C3%B3digo%20inicializa%20el%20cliente,se%20mantenga%20fiable%20y%20mantenible.
+- Jecrespom. (2021, 7 noviembre). MQTT. Aprendiendo Arduino. https://aprendiendoarduino.wordpress.com/2018/11/19/mqtt/#:~:text=mqtt%2Dover%2Dwebsockets-,Protocolo%20MQTT,a%20trav%C3%A9s%20de%20la%20red.&text=Una%20sesi%C3%B3n%20MQTT%20se%20divide,una%20identidad%20de%20cliente%20reutilizada.
+- Monitoreo, Telemetría, Sensores y Automatización Industrial. (2023, 8 agosto). Microcontroladores IoT. https://www.controltec.cl/microcontroladores-iot
+- Garcia, J., & Garcia, J. (2024, 12 junio). Protocolo MQTT: Funcionamiento y creación de tu propio Broker - ATG Analytical. ATG Analytical -. https://atganalytical.com/protocolo-mqtt-funcionamiento-y-creacion-de-tu-propio-broker/#:~:text=Tras%20su%20descarga%20(y%20opcionable%20instalaci%C3%B3n%20para,aparecer%C3%A1%20una%20ventana%20parecida%20a%20la%20siguiente:
+- ¿Qué es el MQTT? - Explicación del protocolo MQTT - AWS. (s. f.). Amazon Web Services, Inc. https://aws.amazon.com/es/what-is/mqtt/#:~:text=El%20agente%20MQTT%20es%20el,mensaje%20y%20enviarles%20los%20mensajes.
+- Sesión 6: MQTT - HackMD. (s. f.). HackMD. https://hackmd.io/@LF0FqZwDTDWM-MMK06IEWA/BkdxYltPn#:~:text=Cuando%20un%20cliente%20se%20conecta%2C%20podr%C3%ADa%20configurar,que%20ese%20cliente%20ya%20no%20est%C3%A1%20disponible.
