@@ -60,3 +60,18 @@ La arquitectura cliente-servidor de MQTT, con el broker como eje central y los c
 El rol del broker es crítico, pues asume la responsabilidad de gestionar las suscripciones, entregar mensajes con garantías de servicio y mantener la coherencia del sistema aun en escenarios de desconexiones. Los clientes, por su parte, se benefician de esta simplicidad al delegar en el broker la complejidad de la comunicación.  
 
 En resumen, el diseño cliente-servidor en MQTT es un ejemplo de cómo una arquitectura bien pensada puede transformar la manera en que los dispositivos se comunican, haciendo posible el crecimiento explosivo de aplicaciones en el Internet de las Cosas.  
+
+## Referencias  
+
+1. [MQTT Version 5.0 – OASIS Open](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html) — Especificación oficial de MQTT 5.  
+2. [MQTT Essentials Part 8: Retained Messages (HiveMQ)](https://www.hivemq.com/blog/mqtt-essentials-part-8-retained-messages/) — Explicación de mensajes retenidos en MQTT.  
+3. [MQTT Essentials Part 7: Persistent Session & Queuing Messages (HiveMQ)](https://www.hivemq.com/blog/mqtt-essentials-part-7-persistent-session-queuing-messages/) — Manejo de sesiones persistentes y almacenamiento de mensajes.  
+4. [Use of MQTT Will Message (EMQX)](https://www.emqx.com/en/blog/use-of-mqtt-will-message) — Descripción y ejemplo del Last Will & Testament en MQTT.  
+5. [MQTT Essentials Part 3: Client, Broker & Connection Establishment (HiveMQ)](https://www.hivemq.com/blog/mqtt-essentials-part-3-client-broker-connection-establishment/) — Rol del broker y clientes, conexión CONNECT/CONNACK.  
+6. [Essential MQTT Architecture Considerations for IoT Use Cases (HiveMQ)](https://www.hivemq.com/blog/essential-mqtt-architecture-considerations-iot-use-cases/) — Consideraciones de arquitectura para casos IoT.  
+7. [Mosquitto man page: MQTT QoS levels](https://mosquitto.org/man/mqtt-7.html) — Definición de los niveles de QoS 0, 1 y 2.  
+8. [A distributed architecture for MQTT messaging: the case of TBMQ (SpringerOpen)](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-025-01271-x) — Ejemplo de broker distribuido para escalabilidad.  
+9. [Secure Data Distribution Architecture in IoT Using MQTT (ResearchGate)](https://www.researchgate.net/publication/368584936_Secure_Data_Distribution_Architecture_in_IoT_Using_MQTT) — Seguridad y arquitectura de datos en MQTT.  
+10. [TLS Beyond the Broker: Enforcing Fine-grained Security and Trust in Publish/Subscribe Environments (arXiv)](https://arxiv.org/abs/2109.01169) — Seguridad y confianza en entornos pub/sub.  
+11. [Security assessment of common open source MQTT brokers and clients (arXiv)](https://arxiv.org/abs/2309.03547) — Evaluación de seguridad en brokers y clientes MQTT.  
+12. [MQTT Bridge Architectures in a Cross-Organizational Context (arXiv)](https://arxiv.org/abs/2501.14890) — Estudio sobre arquitecturas de puente MQTT en contextos distribuidos.  
