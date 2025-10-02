@@ -30,6 +30,8 @@ El broker puede entenderse como el “cerebro” de la red MQTT. Su trabajo es r
 
 La importancia del broker radica en que simplifica la comunicación. Sin él, cada cliente tendría que saber exactamente a qué otro cliente enviar información, lo que se volvería inmanejable en escenarios con cientos o miles de dispositivos. Gracias al broker, cada cliente solo necesita saber a qué servidor conectarse, sin preocuparse por quién recibirá el mensaje final.  
 
+![mqtt](https://academy.nordicsemi.com/wp-content/uploads/2022/10/cellfund_less4_mqtt_protocol.png)
+
 ### El rol de los clientes  
 Los clientes en MQTT pueden actuar como **publicadores**, **suscriptores**, o ambos al mismo tiempo. Un publicador envía mensajes a un *topic* sin necesidad de saber quién los recibirá. Un suscriptor, por su parte, se suscribe a ciertos *topics* para recibir los mensajes asociados. Esta división hace que los clientes sean livianos y fáciles de implementar en casi cualquier lenguaje de programación o dispositivo, desde un microcontrolador hasta un servidor en la nube.  
 
@@ -39,6 +41,8 @@ Los clientes también pueden definir parámetros importantes al conectarse al br
 La interacción entre el broker y los clientes se da siempre sobre un canal de comunicación seguro y persistente, normalmente a través de **TCP/IP**. El proceso inicia cuando un cliente se conecta al broker enviando un mensaje especial de **CONNECT**. Si todo sale bien, el broker responde con un **CONNACK** que confirma la conexión. A partir de ese momento, el cliente puede publicar mensajes o suscribirse a los *topics* de su interés.  
 
 Un detalle clave es que la conexión es mantenida abierta mientras ambos extremos estén activos, gracias a mecanismos como el **Keep Alive**, que envía pequeños mensajes de latido para evitar que la conexión “se congele”. Además, en caso de una desconexión inesperada, el broker puede notificar a los demás clientes con un mensaje de *Last Will and Testament*, lo que asegura que el sistema siempre tenga información del estado de cada dispositivo.  
+
+![mqtt](https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/6708f5b15374117c840d5fcc_6708ee20807b31c351ce6a22_7%2520-%252010.10-min.jpeg)
 
 ### Ventajas del modelo cliente-servidor en MQTT  
 Una de las grandes ventajas de esta arquitectura es la **desacoplación**. Los publicadores y suscriptores no necesitan conocerse ni ejecutarse al mismo tiempo, lo que permite construir sistemas mucho más flexibles y escalables. Además, el broker centraliza funciones críticas como seguridad, control de acceso y almacenamiento de mensajes, evitando que cada cliente tenga que implementar estas funciones por separado.  
