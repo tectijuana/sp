@@ -62,11 +62,6 @@ NOTAS:
 
 ---
 
-📁 Ruta sugerida para los archivos:
-`class-material/u2/MQTT/2PM-TV/`
-
----
-
 | Estudiante                          | Tema asignado relacionado con MQTT                                                    |
 | ----------------------------------- | ------------------------------------------------------------------------------------- |
 | AARON CASILDO RUBALCAVA             | Introducción al modelo pub/sub con MQTT y su impacto en la industria 4.0              |
