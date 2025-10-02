@@ -1,3 +1,9 @@
+## Datos del Alumno
+#### Nombre: Emmanuel Isai Chavez Hernandez
+#### No. Control: 23211005
+#### Materia: Sistemas Programables
+#### Fecha: 02/09/2025
+
 # Configuración y uso de toolchains para proyectos MQTT en dispositivos embebidos
 
 Antes de configurar y usar toolchains en proyectos MQTT en dispositivos embebidos, primero es necesario elegir el toolchain adecuado para el microcontrolador a utilizar (como GCC for ARM para sistemas basados en ARM) y configurarlo con las bibliotecas MQTT necesarias (por ejemplo, Paho MQTT). Luego, en el código, se inicializara el cliente MQTT, para conectarse a un broker, al conectarse existe la opcion de suscribirse o publicar mensajes en tópicos, gestionando la autenticación y la reconexión para asegurar la comunicación eficiente en la red con recursos limitados. 
