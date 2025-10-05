@@ -27,3 +27,45 @@ Aquí surgen los **Sistemas en Chip Heterogéneos (HSoC)**, que combinan:
 - Uno o más **Cortex-M** (bajo consumo, ejecuta RTOS para tareas deterministas).  
 
 Esto permite un entorno **Edge Computing** optimizado: rendimiento + eficiencia.
+
+### MQTT como Protocolo Ubicuo para HSoC  
+
+El **MQTT (Message Queuing Telemetry Transport)** es un protocolo ligero y eficiente para entornos de bajo ancho de banda o energía limitada.  
+Opera bajo el patrón **publicar/suscribir (Pub/Sub)**, reduciendo tráfico y mejorando latencia respecto a modelos punto a punto.  
+
+#### Niveles de Calidad de Servicio (QoS)
+
+| Nivel | Descripción | Garantía |
+|-------|--------------|----------|
+| **QoS 0** | “A lo sumo una vez” | Entrega rápida sin garantía |
+| **QoS 1** | “Al menos una vez” | Garantiza recepción, puede haber duplicados |
+| **QoS 2** | “Exactamente una vez” | Garantiza recepción única |
+
+MQTT también incluye:  
+- **Mensajes retenidos:** el *broker* entrega el último mensaje guardado a nuevos suscriptores.  
+- **Última Voluntad y Testamento (LWT):** mensaje enviado si un cliente se desconecta abruptamente.  
+
+#### Novedades de MQTT 5.0  
+MQTT 5.0 introduce mejoras clave:  
+- **Códigos de Razón:** diagnóstico rápido de fallos de comunicación.  
+- **Propiedades de Usuario:** adjuntar metadatos (ID de máquina, datos de sensor, etc.).  
+- **Suscripciones Compartidas:** balanceo de carga y tolerancia a fallos.  
+
+Se recomienda adoptar **MQTT 5.0** para nuevos proyectos por su mejor escalabilidad y diagnóstico avanzado.
+
+---
+
+### Implicaciones de Diseño y *Trade-offs* para el HSoC  
+
+Los nodos MQTT basados en HSoC deben balancear **Linux (Cortex-A)** y **RTOS (Cortex-M)**.  
+Linux ofrece flexibilidad, pero no elimina la necesidad de control determinista con RTOS.  
+
+Desafíos:
+- Coordinación entre núcleos.  
+- Minimización de la sobrecarga de comunicación (*IPC*).  
+- Implementación segura de transporte criptográfico (TLS).  
+
+El reto principal es equilibrar:
+- El **rendimiento de red (Cortex-A/Linux)**  
+con  
+- La **baja latencia y determinismo (Cortex-M/RTOS)**  
