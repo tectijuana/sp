@@ -1,5 +1,7 @@
 # SoC Heterogéneos como Nodos MQTT
 
+**Autor:** Oscar Esteban Pacheco Cabrera
+
 ## Introducción y Fundamentos Arquitectónicos del Edge IoT
 
 El Internet de las Cosas (IoT) ha evolucionado desde simples dispositivos de detección hasta complejos nodos de procesamiento en el borde (*Edge*).  
