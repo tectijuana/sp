@@ -68,4 +68,62 @@ Desafíos:
 El reto principal es equilibrar:
 - El **rendimiento de red (Cortex-A/Linux)**  
 con  
-- La **baja latencia y determinismo (Cortex-M/RTOS)**  
+- La **baja latencia y determinismo (Cortex-M/RTOS)**
+
+## Arquitectura de Hardware y Coexistencia de Sistemas Operativos  
+
+### Anatomía del HSoC para IoT  
+
+Los HSoC modernos están diseñados para manejar tareas concurrentes que exigen rendimiento y determinismo simultáneamente.  
+La distinción entre núcleos ARM es esencial:
+
+| Tipo de Núcleo | Dominio | Características Clave | Uso Principal |
+|----------------|----------|-----------------------|---------------|
+| **Cortex-A** | Aplicación | Alto rendimiento, ejecuta Linux/Android, incluye FPU estándar | Procesamiento intensivo, ML, redes avanzadas |
+| **Cortex-M** | Control/Tiempo Real | Eficiencia energética, baja latencia, FPU opcional | Control de sensores, actuadores, tareas deterministas |
+
+Ejemplos de plataformas dual-core:  
+- **NXP i.MX**  
+- **STM32MP1**  
+
+Ambas integran Linux en Cortex-A y FreeRTOS en Cortex-M.
+
+---
+
+### Particionamiento Funcional y Asignación de Tareas Clave  
+
+El rendimiento de un nodo HSoC depende de cómo se asignan las tareas entre núcleos.  
+
+| Componente | Dominio de Tiempo Real (Cortex-M/RTOS) | Dominio de Aplicación (Cortex-A/Linux) |
+|-------------|----------------------------------------|----------------------------------------|
+| **Cliente MQTT Core** | Ejecución de `coreMQTT`, manejo de QoS 0 y LWT determinista | Gestión de conectividad a la nube, lógica de alto nivel |
+| **Pila de Red (TCP/IP)** | Controladores de hardware dedicados | Pila completa de red, firewall, gateway |
+| **Sensores/Actuadores** | Control de baja latencia, adquisición directa | Filtrado avanzado, integración de datos |
+| **Seguridad Criptográfica** | Almacenamiento de claves, TrustZone-M, elementos seguros | Gestión de certificados y protocolos avanzados |
+
+---
+
+### Particionamiento Crítico de la Pila de Red  
+
+Si el cliente MQTT (en el Cortex-M) depende de la pila TCP/IP en Linux, se introduce latencia.  
+Esto ocurre porque los mensajes deben atravesar el bus **RPMsg** y esperar al *scheduler* no determinista de Linux.  
+
+Para mantener baja latencia, el canal **IPC** debe ser lo más rápido y ligero posible.
+
+---
+
+## Modelos de Particionamiento de la Pila MQTT/TLS e IPC  
+
+### Remote Processor Messaging (RPMsg) como Habilitador Arquitectónico  
+
+**RPMsg** es el mecanismo estándar para la comunicación entre núcleos en sistemas *Asymmetric Multiprocessing (AMP)*.  
+Permite que **Linux (Cortex-A)** y **FreeRTOS (Cortex-M)** se comuniquen eficientemente.
+
+Ventajas:
+- Basado en *virtio* (estándar del kernel Linux).  
+- Compatible con plataformas como OMAP4 e i.MX.  
+- Puede usar la variante **RPMsg-Lite** para entornos embebidos.  
+
+Consideraciones:
+- Los callbacks de recepción se ejecutan en contexto de interrupción.  
+- Es necesario evitar operaciones pesadas dentro del callback.
