@@ -62,11 +62,6 @@ NOTAS:
 
 ---
 
-📁 Ruta sugerida para los archivos:
-`class-material/u2/MQTT/2PM-TV/`
-
----
-
 | Estudiante                          | Tema asignado relacionado con MQTT                                                    |
 | ----------------------------------- | ------------------------------------------------------------------------------------- |
 | AARON CASILDO RUBALCAVA             | Introducción al modelo pub/sub con MQTT y su impacto en la industria 4.0              |
@@ -105,6 +100,7 @@ NOTAS:
 | ROBERTO CARLOS QUINTERO ANGULO      | Alta disponibilidad y tolerancia a fallos en topologías MQTT distribuidas             |
 | YAEL KRISTOPH TRIANA SANCHEZ        | Aceleración por hardware en microcontroladores con publicación en MQTT                |
 | YLIZETH ROXANA CASTRO REYES         | Programación en VHDL y Verilog para publicar sensores FPGA vía MQTT                   |
+| EDURADO MANUEL MEZA RODRIGUEZ         | (TEMA LIBRE)                   |
 
 NOTA: 
 | Estudiante                    | Ajuste sugerido                                                                                                                |
