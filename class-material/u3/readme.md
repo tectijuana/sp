@@ -129,7 +129,7 @@ graph TD
 
 ---
 
-# RUBTICA
+# RUBRICA
 
 NOTA: Como dashbaord puede utilizarse el visto en la unidad pasada, es costumbre mostrar al estudiante las alternativas que hay opensource
 <img width="950" alt="Screenshot 2025-04-30 at 2 29 07 p m" src="https://github.com/user-attachments/assets/40dadd49-c827-4331-a478-eeea7a10e76c" />
