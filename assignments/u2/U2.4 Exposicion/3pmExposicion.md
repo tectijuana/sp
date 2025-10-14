@@ -19,7 +19,7 @@
 | Monitor de signos vitales para adultos mayores | MQTT, Grafana, InfluxDB   |
 | Detección de caídas en personas mayores        | MQTT, Prometheus, Grafana |
 | Sistema de monitoreo de temperatura de vacunas | MQTT, InfluxDB, Grafana   |
-| Monitoreo remoto de pacientes COVID-19         | MQTT, InfluxDB, Grafana   |
+| Monitoreo remoto de pacientes (libre datos)         | MQTT, InfluxDB, Grafana   |
 
 ---
 
