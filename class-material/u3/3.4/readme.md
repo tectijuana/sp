@@ -109,4 +109,3 @@ def enviar_a_chatgpt(mensaje):
 📝 **Conclusión esperada**
 El estudiante podrá explicar cómo funciona una API, cómo se simulan procesos en Wokwi y cómo se puede conectar una Pico W real a servicios modernos como OpenAI.
 
-
