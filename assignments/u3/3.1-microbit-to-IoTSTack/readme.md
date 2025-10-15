@@ -17,6 +17,8 @@ Compatibilidad:
 
 ## 🧠 Código del micro:bit (común para todos)
 
+Falta determinar el puerto serial de Windows 11, macOS y Linux, este es un templete genérico, si gusta un pull reques de codigo arreglado para darle 1 punto extra.
+
 Carga este código **MicroPython** en tu micro:bit.  
 Es el mismo para todos los ejemplos:
 
