@@ -13,49 +13,6 @@ Compatibilidad:
 
 ---
 
-```mermaid
-flowchart TD
-
-    %% Nodos principales
-    A[💡 Micro:bit] -->|Envía datos por Serial (USB)| B((💻 Puerto COMx))
-    B --> C{Lenguaje / Entorno}
-
-    %% Lenguajes y herramientas
-    C --> D1[🐍 Python<br/>pyserial]
-    C --> D2[🟨 JavaScript<br/>serialport]
-    C --> D3[🦀 Rust<br/>serialport]
-    C --> D4[🦫 Go<br/>tarm/serial]
-    C --> D5[💠 C# (.NET)<br/>System.IO.Ports]
-    C --> D6[🧩 TypeScript<br/>serialport]
-    C --> D7[🟥 Node-RED<br/>node-red-node-serialport]
-
-    %% Flujo de datos
-    D1 --> E[📊 Consola Serial / Debug Panel]
-    D2 --> E
-    D3 --> E
-    D4 --> E
-    D5 --> E
-    D6 --> E
-    D7 --> E
-
-    %% Micro:bit detalles
-    subgraph "Código MicroPython en micro:bit"
-    M1["from microbit import *"] 
-    M2["temperature(), accelerometer.get_x/y/z()"]
-    M3["print('TEMP:{},ACC:({},{},{})')"]
-    M1 --> M2 --> M3
-    end
-
-    M3 --> A
-
-    %% Resultado
-    E --> F[📈 Datos procesados:<br/>Temperatura y Aceleración XYZ]
-
-    style A fill:#f9f,stroke:#333,stroke-width:1px
-    style B fill:#fdf2b2,stroke:#333,stroke-width:1px
-    style C fill:#b2e0f2,stroke:#333,stroke-width:1px
-    style F fill:#d4f5c0,stroke:#333,stroke-width:1px
-```
 
 
 ## 🧠 Código del micro:bit (común para todos)
