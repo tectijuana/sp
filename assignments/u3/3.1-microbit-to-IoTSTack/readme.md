@@ -1,21 +1,23 @@
-# Microbit para envio de datos a Serial Console
 
+# 🧠 Microbit para envío de datos a Serial Console
 
-🐍 Python 3
-🟨 JavaScript (Node.js)
-🦀 Rust
-🦫 Go
-💠 C# (.NET)
-🧩 TypeScript
-🟥 Node-RED
+Compatibilidad:
+🐍 **Python 3**  
+🟨 **JavaScript (Node.js)**  
+🦀 **Rust**  
+🦫 **Go**  
+💠 **C# (.NET)**  
+🧩 **TypeScript**  
+🟥 **Node-RED**
 
-⸻
+---
 
-🧠 Código del micro:bit (común para todos)
+## 🧠 Código del micro:bit (común para todos)
 
-Primero, carga este código MicroPython en tu micro:bit.
+Carga este código **MicroPython** en tu micro:bit.  
 Es el mismo para todos los ejemplos:
 
+```python
 from microbit import *
 import time
 
@@ -26,18 +28,21 @@ while True:
     z = accelerometer.get_z()
     print("TEMP:{},ACC:({},{},{})".format(temp, x, y, z))
     time.sleep(1)
+````
 
+---
 
-⸻
+## 🐍 Python 3
 
-🐍 Python 3
+### Instalación
 
-Instalación
-
+```bash
 pip install pyserial
+```
 
-Código
+### Código
 
+```python
 import serial
 import time
 
@@ -56,18 +61,21 @@ try:
 except KeyboardInterrupt:
     ser.close()
     print("Conexión cerrada.")
+```
 
+---
 
-⸻
+## 🟨 JavaScript (Node.js)
 
-🟨 JavaScript (Node.js)
+### Instalación
 
-Instalación
-
+```bash
 npm install serialport
+```
 
-Código
+### Código
 
+```js
 import { SerialPort, ReadlineParser } from 'serialport';
 
 const port = new SerialPort({ path: 'COM3', baudRate: 115200 });
@@ -78,21 +86,29 @@ console.log('Recibiendo datos del micro:bit...\n');
 parser.on('data', (line) => {
   console.log(line);
 });
+```
 
-⚠️ Asegúrate de usar "type": "module" en package.json
-o ejecuta con node --experimental-modules.
+⚠️ Asegúrate de usar `"type": "module"` en `package.json`
+o ejecuta con:
 
-⸻
+```bash
+node --experimental-modules index.js
+```
 
-🦀 Rust
+---
 
-Cargo.toml
+## 🦀 Rust
 
+### Cargo.toml
+
+```toml
 [dependencies]
 serialport = "4.3.0"
+```
 
-Código (src/main.rs)
+### Código (`src/main.rs`)
 
+```rust
 use std::time::Duration;
 use std::io::{self, BufRead};
 use serialport::SerialPort;
@@ -118,18 +134,21 @@ fn main() {
         Err(e) => eprintln!("Error: {}", e),
     }
 }
+```
 
+---
 
-⸻
+## 🦫 Go (Golang)
 
-🦫 Go (Golang)
+### Instalación
 
-Instalación
-
+```bash
 go get github.com/tarm/serial
+```
 
-Código
+### Código
 
+```go
 package main
 
 import (
@@ -154,14 +173,15 @@ func main() {
 		fmt.Println(scanner.Text())
 	}
 }
+```
 
+---
 
-⸻
+## 💠 C# (.NET)
 
-💠 C# (.NET)
+### Código (`Program.cs`)
 
-Código (Program.cs)
-
+```csharp
 using System;
 using System.IO.Ports;
 
@@ -180,25 +200,30 @@ class Program
         }
     }
 }
+```
 
-Ejecución
+### Ejecución
 
+```bash
 dotnet new console -n MicrobitReader
 cd MicrobitReader
 dotnet run
+```
 
+---
 
-⸻
+## 🧩 TypeScript (Node.js + ES Modules)
 
-🧩 TypeScript (Node.js + ES Modules)
+### Instalación
 
-Instalación
-
+```bash
 npm install serialport
 npm install -D typescript @types/node
+```
 
-Código (index.ts)
+### Código (`index.ts`)
 
+```ts
 import { SerialPort, ReadlineParser } from 'serialport';
 
 const port = new SerialPort({ path: 'COM3', baudRate: 115200 });
@@ -209,35 +234,41 @@ console.log('Recibiendo datos del micro:bit...\n');
 parser.on('data', (line: string) => {
   console.log(line);
 });
+```
 
-Ejecución
+### Ejecución
 
+```bash
 npx tsc index.ts && node index.js
+```
 
+---
 
-⸻
+## 🟥 Node-RED
 
-🟥 Node-RED
+### Instalación
 
-Instalación
-	1.	Instalar Node-RED:
+1. Instalar Node-RED:
 
-npm install -g node-red
+   ```bash
+   npm install -g node-red
+   ```
 
+2. Instalar el nodo Serial:
 
-	2.	Instalar el nodo Serial:
+   ```bash
+   npm install node-red-node-serialport
+   ```
 
-npm install node-red-node-serialport
+3. Conectar el micro:bit y verificar el puerto (por ejemplo `COM3`).
 
+---
 
-	3.	Conectar el micro:bit y verificar el puerto (por ejemplo COM3).
+### Flujo JSON listo para importar
 
-⸻
+Copia y pega en Node-RED → **Menú → Importar → Pegar → Importar**
 
-Flujo JSON listo para importar
-
-Copia y pega en Node-RED → Menú → Importar → Pegar → Importar
-
+```json
 [
     {
         "id": "2b8ef2d1b4a0a8e0",
@@ -295,12 +326,13 @@ Copia y pega en Node-RED → Menú → Importar → Pegar → Importar
         "responsetimeout": "10000"
     }
 ]
+```
 
+---
 
-⸻
+### Resultado en el panel “Debug”
 
-Resultado en el panel “Debug”
-
+```json
 msg.payload : Object
 {
   "temperatura": 25,
@@ -308,23 +340,21 @@ msg.payload : Object
   "accel_y": 12,
   "accel_z": -1024
 }
+```
 
+---
 
-⸻
+## 🔗 Comparativa de entornos
 
+| Lenguaje / Entorno | Librería principal       | Tipo de conexión |
+| ------------------ | ------------------------ | ---------------- |
+| Python             | pyserial                 | Serial USB       |
+| JavaScript         | serialport               | Serial USB       |
+| Rust               | serialport               | Serial USB       |
+| Go                 | tarm/serial              | Serial USB       |
+| C# (.NET)          | System.IO.Ports          | Serial USB       |
+| TypeScript         | serialport               | Serial USB       |
+| Node-RED           | node-red-node-serialport | Serial USB       |
 
-Estos ejemplos permiten recibir datos del micro:bit por USB Serial (COMx) en cualquier lenguaje moderno o entorno IoT:
+---
 
-Lenguaje / Entorno	Librería principal	Tipo de conexión
-Python	pyserial	Serial USB
-JavaScript	serialport	Serial USB
-Rust	serialport	Serial USB
-Go	tarm/serial	Serial USB
-C# (.NET)	System.IO.Ports	Serial USB
-TypeScript	serialport	Serial USB
-Node-RED	node-red-node-serialport	Serial USB
-
-
-⸻
-
-¿Quieres que te genere la versión con Bluetooth (BLE) para todos estos lenguajes también (usando el micro:bit sin cable USB)?
