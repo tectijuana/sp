@@ -60,3 +60,86 @@ En AWS IoT, harías un proceso similar, pero deberías crear manualmente la cosa
 * Cuando no quieres montar toda la infraestructura de AWS IoT.
 
 ---
+
+Flespi combina varias **tecnologías modernas** para ofrecer una plataforma IoT rápida, escalable y fácil de integrar.
+Las principales **tecnologías y componentes** que utiliza (o sobre las que está construida), organizadas por capas:
+
+---
+
+## ⚙️ **1. Infraestructura y Backend**
+
+* **Cloud nativa:** Flespi está completamente en la nube (tipo SaaS), corriendo sobre infraestructura virtual escalable —usa contenedores y microservicios para alta disponibilidad.
+* **Lenguaje base:** gran parte del backend está desarrollado en **C++** (para máxima velocidad y eficiencia en red).
+* **Base de datos en memoria:** emplea **almacenamiento en memoria (RAM)** para procesar millones de mensajes por segundo con baja latencia.
+* **Alta disponibilidad:** todos los componentes están redundados y sincronizados entre centros de datos.
+
+---
+
+## ☁️ **2. Protocolos IoT compatibles**
+
+Flespi es una **plataforma multi-protocolo**, lo que significa que puede comunicarse con muchos tipos de dispositivos IoT:
+
+| Tipo                                        | Tecnologías usadas                                                                                                                      |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Mensajería IoT estándar**                 | **MQTT**, **HTTP REST**, **WebSockets**                                                                                                 |
+| **Dispositivos telemáticos (GPS trackers)** | **TCP/UDP sockets**, con más de **400 protocolos decodificados** automáticamente                                                        |
+| **APIs externas**                           | **RESTful APIs** para integrarse con tus propias apps o dashboards                                                                      |
+| **Integraciones**                           | Puede enviar datos a **AWS**, **Azure**, **Google Cloud**, **ThingsBoard**, **Node-RED**, entre otros, mediante **streams MQTT o HTTP** |
+
+---
+
+## 🔐 **3. Seguridad**
+
+* **Cifrado TLS/SSL** para conexiones MQTT, HTTP y WebSocket.
+* **Tokens de acceso (API tokens)** para autenticar usuarios y servicios.
+* **Aislamiento de cuentas y subcuentas**, útil para empresas o desarrolladores que gestionan muchos clientes o dispositivos.
+
+---
+
+## 💾 **4. Procesamiento y almacenamiento**
+
+* **Motor de almacenamiento interno (“Flespi Storage”)**: guarda la telemetría de dispositivos en tiempo real, indexada por ID y timestamp.
+* **Decodificador automático de protocolos telemáticos**: convierte tramas binarias en JSON legible, sin necesidad de programación adicional.
+* **Streams**: canaliza datos hacia otras plataformas mediante **MQTT**, **HTTP**, **Azure IoT**, etc.
+* **Retención configurable**: puedes definir cuánto tiempo conservar los datos.
+
+---
+
+## 🧩 **5. APIs y SDKs**
+
+* **Flespi REST API:** principal interfaz para interactuar con el sistema (gestionar dispositivos, leer datos, crear streams, etc.).
+* **MQTT Broker integrado:** estándar compatible con cualquier cliente MQTT (por ejemplo, MQTT.fx, Node-RED, o paho-mqtt en Python).
+* **WebSockets API:** para actualizaciones en tiempo real en dashboards o frontends web.
+* **SDKs y librerías**: comunidad y documentación permiten usar Flespi con lenguajes como **Python, JavaScript, C#, y Java**.
+
+---
+
+## 🖥️ **6. Plataforma de gestión**
+
+* **Flespi Panel (Web UI):** dashboard en tiempo real para visualizar canales, dispositivos, streams y logs.
+* **Flespi MQTT Board:** una herramienta visual para suscribirse y publicar en topics MQTT, similar a un "broker client" gráfico.
+* **Integraciones de terceros:** conectable con Grafana, Traccar, Wialon y otras plataformas de análisis y rastreo.
+
+---
+
+## 🧠 **7. Arquitectura orientada a microservicios**
+
+Cada componente de Flespi (almacenamiento, decodificación, MQTT, API, etc.) corre como un **microservicio independiente**, comunicándose por **eventos internos** y **colas de mensajes** de alta velocidad.
+Esto permite:
+
+* Escalar horizontalmente.
+* Actualizar componentes sin downtime.
+* Procesar miles de dispositivos simultáneamente.
+
+---
+
+## 🚀 **En resumen**
+
+Flespi combina:
+
+* **Tecnologías IoT:** MQTT, HTTP, WebSocket, TCP/UDP.
+* **Backend rápido en C++ con almacenamiento en memoria.**
+* **APIs REST modernas y un broker MQTT integrado.**
+* **Arquitectura en la nube y microservicios.**
+
+-
