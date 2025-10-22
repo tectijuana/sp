@@ -17,10 +17,7 @@ Compatibilidad:
 
 ## 🧠 Código del micro:bit (común para todos)
 
-Falta determinar el puerto serial de Windows 11, macOS y Linux, este es un templete genérico, si gusta un pull reques de codigo arreglado para darle 1 punto extra.
-
-Carga este código **MicroPython** en tu micro:bit.  
-Es el mismo para todos los ejemplos:
+Para determinar el puerto serial del micro:bit en diferentes sistemas operativos, no es necesario modificar el código del micro:bit, ya que este se comunica automáticamente mediante USB CDC. Sin embargo, aquí se presenta el código **MicroPython** a cargar en tu micro:bit. Es el mismo para todos los ejemplos:
 
 ```python
 from microbit import *
@@ -28,22 +25,71 @@ import time
 
 while True:
     temp = temperature()
-    x = accelerometer.get_x()
-    y = accelerometer.get_y()
-    z = accelerometer.get_z()
-    print("TEMP:{},ACC:({},{},{})".format(temp, x, y, z))
+    x, y, z = accelerometer.get_x(), accelerometer.get_y(), accelerometer.get_z()
+    print(f"TEMP:{temp},ACC:({x},{y},{z})")  # Usando f-strings
     time.sleep(1)
 ````
 
 ---
 
-## 🐍 Python 3
+### Cómo Detectar el Puerto Serial en tu Sistema
 
-### Instalación
+#### **1. Windows 11:**
+- Abre el **Administrador de dispositivos**.
+- Busca en **Puertos (COM y LPT)**.
+- El micro:bit aparecerá como `mbed Serial Port (COMX)`.
 
+#### **2. macOS:**
+- Abre **Terminal** y ejecuta:
+  ```bash
+  ls /dev/cu.usbmodem*
+  ```
+  El puerto tendrá un nombre como `/dev/cu.usbmodem14102`.
+
+#### **3. Linux:**
+- En la terminal, ejecuta:
+  ```bash
+  ls /dev/ttyACM*
+  ```
+  El puerto será similar a `/dev/ttyACM0`.
+
+---
+
+## Script Python para Detección Automática (Ejecutar en tu PC)
+Si necesitan detectar el puerto programáticamente en tu computadora, usa este script (requiere `pyserial`):
+
+### Instalación de Dependencias
 ```bash
 pip install pyserial
 ```
+### Script
+```python
+import serial.tools.list_ports
+
+# Identificar el micro:bit por su VID y PID
+MICROBIT_VID = 0x0D28
+MICROBIT_PID = 0x0204
+
+def find_microbit_port():
+    for port in serial.tools.list_ports.comports():
+        if port.vid == MICROBIT_VID and port.pid == MICROBIT_PID:
+            return port.device
+    return None
+
+if __name__ == "__main__":
+    port = find_microbit_port()
+    if port:
+        print(f"Micro:bit encontrado en: {port}")
+    else:
+        print("Micro:bit no detectado.")
+```
+
+### Notas:
+- El código del micro:bit **es universal** y no depende del puerto.
+- La detección del puerto se realiza desde el lado de la computadora, no del micro:bit.
+- Si usas editores como Mu o Thonny, detectarán automáticamente el puerto.
+
+## 🐍 Python 3
 
 ### Código
 
