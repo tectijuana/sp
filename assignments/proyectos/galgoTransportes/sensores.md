@@ -1,4 +1,4 @@
-https://r72.cooltext.com/d.php?renderid=494723026043826&extension=png<img width="413" height="79" alt="image" src="https://github.com/user-attachments/assets/d9db4077-29a3-4ea1-96ee-76ef4ab6310f" />
+<img width="413" height="79" alt="image" src="https://github.com/user-attachments/assets/d9db4077-29a3-4ea1-96ee-76ef4ab6310f" />
 
 ---
 
