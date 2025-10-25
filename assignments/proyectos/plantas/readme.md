@@ -1,4 +1,4 @@
-!()[screen.png]
+![](screen.png)
 
 ## 🌿 **Práctica IoT: Sistema Inteligente para el Cuidado de Plantas con Wokwi, Flespi y Dashboard Web**
 
