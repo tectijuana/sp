@@ -417,4 +417,5 @@ while True:
 * Refuerza que esto **no es frontend**: están trabajando **el backend IoT, modelado y lógica de negocio**.
 * Valora si implementan **algoritmos de interpretación**: picos anómalos, patrones de frenado, predicción de falla.
 
+
 -
