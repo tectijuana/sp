@@ -130,28 +130,7 @@ Si se desea explorar más:
 
 ### 🌐 Arquitectura del Sistema (Mermaid.js)
 
-```mermaid
-graph TD
-    subgraph Wokwi / Python
-        V1[Vehículo 1] --> Flespi
-        V2[Vehículo 2] --> Flespi
-        V10[Vehículo 10] --> Flespi
-    end
-
-    subgraph Broker MQTT
-        Flespi[Flespi.io Broker]
-    end
-
-    subgraph (Opcional) EC2 o PC Local
-        NodeRED[Node-RED]
-        Influx[InfluxDB]
-        Grafana[Grafana]
-    end
-
-    Flespi --> NodeRED
-    NodeRED --> Influx
-    Influx --> Grafana
-```
+<img width="1317" height="1082" alt="GalgoTrabsortes diagrama" src="https://github.com/user-attachments/assets/9bcbad32-f1a1-45fb-b575-38bd9856ec41" />
 
 ---
 
