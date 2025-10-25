@@ -4,7 +4,7 @@
 
 # 🧠 CUESTIONARIO TÉCNICO – IoT Vehicular en el Mundo Real
 
-> **Objetivo:** Que el estudiante entienda cómo llevar la simulación a un prototipo real, abordando sensores físicos, electrónica embarcada, comunicaciones celulares y provisión de dashboards en producción.
+**Objetivo:** Que el estudiante entienda cómo llevar la simulación a un prototipo real, abordando sensores físicos, electrónica embarcada, comunicaciones celulares y provisión de dashboards en producción.
 
 ---
 
