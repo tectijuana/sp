@@ -4,14 +4,14 @@
 
 ### 🎯 **Objetivo**
 
-Diseñar un sistema IoT que simule un entorno real de agricultura doméstica inteligente. Se utilizarán **5 sensores simulados**, conectados a una Raspberry Pi Pico W emulada en **Wokwi**, que transmitirá datos a **Flespi MQTT** como si estuviera operando en un sistema de control remoto distribuido. Los datos serán visualizados en un **dashboard web dinámico** tipo "Plant Care Pro".
+Diseñar un sistema IoT que simule un entorno real de agricultura doméstica inteligente. Se utilizarán **5 sensores simulados**, conectados a unas Raspberry Pi Pico W emuladas en **Wokwi**, que transmitirán datos a **Flespi IoT portal MQTT** como si estuviera operando en un sistema de control remoto distribuido. Los datos serán visualizados en un **dashboard web dinámico** tipo "Plant Care Pro" según su propuesta.
 
 ---
 
 ## 🌐 **Descripción del Escenario**
 
-Imagina que esta app está **conectada a una red de controladores remotos en tiempo real** a través de **Flespi**, un broker MQTT que actúa como intermediario entre tu dispositivo (Pico W) y el sistema de monitoreo.
-Cada dispositivo puede estar ubicado en una maceta distinta dentro de un invernadero o una casa.
+Imagina que esta app está **conectada a una red de controladores remotos en tiempo real** a través de **Flespi**, un broker MQTT que actúa como intermediario entre tus dispositivos (Pico W) y el sistema de monitoreo.
+Cada dispositivo puede estar ubicado en una macetas distintas dentro de un invernadero o una casa.
 La app representa un **centro de monitoreo de plantas**, visualizando el estado de cada una mediante sus sensores como si estuviera conectada remotamente a varias estaciones IoT.
 
 ---
