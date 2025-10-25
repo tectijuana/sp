@@ -1,6 +1,6 @@
-¡Perfecto! Aquí tienes la **versión revisada, pedagógica y clara de la práctica**, enfocada en **backend IoT**, ideal para estudiantes o profesionales que trabajan en **Wokwi + Flespi + Python** y, opcionalmente, **AWS EC2 como entorno de despliegue**.
 
----
+<img width="780" height="2110" alt="screen" src="https://github.com/user-attachments/assets/5d7fadb7-821c-4af2-ae38-8000c44b334b" />
+
 
 # 🚚 PRÁCTICA IoT: Simulación de Flota de Vehículos con Backend en Flespi MQTT + Wokwi
 
