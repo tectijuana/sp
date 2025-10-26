@@ -110,7 +110,7 @@ Puedes simular el flujo con herramientas como:
 
 **Requisitos previos:**
 
-* WiFi SSID y contraseña
+* WiFi SSID y contraseña (por wokwi.com)
 * Token de Flespi MQTT: crea uno desde [https://flespi.io](https://flespi.io) (Dashboard → Tokens → Create)
 
 ### 📁 Código: `main.py`
@@ -216,6 +216,62 @@ main()
 * Publica el JSON en el topic `satnet/agrodrone/telemetry`.
 
 ---
+
+ Generérar **detección local de anomalías**, justo **antes de enviar los datos por MQTT**. Aquí te muestro **solo la parte de anomalías**, destacada y explicada para mayor claridad.
+
+---
+
+## 🧠 Fragmento de Código: Detección de Anomalías Local
+
+```python
+# === Detección de anomalías ===
+def check_anomalies(data):
+    anomalies = []
+    if data["temperature"] > 45:
+        anomalies.append("🔥 Temperatura Alta")
+    if data["altitude"] < 0:
+        anomalies.append("📉 Altitud Negativa")
+    if data["gps"]["lat"] is None or data["gps"]["lon"] is None:
+        anomalies.append("🛰️ GPS Perdido")
+    return anomalies
+```
+
+---
+
+## 💡 ¿Cómo se usa?
+
+En el `loop` principal, se simula el dato → se analiza → si hay anomalías, se incluyen en el JSON:
+
+```python
+data = simulate_data(counter)
+anomalies = check_anomalies(data)
+
+if anomalies:
+    data["anomalies"] = anomalies
+    print("🚨 Anomalías detectadas:", anomalies)
+```
+
+Entonces, el payload enviado podría verse así:
+
+```json
+{
+  "timestamp": 1729983405,
+  "temperature": 49.2,
+  "humidity": 67.0,
+  "altitude": -12.3,
+  "gps": { "lat": null, "lon": null },
+  "battery": 78,
+  "anomalies": [
+    "🔥 Temperatura Alta",
+    "📉 Altitud Negativa",
+    "🛰️ GPS Perdido"
+  ]
+}
+```
+
+---
+
+
 
 ## 🧩 **Rúbrica de Evaluación – Backend IoT con Flespi (Total: 100 pts)**
 
