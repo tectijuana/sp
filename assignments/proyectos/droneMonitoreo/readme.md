@@ -217,13 +217,36 @@ main()
 
 ---
 
-## 🚀 ¿Próximo paso?
+## 🧩 **Rúbrica de Evaluación – Backend IoT con Flespi (Total: 100 pts)**
 
-Puedo ayudarte con:
+| **Criterio**                                            | **Descripción**                                                                                        | **Pts Máx.** |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ------------ |
+| **1. Conectividad MQTT (Flespi)**                       | Conexión exitosa al broker Flespi usando token seguro y manejo adecuado del cliente MQTT               | 15 pts       |
+| **2. Simulación de Sensores Realistas**                 | Simulación coherente de temperatura, humedad, altitud, batería y GPS. Valores dentro de rangos lógicos | 10 pts       |
+| **3. Publicación de Datos MQTT**                        | Publicación periódica (cada 5 seg) en el topic `satnet/agrodrone/telemetry` con QoS adecuado           | 10 pts       |
+| **4. Detección de Anomalías Local**                     | Identificación de condiciones anómalas (temp > 45°C, altitud < 0, GPS perdido)                         | 10 pts       |
+| **5. Estructura del Payload JSON**                      | Payload limpio, estructurado y con `timestamp`, campos bien nombrados y parseables                     | 10 pts       |
+| **6. Manejo de Errores (Red / MQTT / Sensor)**          | Reintentos, reconexión automática o manejo de excepciones por fallos de red o MQTT                     | 10 pts       |
+| **7. Código Modular y Legible (MicroPython)**           | Uso de funciones limpias, documentación en comentarios, estilo claro                                   | 10 pts       |
+| **8. Seguridad en el Token y Configuración**            | Token Flespi no hardcoded o uso de archivo externo / variables de entorno                              | 5 pts        |
+| **9. Escalabilidad del Diseño (Multi-sensor / Drone)**  | Preparado para añadir múltiples sensores o nodos sin cambios drásticos al código                       | 10 pts       |
+| **10. Prueba de Funcionamiento / Log de Publicaciones** | Registro serial de publicaciones con indicación de conexión, envío, errores y anomalías                | 10 pts       |
 
-* 📊 Visualización en un dashboard HTML (modificando `code.html`)
-* 📈 Conexión a InfluxDB + Grafana vía Flespi HTTP Stream
-* 🧪 Script de test en tu PC con `paho-mqtt` para debug
+---
 
+## 🧠 Bonus Extra (Opcional) - Hasta 10 pts
 
+| **Criterio Bonus**                                      | **Descripción**                                                                        | **Pts** |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------- |
+| Dashboard MQTT integrado en HTML o con WebSocket        | Frontend dinámico mostrando los datos recibidos en tiempo real                         | +5 pts  |
+| Compresión del payload (ej. uso de CBOR o menos campos) | Uso de técnicas para reducir el tamaño del payload, pensando en LPWAN o edge computing | +5 pts  |
 
+---
+
+### 📊 Distribución Total
+
+* **Obligatorios:** 100 pts
+* **Bonus opcional:** +10 pts
+* **Nota final:** Escalar sobre 100 (si hay bonus, pueden dar crédito adicional o sobresaliente pasará a otra practica de menor puntaje)
+
+---
