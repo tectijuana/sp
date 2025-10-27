@@ -116,38 +116,39 @@ Como por ejemplo:
 
 🛰️ **Práctica MQTT IoT con Flespi, Wokwi y/o AWS Academy** 🌐
 
- 🚀 En esta práctica temática exploraremos MQTT en profundidad utilizando las plataformas Flespi, Wokwi y/o AWS Academy para simular escenarios realistas de integración de dispositivos IoT. Cada uno de UDs. seleccionará un caso del mundo real (ficticio, pero basado en situaciones reales), integrando 10 dispositivos MQTT específicos a ese contexto. Usara ChatGTP bot para que puede amplificar las condiciones de la simulacion para determinar los 10 devices donde acomodarlos para una tematica profesional.
+ 🚀 En esta práctica de cierre de semesrte serán temáticas exploraremos MQTT en profundidad utilizando las plataformas Flespi, Wokwi y/o AWS Academy para simular escenarios realistas de integración de dispositivos IoT. Cada uno de UDs. seleccionará un caso del mundo real (ficticio, pero basado en situaciones reales), integrando 10 dispositivos MQTT específicos a ese contexto. Usara ChatGTP bot para que puede amplificar las condiciones de la simulacion para determinar los 10 devices donde acomodarlos para una tematica profesional.
 
 📡 **Escenarios disponibles (cada uno debe integrar 10 dispositivos IoT MQTT):**
 
-1. 🌾 Agricultura Inteligente / pythonC
-2. 🚛 Logística y Transporte / diegotescodehub
-3. 🏭 Industria 4.0 - brandon0216
-4. 🏥 Salud Inteligente - cesarr777
-5. 🏙️ Ciudad Inteligente
-6. 🏡 Hogar Inteligente / saidtm
-7. 🛍️ Retail Inteligente
-8. 🎓 Campus Universitario Inteligente
-9. 🛳️ Puerto Inteligente / eduardojs7
-10. 🏟️ Estadio Inteligente - aagramon
-11. 🎢 Parque Temático Inteligente - noelgalgo
-12. 🌊 Acuicultura Inteligente
-13. ⚡ Redes Eléctricas Inteligentes-PaulScholl
-14. 🏨 Hotelería Inteligente / Sh0cko
-15. 🚴 Movilidad Inteligente
-16. 🌲 Gestión Forestal Inteligente - urieluna17
-17. 🚉 Ferrocarriles Inteligentes - molinaedgr
-18. 🏢 Edificios Inteligentes / vivianar
-19. 🏋️‍♂️ Gimnasios Inteligentes - castiilejo16
-20. 🍽️ Restaurantes Inteligentes -jonathan-garcia20
-21. 🏖️ Turismo Inteligente-(abnerorterga98)
-22. 🎮 Centros de Entretenimiento Inteligentes
-23. 🐾 Monitoreo Inteligente de Fauna Silvestre
-24. 📦 Almacenes Inteligentes/ 22210329
-25. 🎬 Producción Audiovisual Inteligente
-26. Gestion vehiculos (uber) / juanuz
+1. 🌾 Agricultura Inteligente  
+2. 🚛 Logística y Transporte  
+3. 🏭 Industria 4.0  
+4. 🏥 Salud Inteligente  
+5. 🏙️ Ciudad Inteligente  
+6. 🏡 Hogar Inteligente  
+7. 🛍️ Retail Inteligente  
+8. 🎓 Campus Universitario Inteligente  
+9. 🛳️ Puerto Inteligente  
+10. 🏟️ Estadio Inteligente  
+11. 🎢 Parque Temático Inteligente  
+12. 🌊 Acuicultura Inteligente  
+13. ⚡ Redes Eléctricas Inteligentes  
+14. 🏨 Hotelería Inteligente  
+15. 🚴 Movilidad Inteligente  
+16. 🌲 Gestión Forestal Inteligente  
+17. 🚉 Ferrocarriles Inteligentes  
+18. 🏢 Edificios Inteligentes  
+19. 🏋️‍♂️ Gimnasios Inteligentes  
+20. 🍽️ Restaurantes Inteligentes  
+21. 🏖️ Turismo Inteligente  
+22. 🎮 Centros de Entretenimiento Inteligentes  
+23. 🐾 Monitoreo Inteligente de Fauna Silvestre  
+24. 📦 Almacenes Inteligentes  
+25. 🎬 Producción Audiovisual Inteligente  
+26. 🚗 Gestión de Vehículos (Uber)  
 
-📋 **Tareas a realizar:**
+
+📋 **Algunas tareas a realizar:**
 - Seleccionar un escenario y diseñar los tópicos MQTT adecuados para cada dispositivo.
 - Simular la conexión y comunicación MQTT usando MicroPython en Wokwi y/o AWS Academy.
 - Conectar cada dispositivo al broker MQTT Flespi.
