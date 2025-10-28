@@ -1,222 +1,66 @@
-# 5G para Microcontroladores
+#  5G para Microcontroladores
 
-## Datos
+### Peralta Vigil Fernando Yael - 22211632
 
-**Nombre:** Jorge Joshel Leon Cruz
+***
+![Imagen referente a 5G en Microcontroladores](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSazQsQJUWPA9FaIFHj0YmHUH0IBf5XwXIw&s)
 
-**Número de control:** 22210772
+La integración de la conectividad 5G en dispositivos basados en microcontroladores abre nuevas posibilidades en el Internet de las Cosas (IoT), permitiendo transmisión de datos de alta velocidad, latencia ultra-baja y soporte masivo de dispositivos. Casos prácticos incluyen hogares inteligentes (domótica), ciudades inteligentes (gestión de tráfico, infraestructura), robótica móvil (drones y robots industriales) y monitoreo ambiental remoto. Por ejemplo, sistemas de automatización del hogar aprovechan la 5G para integrar múltiples sensores y actuadores con mayor fiabilidad.
 
-**Fecha:** 15 de Septiembre del 2025
+* Domótica inteligente: sensores y actuadores conectados por 5G permiten automatizar funciones del hogar (iluminación, seguridad, clima) con respuesta rápida y mayor rango operativo. Estudios indican que 5G puede revolucionar la domótica con velocidades muy altas y latencia mínima.
 
-**Nickname:** JOSHELCRUZ28
+* Ciudades inteligentes: se han prototipado plataformas de monitoreo urbano (p.ej., sensores de tráfico o contaminación) basadas en microcontroladores con módem 5G, facilitando la recolección de datos en entornos urbanos densos.
 
----
+* Robótica y vehículos autónomos: equipos como UAV o robots móviles usan módulos 5G externos para transmisión de video y telemetría en tiempo real. Barros et al. (2023) evalúan módulos 5G para drones y resaltan su viabilidad pese a limitaciones de tamaño y peso.
 
-## Introducción
+* Industria 4.0 y manufactura: en fábricas se ensayan sistemas IoT avanzados con 5G para control y mantenimiento predictivo, beneficiándose de la baja latencia y sincronización en tiempo real.
 
-La conectividad inalámbrica se ha convertido en un factor determinante para la evolución de los sistemas embebidos. Desde la domótica hasta la automatización industrial, la capacidad de los microcontroladores (MCUs) de integrarse en redes rápidas y confiables define el alcance de las aplicaciones modernas. En este contexto, la quinta generación de telecomunicaciones móviles, conocida como 5G, emerge como la tecnología que promete revolucionar la interacción de dispositivos IoT, sensores distribuidos y sistemas críticos en tiempo real.
+* Monitorización remota: sensores ambientales (calidad de aire, agua, clima) pueden transmitir grandes volúmenes de datos sin demoras apreciables, permitiendo dashboards en la nube accesibles desde cualquier lugar.
 
-Mientras que estándares previos como Wi-Fi y LTE ofrecieron conectividad básica, 5G plantea un ecosistema optimizado para la masividad de dispositivos conectados y la reducción drástica de la latencia. Este trabajo explora las bases, arquitectura, características técnicas, retos y aplicaciones del 5G aplicado a microcontroladores.
+### Ventajas
 
----
+El 5G aporta al IoT varias ventajas técnicas clave, la tecnología inteligente de próxima generación ofrece “tasas de transferencia de datos más rápidas, mayor ancho de banda, mayor capacidad, menor latencia y respuesta más ágil”
 
-## Bases
+* Alta velocidad y capacidad
 
-**Microcontroladores (MCUs)**
+* Baja latencia
 
-Los microcontroladores son circuitos integrados que incluyen CPU, memoria y periféricos en un único chip. Su función es ejecutar tareas específicas con bajo consumo de energía. Tradicionalmente se conectan mediante buses internos y módulos de comunicación inalámbrica como Wi-Fi, Bluetooth o LoRa.
+* Conectividad masiva
 
-**5G (Quinta Generación)**
+* Eficiencia espectral y energética 
 
-El estándar 5G, definido por la 3GPP (Third Generation Partnership Project), se diseñó para superar las limitaciones de 4G LTE. Sus tres pilares son:
+* Soporte nativo
 
-1. **eMBB (Enhanced Mobile Broadband)** → velocidades de hasta 10 Gbps.
+### Desafíos de implementación
 
-2. **URLLC (Ultra-Reliable Low Latency Communication)** → latencias menores a 1 ms.
+Integrar 5G en microcontroladores IoT también plantea retos importantes. Gkagkas et al. (2025) hallaron que si bien el ESP32 (microcontrolador) es de bajo consumo, el uso de un módulo 5G externo (con un Raspberry Pi en su estudio) incrementa drásticamente el consumo de energía del sistema, limitando su autonomía
 
-3. **mMTC (Massive Machine-Type Communication)** → soporte para millones de dispositivos/km².
+* Consumo energético y alimentacion
 
-<img width="623" height="461" alt="image" src="https://github.com/user-attachments/assets/4a29e458-2cda-4360-aa21-36048157075e" />
+* Complejidad de hardware
 
+* Costo y despliegue de infraestructura
 
----
+* Seguridad e interoperabilidad
 
-## Arquitectura y características técnicas
+* Integración y actualizaciones
 
-**Microcontroladores con 5G**
+### Compatibilidad
 
-- **Diseño:** los MCUs no incluyen directamente transceptores 5G, sino que se integran con módulos 5G NR (New Radio) mediante interfaces como UART, SPI o USB.
+La compatibilidad entre los microcontroladores y la tecnología 5G es un aspecto crítico. Actualmente muy pocos SoC (System-on-Chip) IoT incluyen soporte 5G nativo. En la práctica esto significa que un dispositivo basado en MCU (como Arduino, ESP32, STM32, etc.) debe conectarse a través de un módulo externo (por ejemplo, un módem USB, una tarjeta celular en formato M.2 o HAT de Raspberry Pi).
 
- **Capas de operación:**
+* Módulos externos
 
-- **Capa Física (PHY):** 
-maneja la señalización 5G, frecuencias sub-6 GHz y mmWave.
+* Limitaciones de diseño
 
-**Capa MAC/Radio:**
-gestionada por el módulo 5G, no por el MCU.
-
-**Interfaz MCU-Módulo:** 
-el microcontrolador ejecuta la lógica de aplicación y envía/recibe datos.
-
-<img width="1280" height="460" alt="image" src="https://github.com/user-attachments/assets/88d95b4b-861f-433f-855f-0d168141c87a" />
-
----
-
-## Características clave del 5G aplicadas a MCUs
-
-- **Velocidad:**
-hasta 100× más rápido que LTE.
-
-- **Latencia:**
-1–10 ms, permitiendo control en tiempo real.
-
-- **Confiabilidad:**
-protocolos URLLC garantizan continuidad en aplicaciones críticas.
-
-- **Escalabilidad:**
-millones de dispositivos pueden coexistir en un área reducida.
-
-- **Consumo energético:** 
-optimizaciones con 5G RedCap (Reduced Capability) para IoT.
-
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/a213aace-5bcb-4871-9a25-fd6115345408" />
-
----
-
-## Rendimiento
-
-- **Ancho de banda:**
-microcontroladores con módulos 5G pueden manejar desde Mbps (IoT básico) hasta varios Gbps (aplicaciones multimedia).
-
-- **Latencia:**
-inferior a 10 ms, frente a los 30–50 ms de LTE.
-
-- **Conexiones simultáneas:**
-hasta 1 millón de nodos/km², frente a ~100,000 en 4G.
-
-- **Movilidad:**
-soporte hasta 500 km/h (ej. trenes de alta velocidad).
-
-<img width="921" height="390" alt="image" src="https://github.com/user-attachments/assets/0afc90a1-652f-42a0-ad7f-adaaa60346f5" />
-
-
----
-
-## Escalabilidad y compatibilidad
-
-- **Escalabilidad:** 
-5G permite integrar desde sensores simples (mMTC) hasta controladores industriales complejos (URLLC).
-
-- **Compatibilidad:** 
-retrocompatible con 4G LTE mediante dual-mode modules.
-
-- **Topologías posibles:**
-
-1. Redes celulares masivas.
-
-2. Redes privadas 5G para fábricas y hospitales.
-
-<img width="600" height="273" alt="image" src="https://github.com/user-attachments/assets/3277cd34-276e-4d2f-9150-73147a006526" />
-
----
-
-## Facilidad de implementación y diseño
-
-- **Complejidad:**
-
-- Alta en el módulo 5G (maneja pilas de red, protocolos, PHY).
-
-- Moderada en el microcontrolador (solo gestiona lógica y datos).
-
-- **Flujo de diseño típico:**
-
-- MCU → comunica por UART/SPI → Módulo 5G.
-
-- Módulo 5G → accede a red 5G NR → Operador/Cloud.
-
-- **Ejemplos comerciales:**
-
-- **Quectel RG500Q:** módulo 5G NR para IoT industrial.
-
-- **u-blox 5G modules:** integración para MCUs de bajo consumo.
-
-- **Arduino + Shield 5G** (prototipado académico).
-
-<img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/579fdc42-08b9-429b-8315-a58cbdce75b2" />
-
----
-
-## Aplicaciones típicas
-
-- **IoT masivo:** sensores de agricultura inteligente transmitiendo datos ambientales.
-
-- **Vehículos autónomos:** comunicación V2X (vehicle-to-everything).
-
-- **Telemedicina:** dispositivos médicos portátiles enviando datos vitales en tiempo real.
-
-- **Fábricas inteligentes:** control de robots industriales con URLLC.
-
-- **Ciudades inteligentes:** semáforos, alumbrado y cámaras conectadas.
-
----
-
-## Ventajas y limitaciones
-
-**Ventajas**
-
-- Baja latencia crítica (<1 ms).
-
-- Soporte para millones de dispositivos.
-
-- Mayor velocidad de transmisión.
-
-- Confiabilidad para entornos industriales y médicos.
-
-**Limitaciones**
-
-- Costo elevado de módulos 5G.
-
-- Consumo energético aún significativo (aunque RedCap lo reduce).
-
-- Dependencia de infraestructura (no todo el mundo tiene cobertura 5G).
-
-- Complejidad de diseño frente a tecnologías más simples como LoRa o Wi-Fi.
-
-
----
-
-| Característica           | 4G LTE                  | 5G aplicado a MCUs                |
-| ------------------------ | ----------------------- | --------------------------------- |
-| **Velocidad**            | ~100 Mbps               | 1–10 Gbps                         |
-| **Latencia**             | 30–50 ms                | 1–10 ms                           |
-| **Conexiones/km²**       | ~100,000                | ~1,000,000                        |
-| **Consumo**              | Moderado                | Optimizado (5G RedCap)            |
-| **Fiabilidad**           | Media                   | Alta (URLLC)                      |
-| **Aplicaciones típicas** | Smartphones, IoT básico | IoT masivo, tiempo real, robótica |
-
----
-
-## Conclusión
-
-La integración de 5G en microcontroladores abre un nuevo horizonte para sistemas embebidos y aplicaciones IoT. Su capacidad para ofrecer alta velocidad, baja latencia y masividad de dispositivos conectados permite abordar casos de uso que antes eran imposibles con 4G o Wi-Fi. Sin embargo, la adopción enfrenta retos relacionados con el costo, consumo y la disponibilidad de infraestructura.
-
-A medida que los módulos 5G RedCap y las redes privadas 5G se masifiquen, los microcontroladores podrán convertirse en nodos críticos de ecosistemas interconectados, consolidando la visión de un mundo plenamente digital e inteligente.
-
----
+*  Compatibilidad con estándares
 
 ## Referencias
 
-- 3GPP. (2020). 5G; NR; Overall description; Stage-2 (Release 16).
+1. Gkagkas, G., Karamerou, V., Michalas, A., Dossis, M., & Vergados, D. J. (2025). The behavior of an IoT sensor monitoring system using a 5G network and its challenges in 6G networking. Electronics, 14(16), 3167. https://www.mdpi.com/2079-9292/14/16/3167
 
-- Qualcomm. (2021). 5G and IoT: The Next Evolution.
+2. Martín-Sacristán, D., Ravelo, C., Trelis, P., Ortiz, M., Fuentes, M., & Martínez, S. (2025). Development of a 5G-connected ultra-wideband radar platform for traffic monitoring in a campus environment. Sensors, 25(10), 3203. https://www.mdpi.com/1424-8220/25/10/3203
 
-- u-blox. (2022). 5G Modules for Embedded Systems.
+3. Barros, G., Boshoff, M., Luong, T., & Kuhlenkötter, B. (2023). Deployment of a 5G networking module for robotics and IoT applications. Procedia CIRP, 107, 535–540. https://www.sciencedirect.com/science/article/pii/S2212827123007655?via%3Dihub
 
-- Quectel Wireless Solutions. (2021). 5G Modules Portfolio.
-
-- Ericsson. (2020). 5G for Industries.
-
-- ITU-R. (2017). Minimum requirements related to technical performance for IMT-2020 radio interface(s).
-
-  ---
-  
+4. Palarimath, S., Maqsood, M., Pyingkodi, M., Thenmozhi, K., & [los demás autores]. (2023, junio). Powering IoT Systems with 5G Wireless Communication: A Comprehensive Review. En Proceedings of the 8th International Conference on Communication and Electronics Systems (ICCES 2023). IEEE. https://doi.org/10.1109/ICCES57224.2023.10192678
