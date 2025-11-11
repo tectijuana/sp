@@ -12,7 +12,7 @@ El objetivo: detectar **anomalías ambientales o de seguridad** en tiempo real (
 
 ```mermaid
 graph TD
-  A[Arduino AI Camera Kit] -->|Clasifica imágenes (fuego, humo, objetos, personas)| B[Raspberry Pi / ESP32 Controlador del dron]
+  A[Arduino AI Camera Kit] -->|"Clasifica imágenes (fuego, humo, objetos, personas)| B[Raspberry Pi / ESP32 Controlador del dron"]
   B -->|Publica datos vía MQTT| C[Flespi MQTT Broker]
   C -->|Almacena y distribuye eventos| D[Grafana Dashboard / Node-RED]
   D -->|Alertas automáticas| E[Operador / Cloud Analytics]
