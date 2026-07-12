@@ -44,7 +44,10 @@ sp/
     ├── u1/                      # Prácticas U01 (AWS, dashboards, InfluxDB, Grafana, Prometheus, MQTT)
     ├── u2/                      # Prácticas U02 (sensores, LLM aplicado, smartphone como sensor)
     ├── u3/                      # Prácticas U03 (microbit → IoT stack, flespi)
+    ├── u4/                      # Prácticas U04 (en construcción)
+    ├── u5/                      # Prácticas U05 (en construcción)
+    ├── u6/                      # Prácticas U06 (en construcción)
     └── proyectos/                # Proyectos integradores de equipos (U06)
 ```
 
-> Nota: `class-material/u4`, `u5` y `u6` están creadas con temario base (ver [`SYLLABUS.md`](../SYLLABUS.md)) y contenido pendiente de agregarse conforme avance el ciclo 2027.
+> Nota: `class-material/u4`–`u6` y `assignments/u4`–`u6` están creadas con temario base (ver [`SYLLABUS.md`](../SYLLABUS.md)) y contenido pendiente de agregarse conforme avance el ciclo 2027.
