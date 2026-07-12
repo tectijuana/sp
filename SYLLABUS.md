@@ -13,6 +13,8 @@
 
 El curso de **Sistemas Programables** proporciona los fundamentos teóricos y prácticos para el diseño, programación e integración de sistemas embebidos con arquitecturas de nube e IoT. Se abordan microcontroladores, interfaces de entrada/salida, protocolos de comunicación, mensajería y persistencia de datos, visualización, inteligencia artificial en el borde (Edge AI) e integración con modelos de lenguaje (LLM), así como el desarrollo de un proyecto integrador con sensores, actuadores y plataformas IoT reales.
 
+> La innovación del ciclo 2027 es el **AI-IoT-Stack**: el mismo pipeline de datos IoT del curso, con una capa de inteligencia (Edge AI/TinyML y orquestación con LLM) que razona sobre los datos en vez de solo graficarlos. Ver [`docs/ai-iot-stack.md`](./docs/ai-iot-stack.md).
+
 ---
 
 ## Resultados de aprendizaje

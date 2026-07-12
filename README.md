@@ -37,6 +37,8 @@ Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herra
 - Integrar Edge AI y modelos de lenguaje en soluciones con sensores y actuadores
 - Fomentar documentación estructurada y colaborativa
 
+> 🧠 **AI-IoT-Stack (novedad 2027):** la capa de inteligencia (Edge AI/TinyML + orquestación con LLM) sobre el stack IoT del curso. Ver [`docs/ai-iot-stack.md`](./docs/ai-iot-stack.md).
+
 ---
 
 ## Navegación rápida
