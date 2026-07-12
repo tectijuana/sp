@@ -23,7 +23,7 @@ El proyecto de equipo debe cubrir todas las capas del stack:
 
 ## Entregables
 
-- **Repositorio del equipo** con README (arquitectura, diagrama del stack, instrucciones de reproducción), código fuente y esquemas.
+- **Repositorio del equipo** con README (arquitectura, diagrama del stack, instrucciones de reproducción), código fuente y esquemas — usar la [plantilla profesional de proyecto](../../assignments/proyectos/PLANTILLA-PROYECTO.md).
 - **Declaración de asistencia de IA** ([ANEXO.md](../../ANEXO.md)) — obligatoria; usar IA para desarrollar está permitido y valorado, ocultarlo no.
 - **Informe técnico** de 5–8 páginas.
 - **Demostración en vivo** en la presentación final: el flujo sensor → inteligencia → acción debe verse funcionando.
