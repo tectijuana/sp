@@ -4,7 +4,9 @@
 sp/
 │
 ├── README.md                # Descripción general del curso
-├── SYLLABUS.md               # Temario oficial del curso (revisión 2027)
+├── README.en.md              # Resumen del curso en inglés (paridad internacional)
+├── CITATION.cff               # Metadatos de citación académica del repositorio
+├── SYLLABUS.md                 # Temario oficial del curso (revisión 2027)
 ├── SCHEDULE.md                # Cronograma por semanas (sin fechas fijas)
 ├── GRADING.md                 # Criterios de evaluación y rúbricas
 ├── POLICIES.md                 # Políticas del curso
@@ -19,8 +21,9 @@ sp/
 │   ├── schedule.md            # Referencia cruzada al cronograma
 │   ├── grading.md             # Referencia cruzada a la evaluación
 │   ├── contribution.md        # Guía de contribuciones
-│   ├── guidelines.md          # Lineamientos generales
+│   ├── guidelines.md          # Lineamientos generales y de entrega
 │   ├── references.md          # Referencias y enlaces del curso
+│   ├── ai-iot-stack.md        # Concepto AI-IoT-Stack (innovación 2027)
 │   └── FAQ.md                 # Preguntas frecuentes
 │
 ├── resources/                 # Material de apoyo

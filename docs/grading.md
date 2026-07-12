@@ -1,6 +1,8 @@
 
 # 📖 Políticas de Evaluación - Sistemas Programables
 
+> ⚠️ **Documento de apoyo.** Las ponderaciones y rúbricas oficiales del curso están en [`GRADING.md`](../GRADING.md) (raíz del repositorio); en caso de discrepancia, ese documento prevalece. Este archivo detalla la filosofía de evaluación con rúbricas y ejemplos.
+
 ## 📌 **Criterios de Evaluación**
 El sistema de evaluación se basa en estándares académicos universitarios, empleando **rúbricas detalladas** para garantizar objetividad y transparencia. Se consideran las siguientes categorías de evaluación:
 
@@ -73,11 +75,15 @@ Las rúbricas siguen un sistema de puntuación del **1 al 5**:
 ---
 
 ## 📊 **Distribución de la Evaluación**
+
+La distribución oficial vigente es la de [`GRADING.md`](../GRADING.md):
+
 | **Criterio**          | **Porcentaje** |
 |-----------------------|---------------|
-| Trabajos y Prácticas  | 40%           |
-| Exámenes             | 40%           |
-| Investigaciones y Exposiciones | 20% |
+| Prácticas de laboratorio | 40%        |
+| Quizzes / Evaluaciones parciales | 15% |
+| Participación y peer-review | 10%     |
+| Proyecto Final (U06)  | 35%           |
 
 ---
 

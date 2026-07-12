@@ -17,7 +17,18 @@ El curso de **Sistemas Programables** proporciona los fundamentos teóricos y pr
 
 ---
 
+## Prerrequisitos
+
+- Programación estructurada y orientada a objetos (C/C++, Python a nivel intermedio)
+- Fundamentos de electrónica digital y arquitectura de computadoras
+- Manejo básico de Linux y línea de comandos
+- Uso de Git/GitHub para control de versiones
+
+---
+
 ## Resultados de aprendizaje
+
+Los resultados están redactados con verbos de la taxonomía de Bloom y alineados a las competencias de egreso de Ingeniería en Sistemas Computacionales (marco de referencia CACEI/TECNM): diseño de sistemas, integración de tecnologías emergentes, trabajo colaborativo documentado y ética profesional.
 
 Al finalizar el curso, el estudiante será capaz de:
 

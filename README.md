@@ -14,6 +14,8 @@ https://chatgpt.com/g/g-67e4731b422481919463f4b52818e9c2-sensor-challenge-gpt
 
 Repositorio oficial del curso **Sistemas Programables**.
 
+> 🌐 English overview: [README.en.md](./README.en.md) · 📖 Para citar este repositorio: [CITATION.cff](./CITATION.cff)
+
 Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herramientas para diseño y desarrollo de sistemas embebidos con sensores, actuadores y automatización.
 
 ---
