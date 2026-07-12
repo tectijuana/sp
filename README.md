@@ -22,6 +22,8 @@ Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herra
 
 - **Ejemplos de código:** Programación en C, C++ y MicroPython (ESP32, RP Pico W, STM32)
 - **Proyectos prácticos:** Integración sensores, actuadores, comunicaciones (I²C, SPI, UART, MQTT)
+- **Stack IoT y nube:** AWS Academy/EC2, EdgeX Foundry, InfluxDB, Grafana, Prometheus, ThingsBoard
+- **Edge AI e integración con LLM:** TinyML y consumo de APIs de IA (ChatGPT, Copilot) desde microcontroladores
 - **Circuitos y simulaciones:** Wokwi, Fritzing, Proteus
 - **Documentación:** Tutoriales paso a paso, hojas técnicas y enlaces útiles
 
@@ -31,6 +33,8 @@ Aquí encontrarás: prácticas, ejemplos, proyectos, diagramas, recursos y herra
 
 - Dominar prácticas de programación de sistemas embebidos
 - Aplicar automatización, control digital e IoT
+- Diseñar pipelines de datos IoT: mensajería, persistencia en series temporales y visualización en dashboards
+- Integrar Edge AI y modelos de lenguaje en soluciones con sensores y actuadores
 - Fomentar documentación estructurada y colaborativa
 
 ---
