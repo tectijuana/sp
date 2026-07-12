@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Si utilizas este material educativo, cítalo como se indica a continuación. / If you use this educational material, please cite it as below."
+title: "Sistemas Programables (EmbeddedSP) — Curso con AI-IoT-Stack"
+type: software
+authors:
+  - family-names: "Solís Reyes"
+    given-names: "René"
+    affiliation: "Tecnológico Nacional de México, Instituto Tecnológico de Tijuana"
+abstract: >-
+  Repositorio oficial del curso Sistemas Programables de la carrera de
+  Ingeniería en Sistemas Computacionales (TECNM/ITT). Incluye material de
+  clase, prácticas y proyectos sobre sistemas embebidos, IoT y la
+  integración de inteligencia artificial (Edge AI/TinyML y LLMs) en el
+  pipeline de datos: el AI-IoT-Stack.
+keywords:
+  - embedded systems
+  - IoT
+  - MQTT
+  - TinyML
+  - Edge AI
+  - LLM
+  - education
+  - MicroPython
+  - ESP32
+license: GPL-3.0
+repository-code: "https://github.com/tectijuana/sp"
+version: "2027"
+date-released: "2026-07-12"
