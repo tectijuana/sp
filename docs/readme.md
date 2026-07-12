@@ -35,6 +35,9 @@ sp/
 │   │   └── investigacion/       # Investigaciones de estudiantes (temas U01)
 │   ├── u2/                     # U02 — Sensores, MQTT, EdgeX Foundry, desafíos IoT
 │   ├── u3/                     # U03 — Persistencia/visualización, ThingsBoard, integración con APIs/IA
+│   ├── u4/                     # U04 — Comunicaciones avanzadas e integración con IA (en construcción)
+│   ├── u5/                     # U05 — Edge AI, seguridad y eficiencia (en construcción)
+│   ├── u6/                     # U06 — Proyecto integrador (en construcción)
 │   └── FakeSensors/             # Simuladores de sensores para prácticas sin hardware físico
 │
 └── assignments/                # Tareas y laboratorios entregables
@@ -44,4 +47,4 @@ sp/
     └── proyectos/                # Proyectos integradores de equipos (U06)
 ```
 
-> Nota: las unidades U04–U06 del temario ([`SYLLABUS.md`](../SYLLABUS.md)) se cubren de forma transversal dentro de `class-material/u3` y en `assignments/proyectos`; conforme se generen materiales dedicados se moverán a carpetas `u4/`, `u5/` y `u6/`.
+> Nota: `class-material/u4`, `u5` y `u6` están creadas con temario base (ver [`SYLLABUS.md`](../SYLLABUS.md)) y contenido pendiente de agregarse conforme avance el ciclo 2027.
