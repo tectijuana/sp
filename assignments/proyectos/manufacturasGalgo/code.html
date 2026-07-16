@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AURORA PLANT OPS v2.9</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#06d0f9",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f1f23",
+                        "graphite": "#1A1D21",
+                        "glass": "rgba(44, 48, 54, 0.8)",
+                        "border-luminous": "rgba(75, 111, 120, 0.5)",
+                        "alert-critical": "#FF5252",
+                        "alert-warning": "#FFC107",
+                        "status-good": "#76FF03",
+                        "text-light": "#E0E0E0",
+                        "text-dim": "#9bb6bb",
+                        "cyan-electric": "#00E5FF"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 15px rgba(6, 209, 249, 0.3)',
+                        'glow-amber': '0 0 15px rgba(255, 193, 7, 0.4)',
+                        'glow-critical': '0 0 20px rgba(255, 82, 82, 0.5)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-image:
+                radial-gradient(rgba(75, 111, 120, 0.1) 1px, transparent 1px),
+                radial-gradient(rgba(75, 111, 120, 0.1) 1px, transparent 1px);
+            background-position: 0 0, 25px 25px;
+            background-size: 50px 50px;
+        }
+
+        .card-base {
+            @apply bg-glass border border-border-luminous rounded-xl backdrop-blur-md shadow-lg;
+        }
+
+        .pulse-critical {
+            animation: pulse-critical 1.5s infinite;
+        }
+
+        .pulse-warning {
+            animation: pulse-warning 2s infinite;
+        }
+
+        @keyframes pulse-critical {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+            }
+        }
+        @keyframes pulse-warning {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5);
+            }
+            70% {
+                box-shadow: 0 0 0 8px rgba(255, 193, 7, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-graphite font-display text-text-light antialiased">
+<div class="relative flex h-screen w-full flex-col p-4 gap-4 overflow-hidden">
+<!-- Top Nav Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-luminous px-6 py-2 shrink-0">
+<div class="flex items-center gap-4">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs><clippath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clippath></defs>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AURORA PLANT OPS v2.9</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+<div class="flex items-center gap-6 text-sm text-text-dim">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span><span id="local-time">16:30:55</span></span>
+<span class="flex items-center gap-2 text-cyan-electric font-medium"><span class="material-symbols-outlined text-base">wifi</span>Network: Online</span>
+<span class="flex items-center gap-2 text-status-good font-medium"><span class="material-symbols-outlined text-base">memory</span>PLC: Connected</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">swap_vert</span>Packet Rate: 1.2 Gbps</span>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-graphite text-sm font-bold leading-normal tracking-[0.015em] shadow-glow-cyan transition-all hover:brightness-110">
+<span class="truncate">Command Center</span>
+</button>
+</div>
+</header>
+<!-- Main Content Grid -->
+<main class="grid grid-cols-12 grid-rows-10 gap-4 flex-grow h-full overflow-hidden">
+<!-- Side Nav Bar -->
+<aside class="col-span-2 row-span-10 card-base p-4 flex flex-col gap-6">
+<div class="flex flex-col">
+<h1 class="text-white text-base font-medium leading-normal">Control Panel</h1>
+<p class="text-text-dim text-sm font-normal leading-normal">Filters &amp; Layers</p>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-white text-sm font-medium leading-normal pb-2">Shift</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border-none bg-[#27373a] placeholder:text-text-dim p-3 text-sm font-normal leading-normal">
+<option>Shift 1 (06:00 - 14:00)</option>
+<option>Shift 2 (14:00 - 22:00)</option>
+<option>Shift 3 (22:00 - 06:00)</option>
+</select>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-white text-sm font-medium leading-normal pb-2">Line</p>
+<select class="form-select w-full rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border-none bg-[#27373a] p-3 text-sm"><option>All Lines</option></select>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-white text-sm font-medium leading-normal pb-2">Machine</p>
+<select class="form-select w-full rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border-none bg-[#27373a] p-3 text-sm"><option>All Machines</option></select>
+</label>
+</div>
+<div class="border-t border-border-luminous my-2"></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-xl">query_stats</span>
+<p class="text-white text-sm font-medium leading-normal">KPIs</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined text-alert-warning text-xl">notifications_active</span>
+<p class="text-white text-sm font-medium leading-normal">Alerts</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined text-text-dim text-xl">engineering</span>
+<p class="text-white text-sm font-medium leading-normal">Scheduled Maintenance</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined text-text-dim text-xl">verified</span>
+<p class="text-white text-sm font-medium leading-normal">Quality</p>
+</div>
+</div>
+</aside>
+<!-- Center Map -->
+<section class="col-span-7 row-span-10 card-base p-2 relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-lg object-cover" data-alt="Isometric grid map of a factory floor with production lines and machine nodes" data-location="AURORA PLANT" style='background-image: url("https://placeholder.pics/svg/300"); opacity: 0.1;'></div>
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<div class="w-full h-full grid grid-cols-5 grid-rows-2 gap-8 text-center text-text-dim">
+<!-- Machine Nodes -->
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-status-good/20 border-2 border-status-good flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-status-good">precision_manufacturing</span>
+<div class="absolute inset-0 rounded-full border-2 border-status-good animate-ping"></div>
+</div>
+<span>L1-M1</span>
+<div class="absolute hidden group-hover:block bottom-full mb-2 w-52 p-3 text-left bg-graphite border border-border-luminous rounded-lg shadow-2xl z-10 text-xs">
+<p><strong>OEE:</strong> <span class="text-status-good">92%</span></p>
+<p><strong>Throughput:</strong> 120/min</p>
+<p><strong>Scrap:</strong> 1.5%</p>
+<p><strong>Availability:</strong> 98%</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-alert-warning/20 border-2 border-alert-warning pulse-warning flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-alert-warning">robot</span>
+</div>
+<span>L2-M1</span>
+<div class="absolute hidden group-hover:block bottom-full mb-2 w-52 p-3 text-left bg-graphite border border-border-luminous rounded-lg shadow-2xl z-10 text-xs">
+<p><strong>OEE:</strong> <span class="text-alert-warning">78%</span></p>
+<p><strong>Throughput:</strong> 95/min</p>
+<p><strong>Scrap:</strong> 3.2%</p>
+<p><strong>Availability:</strong> 85%</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-status-good/20 border-2 border-status-good flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-status-good">conveyor_belt</span>
+</div>
+<span>L3-M1</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-status-good/20 border-2 border-status-good flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-status-good">precision_manufacturing</span>
+</div>
+<span>L4-M1</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-alert-critical/20 border-2 border-alert-critical pulse-critical flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-alert-critical">robot_2</span>
+</div>
+<span>L5-M1</span>
+<div class="absolute hidden group-hover:block bottom-full mb-2 w-52 p-3 text-left bg-graphite border border-border-luminous rounded-lg shadow-2xl z-10 text-xs">
+<p><strong>OEE:</strong> <span class="text-alert-critical">45%</span></p>
+<p><strong>Throughput:</strong> 30/min</p>
+<p><strong>Scrap:</strong> 11.8%</p>
+<p><strong>Availability:</strong> <span class="text-alert-critical">55% (Unplanned Stop)</span></p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-status-good/20 border-2 border-status-good flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-status-good">conveyor_belt</span>
+</div>
+<span>L1-M2</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 group">
+<div class="relative w-16 h-16 rounded-full bg-text-dim/20 border-2 border-text-dim border-dashed flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-text-dim">power_off</span>
+</div>
+<span>L2-M2 (Offline)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- KPIs -->
+<section class="col-span-3 row-span-3 card-base p-4 flex flex-col gap-2">
+<h3 class="text-white text-base font-bold leading-tight tracking-[-0.015em]">Production KPIs</h3>
+<div class="grid grid-cols-2 gap-4 flex-grow">
+<div class="flex flex-col items-center justify-center bg-graphite/50 rounded-lg p-2 gap-1">
+<p class="text-sm text-text-dim">Total OEE</p>
+<div class="text-3xl font-bold text-status-good">86.4<span class="text-lg">%</span></div>
+<div class="text-xs text-text-dim">A:95% P:92% Q:99%</div>
+</div>
+<div class="flex flex-col items-center justify-center bg-graphite/50 rounded-lg p-2 gap-1">
+<p class="text-sm text-text-dim">Scrap Rate</p>
+<div class="text-3xl font-bold text-alert-warning">2.1<span class="text-lg">%</span></div>
+<div class="text-xs text-text-dim">Target: &lt;2.0%</div>
+</div>
+<div class="col-span-2 flex flex-col items-center justify-center bg-graphite/50 rounded-lg p-2 gap-1">
+<p class="text-sm text-text-dim">Actual vs Target Throughput</p>
+<div class="text-3xl font-bold text-primary">450 <span class="text-lg text-text-dim">/ 480 units/hr</span></div>
+</div>
+</div>
+</section>
+<!-- Alerts -->
+<section class="col-span-3 row-span-4 card-base p-4 flex flex-col">
+<h3 class="text-white text-base font-bold leading-tight tracking-[-0.015em]">Alerts Center</h3>
+<div class="flex gap-2 py-2">
+<button class="px-3 py-1 text-xs rounded-full bg-alert-critical/20 text-alert-critical border border-alert-critical">Safety</button>
+<button class="px-3 py-1 text-xs rounded-full bg-primary/20 text-primary border border-primary">Quality</button>
+<button class="px-3 py-1 text-xs rounded-full bg-text-dim/20 text-text-dim border border-text-dim">Sensors</button>
+</div>
+<div class="flex-grow overflow-y-auto text-xs space-y-2 pr-2 font-mono">
+<div class="p-2 rounded-md bg-alert-critical/20 shadow-glow-critical">
+<div class="flex justify-between items-center text-alert-critical font-bold"><span>PRIORITY 1: L5-M1</span><span>00:05:12</span></div>
+<p class="text-text-light">E-Stop Activated</p>
+</div>
+<div class="p-2 rounded-md bg-alert-warning/20">
+<div class="flex justify-between items-center text-alert-warning"><span>PRIORITY 2: L2-M1</span><span>00:21:40</span></div>
+<p class="text-text-light">Temp sensor T-102 high</p>
+</div>
+<div class="p-2 rounded-md bg-alert-warning/20">
+<div class="flex justify-between items-center text-alert-warning"><span>PRIORITY 3: L3-M1</span><span>01:10:05</span></div>
+<p class="text-text-light">Vision system low confidence</p>
+</div>
+<div class="p-2 rounded-md bg-text-dim/10">
+<div class="flex justify-between items-center text-text-dim"><span>INFO: L1-M1</span><span>02:30:11</span></div>
+<p class="text-text-light">Low level of lubricant detected</p>
+</div>
+</div>
+</section>
+<!-- Maintenance -->
+<section class="col-span-3 row-span-3 card-base p-4 flex flex-col">
+<h3 class="text-white text-base font-bold leading-tight tracking-[-0.015em]">Predictive Maintenance</h3>
+<div class="flex-grow overflow-y-auto space-y-2 pr-2 text-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-graphite/50">
+<div class="font-medium">L2-M1 Motor</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-alert-warning">High Risk</span>
+<div class="w-4 h-4 rounded-full bg-alert-warning"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-graphite/50">
+<div class="font-medium">L5-M1 Actuator</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-alert-critical">Failure Probable</span>
+<div class="w-4 h-4 rounded-full bg-alert-critical"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-graphite/50">
+<div class="font-medium">L1-M2 Gearbox</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-status-good">Healthy</span>
+<div class="w-4 h-4 rounded-full bg-status-good"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Runway Log -->
+<footer class="card-base h-16 shrink-0 p-3 flex items-center font-mono text-sm overflow-hidden">
+<div class="flex items-center gap-6 animate-marquee whitespace-nowrap">
+<span class="text-text-dim">[16:30:52] <span class="text-status-good">START</span> - OP 7890 on L1-M1</span>
+<span class="text-text-dim">[16:30:15] <span class="text-primary">QC_CONFIRM</span> - Batch B-456 passed inspection on L4</span>
+<span class="text-text-dim">[16:29:45] <span class="text-alert-warning">ALERT_ACK</span> - User:J.Doe acknowledged L2-M1 Temp High</span>
+<span class="text-text-dim">[16:28:10] <span class="text-status-good">WO_CLOSE</span> - WO-1123 (L2-M2 PM) closed.</span>
+<span class="text-text-dim">[16:25:43] <span class="text-alert-critical">E-STOP</span> - E-Stop activated on L5-M1.</span>
+<span class="text-text-dim">[16:30:52] <span class="text-status-good">START</span> - OP 7890 on L1-M1</span>
+<span class="text-text-dim">[16:30:15] <span class="text-primary">QC_CONFIRM</span> - Batch B-456 passed inspection on L4</span>
+<span class="text-text-dim">[16:29:45] <span class="text-alert-warning">ALERT_ACK</span> - User:J.Doe acknowledged L2-M1 Temp High</span>
+<span class="text-text-dim">[16:28:10] <span class="text-status-good">WO_CLOSE</span> - WO-1123 (L2-M2 PM) closed.</span>
+<span class="text-text-dim">[16:25:43] <span class="text-alert-critical">E-STOP</span> - E-Stop activated on L5-M1.</span>
+</div>
+</footer>
+</div>
+<style>
+      @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+          animation: marquee 40s linear infinite;
+      }
+    </style>
+<script>
+        function updateTime() {
+            const timeElement = document.getElementById('local-time');
+            if (timeElement) {
+                const now = new Date();
+                timeElement.textContent = now.toLocaleTimeString('en-GB');
+            }
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body></html>

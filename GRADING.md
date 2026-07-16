@@ -21,14 +21,17 @@
 
 ---
 
-## Proyecto final (100 pts)
+## Proyecto final (100 pts) — ciclo 2027
+
+El proyecto debe demostrar el [AI-IoT-Stack](./docs/ai-iot-stack.md) completo; requisitos detallados en [`class-material/u6`](./class-material/u6/readme.md).
 
 | Criterio | Peso | Descripción |
 |----------|-----:|-------------|
-| Diseño y prototipo | 20 | Claridad en el planteamiento y arquitectura |
-| Implementación | 30 | Hardware y software funcional, integración de sensores/actuadores |
-| IoT y comunicación | 15 | Conectividad estable (WiFi, BT, MQTT, etc.) |
-| Documentación técnica | 15 | Informe 5–8 págs + README con instrucciones |
-| Innovación y relevancia | 10 | Impacto y aplicación práctica |
-| Presentación final | 10 | Claridad, demostración y defensa técnica |
+| Diseño y prototipo | 20 | Claridad en el planteamiento y arquitectura del stack completo |
+| Implementación | 25 | Hardware y software funcional, integración de sensores/actuadores; seguridad crítica resuelta con lógica local |
+| IoT y comunicación | 10 | Conectividad estable (WiFi, BT, LoRaWAN, MQTT) y persistencia en series temporales |
+| Capa de inteligencia | 15 | Edge AI (TinyML) o integración LLM funcionando sobre el stack, con métrica que justifique su valor |
+| Documentación técnica | 15 | Informe 5–8 págs + README con instrucciones + declaración de asistencia de IA ([ANEXO.md](./ANEXO.md)) |
+| Innovación y relevancia | 5 | Impacto y aplicación práctica; bonifica integrar ambas rutas de inteligencia con justificación |
+| Presentación final | 10 | Demostración en vivo del flujo sensor → inteligencia → acción |
 

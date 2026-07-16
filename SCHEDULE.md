@@ -11,20 +11,20 @@
 | Semana | Unidad | Tema central | Entregables |
 |-------:|:------:|--------------|-------------|
 | 01 | U01 | Introducción, microcontroladores y microprocesadores | P01 asignada |
-| 02 | U01 | Entorno de desarrollo, simuladores (Wokwi, Proteus, Fritzing) | Quiz E01 |
-| 03 | U02 | Programación en C/C++ para microcontroladores | — |
-| 04 | U02 | MicroPython y control de GPIO (entradas/salidas) | P01 entrega |
-| 05 | U02 | Manejo de interrupciones y temporizadores | P02 asignada |
-| 06 | U03 | Sensores y actuadores básicos | Quiz E02 |
-| 07 | U03 | Protocolos de comunicación (UART, SPI, I²C) | — |
-| 08 | U03 | Comunicaciones avanzadas entre módulos | P02 entrega |
-| 09 | U04 | Conectividad WiFi y Bluetooth (ESP32, RP Pico W) | P03 asignada |
-| 10 | U04 | Protocolos IoT: MQTT, HTTP básico | Quiz E03 |
-| 11 | U05 | Introducción a IoT y aplicaciones prácticas | — |
-| 12 | U05 | Seguridad y eficiencia energética en sistemas embebidos | P03 entrega |
-| 13 | U06 | Proyecto integrador: definición y prototipo | — |
+| 02 | U01 | Entorno de desarrollo, simuladores (Wokwi, Proteus, Fritzing); AWS Academy, EC2 y backend Flask | Quiz E01 |
+| 03 | U02 | Programación C/C++ y MicroPython; GPIO digital y analógico | — |
+| 04 | U02 | Sensores y actuadores; protocolos UART, SPI, I²C | P01 entrega |
+| 05 | U02 | Mensajería pub/sub con MQTT (Mosquitto/EMQX) y EdgeX Foundry; desafíos IoT | P02 asignada |
+| 06 | U03 | Series temporales con InfluxDB: ingesta y consultas | Quiz E02 |
+| 07 | U03 | Dashboards y monitoreo: Grafana y Prometheus | — |
+| 08 | U03 | ThingsBoard; tipos de dashboards (estratégico, táctico, operacional, informativo) | P02 entrega |
+| 09 | U04 | Conectividad WiFi/BT (ESP32, RP Pico W) y bajo consumo (LoRaWAN) | P03 asignada |
+| 10 | U04 | Consumo de APIs REST e integración de LLM en flujos de sensores | Quiz E03 |
+| 11 | U05 | Edge AI / TinyML: entrenamiento y despliegue en microcontrolador (Edge Impulse) | — |
+| 12 | U05 | Seguridad en sistemas embebidos e IoT; eficiencia energética | P03 entrega |
+| 13 | U06 | Proyecto integrador AI-IoT-Stack: definición y prototipo | — |
 | 14 | U06 | Implementación del proyecto | Avance del proyecto |
-| 15 | U06 | Pruebas, métricas y documentación | Entrega proyecto final |
+| 15 | U06 | Pruebas, métricas (capa de inteligencia) y documentación | Entrega proyecto final |
 | 16 | U06 | Presentaciones finales y retroalimentación | — |
 
 ---
