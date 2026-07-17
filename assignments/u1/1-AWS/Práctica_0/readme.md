@@ -34,6 +34,8 @@ Se mostrará como se ejecutaron los comandos en el siguiente link:
 
 [![asciicast](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt.svg)](https://asciinema.org/a/SItBv8O4tXgllJ40lNpYmnGVt)
 
-## Creción y ejecución de Raspberry Pi 4 AVH
+## Creación y ejecución de Raspberry Pi 4 AVH
 
-[![asciicast](https://asciinema.org/a/nvPs2VpgasCCBkBCJCLbh5GG3.svg)](https://asciinema.org/a/nvPs2VpgasCCBkBCJCLbh5GG3)
+> La grabación original de esta sección ya no está disponible en asciinema (el cast fue eliminado).
+
+<!-- Cast eliminado: https://asciinema.org/a/nvPs2VpgasCCBkBCJCLbh5GG3 -->

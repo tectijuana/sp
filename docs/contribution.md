@@ -91,7 +91,7 @@ Para garantizar un ambiente colaborativo y respetuoso:
 - Respeta las opiniones y código de los demás.
 - Sigue las indicaciones del docente o mantenedores del repositorio.
 
-Para más detalles, revisa el [`code-of-conduct.md`](code-of-conduct.md).
+Para más detalles, revisa el [`CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md).
 
 ---
 

@@ -23,7 +23,7 @@ Un dron agrícola sobrevuela parcelas monitoreando temperatura, humedad y altura
 
   * `BME280` (Temperatura, Humedad, Presión/Altitud)
   * `GPS NMEA stream` (simulado en formato JSON)
-* Broker MQTT: [Flespi MQTT Broker](https://flespi.io/mqtt-broker)
+* Broker MQTT: [Flespi MQTT Broker](https://flespi.com/mqtt-broker)
 * UI: `code.html` como plantilla para frontend
 
 ---
@@ -96,7 +96,7 @@ Puedes simular el flujo con herramientas como:
 
 * [MQTT Explorer](https://mqtt-explorer.com)
 * Wokwi (para código C con ESP32)
-* Flespi MQTT test tool: [Try Now](https://flespi.io/mqtt-test)
+* Flespi MQTT test tool: [Try Now](https://flespi.com/tools/mqtt-board)
 
 ---
 

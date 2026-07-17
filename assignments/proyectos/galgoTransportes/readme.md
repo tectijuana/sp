@@ -263,7 +263,7 @@ while True:
 
 ## 🧰 Wokwi Setup
 
-1. Abre [https://wokwi.com/new](https://wokwi.com/new)
+1. Abre [https://wokwi.com/projects/new](https://wokwi.com/projects/new)
 2. Elige `Raspberry Pi Pico W` o `ESP32`
 3. Agrega archivo `main.py` con el código anterior
 4. Asegúrate que el proyecto tenga Internet (Wokwi lo simula)
