@@ -1,82 +1,34 @@
+# U03 — Persistencia y visualización de datos
 
-
-# Lectura: El valor económico del software de código abierto
-
-## ¿Qué es el software de código abierto?
-
-El **software de código abierto** (_Open Source Software_, OSS) es aquel cuyo código fuente está disponible públicamente. Cualquier persona puede ver, usar, modificar y compartir libremente este tipo de software. Algunos ejemplos reconocidos son:
-
-- El sistema operativo **Linux**.
-- El navegador web **Firefox**.
-- Lenguajes de programación como **Python** y **JavaScript**.
+Esta unidad cubre la capa de **persistencia y visualización** del [AI-IoT-Stack](../../docs/ai-iot-stack.md): las lecturas que en U02 viajaron por MQTT ahora se almacenan como series temporales y se presentan en dashboards para su monitoreo y análisis.
 
 ---
 
-## ¿Cuál es el valor económico del código abierto?
+## Contenido de la unidad
 
-Un estudio reciente realizado por la **Escuela de Negocios de Harvard** reveló un dato sorprendente:
+| Subtema | Material | Tema |
+|---|---|---|
+| 3.1 | [`3.1/`](./3.1/readme.md) | Bases de datos de series temporales con **InfluxDB** |
+| 3.2 | [`3.2/`](./3.2/readme.md) | Dashboards y monitoreo con **Grafana** y **Prometheus** |
+| 3.3 | [`3.3/`](./3.3/readme.md) | **ThingsBoard** como plataforma IoT open source todo-en-uno |
+| 3.4 | [`3.4/`](./3.4/readme.md) | Práctica: Raspberry Pi Pico W consultando la API de ChatGPT (semilla de la capa de inteligencia — se formaliza en U04) |
 
-> **El software de código abierto tiene un valor económico estimado en 8,8 billones de dólares**.
+## Lectura complementaria
 
-Esto significa que, si las empresas tuvieran que desarrollar software similar sin utilizar código abierto, los costos serían aproximadamente **3,5 veces mayores**. Por lo tanto, el OSS es esencial para la economía digital actual.
+- [El valor económico del software de código abierto](./lectura-valor-economico-oss.md) — por qué el stack del curso (Mosquitto, InfluxDB, Grafana, ThingsBoard) se apoya en OSS.
 
----
+## Prácticas relacionadas
 
-### Datos relevantes del estudio:
+- [`assignments/u1/4-influxdb`](../../assignments/u1/4-influxdb/readme.md) — instalación y carga de datos en InfluxDB
+- [`assignments/u1/5-grafana`](../../assignments/u1/5-grafana/readme.md) — instalación de Grafana en AWS (Ubuntu)
+- [`assignments/u1/6-prometeus`](../../assignments/u1/6-prometeus/readme.md) — instalación de Prometheus en AWS (Ubuntu)
+- [`assignments/u3/`](../../assignments/u3/readme.md) — prácticas propias de la unidad (micro:bit → IoT Stack, flespi)
 
-- El **96%** del software creado actualmente contiene algún componente de código abierto.
-- El valor del OSS se concentra en relativamente pocas personas: **el 5% de los desarrolladores genera el 95% del valor económico**.
+## Tipos de dashboards (temario 2027)
 
-### Valor económico por lenguaje de programación:
+Al diseñar la visualización del proyecto, identificar qué tipo de dashboard se está construyendo:
 
-| Lenguaje      | Valor estimado (oferta)  |
-|---------------|---------------------------|
-| Go            | $803 millones             |
-| JavaScript    | $758 millones             |
-| Java          | $658 millones             |
-| C             | $406 millones             |
-| Python        | $55 millones              |
-
-- En términos de demanda empresarial, **Go** es el lenguaje con mayor impacto económico, con un valor que supera los **5 billones de dólares**.
-
----
-
-## Implicaciones y recomendaciones del estudio
-
-El software de código abierto se considera un **bien común moderno**. Esto significa que todos se benefician de su uso, pero no siempre se contribuye lo suficiente para mantenerlo sostenible.
-
-El estudio de Harvard recomienda:
-
-- **Las empresas** deberían contribuir activamente al desarrollo del software de código abierto, especialmente considerando el enorme valor económico que reciben.
-- **Los gobiernos y responsables políticos** deben reconocer la importancia del OSS y promover políticas que apoyen su sostenibilidad.
-
----
-
-## ¿Por qué esto es importante para ti?
-
-Como estudiante y futuro profesional, entender el valor del software de código abierto es fundamental. El OSS:
-
-- Impulsa la **innovación**.
-- Facilita el **acceso al conocimiento**.
-- Contribuye significativamente al **desarrollo económico y social global**.
-
-### Reflexiona sobre lo siguiente:
-
-- ¿Qué impacto tendría en tu vida diaria si no pudieras acceder a software gratuito como Linux, Android o navegadores web libres?
-- ¿Qué puedes hacer para apoyar o contribuir al software de código abierto en tu futuro profesional?
-
----
-
-## Actividad recomendada:
-
-- Investiga un software de código abierto que utilices regularmente.
-- Descubre quién lo creó, cómo se sostiene, y si puedes aportar a su desarrollo.
-- Comparte tus hallazgos en la próxima clase.
-
----
-
-## Fuente principal:
-
-[**Harvard Business School - Open source has an economic value of $8.8 trillion**](https://www.heise.de/en/news/Harvard-study-Open-source-has-an-economic-value-of-8-8-trillion-dollars-10322643.html)
-
----
+- **Estratégico** — indicadores agregados para decisiones de largo plazo
+- **Táctico** — seguimiento de procesos y tendencias por área
+- **Operacional** — estado en tiempo (casi) real; el más común en IoT
+- **Informativo** — comunicación de datos a audiencias generales
