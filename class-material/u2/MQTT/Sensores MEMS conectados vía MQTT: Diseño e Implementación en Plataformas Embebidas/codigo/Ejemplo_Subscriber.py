@@ -1,6 +1,6 @@
 # ╔═══════════════════════════════════════════════════════════════╗
 # ║  Programa:    Ejemplo_Subscriber.py — Suscriptor MQTT         ║
-# ║  Programador: [Tu Nombre]                                     ║
+# ║  Programador: MC. René Solis R.                               ║
 # ║  Curso:       Sistemas Programables (EmbeddedSP) TECNM / ITT  ║
 # ║  Horario:     [999]                                           ║
 # ║  Actividad:   U2 — Sensores MEMS (MPU-6050) vía MQTT          ║
@@ -11,7 +11,7 @@
 # lecturas del sensor MPU-6050 y mostrarlas en consola conforme llegan.
 #
 # Recuerde iniciar su asciinema identificándose antes de cualquier comando:
-#   $ echo "Programa Ejemplo_Subscriber.py, por [Tu Nombre] de curso Sistemas Programables Horario [999] actividad MQTT-MEMS"
+#   $ echo "Programa Ejemplo_Subscriber.py, por MC. René Solis R. de curso Sistemas Programables Horario [999] actividad MQTT-MEMS"
 
 import paho.mqtt.client as mqtt
 

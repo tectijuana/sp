@@ -1,7 +1,7 @@
 #!/bin/bash
 # ╔═══════════════════════════════════════════════════════════════╗
 # ║  Programa:    info.sh — Información básica del dispositivo    ║
-# ║  Programador: [Tu Nombre]                                     ║
+# ║  Programador: MC. René Solis R.                               ║
 # ║  Curso:       Sistemas Programables (EmbeddedSP) TECNM / ITT  ║
 # ║  Horario:     [999]                                           ║
 # ║  Actividad:   Recursos — Diagnóstico del dispositivo (Termux) ║
@@ -12,7 +12,7 @@
 # Android desde Termux, usando getprop y los pseudo-archivos /proc.
 #
 # Recuerde iniciar su asciinema identificándose antes de cualquier comando:
-#   $ echo "Programa info.sh, por [Tu Nombre] de curso Sistemas Programables Horario [999] actividad [ZZZZ]"
+#   $ echo "Programa info.sh, por MC. René Solis R. de curso Sistemas Programables Horario [999] actividad [ZZZZ]"
 
 echo "===== Información del Dispositivo ====="
 # getprop consulta las propiedades del sistema Android

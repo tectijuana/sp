@@ -1,6 +1,6 @@
 # ╔═══════════════════════════════════════════════════════════════╗
 # ║  Programa:    🌤️ Mini Dashboard del Clima (Flask + Tailscale)  ║
-# ║  Programador: [Tu Nombre]                                     ║
+# ║  Programador: MC. René Solis R.                               ║
 # ║  Curso:       Sistemas Programables (EmbeddedSP) TECNM / ITT  ║
 # ║  Horario:     [999]                                           ║
 # ║  Actividad:   U1 — 4-Flask, dashboard del clima               ║
@@ -12,7 +12,7 @@
 # fondo según la temperatura.
 #
 # Recuerde iniciar su asciinema identificándose antes de cualquier comando:
-#   $ echo "Programa app.py, por [Tu Nombre] de curso Sistemas Programables Horario [999] actividad 4-Flask"
+#   $ echo "Programa app.py, por MC. René Solis R. de curso Sistemas Programables Horario [999] actividad 4-Flask"
 
 from flask import Flask
 import requests
