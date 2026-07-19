@@ -1,9 +1,18 @@
 # ╔═══════════════════════════════════════════════════════════════╗
-# ║        🌤️ Mini Dashboard del Clima con Flask + Tailscale       ║
-# ║        Lenguajes de Interfaz - TECNM / ITT - 2025              ║
-# ║        Autor: [Tu Nombre]                                      ║
-# ║        Descripción: Servidor Flask consultando OpenWeatherMap  ║
+# ║  Programa:    🌤️ Mini Dashboard del Clima (Flask + Tailscale)  ║
+# ║  Programador: [Tu Nombre]                                     ║
+# ║  Curso:       Sistemas Programables (EmbeddedSP) TECNM / ITT  ║
+# ║  Horario:     [999]                                           ║
+# ║  Actividad:   U1 — 4-Flask, dashboard del clima               ║
+# ║  Asciinema:   [URL de la grabación]                           ║
 # ╚═══════════════════════════════════════════════════════════════╝
+#
+# Objetivo: servidor web Flask que consulta la API de OpenWeatherMap
+# y muestra la temperatura y condiciones de una ciudad, con color de
+# fondo según la temperatura.
+#
+# Recuerde iniciar su asciinema identificándose antes de cualquier comando:
+#   $ echo "Programa app.py, por [Tu Nombre] de curso Sistemas Programables Horario [999] actividad 4-Flask"
 
 from flask import Flask
 import requests

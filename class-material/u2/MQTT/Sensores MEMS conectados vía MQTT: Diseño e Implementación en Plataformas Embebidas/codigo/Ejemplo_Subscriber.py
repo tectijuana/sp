@@ -1,5 +1,21 @@
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║  Programa:    Ejemplo_Subscriber.py — Suscriptor MQTT         ║
+# ║  Programador: [Tu Nombre]                                     ║
+# ║  Curso:       Sistemas Programables (EmbeddedSP) TECNM / ITT  ║
+# ║  Horario:     [999]                                           ║
+# ║  Actividad:   U2 — Sensores MEMS (MPU-6050) vía MQTT          ║
+# ║  Asciinema:   [URL de la grabación]                           ║
+# ╚═══════════════════════════════════════════════════════════════╝
+#
+# Objetivo: suscribirse al tópico MQTT donde el publisher publica las
+# lecturas del sensor MPU-6050 y mostrarlas en consola conforme llegan.
+#
+# Recuerde iniciar su asciinema identificándose antes de cualquier comando:
+#   $ echo "Programa Ejemplo_Subscriber.py, por [Tu Nombre] de curso Sistemas Programables Horario [999] actividad MQTT-MEMS"
+
 import paho.mqtt.client as mqtt
 
+# Callback: se ejecuta cada vez que llega un mensaje al tópico suscrito
 def on_message(client, userdata, msg):
     print(f"Mensaje recibido en {msg.topic}: {msg.payload.decode()}")
 
