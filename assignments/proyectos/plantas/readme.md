@@ -312,7 +312,101 @@ def get_sensores():
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
 ```
+---
+## 📺 Pico W con Display OLED
 
+La pantalla OLED se encargará de desplegar los datos de una sexta planta simulada en la Pico W
+El siguiente codigo muesta como se simulan estos datos y se envian al display OLED
+
+```
+# plant6_local_oled.py
+# Simula sensores de "Planta 6" y los muestra en OLED SSD1306 (MicroPython, Pico W)
+# NO envía datos a ningún broker.
+
+from machine import Pin, I2C
+import time
+import random
+import ssd1306
+
+# ===== CONFIGURACIÓN DEL OLED =====
+i2c = I2C(0, scl=Pin(5), sda=Pin(4))
+oled = ssd1306.SSD1306_I2C(128, 64, i2c)
+
+PLANT_NAME = "Planta 6"
+
+# ===== UMBRALES PARA ALERTAS =====
+SOIL_THRESHOLD = 25      # % por debajo → riego urgente
+LIGHT_THRESHOLD = 100    # lux por debajo → baja luz
+AIR_THRESHOLD = 800      # valor por encima → mala calidad / alerta
+
+# ===== FUNCIONES =====
+def read_sensors():
+    """Simula lecturas de sensores."""
+    return {
+        "soil": round(random.uniform(18.0, 60.0), 1),   # humedad suelo %
+        "temp": round(random.uniform(16.0, 32.0), 1),   # temperatura °C
+        "light": random.randint(20, 900),               # lux
+        "air": random.randint(300, 950),                # índice/ppm
+        "water": random.choice([0, 1])                  # 0 = vacío, 1 = OK
+    }
+
+def evaluate_status(data):
+    """Evalúa las condiciones y devuelve un texto de estado."""
+    msgs = []
+    if data["soil"] < SOIL_THRESHOLD:
+        msgs.append("RIEGO!")
+    if data["light"] < LIGHT_THRESHOLD:
+        msgs.append("Luz baja")
+    if data["air"] > AIR_THRESHOLD:
+        msgs.append("Aire malo")
+    if data["water"] == 0:
+        msgs.append("Agua BAJA")
+    if not msgs:
+        return "ESTADO: SANO"
+    return " ".join(msgs)
+
+def show_display(data, status):
+    """Muestra las lecturas y estado en el OLED."""
+    oled.fill(0)
+    oled.text(PLANT_NAME, 0, 0)
+    oled.text("T:{:.1f}C S:{:.0f}%".format(data["temp"], data["soil"]), 0, 16)
+    oled.text("L:{:d}lx A:{:d}".format(data["light"], data["air"]), 0, 32)
+    water_txt = "Agua:OK" if data["water"] == 1 else "Agua:BAJO"
+    oled.text(water_txt, 0, 48)
+    oled.show()
+
+    # Si hay alertas, mostrar una segunda pantalla de estado por 1s
+    if status != "ESTADO: SANO":
+        time.sleep(1)
+        oled.fill(0)
+        oled.text("ALERTA!", 0, 0)
+        oled.text(status[:16], 0, 16)
+        if len(status) > 16:
+            oled.text(status[16:32], 0, 32)
+        oled.show()
+        time.sleep(1)
+
+# ===== PROGRAMA PRINCIPAL =====
+def main():
+    try:
+        while True:
+            data = read_sensors()
+            status = evaluate_status(data)
+            show_display(data, status)
+
+            # Mostrar también por consola (Thonny Shell)
+            print("Datos:", data, "|", status)
+
+            time.sleep(5)
+
+    except KeyboardInterrupt:
+        oled.fill(0)
+        oled.show()
+        print("Programa detenido por usuario.")
+
+# ===== Ejecutar =====
+main()
+```
 ---
 
 ## 🌐 Cómo probar
